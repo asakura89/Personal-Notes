@@ -4,7 +4,7 @@
 
 [TOC]
 
-## Persiapan k
+## Kebutuhan
 ### Operating System
 Semua code dan kebutuhan menjalankan program, dijalankan di atas Windows 10. Karena menggunakan `.Net Core`, bisa memilih sesuai OS yang digunakan. Dengan catatan, cari installer yang sesuai. Berikut link yang disebut di bawah adalah spesifik Windows.
 
@@ -14,7 +14,6 @@ Semua code dan kebutuhan menjalankan program, dijalankan di atas Windows 10. Kar
 Di waktu tulisan ini dibuat, versi yang digunakan untuk semua program adalah `.Net Core 2.1`. Install / gunakan versi yang sama atau di atasnya (`>= 2.1`).
 
 * [.Net Core](https://dotnet.microsoft.com/download/dotnet-core)
-
 * [.Net Core SDK 2.1](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.610-windows-x64-installer)
 
 
@@ -23,7 +22,6 @@ Di waktu tulisan ini dibuat, versi yang digunakan untuk semua program adalah `.N
 Versi yang digunakan adalah versi terbaru saat tulisan ini dibuat, yaitu `1.43.2`. Install / gunakan versi yang sama atau di atasnya (`>= 1.43.2`).
 
 * [VS Code](https://code.visualstudio.com/download)
-
 * [VS Code 1.43.2](https://update.code.visualstudio.com/1.43.2/win32-x64/stable)
 
 
@@ -35,6 +33,23 @@ Install C# Extension dari VS Code. Caranya klik icon extension (icon kubus rubik
 
 
 
+## Persiapan
+### Membuat Solution / file `.sln`
+
+
+
+### Membuat  Project / file `.proj`
+
+
+
+### Meng-compile / Mem-build program
+
+
+
+### Menjalankan Program
+
+
+
 ## Tingkat awal
 ### Entry Point
 Untuk Program C# berjalan ada titik awal yang dijadikan patokan oleh runtime. Yaitu Entry Point. Program yang berjenis desktop, seperti WinForm, WPF, dan Console, Entry Point dimulai dari method Main.
@@ -42,7 +57,64 @@ Untuk Program C# berjalan ada titik awal yang dijadikan patokan oleh runtime. Ya
 ```c#
 class Program {
     static void Main(string[] args) {
-        // Ini adalah Entry Point.
+        // Method Main di atas ini adalah Entry Point.
+    }
+}
+```
+
+
+
+### Constructor
+Ketika sebuah class dipanggil, maka baris code yang pertama kali dijalankan adalah baris code yang berada di constructor. Constructor adalah method dengan nama yang sama dengan nama class tetapi tidak memiliki return value. Atau tidak ada nilai yang dikembalikan dari method tersebut. Biasanya method semacam ini diberi keyword `void` (method yang tidak mengembalikan nilai). Tapi constructor adalah method khusus sehingga tidak memiliki keyword `void`.
+
+```c#
+class Program {
+    public Program() {
+        // Method di atas ini adalah constructor
+    }
+
+    static void Main(string[] args) {
+        var program = new Program();
+        // ketika class Program dipanggil maka constructor dari class tersebut akan dijalankan duluan
+    }
+}
+```
+
+
+
+### Deklarasi
+Tahap deklarasi adalah tahapan ketika sebuah variable dibuat. Apakah diberi nilai atau tidak.
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        // Deklarasi variable
+        int permenDiTanganKiri;
+        int permenDiTanganKanan = 3;
+    }
+}
+```
+
+
+
+### Inisialisasi
+Tahap inisialisasi adalah tahapan ketika sebuah variable diberi nilai.
+
+```c#
+class Program {
+    // Deklarasi variable
+    int jariKakiKiri;
+    int jariKakiKanan;
+
+    public Program() {
+        // Inisialisasi variable
+        jariKakiKiri = 5;
+        jariKakiKanan = 5;
+    }
+
+    static void Main(string[] args) {
+        int permenDiTanganKiri; // → hanya deklarasi
+        int permenDiTanganKanan = 3; // → deklarasi dan inisialisasi
     }
 }
 ```
@@ -147,7 +219,7 @@ class Program {
 
 
 ### Nilai standar
-Ketika suatu variabel tidak diberikan nilai, maka secara otomatis  variabel tersebut akan diberi nilai standar. Untuk melihat nilai standar ini hanya bisa menggunakan fitur VS Code. Bernama `variables`. Karena kalau variabel nya ditampilkan akan ada pesan error saat di compile. Sehingga tidak bisa di-compile dan dijalankan.
+Ketika suatu variabel tidak diberikan nilai, maka secara otomatis variabel tersebut akan diberi nilai standar.
 
 ```c#
 class Program {
@@ -169,7 +241,7 @@ class Program {
 }
 ```
 
-Nilai standarnya berturur-turut adalah:
+Nilai standarnya berturut-turut adalah:
 
 * `nilaiBoolean` → `false`
 * `nilaiChar` → `\0` (Unicode untuk karakter `null`)
@@ -180,18 +252,130 @@ Nilai standarnya berturur-turut adalah:
 * `nilaiObject` → `null`
 * `nilaiString` → `null`
 
+Untuk melihat nilai standar ketika belum di inisialisai  ini hanya bisa menggunakan fitur VS Code. Bernama `variables`. Karena kalau variabel nya ditampilkan akan ada pesan error saat di compile. Sehingga tidak bisa di-compile dan dijalankan. Error ini adalah error dari compiler yang akan ditampilkan ketika ada suatu variable yang akan digunakan tanpa diinisialisasi sebelumnya.
+
 ![Nilai standar](2020-03-28_19-16-35.png)
 
 
 
 ###  Nilai tetap
+Seperti namanya, nilai tetap tidak bisa diubah setelah diberi nilai. Ada 2 nilai tetap di C#. Yang satu `readonly`. Yang satu lagi `const`. Bedanya hanya jika `const`, nilainya sama sekali tidak bisa diubah dan tidak diambil dari variabel manapun. Jadi nilainya adalah nilai dirinya sendiri. Sedangkan `readonly`, nilainya hanya bisa diberi sebaris / inline pada saat deklarasi atau di `constructor`.
+
+```c#
+class Program {
+    const bool bundar = true;
+
+    readonly bool topiSaya = bundar;
+    readonly bool bukanTopiSaya;
+
+    public Program() { // ← ini constructor\
+        bukanTopiSaya = bundar == false;
+
+        // bundar = false;
+        // ^ compile-time error
+
+        Console.WriteLine($"Apakah topi saya bundar? {topiSaya}");
+        Console.WriteLine($"Bagaimana dengan bukan topi saya, apakah juga bundar? {bukanTopiSaya}");
+
+        Console.ReadLine();
+    }
+
+    static void Main(string[] args) {
+        var program = new Program();
+    }
+}
+```
+
+![Nilai tetap](2020-05-17_204428.png)
 
 
 
-Seperti namanya, nilai tetap tidak bisa diubah setelah diberi nilai. Ada 2 nilai tetap di C#. Yang satu `readonly`. Yang satu lagi `const`. Bedanya hanya jika `const`, nilainya sama sekali tidak bisa diubah dan tidak diambil dari variabel manapun. Jadi nilainya adalah nilai dirinya sendiri. Sedangkan `readonly`, nilainya hanya bisa diubah di `constructor`.
+### String dasar
 
-readonly
-const
+```c#
+var rawString = @"The following is not expanded to a tab \t";
+
+var escapedString = "The following is not expanded to a tab \\t";
+
+rawString == escapedString // == true
+```
+
+
+
+### Multi-line String
+
+```c#
+// C# allows multi-line literal strings.
+// Both the first and last new-line are recognized.
+var myString = @"
+This is a string that spans
+many lines.
+";
+```
+
+
+
+### Interpolasi / penyisipan kata
+
+```c#
+// C# uses methods such as String.Format() to interpolate expressions with strings.
+
+var name = "Aaron";
+var greeting = String.Format("My name is {0}.", name);
+
+var greetingPolish = String.Format("My Polish name would be {0}ski.", name);
+
+var someProperty = String.Format("{0}px", top + 20);
+```
+
+
+
+### Concatenation / rentetan kata
+
+```c#
+// String concatenation with the '+' operator
+var longMessage = "This is a very long line. "
+                + "It is concatenated into one string.";
+```
+
+
+
+### Substring
+
+```c#
+"doghouses".Substring(3, 5); // == "house"
+// The second argument is a length value.
+```
+
+
+
+### Awalan dan akhiran
+
+```c#
+"racecar".StartsWith("race"); // == true
+"racecar".StartsWith("pace"); // == false
+```
+
+
+
+### Replace
+
+```c#
+var doghouzez = "doghouses".Replace('s', 'z');
+
+var regex = new Regex("r");
+var newText = regex.Replace("racecar", "sp", 1);
+```
+
+
+
+### Split
+
+```c#
+var animals = "dogs, cats, gophers, zebras";
+var individualAnimals = animals.Split(new []{", "}, StringSplitOptions.None);
+// == ['dogs', 'cats', 'gophers', 'zebras']
+```
 
 
 
@@ -283,82 +467,6 @@ Console.WriteLine("{0}", eventId == "event:32342"); // true
 Console.WriteLine("{0}", queue.Count); // 1
 ```
 
-### String dasar
-
-```c#
-var rawString = @"The following is not expanded to a tab \t";
-
-var escapedString = "The following is not expanded to a tab \\t";
-
-rawString == escapedString // == true
-```
-
-### Multi-line String
-
-```c#
-// C# allows multi-line literal strings.
-// Both the first and last new-line are recognized.
-var myString = @"
-This is a string that spans
-many lines.
-";
-```
-
-
-### Interpolasi / penyisipan kata
-
-
-```c#
-// C# uses methods such as String.Format() to interpolate expressions with strings.
-
-var name = "Aaron";
-var greeting = String.Format("My name is {0}.", name);
-
-var greetingPolish = String.Format("My Polish name would be {0}ski.", name);
-
-var someProperty = String.Format("{0}px", top + 20);
-```
-
-### Concatenation / rentetan kata
-
-```c#
-// String concatenation with the '+' operator
-var longMessage = "This is a very long line. "
-                + "It is concatenated into one string.";
-```
-
-
-### Substring
-
-```c#
-"doghouses".Substring(3, 5); // == "house"
-// The second argument is a length value.
-```
-
-### Awalan dan akhiran
-
-```c#
-"racecar".StartsWith("race"); // == true
-"racecar".StartsWith("pace"); // == false
-```
-
-
-### Replace
-
-```c#
-var doghouzez = "doghouses".Replace('s', 'z');
-
-var regex = new Regex("r");
-var newText = regex.Replace("racecar", "sp", 1);
-```
-
-### Split
-
-```c#
-var animals = "dogs, cats, gophers, zebras";
-var individualAnimals = animals.Split(new []{", "}, StringSplitOptions.None);
-// == ['dogs', 'cats', 'gophers', 'zebras']
-```
 
 
 ### Alur program
@@ -397,6 +505,33 @@ if (myNull == default(MyClass))
 
 
 
+## Tingkat Menengah
+
+### Lambda
+
+
+### Variable Lifetime
+
+Scope
+Normal variable
+
+Static Variable
+
+Persistence
+Normal Variable
+
+Static Variable
+
+
+### Collection Pipeline
+
+Map
+
+Filter
+
+Sort
+
+Reduce
 
 
 
