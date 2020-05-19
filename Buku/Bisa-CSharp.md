@@ -289,8 +289,8 @@ class Program {
 ![Nilai tetap](2020-05-17_204428.png)
 
 
-
-### String dasar
+### String
+#### String dasar
 
 ```c#
 var rawString = @"The following is not expanded to a tab \t";
@@ -302,7 +302,7 @@ rawString == escapedString // == true
 
 
 
-### Multi-line String
+#### Multi-line String
 
 ```c#
 // C# allows multi-line literal strings.
@@ -315,7 +315,7 @@ many lines.
 
 
 
-### Interpolasi / penyisipan kata
+#### Interpolasi / penyisipan kata
 
 ```c#
 // C# uses methods such as String.Format() to interpolate expressions with strings.
@@ -330,7 +330,7 @@ var someProperty = String.Format("{0}px", top + 20);
 
 
 
-### Concatenation / rentetan kata
+#### Concatenation / rentetan kata
 
 ```c#
 // String concatenation with the '+' operator
@@ -340,7 +340,7 @@ var longMessage = "This is a very long line. "
 
 
 
-### Substring
+#### Substring
 
 ```c#
 "doghouses".Substring(3, 5); // == "house"
@@ -349,7 +349,7 @@ var longMessage = "This is a very long line. "
 
 
 
-### Awalan dan akhiran
+#### Awalan dan akhiran
 
 ```c#
 "racecar".StartsWith("race"); // == true
@@ -358,7 +358,7 @@ var longMessage = "This is a very long line. "
 
 
 
-### Replace
+#### Replace
 
 ```c#
 var doghouzez = "doghouses".Replace('s', 'z');
@@ -369,7 +369,7 @@ var newText = regex.Replace("racecar", "sp", 1);
 
 
 
-### Split
+#### Split
 
 ```c#
 var animals = "dogs, cats, gophers, zebras";
@@ -379,11 +379,12 @@ var individualAnimals = animals.Split(new []{", "}, StringSplitOptions.None);
 
 
 
-### Array / List
+### Collection
+#### Array / List
 
 
 
-### Sort
+#### Sort
 
 
 
@@ -398,7 +399,7 @@ numbers.OrderBy(n => n);
 
 
 
-### Pasangan Key-Value
+#### Pasangan Key-Value
 
 
 
@@ -435,7 +436,7 @@ cc.GetOrAdd("Xenon", (key) => "XE")); // "XE"
 
 
 
-### Set (daftar unik)
+#### Set (daftar unik)
 
 
 
@@ -451,7 +452,7 @@ Console.WriteLine("{0}", fruits.Count); // == 2
 
 
 
-### Antrian (FIFO / First In First Out)
+#### Antrian (FIFO / First In First Out)
 
 ```c#
 
@@ -507,6 +508,18 @@ if (myNull == default(MyClass))
 
 ## Tingkat Menengah
 
+### Object Oriented Programming
+
+#### Inheritance
+
+#### Encapsulation
+
+#### Abstraction
+
+#### Polymorphism
+
+
+
 ### Lambda
 
 
@@ -535,6 +548,23 @@ Reduce
 
 
 
+## Tingkat Akhir
+
+### Fuctional Programming
+
+#### Immutability
+
+#### Purity
+
+#### First-class function
+
+#### Recursion
+
+
+
+
 ## Sumber
 
 https://dartdoc.takyam.com/docs/synonyms/
+https://sigma.software/about/media/pillars-functional-programming-part-1
+https://sigma.software/about/media/pillars-functional-programming-part-2
