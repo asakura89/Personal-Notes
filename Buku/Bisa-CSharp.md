@@ -65,7 +65,7 @@ class Program {
 
 
 ### Constructor
-Ketika sebuah class dipanggil, maka baris code yang pertama kali dijalankan adalah baris code yang berada di constructor. Constructor adalah method dengan nama yang sama dengan nama class tetapi tidak memiliki return value. Atau tidak ada nilai yang dikembalikan dari method tersebut. Biasanya method semacam ini diberi keyword `void` (method yang tidak mengembalikan nilai). Tapi constructor adalah method khusus sehingga tidak memiliki keyword `void`.
+Ketika sebuah class dipanggil, maka baris code yang pertama kali dijalankan adalah baris code yang berada di `constructor`. `constructor` adalah method dengan nama yang sama dengan nama class tetapi tidak memiliki return value. Atau tidak ada nilai yang dikembalikan dari method tersebut. Biasanya method semacam ini diberi keyword `void` (method yang tidak mengembalikan nilai). Tapi constructor adalah method khusus sehingga tidak memiliki keyword `void`.
 
 ```c#
 class Program {
@@ -83,12 +83,12 @@ class Program {
 
 
 ### Deklarasi
-Tahap deklarasi adalah tahapan ketika sebuah variable dibuat. Apakah diberi nilai atau tidak.
+Tahap deklarasi adalah tahapan ketika sebuah variabel dibuat. Apakah diberi nilai atau tidak.
 
 ```c#
 class Program {
     static void Main(string[] args) {
-        // Deklarasi variable
+        // Deklarasi variabel
         int permenDiTanganKiri;
         int permenDiTanganKanan = 3;
     }
@@ -98,16 +98,16 @@ class Program {
 
 
 ### Inisialisasi
-Tahap inisialisasi adalah tahapan ketika sebuah variable diberi nilai.
+Tahap inisialisasi adalah tahapan ketika sebuah variabel diberi nilai.
 
 ```c#
 class Program {
-    // Deklarasi variable
+    // Deklarasi variabel
     int jariKakiKiri;
     int jariKakiKanan;
 
     public Program() {
-        // Inisialisasi variable
+        // Inisialisasi variabel
         jariKakiKiri = 5;
         jariKakiKanan = 5;
     }
@@ -124,7 +124,7 @@ class Program {
 ### Print to Console
 Apa itu Console? Console adalah program yang beroperasi di lingkungan text hitam putih. Biasanya program-program yang dibuat bekerja di lingkungan ini adalah program yang kecil, simpel, dan melakukan operasi yang tidak kompleks. Atau bisa juga untuk program yang tidak butuh banyak input dari manusia.
 
-Nah lalu yang dimaksud dengan Print to Console disini, tidak ada hubungannya dengan nge-Print ke kertas. Seperti nge-Print tugas, nge-Print makalah. Tetapi yang dimaksud adalah, menampilkan ke Console. Atau menampilkan ke text hitam putih.
+Nah lalu yang dimaksud dengan Print to Console disini, tidak ada hubungannya dengan nge-print ke kertas. Seperti nge-print tugas, nge-print makalah. Tetapi yang dimaksud adalah, menampilkan ke `console`. Atau menampilkan ke text hitam putih.
 
 ```c#
 class Program {
@@ -160,7 +160,7 @@ class ProgramB {
 }
 ```
 
-Sebelum bagian program untuk menampilkan kalimat dipisah, kedua program tersebut terlihat seperti di atas. Tetapi setelah dipisahm jadi terlihat seperti di bawah.
+Sebelum bagian program untuk menampilkan kalimat dipisah, kedua program tersebut terlihat seperti di atas. Tetapi setelah dipisah jadi terlihat seperti di bawah.
 
 ```c#
 namespace LibraryKalimat {
@@ -252,7 +252,7 @@ Nilai standarnya berturut-turut adalah:
 * `nilaiObject` → `null`
 * `nilaiString` → `null`
 
-Untuk melihat nilai standar ketika belum di inisialisai  ini hanya bisa menggunakan fitur VS Code. Bernama `variables`. Karena kalau variabel nya ditampilkan akan ada pesan error saat di compile. Sehingga tidak bisa di-compile dan dijalankan. Error ini adalah error dari compiler yang akan ditampilkan ketika ada suatu variable yang akan digunakan tanpa diinisialisasi sebelumnya.
+Untuk melihat nilai standar ketika belum di inisialisai  ini hanya bisa menggunakan fitur VS Code. Bernama `variables`. Karena kalau variabel nya ditampilkan akan ada pesan error saat di compile. Sehingga tidak bisa di-compile dan dijalankan. Error ini adalah error dari compiler yang akan ditampilkan ketika ada suatu variabel yang akan digunakan tanpa diinisialisasi sebelumnya.
 
 ![Nilai standar](2020-03-28_19-16-35.png)
 
@@ -268,7 +268,7 @@ class Program {
     readonly bool topiSaya = bundar;
     readonly bool bukanTopiSaya;
 
-    public Program() { // ← ini constructor\
+    public Program() {
         bukanTopiSaya = bundar == false;
 
         // bundar = false;
