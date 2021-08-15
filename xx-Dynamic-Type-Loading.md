@@ -14,20 +14,14 @@
 
 
 
-## [.Net] Collection
-### 1. Array / List
+## [.Net] Dynamic Type Loading
+
+### Fully automatic
+
+Plugin-like architecture and loading
 
 
+### Semi automatic
 
-### 2. Pasangan Key-Value
-
-
-
-### 3. Set (daftar unik)
-
-
-
-### 4. Antrian (FIFO / First In First Out)
-
-
+Defined by configuration like application pipeline (Ria) and event emitter (Emi)
 
