@@ -429,3 +429,47 @@ if (validContacts) {
     // . . . omitted . . .
 }
 ```
+
+
+
+**9. Penggabungan String yang panjang**
+
+**Penjelasan**
+
+Dynamic String adalah kewajiban. Dan umum banget dimana-mana. Menaggulanginya bisa dengan 2 cara, string interpolation (c# 6 ke atas) dan `StringBuilder`.
+
+**Contoh**
+
+```C#
+String apiUrl = "https://api.orenosaito.co.jp/" + apiVersion + "/user/" + userId;
+```
+
+**Atau**
+
+```C#
+String apiUrl = String.Format("https://api.orenosaito.co.jp/{0}/user/{1}", apiVersion, userId);
+```
+
+**Seharusnya**
+
+```C#
+String apiUrl = $"https://api.orenosaito.co.jp/{apiVersion}/user/{userId}";
+```
+
+**Contoh lain**
+
+```C#
+String errorMessage = "Operation cannot be carried out becaus of: " + reason + ", by user: " + username + " with role: " + role + "\r\nOriginal exception was: " + ex.Message + "with stack trace: " + ex.StackTrace;
+```
+
+**Seharusnya**
+
+```C#
+String errorMessage = new StringBuilder()
+    .Append($"Operation cannot be carried out becaus of: {reason}")
+    .Append($", by user: {username} with role: {role}")
+    .AppendLine()
+    .Append($"Original exception was: {ex.Message}")
+    .Append($" with stack trace: {ex.StackTrace}")
+    .ToString();
+```
