@@ -230,26 +230,6 @@ IList<String> selectedUsernameList = ListBoxUser
     .Select(item => item.Value)
     .ToList();
 
-if (selectedUsernameList.Any())
-    return "Users were selected.";
-
-String[] selectedUsernameArray = ListBoxUser
-    .SelectedItems
-    .Select(item => item.Value)
-    .ToArray();
-
-if (selectedUsernameArray.Any())
-    return "Users were selected.";
-```
-
-**Code yang bertentangan**
-
-```C#
-IList<String> selectedUsernameList = ListBoxUser
-    .SelectedItems
-    .Select(item => item.Value)
-    .ToList();
-
 if (selectedUsernameList.Count != 0)
     return "Users were selected.";
 
@@ -259,6 +239,26 @@ String[] selectedUsernameArray = ListBoxUser
     .ToArray();
 
 if (selectedUsernameArray.Length > 0)
+    return "Users were selected.";
+```
+
+**Seharusnya**
+
+```C#
+IList<String> selectedUsernameList = ListBoxUser
+    .SelectedItems
+    .Select(item => item.Value)
+    .ToList();
+
+if (selectedUsernameList.Any())
+    return "Users were selected.";
+
+String[] selectedUsernameArray = ListBoxUser
+    .SelectedItems
+    .Select(item => item.Value)
+    .ToArray();
+
+if (selectedUsernameArray.Any())
     return "Users were selected.";
 ```
 
@@ -273,15 +273,15 @@ Kadang ada aja developer yang kebiasaan manggil class beserta namespace-nya. Ya 
 **Contoh**
 
 ```C#
+System.Data.DataTable employeData = employeeService.GetAllEmployeeData();
+```
+
+**Seharusnya**
+
+```C#
 using System.Data;
 
 DataTable employeData = employeeService.GetAllEmployeeData();
-```
-
-**Code yang bertentangan**
-
-```C#
-System.Data.DataTable employeData = employeeService.GetAllEmployeeData();
 ```
 
 
@@ -351,7 +351,7 @@ String contactName = dbContext
 
 **Penjelasan**
 
-Antara gunakan maksimal hanya 2 predicate dalam 1 control flow atau parameter yang menerima predicate. Atau boleh di-enter ke bawah untuk readability.
+Antara gunakan maksimal hanya 2 predicate dalam 1 control flow atau parameter yang menerima predicate untuk mengurangi kompleksit. Atau boleh di-enter ke bawah untuk readability.
 
 **Contoh**
 
@@ -436,7 +436,7 @@ if (validContacts) {
 
 **Penjelasan**
 
-Dynamic String adalah kewajiban. Dan umum banget dimana-mana. Menaggulanginya bisa dengan 2 cara, string interpolation (c# 6 ke atas) dan `StringBuilder`.
+Dynamic String adalah kewajiban. Dan umum banget dimana-mana. Menaggulanginya bisa dengan 2 cara, string interpolation (c# 6 ke atas) atau `StringBuilder`. Ini untuk meningkatkan readability. Walaupun sebenernya udah ada `String.Format` tapi untuk readability masih lebih baik string interpolation.
 
 **Contoh**
 
