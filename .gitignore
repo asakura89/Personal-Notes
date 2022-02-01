@@ -308,3 +308,14 @@ build-log.txt
 *-log.txt
 *log.txt
 wwwroot/
+
+# > Typora export specific
+*.html
+*.pdf
+*.docx
+*.odt
+*.rtf
+*.epub
+*.tex
+*.opml
+
