@@ -198,7 +198,51 @@ public String CaraBerpindahTempat(IDictionary<String, String> aksiPindah, String
 
 
 ### 3. Predicate
+Predicate ini secara general adalah `Func` yang return value-nya selalu `Boolean`. Dan bisa dibilang `class` khusus, karena .Net nyediain class `Predicate<T>`.
 
+Cara pakenya? apa? apa? cara pakenya? gampang!
+
+Dari namanya predicate, artinya membuktikan suatu kondisi. Bisa diartikan juga sebagai syarat untuk melakukan suatu action.
+
+Contoh nih ya, contoh predicate sebagai `class` khusus.
+
+```C#
+Int32 anggotaPreman = 7;
+Int32 palakanPerHari = 30_000;
+Int32 totalPalakan = new Func<Int32>(() => anggotaPreman * palakanPerHari)();
+
+Predicate<Int32> apakahTotalMencapaiTarget = palakan => palakan >= 70_000;
+Predicate<Int32> apakahJumlahAnggotaCukupBanyak = anggota => anggota > 5;
+Boolean mencapaiTarget = apakahTotalMencapaiTarget(totalPalakan);
+Boolean anggotaBanyak = apakahJumlahAnggotaCukupBanyak(anggotaPreman);
+
+if (mencapaiTarget)
+    Console.WriteLine("Kerja bagus semuanya! Lanjutkan besok-besok.");
+    
+if (anggotaBanyak)
+    Console.WriteLine("Ternyata anggota kita udah banyak banget ya.");
+```
+
+
+
+Ini contoh lain yang make `Func`
+
+```C#
+Int32 anggotaPreman = 7;
+Int32 palakanPerHari = 30_000;
+Int32 totalPalakan = new Func<Int32>(() => anggotaPreman * palakanPerHari)();
+
+Func<Int32, Boolean> apakahTotalMencapaiTarget = palakan => palakan >= 70_000;
+Func<Int32, Boolean> apakahJumlahAnggotaCukupBanyak = anggota => anggota > 5;
+Boolean mencapaiTarget = apakahTotalMencapaiTarget(totalPalakan);
+Boolean anggotaBanyak = apakahJumlahAnggotaCukupBanyak(anggotaPreman);
+
+if (mencapaiTarget)
+    Console.WriteLine("Kerja bagus semuanya! Lanjutkan besok-besok.");
+    
+if (anggotaBanyak)
+    Console.WriteLine("Ternyata anggota kita udah banyak banget ya.");
+```
 
 
 
