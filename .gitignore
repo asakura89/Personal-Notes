@@ -1,0 +1,15 @@
+.autogit/logs
+*.html
+*.pdf
+*.docx
+*.odt
+*.rtf
+*.epub
+*.tex
+*.opml
+
+!styles/**/*.*
+!embedded_*.html
+!**/embedded_*.html
+
+.obsidian/workspace
