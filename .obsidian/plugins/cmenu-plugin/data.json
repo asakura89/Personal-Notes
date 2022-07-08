@@ -54,12 +54,22 @@
     {
       "id": "obsidian-pandoc:pandoc-export-html",
       "name": "Pandoc Plugin: Export as HTML (without Pandoc)",
-      "icon": "remix-LogoutCircleRLine"
+      "icon": "feather-upload"
+    },
+    {
+      "id": "cmenu-plugin:editor:insert-wikilink",
+      "name": "cMenu: Add internal link",
+      "icon": "bracket-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:insert-link",
+      "name": "cMenu: Insert markdown link",
+      "icon": "link-glyph"
     }
   ],
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
   "cMenuVisibility": true,
-  "cMenuBottomValue": 4.25,
+  "cMenuBottomValue":2,
   "cMenuNumRows": 9
 }
