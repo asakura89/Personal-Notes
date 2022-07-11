@@ -7,3 +7,21 @@
 Just open in Obsidian as a Vault.
 
 
+
+## Index
+
+<!--
+```dataview
+List From #Index
+```
+-->
+
+- [[Powershell Index]]
+- [[Communication Index]]
+- [[Excel Index]]
+- [[Git Index]]
+- [[Concept Index]]
+- [[Time Management Index]]
+- [[Work Index]]
+
+
