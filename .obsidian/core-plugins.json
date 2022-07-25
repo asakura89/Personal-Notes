@@ -3,13 +3,10 @@
   "global-search",
   "switcher",
   "graph",
-  "backlink",
-  "tag-pane",
+  "templates",
   "command-palette",
-  "slash-command",
   "editor-status",
   "outline",
   "word-count",
-  "open-with-default-app",
   "file-recovery"
 ]
