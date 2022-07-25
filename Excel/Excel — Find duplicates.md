@@ -12,17 +12,17 @@ date: 2022-07-08
 
 ## Conditional Formatting
 1. Pilih dulu data-nya
-![[Excel/img/Pasted image 20220708200433.png]]
+![[Excel/_media/Pasted image 20220708200433.png]]
 
 2. Pilih _Conditional Formatting_ ›› _Highlight Cell Rules_ ›› _Duplicate Values_
-![[Excel/img/Pasted image 20220708202005.png]]
-![[Excel/img/Pasted image 20220708202235.png]]
+![[Excel/_media/Pasted image 20220708202005.png]]
+![[Excel/_media/Pasted image 20220708202235.png]]
 3. Di _Format cells that contain:_, pilih _Duplicate_ dan pewarnaannya
-![[Excel/img/Pasted image 20220708202700.png]]
+![[Excel/_media/Pasted image 20220708202700.png]]
 
 
 4. Hasil akhir
-![[Excel/img/Pasted image 20220708202955.png]]
+![[Excel/_media/Pasted image 20220708202955.png]]
 
 
 
