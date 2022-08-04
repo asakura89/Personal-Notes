@@ -48,6 +48,34 @@
         "a": 1,
         "rgb": 0
       }
+    },
+    {
+      "query": "tag:#Java",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "tag:#DotNet",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
+      }
+    },
+    {
+      "query": "tag:#IIS",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
+      }
+    },
+    {
+      "query": "tag:#ASP",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
+      }
     }
   ],
   "collapse-display": true,
@@ -59,7 +87,7 @@
   "centerStrength": 1,
   "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1,
+  "linkDistance": 500,
+  "scale": 0.42967809143425245,
   "close": true
 }
