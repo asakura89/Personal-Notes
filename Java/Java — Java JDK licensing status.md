@@ -8,12 +8,14 @@ date: 2022-07-28
 # Java JDK licensing status
 
 ## Java JDK 11
+
 1. Free download and install
 2. Not → data processing, commercial, production, internal business purposes
 3. Ok → developing, testing, prototyping, demonstrating
 [^1]  [^2] [^5] [^6]
 
 ## Java SE 8
+
 1. Commercial license → Public updates for business commercial and production use
 2. Free → General purpose computing
 [^3] [^4]

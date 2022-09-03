@@ -11,6 +11,7 @@ date: 2022-07-08
 # Find duplicates
 
 ## Conditional Formatting
+
 1. Pilih dulu data-nya
 ![[Excel/_media/Pasted image 20220708200433.png]]
 

@@ -7,7 +7,9 @@ date: 2020-05-25
 ---
 
 # Get OS Version
+
 ## OS Version
+
 OS version bisa make command ini
 ```powershell
 Clear-Host
@@ -26,6 +28,7 @@ Contoh hasil run
 
 
 ## OS Full Version
+
 ```powershell
 Clear-Host
 [System.Environment]::OSVersion
@@ -43,6 +46,7 @@ Platform ServicePack Version      VersionString
 
 
 ## OS Major Version only
+
 ```powershell
 Clear-Host
 [System.Environment]::OSVersion.Version.Major

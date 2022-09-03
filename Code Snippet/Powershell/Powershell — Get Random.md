@@ -7,7 +7,9 @@ date: 2020-05-25
 ---
 
 # Get Random
+
 ## Random Seeds
+
 Generate random seeds dengan trik random _Guid_ dan Feigenbaum (46692016)
 ```powershell
 Clear-Host
@@ -65,6 +67,7 @@ Contoh hasil run
 
 
 ## Random Number
+
 ```powershell
 Clear-Host
 

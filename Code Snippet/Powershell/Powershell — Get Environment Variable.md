@@ -10,7 +10,9 @@ date: 2020-05-25
 ---
 
 # Get Environment Variable
+
 ## All Environment Variable
+
 Buat nge-list semua _env var_ bisa pake code ini
 ```powershell
 Clear-Host
@@ -67,6 +69,7 @@ PUBLIC                         C:\Users\Public
 
 
 ## Path
+
 Path di _env var_ adalah hal yang paling sering dicari atau dicek. Karena kadang ada console app yang udah di-update version-nya tapi masih gak ke-update di command prompt / Powershell karena path-nya ketimpa duplikat misalnya.
 
 
@@ -99,6 +102,7 @@ C:\ProgramData\Oracle\Java\javapath
 
 
 ## User Information
+
 Selain path, sebenernya ada banyak yang lain. Kaya yang ada di section paling atas yang ini  [[Powershell — Get Environment Variable#All Environment Variable|All Environment Variable]]. Yang paling sering dibutuhin adalah informasi user yang lagi nge-run script. Mungkin bisa buat identifier dari file yang di-generate dari suatu script atau bisa jadi untuk sistem audit trail.
 
 Buat ngambil data user-nya sendiri, bisa pake script di bawah ini

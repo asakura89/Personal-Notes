@@ -1,0 +1,298 @@
+{
+    "folders": [
+        {
+            "path": "_templates"
+        },
+        {
+            "path": "All Things .NET"
+        },
+        {
+            "path": "Code Snippet"
+        },
+        {
+            "path": "Communication"
+        },
+        {
+            "path": "Excel"
+        },
+        {
+            "path": "Git"
+        },
+        {
+            "path": "Java"
+        },
+        {
+            "path": "Office 365"
+        },
+        {
+            "path": "Programming Concept"
+        },
+        {
+            "path": "Time Management"
+        },
+        {
+            "path": "Work"
+        }
+    ],
+    "settings": {
+        "[html]": {
+            "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "[css]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[vue]": {
+            "editor.defaultFormatter": "octref.vetur"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+        },
+        "[markdown]": {
+            "editor.wordWrap": "on",
+            "editor.lineNumbers": "off",
+            "editor.quickSuggestions": {
+                "comments": "off",
+                "strings": "off",
+                "other": "off"
+            },
+            "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        },
+        "blockman.n01LineHeight": 0,
+        "blockman.n04ColorComboPreset": "Classic Light (Gradients)",
+
+        "breadcrumbs.enabled": true,
+
+        "clock.dateFormat": "hh:MM TT / dd.mm.yyyy",
+
+        "debug.console.closeOnEnd": true,
+        "debug.console.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        "debug.inlineValues": "on",
+        "debug.toolBarLocation": "floating",
+
+        "diffEditor.ignoreTrimWhitespace": false,
+        "diffEditor.renderSideBySide": true,
+        "diffEditor.wordWrap": "off",
+
+        "editor.accessibilitySupport": "off",
+        "editor.experimental.stickyScroll.enabled": true,
+        "editor.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        "editor.fontLigatures": true,
+        "editor.fontSize": 16,
+        "editor.guides.bracketPairs": false,
+        "editor.guides.indentation": false,
+        "editor.inlayHints.enabled": "off",
+        "editor.insertSpaces": true,
+        "editor.largeFileOptimizations": false,
+        "editor.minimap.enabled": false,
+        "editor.minimap.maxColumn": 20,
+        "editor.renderControlCharacters": true,
+        "editor.renderLineHighlight": "all",
+        "editor.renderWhitespace": "all",
+        "editor.stablePeek": true,
+        "editor.suggest.filterGraceful": false,
+        "editor.suggestSelection": "first",
+        "editor.tabSize": 4,
+        "editor.trimAutoWhitespace": true,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordWrap": "off",
+
+        "explorer.autoReveal": false,
+        "explorer.confirmDelete": false,
+        "explorer.openEditors.visible": 2,
+        
+        "extensions.ignoreRecommendations": true,
+        
+        "files.associations": {
+            "**/*.asax": "html",
+            "**/*.ascx": "html",
+            "**/*.asp": "html",
+            "**/*.aspx": "html",
+            "**/*.cshtml": "razor",
+            "**/*.ejx": "json",
+            "**/*.eqx": "sql",
+            "**/*.linq": "csharp",
+            "**/*.master": "html",
+            "*-log.txt": "log",
+            "*.axaml": "xml",
+            "*.config": "xml",
+            "*.cshtml": "razor",
+            "*.editorconfig": "properties",
+            "*\\d{8}.\\d{6}*.txt": "log",
+            "*log*.*": "log",
+            "*log.*.*": "log",
+            "*log.*.txt": "log",
+            ".editorconfig": "properties",
+            "log.*.*": "log",
+            "log.*.txt": "log",
+            "log/*.txt": "log",
+            "Log/*.txt": "log",
+            "logs/*.txt": "log",
+            "Logs/*.txt": "log"
+        },
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 100,
+        "files.exclude": {
+            "**/*tmp*": true,
+            "**/.DS_Store": true,
+            "**/.git": true,
+            "**/bower_components": false,
+            "**/node_modules": false,
+            "**/obj/**": true
+        },
+        "files.trimTrailingWhitespace": false,
+
+        "javascript.format.enable": false,
+        "javascript.format.semicolons": "insert",
+        
+        "markdown-editor.imageSaveFolder": "_media",
+
+        "markdown.extension.italic.indicator": "_",
+        "markdown.extension.print.imgToBase64": true,
+        "markdown.extension.syntax.decorationFileSizeLimit": 10000000,
+        "markdown.extension.tableFormatter.normalizeIndentation": true,
+        "markdown.extension.toc.updateOnSave": false,
+
+        "markdown.preview.breaks": true,
+        "markdown.preview.doubleClickToSwitchToEditor": false,
+
+        "notebook.showFoldingControls": "always",
+
+        "partialDiff.enableTelemetry": false,
+
+        "search.searchEditor.defaultNumberOfContextLines": 2,
+        "search.searchEditor.reusePriorSearchConfiguration": true,
+        "search.searchOnType": false,
+        "search.showLineNumbers": true,
+
+        "telemetry.telemetryLevel": "off",
+
+        "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "terminal.integrated.cursorBlinking": true,
+        "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        
+        "todo-tree.defaultHighlight": {},
+
+        "todo.colors.dark": {
+            "cancelled": "#dd1144",
+            "code": "#eb6000",
+            "comment": "#434241",
+            "done": "#87a924",
+            "project": "#24adff",
+            "projectStatistics": "#0067a5",
+            "tag": "#eb6000",
+            "tags": {
+                "background": [
+                    "#e54545",
+                    "#e54545",
+                    "#e59f45",
+                    "#e59f45",
+                    "#4d91d6",
+                    "#4d91d6",
+                    "#e5d145",
+                    "#e5d145",
+                    "#ae81ff",
+                    "#ae81ff"
+                ],
+                "foreground": [
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333"
+                ]
+            }
+        },
+        "todo.colors.light": {
+            "cancelled": "#dd1144",
+            "code": "#eb6000",
+            "comment": "#434241",
+            "done": "#87a924",
+            "project": "#24adff",
+            "projectStatistics": "#0067a5",
+            "tag": "#eb6000",
+            "tags": {
+                "background": [
+                    "#e54545",
+                    "#e54545",
+                    "#e59f45",
+                    "#e59f45",
+                    "#4d91d6",
+                    "#4d91d6",
+                    "#e5d145",
+                    "#e5d145",
+                    "#ae81ff",
+                    "#ae81ff"
+                ],
+                "foreground": [
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333",
+                    "#333"
+                ]
+            }
+        },
+        "todo.embedded.provider": "ag",
+        "todo.symbols.box": "[ ]",
+        "todo.symbols.cancelled": "[-]",
+        "todo.symbols.done": "[x]",
+        "todo.tags.names": [
+            "critical",
+            "Critical",
+            "high",
+            "High",
+            "medium",
+            "Medium",
+            "low",
+            "Low",
+            "today",
+            "Today"
+        ],
+
+        "todo.timekeeping.created.format": "DD.MM.YYYY HH:mm",
+        "todo.timekeeping.finished.format": "DD.MM.YYYY HH:mm",
+        "todo.timekeeping.started.format": "DD.MM.YYYY HH:mm",
+
+        "typescript.format.enable": false,
+        "typescript.format.semicolons": "insert",
+        
+        "update.mode": "manual",
+        
+        "vscode-json-editor.theme": "dark",
+        
+        "vsicons.projectDetection.autoReload": true,
+        
+        "window.titleSeparator": " • ",
+        "window.zoomLevel": 0,
+        
+        "workbench.colorCustomizations": {
+            "editor.lineHighlightBackground": "#1073cf2d",
+            "editor.lineHighlightBorder": "#9fced11f"
+        },
+        "workbench.colorTheme": "Office Theme (Word)",
+        "workbench.editor.enablePreview": false,
+        "workbench.editor.enablePreviewFromQuickOpen": false,
+        "workbench.editor.pinnedTabSizing": "shrink",
+        "workbench.editor.untitled.hint": "hidden",
+        "workbench.editor.untitled.labelFormat": "name",
+        "workbench.iconTheme": "file-icons",
+        "workbench.layoutControl.enabled": false,
+        "workbench.panel.defaultLocation": "bottom",
+        "workbench.productIconTheme": "fluent-icons",
+        "workbench.sideBar.location": "right",
+        "workbench.tree.indent": 16
+    }
+}

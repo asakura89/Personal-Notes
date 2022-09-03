@@ -4,7 +4,8 @@
 </p>
 
 ## Usage
-Open sebagai Vault di Obsidian.md
+
+Open sebagai Vault di Obsidian.md. Atau bisa juga dengan Visual Studio Code.
 
 
 
