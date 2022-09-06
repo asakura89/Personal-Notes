@@ -476,32 +476,3 @@ String errorMessage = new StringBuilder()
 
 
 
-**10. Config**
-Pake String Extention untuk String bervariable ${}
-kaya di url
-
-
-
-**11. Logging**
-
-pake ScLogUtil / LoggerAdapter
-
-
-
-
-**12. N-Layer Arsitektur**
-
-View, Manager, Model GANTI!!!
-
-
-
-**13. Exception**
-
-don't use general `Exception`. it was just meant to be inherited to a specific exception. here is [reference #1](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/#common-exceptions) or this [reference #2](https://powershellexplained.com/2017-04-07-all-dotnet-exception-list/), is more complete
-
-
-
-**14. Ternary operator**
-
-never use ternary operator if it is too long
-
