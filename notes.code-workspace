@@ -22,6 +22,9 @@
             "path": "Java"
         },
         {
+            "path": "Markdown"
+        },
+        {
             "path": "Office 365"
         },
         {
@@ -77,7 +80,6 @@
         "diffEditor.wordWrap": "off",
 
         "editor.accessibilitySupport": "off",
-        "editor.experimental.stickyScroll.enabled": true,
         "editor.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
         "editor.fontLigatures": true,
         "editor.fontSize": 16,
@@ -102,35 +104,41 @@
         "explorer.autoReveal": false,
         "explorer.confirmDelete": false,
         "explorer.openEditors.visible": 2,
-        
+
         "extensions.ignoreRecommendations": true,
-        
+
         "files.associations": {
             "**/*.asax": "html",
             "**/*.ascx": "html",
             "**/*.asp": "html",
             "**/*.aspx": "html",
+            "**/*.master": "html",
             "**/*.cshtml": "razor",
+            "*.cshtml": "razor",
             "**/*.ejx": "json",
             "**/*.eqx": "sql",
             "**/*.linq": "csharp",
-            "**/*.master": "html",
-            "*-log.txt": "log",
             "*.axaml": "xml",
             "*.config": "xml",
-            "*.cshtml": "razor",
             "*.editorconfig": "properties",
-            "*\\d{8}.\\d{6}*.txt": "log",
-            "*log*.*": "log",
-            "*log.*.*": "log",
-            "*log.*.txt": "log",
             ".editorconfig": "properties",
-            "log.*.*": "log",
+            "*\\d{8}.\\d{6}*.txt": "log",
+            "*-log.txt": "log",
+            "*-log.log": "log",
+            "*log*.txt": "log",
+            "*log*.log": "log",
+            "*log.*.txt": "log",
+            "*log.*.log": "log",
             "log.*.txt": "log",
+            "log.*.log": "log",
             "log/*.txt": "log",
+            "log/*.log": "log",
             "Log/*.txt": "log",
+            "Log/*.log": "log",
             "logs/*.txt": "log",
-            "Logs/*.txt": "log"
+            "logs/*.log": "log",
+            "Logs/*.txt": "log",
+            "Logs/*.log": "log"
         },
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 100,
@@ -146,7 +154,7 @@
 
         "javascript.format.enable": false,
         "javascript.format.semicolons": "insert",
-        
+
         "markdown-editor.imageSaveFolder": "_media",
 
         "markdown.extension.italic.indicator": "_",
@@ -172,7 +180,7 @@
         "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "terminal.integrated.cursorBlinking": true,
         "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
-        
+
         "todo-tree.defaultHighlight": {},
 
         "todo.colors.dark": {
@@ -268,16 +276,16 @@
 
         "typescript.format.enable": false,
         "typescript.format.semicolons": "insert",
-        
+
         "update.mode": "manual",
-        
+
         "vscode-json-editor.theme": "dark",
-        
+
         "vsicons.projectDetection.autoReload": true,
-        
+
         "window.titleSeparator": " • ",
         "window.zoomLevel": 0,
-        
+
         "workbench.colorCustomizations": {
             "editor.lineHighlightBackground": "#1073cf2d",
             "editor.lineHighlightBorder": "#9fced11f"
@@ -293,6 +301,7 @@
         "workbench.panel.defaultLocation": "bottom",
         "workbench.productIconTheme": "fluent-icons",
         "workbench.sideBar.location": "right",
-        "workbench.tree.indent": 16
+        "workbench.tree.indent": 16,
+        "editor.stickyScroll.enabled": true
     }
 }

@@ -8,7 +8,7 @@ date: 2022-07-22
 
 # Application Analytics
 
-**Google analytics / Web analytics concept**
+## Google analytics / Web analytics concept
 
 **Link**
 
@@ -19,7 +19,11 @@ date: 2022-07-22
 5. https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCustomVariables#visitorLevel
 6. https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript
 
-**Concept**
+
+
+## Concept
+
+### Data
 
 1. User data
 
@@ -39,194 +43,88 @@ date: 2022-07-22
 
 
 
-```javascript
-// how to track visitor
-function(){
-  var readCookie = function(key){
-    var result;
-	return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? (result[1]) : null;
-  }
-  var writeCookie = function(name, value, domain, expire){
-    document.cookie = name+"="+value+";domain=."+domain+";path=/;expires="+expire;
-  }
-  var visitorId = readCookie('v_id');
-  var date = new Date();
-  if(visitorId === null){
-    visitorId = date.getTime().toString(16) + (Math.floor(Math.random() * (999999 - 100000) + 100000)).toString(16);
-  }
-  date.setTime(date.getTime() + (2 * 365 * 24 * 60 * 60 * 1000));
-  writeCookie('v_id', visitorId, location.hostname, new Date(date).toUTCString());
-  return visitorId;
-}
-```
-
-visitor data might contains
+Data visitor kurang lebih kaya gini
 
 ```
 $id;
 $uuid;
 $httpAcceptLanguage;
-$httpUserAgent;
+$clientUserAgent;
+$clientScreenSize
 $remoteAddr;
 $createdAt;
 ```
 
 
 
+### Code
+
 ```javascript
-import Analytics from 'analytics'
-import googleAnalytics from '@analytics/google-analytics'
-import customerIo from '@analytics/customerio'
+// Initialize engine
+var analytics = new Analytics("<app_name> or <app_identifier>");
 
-/* Initialize analytics */
-const analytics = Analytics({
-  app: 'my-app-name',
-  version: 100,
-  plugins: [
-    googleAnalytics({
-      trackingId: 'UA-121991291',
-    }),
-    customerIo({
-      siteId: '123-xyz'
-    })
-  ]
+// Track page view
+analytics.visit();
+
+// Track page but overrides the url
+// e.g. visit https://tofunojura.com/shop/register#final-step
+analytics.visit("https://tofunojura.com/shop/register");
+
+analytics.visit({
+    url: "https://tofunojura.com/shop/register",
+    section: "final-step"
+});
+
+// callback
+analytics.visit("https://tofunojura.com/shop/register", () => {
+  console.log("callback");
+});
+
+analytics.visit(() => {
+  console.log("callback");
+});
+
+// callback in every method, not just visit
+
+// Track custom event
+analytics.track("<event_name>");
+
+analytics.track("form_submit_clicked");
+
+analytics.track("cart_add", {
+    price: 20,
+    item: "microsoft 365 subscription",
+    sku: "sku-number",
+    qty: 2
+});
+
+// Identify a visitor
+analytics.identify("<user_identifier>", {
+  firstName: "juragan",
+  lastName: "tahu",
+  email: "tofu.no.jura.1457@gmail.com"
 })
 
-/* Track a page view */
-analytics.page()
-
-/* Track a custom event */
-analytics.track('userPurchase', {
-  price: 20
-  item: 'pink socks'
+// Identify visitor with additional profile
+analytics.identify("<user_identifier>", {
+  name: "juragan tahu",
+  company: "Tofu no Jura Inc."
 })
 
-/* Identify a visitor */
-analytics.identify('user-id-xyz', {
-  firstName: 'bill',
-  lastName: 'murray',
-  email: 'da-coolest@aol.com'
-})
+// Get current user
+var user = analytics.user();
 
+// Get specific user
+var user = analytics.user("<user_identifier>");
 
-/* analytics.identify */
-// Basic user id identify
-analytics.identify('xyz-123')
-
-// Identify with additional traits
-analytics.identify('xyz-123', {
-  name: 'steve',
-  company: 'hello-clicky'
-})
-
-// Fire callback with 2nd or 3rd argument
-analytics.identify('xyz-123', () => {
-  console.log('do this after identify')
-})
-
-// Disable sending user data to specific analytic tools
-analytics.identify('xyz-123', {}, {
-  plugins: {
-    // disable sending this identify call to segment
-    segment: false
-  }
-})
-
-// Send user data to only to specific analytic tools
-analytics.identify('xyz-123', {}, {
-  plugins: {
-    // disable this specific identify in all plugins except customerio
-    all: false,
-    customerio: true
-  }
-})
-
-/* analytics.track */
-// Basic event tracking
-analytics.track('buttonClicked')
-
-// Event tracking with payload
-analytics.track('itemPurchased', {
-  price: 11,
-  sku: '1234'
-})
-
-// Fire callback with 2nd or 3rd argument
-analytics.track('newsletterSubscribed', () => {
-  console.log('do this after track')
-})
-
-// Disable sending this event to specific analytic tools
-analytics.track('cartAbandoned', {
-  items: ['xyz', 'abc']
-}, {
-  plugins: {
-    // disable track event for segment
-    segment: false
-  }
-})
-
-// Send event to only to specific analytic tools
-analytics.track('customerIoOnlyEventExample', {
-  price: 11,
-  sku: '1234'
-}, {
-  plugins: {
-    // disable this specific track call all plugins except customerio
-    all: false,
-    customerio: true
-  }
-})
-
-/* analytics.page */
-// Basic page tracking
-analytics.page()
-
-// Page tracking with page data overrides
-analytics.page({
-  url: 'https://google.com'
-})
-
-// Fire callback with 1st, 2nd or 3rd argument
-analytics.page(() => {
-  console.log('do this after page')
-})
-
-// Disable sending this pageview to specific analytic tools
-analytics.page({}, {
-  plugins: {
-    // disable page tracking event for segment
-    segment: false
-  }
-})
-
-// Send pageview to only to specific analytic tools
-analytics.page({}, {
-  plugins: {
-    // disable this specific page in all plugins except customerio
-    all: false,
-    customerio: true
-  }
-})
-
-/* analytics.user */
-// Get all user data
-const userData = analytics.user()
-
-// Get user id
-const userId = analytics.user('userId')
-
-// Get user company name
-const companyName = analytics.user('traits.company.name')
-
-/* analytics.reset */
 // Reset current visitor
-analytics.reset()
+analytics.reset();
 ```
+
 
 client ip can't be recorded by client script
 need geoip db
-doesnt matter, just use the v_id
+doesnt matter, just use the visitor id
 
 
 

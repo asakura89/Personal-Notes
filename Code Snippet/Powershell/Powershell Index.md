@@ -13,8 +13,8 @@ From #Powershell
 ```
 -->
 
-- [[Powershell — Get Environment Variable]]
-- [[Powershell — Get OS Version]]
-- [[Powershell — Get Random]]
+- [Powershell — Get Environment Variable](Powershell%20—%20Get%20Environment%20Variable.md)
+- [Powershell — Get OS Version](Powershell%20—%20Get%20OS%20Version.md)
+- [Powershell — Get Random](Powershell%20—%20Get%20Random.md)
 
 

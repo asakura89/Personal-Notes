@@ -3,9 +3,11 @@ SPDX-License-Identifier: 0BSD
 -->
 
 <p>
-  <p style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Personal Notes</p>
-  <p style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Simple Obsidian.md notes sebagai bentuk Personal Knowledge Management</p>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Personal Notes</h1>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Simple Obsidian.md notes sebagai bentuk Personal Knowledge Bank</h5>
 </p>
+
+
 
 ## Usage
 
@@ -33,8 +35,8 @@ List From #Index
 
 ## License
 
-Licensed under the BSD Zero Clause License. See [LICENSE file](LICENSE.md) in
-the project root, or https://opensource.org/licenses/0BSD for full license
-information.
+Dilisensikan di bawah BSD Zero Clause License. Atau liat [LICENSE file ini](LICENSE.md), atau buka link ini https://opensource.org/licenses/0BSD buat keterangan lengkap.
 
-The [SPDX](https://spdx.dev) license identifier for this project is `0BSD`.
+[SPDX](https://spdx.dev) license identifier buat project ini `0BSD`.
+
+Untuk hal lain yang punya license berbeda, silakan baca license link yang disertakan di masing-masing tulisan.
