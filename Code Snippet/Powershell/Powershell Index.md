@@ -4,7 +4,7 @@ tags:
 date: 2020-07-11
 ---
 
-# Powershell  Index
+# Powershell Index
 
 <!--
 ```dataview
@@ -16,5 +16,6 @@ From #Powershell
 - [Powershell — Get Environment Variable](Powershell%20—%20Get%20Environment%20Variable.md)
 - [Powershell — Get OS Version](Powershell%20—%20Get%20OS%20Version.md)
 - [Powershell — Get Random](Powershell%20—%20Get%20Random.md)
+- [Powershell — List Directory](Powershell%20%E2%80%94%20List%20Directory.md)
 
 

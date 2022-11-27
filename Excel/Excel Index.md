@@ -13,6 +13,6 @@ From #Excel
 ```
 -->
 
-- [[Excel — Find duplicates]]
+- [Excel — Find duplicates](Excel%20%E2%80%94%20Find%20duplicates.md)
 
 

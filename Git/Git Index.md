@@ -13,6 +13,6 @@ From #Git
 ```
 -->
 
-- [[Git — User info]]
+- [Git — User info](Git%20%E2%80%94%20User%20info.md)
 
 

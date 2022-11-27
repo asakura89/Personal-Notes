@@ -23,11 +23,12 @@ List From #Index
 ```
 -->
 
+- [.NET Index](All%20Things%20.NET/All%20Things%20.NET%20Index.md)
 - [Powershell Index](Code%20Snippet/Powershell/Powershell%20Index.md)
 - [Communication Index](Communication/Communication%20Index.md)
 - [Excel Index](Excel/Excel%20Index.md)
 - [Git Index](Git/Git%20Index.md)
-- [Concept Index](Concept/Concept%20Index.md)
+- [Programming Concept Index](Concept/Concept%20Index.md)
 - [Time Management Index](Time%20Management/Time%20Management%20Index.md)
 - [Work Index](Work/Work%20Index.md)
 

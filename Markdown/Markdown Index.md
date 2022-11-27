@@ -13,6 +13,6 @@ From #Markdown
 ```
 -->
 
-- [[Markdown — Citation]]
-- [[Markdown — Message Box]]
+- [Markdown — Citation](Markdown%20%E2%80%94%20Citation.md)
+- [Markdown — Message Box](Markdown%20%E2%80%94%20Message%20Box.md)
 
