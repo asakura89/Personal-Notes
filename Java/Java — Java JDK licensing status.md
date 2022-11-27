@@ -1,7 +1,7 @@
 ---
 tags:
 - Java
-- Unfinished-note
+- License
 date: 2022-07-28
 ---
 
