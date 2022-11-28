@@ -28,6 +28,7 @@ List From #Index
 - [Communication Index](Communication/Communication%20Index.md)
 - [Excel Index](Excel/Excel%20Index.md)
 - [Git Index](Git/Git%20Index.md)
+- [Java Index](Java/Java%20Index.md)
 - [Programming Concept Index](Concept/Concept%20Index.md)
 - [Time Management Index](Time%20Management/Time%20Management%20Index.md)
 - [Work Index](Work/Work%20Index.md)

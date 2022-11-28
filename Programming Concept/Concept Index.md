@@ -4,7 +4,7 @@ tags:
 date: 2020-07-11
 ---
 
-# Concept  Index
+# Concept Index
 
 <!--
 ```dataview
