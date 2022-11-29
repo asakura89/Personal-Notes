@@ -40,7 +40,7 @@ var credsValid = CredentialValidator.ValidatePassword(secure.Password);
 
 
 
-Reference or Reading material:
+Referensi/Bahan bacaan:
 
 - [Software Security | Privacy Violation: Heap Inspection C#](https://vulncat.fortify.com/en/detail?id=desc.dataflow.dotnet.privacy_violation_heap_inspection.master#C%23%2FVB.NET%2FASP.NET)
 - [Software Security | Privacy Violation: Heap Inspection Java](https://vulncat.fortify.com/en/detail?id=desc.dataflow.dotnet.privacy_violation_heap_inspection.master#Java%2FJSP)
