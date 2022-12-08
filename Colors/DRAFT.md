@@ -1,0 +1,50 @@
+<!--
+DRAFT
+
+"#b8d6d8",
+"#bfe9ff",
+"#fdeacc",
+"#f7d6cf",
+"#f29da4"
+
+
+"#ffffff",
+"#6b1d23",
+"#0f3350",
+"#5f8197",
+"#255674",
+"#7f1f26"
+
+
+
+C2 6B 00
+FF 8C 00
+95 0C 17
+C5 0F 1F
+81 64 5A
+E2 D1 CB
+79 80 83
+E9 ED EE
+7B 79 78
+E5 E4 E3
+38 8B 8B
+C2 E7 E7
+83 9C 61
+E5 F2 D3
+A7 41 09
+F1 D9 CC
+40 1B 6C
+D7 CB E6
+3C 83 BA
+D0 E7 F8
+67 8A 3C
+DB EB C7
+6D 57 00
+F5 ED CE
+9D 4C 59
+E9 C7 CD
+B8 48 8F
+FB DD F0
+
+
+-->
