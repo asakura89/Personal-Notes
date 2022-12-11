@@ -1,0 +1,90 @@
+{
+  "main": {
+    "id": "601b8d528f334aa2",
+    "type": "split",
+    "children": [
+      {
+        "id": "35d8c037ca9bb072",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25aa96de035e8346",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Communication/Communication — English.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cee75ba9775afc36",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d32c46eed966fb29",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "e688fd51bae3dc21",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "aec809cda61855d8",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "27f8fb8ccb457174",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Communication/Communication — English.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "25aa96de035e8346",
+  "lastOpenFiles": [
+    "Colors/Colors — Article card and text palette.md",
+    "Colors/Colors — MS Edge welcome page palette.md",
+    "Colors/Colors — Palette 0045.md",
+    "Colors/Colors — .NET Support Policy Palette.md",
+    "Colors/Colors — MS Edge Welcome Palette.md",
+    "Colors/Colors Index.md",
+    "README.md",
+    "All Things .NET/All Things .NET Index.md",
+    "Code Snippet/Powershell/Powershell Index.md",
+    "Code Snippet/Powershell/Powershell — Get Random.md"
+  ]
+}
