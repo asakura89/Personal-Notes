@@ -11,6 +11,14 @@ date: 2022-12-15
 See [Work — Basic Ground Rules](Work%20%E2%80%94%20Basic%20Ground%20Rules.md)
 
 
+## What to do if you assigned?
+
+Take notes of the assignment
+Find keyword
+Google
+Research
+Ask question
+
 
 ## Other ethics
 
