@@ -4,7 +4,7 @@ tags:
 date: 2022-12-11
 ---
 
-# Communication — Communicate
+# Communicate
 
 ## What is this?
 Komunikasi itu masalah yang penting banget di dunia ini. Dimana pun. Lagi ngapain pun.
