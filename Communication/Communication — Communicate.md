@@ -6,7 +6,7 @@ date: 2022-12-11
 
 # Communicate
 
-## What is this?
+## What is
 Komunikasi itu masalah yang penting banget di dunia ini. Dimana pun. Lagi ngapain pun.
 
 

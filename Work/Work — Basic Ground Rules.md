@@ -7,6 +7,12 @@ date: 2022-12-15
 
 # Basic Ground Rules
 
+## In the face of ownself
+
+Baca [Work — Individual Contributor](Work%20%E2%80%94%20Individual%20Contributor.md)
+
+
+
 ## In the face of people
 
 ### Help each other
@@ -23,6 +29,7 @@ Ini mirip sama _Help each other_. Jangan cuma diem aja ngeliat temen kita kesusa
 
 #### Link lain
 - [Communication — Communicate](Communication/Communication%20%E2%80%94%20Communicate.md)
+
 
 
 ## In the face of tasks or job desks
