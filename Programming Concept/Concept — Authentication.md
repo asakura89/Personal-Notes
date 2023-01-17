@@ -186,10 +186,102 @@ the last claims forwarded to the application.
 
 ## Basic
 
+to provide delegated authority
 
-# OIDC
+
+
+## Access Token
+
+To access resources
+
+
+
+## Refresh Token
+
+To request new Access Token
+
+
+
+## Resource Owner (RO)
+
+is User
+
+
+
+## Client
+
+is the App that accessed by User
+
+
+
+## Authorization Server (AS)
+
+is to login. Once authenticated AS provides Access Token and Refresh Token. Both tokens sent to client. If Access Token is expired, Refresh Token sent to AS to request new Access Token.
+
+
+
+## Resource Server (RS)
+
+contains resources protected behind login. To access the resources, client attaches Access Token to RS.
+
+
+
+## Server-to-Server delegated authority
+
+Client (Server 1) must provide a name or identifier of the App and callback url/uri to send tokens to. And register both name and callback uri in the AS (Server 2). AS must provide Client Id and Secret.
+
+When user access the Client, client will redirect to AS url with client id, response_type = code, and scope attached in the request. response_type = code means Client wanted and request an authorization code. scope is the type of authorization granted to the client or in other words the resource that wanted to be accessed by the client. e.g. scope = edit_content.
+
+
+
+## Front Channel
+
+The API call done in the user's browser
+
+
+
+## Back Channel
+
+The API call done in the Server-to-Server
+
+
+
+## Standardization
+
+1. Does not include specific form of token, just specify that it must be a string value
+2. Does not include list fo standard scope. Vendors can add their own standard.
+
+
+
+# OIDC (OpenID Connect)
 
 ## Basic
+
+Add Standardization on top of the OAuth 2.0
+1. ID Token must be JWT
+2. What claims must be included in the ID Token
+
+UserInfo Endpoint
+
+OpenID Discovery to expose the configuration to help the integration (delegated authority)
+
+
+
+## Relying Party (RP)
+
+because it relies on a claim for user authentication (Client is act as an RP). RP or Client need to specify the OpenID Profile scope when request for an Authorization Code.
+
+
+
+## OIDC Provider
+
+this is AS
+
+
+
+## Flow
+
+Flow is the same as OAuth 2.0 standard from Front Channel to Back Channel with difference. When Client send Authorization Code to Provider to get an Access Token, the response received is not just contains an Access Token but also an ID Token. ID Token will contains Claims about the user e.g Subject, which is a unique identifier of the user (maybe email).
 
 
 
