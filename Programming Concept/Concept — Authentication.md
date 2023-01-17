@@ -236,13 +236,13 @@ When user access the Client, client will redirect to AS url with client id, resp
 
 ## Front Channel
 
-The API call done in the user's browser
+Client redirect to AS through user's browser to request an Authorization Code.
 
 
 
 ## Back Channel
 
-The API call done in the Server-to-Server
+When the Authorization Code received, Authorization Code sent to AS to receive an Access Token via Server-to-Server integration.
 
 
 
