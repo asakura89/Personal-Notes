@@ -44,6 +44,8 @@ date: 2022-12-08
 &nbsp;
 </span>
 
-Reference:
+
+
+References:
 
 - https://dotnet.microsoft.com/en-us/platform/support/policy
