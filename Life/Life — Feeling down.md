@@ -13,13 +13,17 @@ Ini permasalahan semua orang. Gak ada orang yang gak pernah feeling down. Apakah
 ## Things to consider
 
 1. Buat bisa menerima sepenuh hati, kita bisa coba debug akar masalahnya. Terus coba bikin daftar pro-kontranya
-2. 
 
 
 
 ## Daily driver
 
-{Content}
+Daily driver ini adalah hal, apapun, yangbisa nge-rive atau ngangkat motivasi kita tiap hari. Orang yang punya hobi, biasanya bakal bia enmuin hal-hal yang bisa bikin dia termotivasi lagi. Karena mereka akan bisa nyari pengalihan dari hal yang bikin mereka ngerasa down. Tapi ada juga yang masih bingung buat nyari sesuatu buat bisa dijadiin hobi. Atau malah sebenernya walaupun udah punya hobi, hobinya tetep gak bisa bantuin buat bikin reda perasaan down-nya.
+
+Hal utama yang bisa dilakuin adalah cari hal-hal yang bisa bikin rileks. Mungkin hal-hal ini bisa ngebantu.
+1. Bershowerlah, kalo kata @poconggg di twitter. Galau, bershowerlah.
+2. Seduh Teh. Bukan anak teh? Ngopi. Bukan anak senja yang doyan ngopi? Bikin susu hangat. Enggak juga? Coklat anget deh. Udah gausah banyak komplen.
+3. Dengerin playlist akustik atau piano yang slow bpm.
 
 
 
