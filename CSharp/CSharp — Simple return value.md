@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - CSharp
 date: 2016-01-18
 ---

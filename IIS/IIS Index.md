@@ -1,3 +1,4 @@
+@@ -1,28 +0,0 @@
 ---
 tags:
 - Index
@@ -26,3 +27,4 @@ From #IIS
 List
 From #ASP
 ```
+No newline at end of file
