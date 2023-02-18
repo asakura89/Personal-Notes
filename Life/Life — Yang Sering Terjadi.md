@@ -32,7 +32,7 @@ Jalan-jalan keluar. Liat alam. Liat pohon. Pergi ke taman. Pergi ke hutan. Berce
 
 ## Emosi
 
-Olahraga. Senam. Cardio workout. Luapkan ke aktifitas fisik.
+Olahraga. Senam. Cardio workout. Luapkan ke aktifitas fisik. Baca juga [Life — Kebiasaan Penting](/Life/Life%20%E2%80%94%20Kebiasaan%20Penting).
 
 
 
@@ -50,10 +50,10 @@ Mandi atau keramas dengan air dingin.
 
 ## Tersinggung
 
-Lihat sesuatu dari sudut pandang lain. Lebarkan perspektif.
+Lihat sesuatu dari sudut pandang lain. Lebarkan perspektif. Baca juga [Life — Kebiasaan Penting](Life%20%E2%80%94%20Kebiasaan%20Penting). 
 
 
 
 ## Teman beracun? Toxic friends
 
-Cari mentor. Cari perspektif baru. Baca buku.
+Cari mentor. Cari perspektif baru. Baca buku. Baca juga [Life — Kebiasaan Penting](Life%20%E2%80%94%20Kebiasaan%20Penting).

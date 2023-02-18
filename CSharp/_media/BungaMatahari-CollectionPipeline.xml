@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.7">
+  <diagram id="6SR7Z1we7s6VZpHu6Nb_" name="Page-1">
+    <mxGraphModel dx="1081" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-1" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="60" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-2" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-3" value="transformasi,&lt;br&gt;butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="210" y="160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-4" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" source="UFXkkhBDYSM49y-PjLKx-1" target="UFXkkhBDYSM49y-PjLKx-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="270" as="sourcePoint" />
+            <mxPoint x="150" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" source="UFXkkhBDYSM49y-PjLKx-3" target="UFXkkhBDYSM49y-PjLKx-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="180" as="sourcePoint" />
+            <mxPoint x="300" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-2" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="60" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-3" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="400" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-4" value="pilih berdasarkan predikat, butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="210" y="260" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-5" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" source="O4Ov-4ZXLOQVkv3ozfqf-2" target="O4Ov-4ZXLOQVkv3ozfqf-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="370" as="sourcePoint" />
+            <mxPoint x="150" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" source="O4Ov-4ZXLOQVkv3ozfqf-4" target="O4Ov-4ZXLOQVkv3ozfqf-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="280" as="sourcePoint" />
+            <mxPoint x="300" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-1" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-2" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="400" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-3" value="urutkan berdasarkan key, butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="210" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-4" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" source="1LlifrmZN7jgU4XSnuHW-1" target="1LlifrmZN7jgU4XSnuHW-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="470" as="sourcePoint" />
+            <mxPoint x="150" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" source="1LlifrmZN7jgU4XSnuHW-3" target="1LlifrmZN7jgU4XSnuHW-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="380" as="sourcePoint" />
+            <mxPoint x="300" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-3" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="60" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-4" value="output&lt;br&gt;berupa sebuah hasil" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="400" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-5" value="proses butir-per-butir untuk dijadikan satu" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="210" y="460" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-6" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" source="ZTbdkQAd4Fc1TeL_gzrw-3" target="ZTbdkQAd4Fc1TeL_gzrw-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="570" as="sourcePoint" />
+            <mxPoint x="150" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" source="ZTbdkQAd4Fc1TeL_gzrw-5" target="ZTbdkQAd4Fc1TeL_gzrw-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="300" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

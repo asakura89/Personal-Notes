@@ -1,0 +1,39 @@
+### Introduction to API Security
+
+Welcome to this session at NDC Oslo! It’s fantastic to see such a packed room. Though I can’t see much due to the bright lights, I appreciate those in the front rows. If you’re in the back, feel free to relax as I won’t notice. I have to stay within these constraints due to the cameras, so bear with me if I seem a bit nervous. Today, we’ll dive into API security for the next hour.
+
+There’s an interesting start to this talk. At noon, there’s supposed to be a national security alert, so your phones might go off with a lot of noise. It’s supposed to be a test, so let’s hope it doesn’t cause too much disruption. This is a unique experience for me, so we’ll see how it goes. Our focus today is API security, a field that has gained importance as we build more API-based applications. The more we connect systems, the more complex they become, leading to more security vulnerabilities.
+
+One major aspect of API security is the OWASP API Security Top 10. OWASP is a nonprofit organization dedicated to improving software security. They originally focused on web security, but with the shift to API-based apps, they’ve adapted their focus. The OWASP API Security Top 10 highlights the most critical API vulnerabilities, serving as a guide for what to watch out for in modern APIs.
+
+### Real-World Examples
+
+Instead of going through the OWASP Top 10 one by one, which can be tedious, I’ll share real-world cases. The first example is a smart scale app that had significant security issues. This will illustrate what not to do in API security. The second case is from Dropbox, a company known for its robust security measures. Despite their efforts, they still encountered issues, showing that even the best can make mistakes.
+
+Who am I? I’m Philip De Ryck, a security expert and founder of Pragmatic Web Security. I have a PhD in web security and have been helping developers understand security concepts for years. I aim to translate complex topics into actionable advice, best practices, and coding guidelines. I do this through training, consulting, and online courses. I’m also a Google Developer Expert, contributing to the community through talks and articles.
+
+### Server-Side Request Forgery (SSRF)
+
+Let’s dive into one specific issue: server-side request forgery (SSRF). SSRF vulnerabilities allow attackers to manipulate your server into making requests on their behalf. This can lead to severe security breaches. SSRF can be a significant problem or a non-issue, depending on your environment. It often arises in applications with features like webhooks, where users provide URLs that the server later calls.
+
+SSRF matters because it exploits the way we segment our secure and insecure environments. Attackers can manipulate your server to make requests from within your secure perimeter, potentially accessing internal services that should not be exposed. This can lead to severe security risks, as internal services are often less protected than public-facing ones.
+
+### Protecting Against SSRF
+
+To protect against SSRF, you need to ensure that your server only makes safe requests. One approach is to implement an allowlist, specifying which URLs are safe to call. However, in practice, you often need to block certain internal addresses instead. This means checking if a URL points to a trusted location before making a request.
+
+A common mistake is parsing URLs twice, leading to discrepancies. For example, a URL might be checked by one parser and deemed safe, but another parser might interpret it differently, leading to an SSRF attack. The solution is to parse the URL once and use that representation consistently. This removes ambiguity and ensures you’re always working with a safe, validated URL.
+
+### Conclusion
+
+Protecting against SSRF involves understanding how attackers exploit these vulnerabilities and implementing measures to prevent them. By carefully validating URLs and avoiding double parsing, you can mitigate the risk of SSRF attacks. Always be vigilant, as even robust systems like Dropbox can fall victim to these issues.
+
+In summary, API security is crucial in today’s interconnected world. By learning from real-world examples and understanding specific vulnerabilities like SSRF, you can better protect your applications. Remember to stay informed and proactive in your security measures to safeguard your systems effectively. 🌟
+
+### Opinions
+
+In my opinion, understanding the intricacies of API security is essential for any developer working with modern applications. The examples from the smart scale app and Dropbox highlight that security is a continuous effort. Even companies with significant resources dedicated to security can encounter issues. Therefore, it's crucial to stay updated on best practices and continuously improve your security measures.
+
+Additionally, the complexity of today’s interconnected systems means that security cannot be an afterthought. It must be integrated into the development process from the beginning. Regular training and staying informed about the latest security threats are key to maintaining a secure environment.
+
+Finally, while the technical aspects of security are critical, fostering a security-aware culture within your team is equally important. Encourage open discussions about security issues and make it a shared responsibility. By doing so, you create a proactive approach to security that can help prevent vulnerabilities before they become major problems. 🚀

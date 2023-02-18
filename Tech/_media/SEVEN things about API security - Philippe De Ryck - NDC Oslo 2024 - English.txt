@@ -1,0 +1,1606 @@
+welcome
+to the session at NDC Oso it's great to
+see a packed room even though I can't
+see much because there's like a lot of
+bright lights in my face but so if
+you're in the front rows I can see you
+so uh yeah thank you for raving that's
+awesome if you're in a back row you can
+do whatever you want I'm not going to
+see it anyway so all right so um I have
+like very strict constraints so if you
+see me being nervous it's like I'm used
+to walking around but there's like
+cameras on me so I have to stay in this
+boundary and try to do my best here
+we're going to talk about API security
+for the next hour and actually the the
+opening slide I'm going to use here is
+something I've never had to do before
+and it's kind of a weird thing but
+there's uh supposed to be a national
+security alert coming up uh at 12: so
+your phone will start making like a lot
+of noise and we'll be very distracted
+and it's going to be awesome so
+uh it's supposed to be a test at least
+that's what they told me so uh let's
+hope that that's actually true and that
+things will go away as quickly as
+possible but um yeah let's see what
+happens uh as we go along it's going to
+be a unique experience for me as well so
+uh we'll see how that goes but the the
+gist of it it's not like security alerts
+it's kind of in the same space but we're
+going to talk about API security more
+specifically and when we talk about API
+security it's it's kind of important to
+realize that API security has has been
+booming in the last couple of years as
+in it has gotten more and more important
+and part of it is because we're building
+more and more API based applications
+like anything new you're going to build
+today is likely going to be API based we
+have a lot of exposed apis and it turns
+out that a lot of vulnerabilities are
+also very visible in API based
+applications we're also building more
+interconnected systems so things just
+get more complex and more complexity
+typically means more chances to make a
+mistake to screw things up and to create
+security vulnerabilities and one of the
+things that highlights this is the oasp
+API security top 10 so oasp is this
+nonprofit organization that has been
+around since the the good old days like
+when we're building PHP and pearl based
+web applications like yes those days um
+OAS back then created is top 10 for
+about the 10 most dangerous web security
+vulnerabilities and over time OAS
+evolved as well web applications became
+API based apps and mobile apps and AI
+stuff and so on and what we'll see in in
+the OAS organization is a lot of these
+dedicated top 10 because not all web
+security vulnerabilities translate well
+into apis like you don't really have
+cross- out scripting in an API based
+application however you have other
+problems and this oasp API executed up
+then it's a second iteration so it's
+been around for like five six years
+right before the pandemic hits and it
+highlights the 10 most dangerous or most
+common vulnerabilities in modern apis
+and these things are it's not an
+exhaustive list of stuff to check and
+then you're good it's kind of a starting
+point like hey if you're doing apis
+these are the things you really want to
+take into account and that's why the
+slide is right here I'm going to talk
+about quite a few of these issues uh but
+don't worry I'm not going to go over
+like OAS top 10 number one and all the
+way to 10 because trust me if you do
+that you're going to be asleep by item
+one and a half you're going be like a
+and that doesn't work very well so what
+I'm going to do instead is I'm not not
+going to list them one by one I'm going
+to talk about real world cases I'm going
+to talk about a smart Scale app like a a
+scale to weigh yourself and it has an
+app and an API and it had some security
+issues as well actually quite a few
+security issues so this is going to be
+my how to screw it up example um I say
+that respectfully but it's just a fact
+this is how not to do API security then
+the second case study we'll touch upon
+is from drawbox and drawbox is actually
+on the other end of the spectrum like
+drawbox is a company that invests
+heavily in security they have a very
+good security team they know what
+they're doing they spend a lot of
+resources on security and even then
+things tend to go wrong and this is kind
+of the wakeup call to you as well like
+hey even if you're trying your best
+you're going to make mistakes it's going
+to fail at some point and that's why I'm
+doing the stock that's why I'm here
+talking about these vulnerabilities now
+who am I I'm Philip D I'm um a security
+expert and I run my own company called
+pragmatic web security what I do is I
+did a PhD in web security so I've been
+in security for a long time like really
+deep into it and uh since my PhD I've
+been helping developers understand
+security like trying to explain very
+complicated topics in a way that you
+understand translate them into actional
+advice uh coding guidelines best
+practices just like I will do in the
+talk right here so I do that through
+training I did a two-day workshop here
+at NC Oslo so some of you may have been
+there um I do that through Consulting
+online courses and so on and so on all
+right I'm also a Google developer expert
+which caus of some confusion I'm not
+employed by Google but it's kind of an
+outreach program that they reward people
+that are contributing to the community
+so I'm a developer expert for security
+because of the talks and the Articles
+and all of the stuff that I'm doing I'm
+not employed by Google they just send me
+free swag every now and then which makes
+both of us kind of happy so that's
+that's a good deal and then I'm also a
+sec upde organizer SE upde is a course
+secure application development it's a
+course in Belgium weekl long course on
+application security um and it ran
+actually last week so if I look a bit
+tired that kind of explains uh why it's
+a hell of an organization but it's a
+very great course where we bring in
+speakers from all over the world to
+teach application security all right so
+if you ever need an excuse to visit
+Belgium that course uh which runs again
+next year in June is the perfect reason
+to come visit us and enjoy beautiful
+culture and uh liquid chromy let's put
+it like that so all right um about this
+talk you can easily find me online um
+the talks are listed on my website as
+well you'll find the slides there you
+can also scan the code if you want to um
+if you want to grabb a copy of the
+slides PDF copy um just to keep that in
+mind as well all
+right let's talk about API security
+shall we we have about 45 minutes no 55
+minutes sorry 55 minutes to dive deep
+into API security and I want to do that
+by starting to talk about serers side
+request forgery server side request
+forgery is this kind of a weird issue
+it's something that all of a sudden
+popped up on the radar like hold on
+there's a massive problem here and has
+resulted in major breaches and it's kind
+of a hit or Miss problem like either you
+have ssrf vulnerabilities and you have
+to deal with them in various ways you'll
+probably have them in multiple places or
+it's not an issue at all and you're like
+me I don't care um in that case well
+I'll wake you up when we're done with
+ssrf but if you really care about
+service at request forgery this is
+really important so why does this matter
+server side request forgery is a
+vulnerability where the attacker can
+trick or manipulate your server into
+sending a request from its origin so the
+server will send a request to somewhere
+else and that can allow the attacker to
+control certain actions or behaviors or
+extract certain information and so on
+and this matters because we all too
+often we think about our environments
+our application environments our
+architectures our deployments as a
+secure versus an insecure version right
+so we have our firewall our perimeter
+our private networks or whatever that's
+Paradise basically where everything is
+beautiful and sunshine and blue oceans
+and whatever then you have the dark
+outside world where the attackers live
+and that's how we often think about
+application security as well and we all
+do that that's just the way things are
+um and that's essentially what we're
+really uh talking about with server side
+request fory because when we do that an
+attacker is able to trick our server our
+back ends into making requests so what's
+going to happen is something like this
+the attacker provides a URL one way or
+another a very good example of how this
+happens is a web hook many applications
+these days have web hooks where a user
+one of your users comes to the
+application says like if something
+happens in your app like an event maybe
+send me a request on this URL if that
+user is malicious they can provide you a
+malicious URL and at some point
+something will happen in the application
+you'll call the web hook you're now
+calling a URL controlled by the user
+that's the risk here and why does this
+matter because the request is
+originating from within your secure
+perimeter secure perimeter is that still
+exists let's uh keep that discussion for
+a different time but that's the whole
+problem because now all of a sudden the
+attacker controls where the request is
+going to and they might be able to reach
+things on Local Host the things you
+thought of like yeah nobody else can
+call this except my application so we're
+good we don't really need security there
+or internal services that are less
+protected because it's internal anyway
+not reachable from the outside world
+like the dark gloomy place you can't
+reach this internal service so maybe
+security is a bit less relevant we've
+all made that argument at some point in
+time whether it's a right argument or
+not that's essentially what happens and
+that is the danger of server side
+request forgery it's basically a Gateway
+into your internal networks your
+internal environment allowing the
+attacker to send that request all right
+so how does that happen what are the
+features that triggers this web hooks
+are one example other examples are for
+example features for the attacker gives
+you a URL to fetch an image that's
+exactly what happened at drawbox they
+allowed branding with URLs and you
+provide URL like hey my logo stuff is
+there and drawbox would accept the URL
+fetch the logo stuff and load it into
+your configuration of your account
+that's another example link previews you
+often have like LinkedIn if you post
+something on LinkedIn with a a link to
+like NDC ow you drop it in and Linkedin
+is being like o URL and it's going to
+take that URL fetch that and show you
+like the little preview with an image
+and short description and a title that's
+a serers side request as well so these
+things are quite common in modern
+applications all
+right when it occurs your internal um
+infrastructure is exposed and it may
+cause quite a few problems in practice
+all right so how do we protect against
+that that's kind of the gist of this
+talk it's not like a depressing talk of
+all of this stuff can go wrong it's kind
+of should be an uplifting talk like hey
+here's how we can fix that in practice
+but it's going to take a few steps to
+get there so let's look at some examples
+the example of fetching an image what
+happened at drawbox here's a legitimate
+URL that we want to allow like this is
+legitimate data and we want to load that
+image and that's perfectly fine
+something like this is invalid right I
+mean Local Host P 8080 that's not going
+to be a valid URL that's not something
+we want to allow and ideally when you're
+building security measures you would
+like to go for an allow list approach
+right you would like to go to to an
+approach that says like hey these things
+I know are good these are allowed like
+yes you're allowed to do this and
+everything else is
+blocked however for server side request
+forgery that's one of the cases where
+this actually gets flipped around
+because in the example like this or the
+example of a web hook everything is
+allowed except your own stuff like the
+stuff you don't want to be called and
+that's where you you have to turn the
+model around and we're going to have to
+implement an approach that says like hey
+things go into local host or like a
+local network or maybe a private Network
+range yeah we don't really want to do
+that for a web hook or for fetching an
+image but things running outside of the
+internet are acceptable and that is a
+different approach all right so how do
+we do that while we take a URL what do
+we have to check we have to check that
+the host name of the URL like the host
+part points to not something we don't
+want to call but something external
+shouldn't be too hard right I mean why
+am I talking about this shouldn't be
+that difficult well it turns out that
+parsing URLs is kind of difficult
+especially when they're malicious when
+some malicious user is crafting URL that
+might confuse your application and
+remember this is what happened at
+drawbox which I'll show you in the next
+slide so what's the problem here your
+all parsers are in various places and
+you have application code that is
+basically going to say like here's the
+web hook I'm going to take the host part
+I'm going to resolve that into an IP
+address and then check if that is a
+local IP address or maybe an external
+one
+all right and if you do that in your
+application code you're going to be at
+the bottom like nodejs Pearl go PHP Ruby
+all of those languages and they will see
+a UR like this with two ad signs which
+is maliciously crafted it's not supposed
+to be like that but an attacker can
+provide that and those languages will
+resolve this to google.com and you're
+going to check this and like yeah that
+seems legit bam and you will send that
+request to that server except when you
+send the request and you use a library
+to do that and one common library is lip
+curl which is hooked into many
+programming languages as well you use
+Curl or lip curl to send that request
+it's a different URL parser with a
+different interpretation it's going to
+be like oo this request is going to go
+to evil.com so you checked it you said
+it's safe you sent a request and it
+actually goes to well evil.com or
+internal local host or internal
+addresses and so on and so on and you're
+now victim to a server side request fory
+attack just like that you did nothing
+wrong except well no I I don't think we
+can blame Developers for this this is
+just a weird piece of behavior in url
+parsers and there's a couple of these B
+passes known today exactly what happened
+at Dropbox so the Dropbox case with
+service at request fory they were like
+okay we have to check where the request
+is going and they actually checked that
+um but what they did is they used one
+application logic function to check it
+that's the top one which saw this URL
+db. dropbox.com at1 1271 and they
+thought yeah this is going to our
+servers where the images are hosted this
+is perfectly fine and then they sent the
+request using lip curl and lip curl saw
+this as 127 01 and we had that exact
+vulnerability that exact bypass that's
+how these things come to life and how
+they manifest themselves in
+applications all right so how do we fix
+this then what's the actual solution to
+this and the solution to this is to
+avoid parsing a malicious URL twice what
+we really want to avoid is taking that
+untrusted URL from the user parsing it
+here and parsing it there if you only do
+it once there's no confusion anymore
+because you see it once you can reason
+about that one representation whether
+it's good or not either rejected or
+accepted and from that point on you use
+that accepted representation and the
+problem goes away and one of the ways to
+solve that is by doing this on the
+server by creating a safe URI first so
+you get some input I'm actually have
+some code examples this is the Dropbox
+case but I actually have some code here
+as well so we we we remove ambiguity on
+the server by accepting the UR input we
+parse it using URL parser this is no GS
+code uh we parse it using URL parser and
+we use use that representation to
+construct a new safe URL and whatever
+the parer sees that's what we will use
+as a URL all right of course you still
+have to do input validation to make sure
+URL is valid it points to a host you
+want to accept and so on and so on but
+that's how you uh remove the ambiguity
+parse it once and then use that that
+view for the rest of the application all
+right we can also move this towards the
+client you can actually Force the client
+to do this for you and only accept a
+decomposed URL how how does that work
+well in this case it's a browser based
+application so the front end running
+JavaScript in the browser would parse
+the URL provided by the user so the user
+still enters URL in an input field we
+take that value we parse it on the
+browser and we decompose it into the
+different parts and that's the data we
+submit to the server so on the server we
+don't get a full URL but we get a a
+scheme a host name a port a poth and so
+on and so on and each of these values
+becomes easier to reason about there's
+no ambiguity I mean the host name
+there's not going to be confusion like
+is the host name dis value or that value
+no it's the exact string that you get as
+the host name value and you can input
+validate that like no add signs please
+and so on and so on and then you can
+verify that this points to a trusted
+location or something that you actually
+want to call and you can accept this as
+input and that's how you would protect
+against serers side request forgery
+remove the ambiguity and then you can
+reason about that one representation to
+make sure it's a safe and trusted value
+all right brings us to take away number
+one protect against server side request
+forgery um that's kind of the important
+takeaway here server side request
+forgeries uh vulnerabilities often occur
+whenever you have a feature on the
+server that calls external hosts all
+right can be very visible like web hooks
+can be somewhat invisible maybe hidden
+in libraries uh we have seen this in PDF
+generation libraries as well where you
+accept like a document and you generate
+PDFs from that it can also trigger the
+sending of external requests all right
+the best thing you can do is ensure that
+this is trustworthy data that is
+unambiguous when you accept URLs and
+then Additionally you can also isolate
+those features in like separate services
+and shield them off from your internal
+infrastructure but that's kind of an
+advanced defense in depth approach to
+this
+problem all right that was one of the
+items of the OAS API security top them
+now for the second item I want to talk
+about broken authentication and broken
+authentication is this very generic item
+and it has to do with um all kinds of
+vulnerabilities that essentially result
+in the taking over of a user's account
+and it can manifest itself in a thousand
+different ways and one of the perfect
+ways to describe this is using the smart
+scale application so in this case a
+smart scale application uh I'm not sure
+if the scale itself was decent but the
+API behind it definitely wasn't and it
+had this abuse case where you could
+abuse the forget password functionality
+to take over an account so all you need
+is like an email address of a legitimate
+user and then you can um forget the
+password for that legitimate user and
+all of a sudden you can break into the
+application by taking control of that
+specific account and to explain this
+what I'm going to do is I'm going to use
+a demo a live demo so it's always a bit
+risky uh but it should be fine um I'm
+going to do this live demo on breaking
+authentication I'm going to walk you
+through a bunch of steps explain how
+attackers come after your application
+show you how easy it is and also show
+you a couple of things you can do to
+defend against this all right let's see
+if we can actually get this to
+work all right what I'm going to do is
+I'm going to use a tool called burp
+Suite burp Suite is what fent testers
+and attackers also use to Target your
+application so in burp Suite you
+actually have one of the features there
+is actually really awesome it's a proxy
+and that proxy allows you to to
+intercept all traffic between a browser
+and the back end so what we're going to
+do is we're going to open this browser
+that will Channel all traffic through
+burp and we're going to go to the
+application
+um okay crap um I should have checked
+this yeah I forgot to enable internet so
+there's no styling but it probably
+should work we'll see if it breaks um as
+live demos should always do so the
+application it's a restaurant review
+application you can log in create
+restaurant reviews and as a legitimate
+user we can actually um authenticate
+here we can log in it looks very pretty
+uh I know awesome styling we're
+authenticated and we can we're now
+logged in as one of the users we're a
+malicious user we're exploring the
+application to see how it operates and
+if we can find some weak spots right so
+let's see what happens um here so we can
+now go back to burp and we can look at
+the HTTP history so you can see here
+that we loaded the application and we uh
+called the login endpoints and as you
+can see we provided a username my us my
+email address and then a password test 1
+2 3 4 this is not a course on choosing
+secure password so just ignore that and
+this is a legitimate authentication now
+what happens if we try to Lo in with a
+password that's wrong we get an error
+message login failed please try again
+it's like okay and what happens if we
+log in with an email address that
+doesn't
+exist that's actually formatted validly
+as an email
+address we get the same error message
+all right so let's inspect what's going
+on behind the scenes what we have here
+is we have a failed attempt and the
+message here is invalid email or
+password now sometimes applications are
+a bit silly as in they return an error
+message in the API saying like hey this
+user doesn't exist and you're like oh
+interesting because now we learn whether
+users exist or not and to compromise an
+existing user in the application we have
+to find existing users first we don't
+know who has an account maybe you have
+an account on this application but we
+don't know in practice all right so do
+we have a different error message this
+is one and the second error where we
+have a a non-existent user gives the
+same error message so nothing is
+happening here we can't really discern
+whether a user exists or not that's good
+coding so that's already
+awesome thank you for the sound
+effects all right if you have trouble
+staying awake this definitely helps so
+not that I have your full attention um
+what's going on here behind the scenes
+is yes we'll we'll have some people that
+are bit delayed with the notifications
+so this is going to go on for a few more
+minutes but uh what we have behind the
+scenes is we have a database of users we
+have password stored in the database
+stored securely with a password hashing
+function and so on but if you look at
+the authentication logic of the login
+endpoints so what we have here that's
+login endpoints we look for the user if
+we can't find it we give an error
+message the message to the API is this
+one it's the same as we give when the
+user does exist but the password is
+wrong so that's good that's a secure
+coding correcti this um so if the user
+doesn't exist we bail out and we give an
+error message but if the user exists we
+check the the password that's kind of
+normal behavior right that's how you
+supposed to implement authentication
+however this operation checking the
+password is using a password hashing
+function and a password hashing function
+is designed to withstand Brute Force
+attacks in case somebody steals your
+hashes they're not able to Brute Force
+the passwords of your users so that's
+the whole idea of this and that
+operation is purposely
+slow meaning it will take at least half
+a second if it's good it should take at
+least half a second to verify and that
+might be observable Behavior so what can
+we do we can use a timing attack to
+figure out if the code the code actually
+the application reaches this part of the
+code yes or no so let's let's do exactly
+that what we're going to do is we're
+going to use this request and send it to
+a feature called the Intruder a very
+ominous name but it allows us to launch
+an attack against the application and we
+Define some fields we want to play
+around with we want to provide values
+for the email address because we want to
+find out if a certain email address
+exists in the application all right so
+that's what we're doing right here and
+we provide a list of payloads here you
+can load a list of emails which we
+bought uh we got from underground forums
+like data breaches of Facebook Messenger
+has like a whole bunch of email like
+millions and millions of email addresses
+so we're going to load a list with
+millions and millions of email addresses
+or something like that um in our
+application there's only like a few
+because Millions would take a while in
+the demo and it would be very very
+boring to see and we're going to Lounge
+this uh against the application so we
+want to do a timing attack so we don't
+want to do concurrent requests but we
+want to do um one request at a time so
+we can get like good results so one
+request at a time and we start the
+attack what you see here
+is burp having some UI issues I don't
+know why it does that but what you see
+here is we send a whole bunch of
+requests we tried seven different email
+addresses uh and they all failed which
+is normal because well we don't have the
+password for these users otherwise it
+would be very very easy so what we can
+do
+now is enable the column response
+completed which shows us the response
+times and this is all running on Local
+Host so it's super fast um and you can
+see like response time one millisecond 2
+milliseconds blah blah blah 800 huh
+that's interesting 800 milliseconds um
+this is observable Behavior even over
+the internet if you have a good internet
+connection this is going to be
+observable and this means that the
+application has been calculating a
+password hash so that's um a very good
+piece of information because now we know
+that victim at virtual food.com which is
+kind of obvious here but that this email
+address exists in the application so
+that's called a username enumeration
+attack and that's something that's very
+effective to find out a list of existing
+users and email addresses can be
+harvested From The Underground web but
+you can also get them by guessing or
+constructing email addresses if you're
+working at a company and like pragmatic
+web security and your email address is
+philip. pragmatic web.com then it's
+going to be very easy to go on LinkedIn
+find like a list of employees and use
+their first name do last name at
+something something uh to construct a
+list of email addresses to use this
+input for this type of attack all right
+that was phase one of the attack so um
+let's first let's talk about the fix how
+do we fix this how do we avoid this
+timing attack well this operation should
+take as long as this operation and one
+of the ways you can do that is the easy
+way is to calculate the password hash
+for a non-existent user this is maybe
+not the best approach because it's
+expensive as in it consumes service side
+resources um but we can now calculate a
+fake password hash even if the user
+doesn't exist and that will basically
+take as long as the other one so let's
+see the effect here if we launch the
+attack again um the UI is working
+correctly now you can see that all of
+them take a long time and we can see
+that the response completed is all about
+800 milliseconds something so this
+becomes unobservable you could also do
+this with like a sleep or a delay
+somewhere uh but this one shows you the
+effect of having constant time
+effects all right we're timing these
+really good by the way
+so let's keep doing that all right now
+we know that the user exists so how can
+we take over that account that's the
+ultimate goal here account takeover so
+what do we do we want to abuse that
+account and one of the features we can
+do that is in the the nature of the
+smart scale the forgot password feature
+so we forgot our password so we what
+does happen we enter an email address
+and we reset the password and we get
+like a message hey we have reset your
+password password and you can now
+recover your account how do we do that
+by going to our
+Webmail webmail.rr.com um we can reset
+the password by clicking this link and
+that's how a lot of applications do this
+you get like this password reset code
+and with this unique code you can reset
+a password for your account right so we
+can click this we end up here we can set
+a new password I'm going to use the name
+of my dog uh fluffy my non-existent dog
+by the way um don't use this as my real
+password it doesn't work anywhere uh but
+fluffy we reset the password
+we can now log in with our new password
+which should be fluffy
+and off we go we're logged in and we're
+all good so what happened behind the
+scenes behind the scenes we still have
+our proxy running we requested our
+password reset so we provide an email
+address to the API and it says like yeah
+okay we've basically meaning that we've
+sent an email to that user now if we
+provide victim virtual food.com we can't
+access their email that would be too
+easy you can't access their email so we
+can't get their unique to code to reset
+a password so how do we actually reset
+the password here's where we load the
+HTML page here's where we reset the
+password we provide that unique code and
+the new password and it says new
+password is set for Philip all right
+this is something we can abuse right
+it's a four-digit code how many options
+are there not that many right something
+around 10,000 and we should be good to
+go so let's um not a fictional example
+by the way this has happened in a smart
+scale application this has happened in
+beta version versions of Facebook and
+Instagram where they had like production
+data with actual accounts and then no
+rate limiting on this endpoint so I'm
+making all of this possible so how do we
+do that well let's launch the attack
+again first as the attacker we go here
+and we're like hey application we forgot
+our password our email address is victim
+virtual foodi.com reset password okay
+mail has been sent we can't access the
+email um so now we have to break the
+application and we do that as follows so
+we reset the password
+send that to the Intruder we um want to
+provide a code and fluffy as a password
+because why not and um we don't know
+what this code is so we'll guess it um
+it's not going to be that hard we guess
+for numbers the number should be
+sequential between one and
+99999 that's step one we um want four
+digits and zero digits behind the comma
+so that's what we'll get as payload that
+looks pretty good to me um what else do
+we need doesn't matter but let's turn it
+off your coding we don't need that um
+that should be good right we want to use
+as fast as possible 10 concurrent
+request that's fine and then we can here
+U look for this sentence like new
+password set if we find that we have
+succeeded um so we can do that right
+here um we can match for this clear the
+list and add new password set all right
+let's see what this does we can launch
+the attack now I think I've covered
+everything so let's see you can launch
+the attack you can see it's sending like
+requests sequentially 1 2 3 four 5 and
+so on and so on here's the column
+finding our results and if we sort it we
+find a one a match and you can see the
+request 46 uh 4769 and the response is
+new password set for Valerie which is
+victim virtual foodi.com so now we've
+taken over the account we can log in
+with this information so we can go to
+the application we can um go here we can
+log in with victim and the name of my
+non-existent dog fluffy and we're now
+authenticated that's how we do account
+takeover this happens in practice this
+is super well as you can see this is not
+a complicated attack to execute you just
+have to remember to set parameters
+correctly and then you're good to go
+basically all right so how do we fix
+this well there's a couple of things you
+can do first of all you should have rate
+limit I mean it makes zero sense that
+there's an endpoint with a four-digit
+code that you can just send like 10,000
+requests to and it's like me good enough
+for me uh so rate limiting is very
+important there second thing is maybe
+the four-digit code is not the bestest
+idea either either you want to use like
+a long random string as something that
+is a bit more hard to guess but the
+third thing I really want to talk about
+is why on Earth do we allow guessing in
+the first place I mean this makes zero
+sense to just have like a parameter that
+the attacker can control and temper with
+and try to attack if we take that away
+then this whole attack just goes away I
+mean it's becomes impossible and the way
+to do that is by adding Integrity to
+that data because we our application is
+providing that code and is receiving
+that code we can sign that code and
+detect tempering with that value and the
+way to do that is here um I'm using the
+generate reset code function from the
+insecure file and I'm going to use the
+secure file so this is super easy
+development but what we're basically
+doing here is this reset code was a four
+digigit uh digit um number
+and this one is a signed Json web token
+so what we're basically doing is we're
+creating a Json web token in the token
+we create or we add the email address of
+the user we're trying to reset the
+account for and we sign that whole value
+meaning that nobody else can change the
+legit the email address to something
+else and cause this attack again so
+let's take a look at how this works we
+can go back here um to our browser we
+can reset our own password and go to our
+webmail you can see that the password
+reset link is now something very long
+and this something very long is a Json
+web token and this Json web token we can
+observe this in burp this Json web token
+contains um to observe this we actually
+have to do
+this the password is now test another
+very secure option um so now the code
+that we sent here is that Json web token
+and inside that Json web token as you
+can see here is the email address of the
+user uh an issued at time stamp an
+expiration time stamp and unique
+identifier and this all of this is
+signed and verified by the backend so if
+you would go in here and would change
+like flip rest.com with victim virtual
+food.com the back end is going to be
+like uhuh you have changed that this is
+no longer valid go away so the only way
+to re to to actually reset your password
+is by using your legitimate token which
+has been sent to your email and it's
+only accessible to you as a user so it
+this takes away the attack Factor takes
+away the capability of the attacker to
+try and temper with this value and
+that's essentially how you can secure
+your applications this applies to reset
+passwords but also to all other kinds of
+uh cases as well so what we see today is
+a lot of applications relying on the um
+on parameters in Uris to for security um
+just by hoping they stay intact but by
+adding Integrity to that you can
+actually secure your applications in
+practice all right
+some takeaways what do we take away from
+this Demo First of all attacker tools
+are awesome uh you can play around with
+burp yourself they have a free version
+to play around with um there's also
+Alternatives like oasp has a tool called
+zap uh which does something very similar
+as burp and there's plenty of other
+Alternatives as well I just like burp
+I've been using burp for a long time and
+I'm a big fan of that so that's option
+number one or takeaway number one second
+one avoid leaking information like this
+username enumeration seems like a silly
+problem but once the attack has a list
+of valid users it just opens them up for
+all kinds of nasty attacks like spear
+fishing targeted attacks um account take
+over vulnerabilities and so on and so on
+and if you don't leak that information
+you take away that um that problem and
+it gets better so that's something to
+definitely pay attention to note that
+sometimes you really don't care about
+this right for example if you're a
+social media application and your users
+names are public anyway then you don't
+really care about username neration
+because it's just a list on the website
+you can actually get them from there so
+in that case it doesn't matter but if
+you're doing something more private if
+the list of users is not easily
+guessable this is something to
+definitely take into account maybe you
+accept that risk and you're like we
+don't care about that but then at least
+have it written down somewhere that
+that's your assessment of this threat
+second takeaway Implement rate limiting
+like this endpoint that accepted just
+like endless requests for guessing this
+four-digit code that's absolute bad uh
+an absolute bad idea so Implement some
+form of rate limit
+uh to kind of stop this from happening
+and then the third takeaway is mitigate
+guessing attacks by adding an Integrity
+check to the parameters in the URL
+that's a really good way to stop these
+attacks uh at the beginning to not even
+make it possible um you can also of
+course do things like include random
+identifiers to make it more difficult to
+carry out his attack but just stopping
+the attacker from being able to do that
+in the first place is a really good idea
+and you saw this in the example using a
+Json web token to sign a value that's
+not a heavy lift that's something that's
+fairly as straightforward to implement
+there's plenty of libraries that support
+something like that and it gives you
+solid security
+properties all
+right that brings us back to the API
+security top
+10 what about authorization
+authorization is kind of important as
+evidenced by number one in the API
+security to 10 and also number five in
+the API security to 10 like somebody's
+50 minutes over time at deal that's if
+this was real you're in trouble by the
+way everybody else is running and you're
+like what's going on it's like I don't
+know so authorization what's going on
+with authorization it's a absolute
+horrible problem that plagues everyone
+and in this case the smart scale
+application has some authorization
+problems as well this is this
+application is kind of a gift that keeps
+on giving when it comes to security
+demos it's a yeah there's just no end to
+it basically it's going to come back
+later again so uh don't worry about it
+let me ask you why what happened here
+well the application allowed any user to
+add family members to any family like
+you're supposed to add a family member
+to your family that's kind of designed
+uh feature but if I'm a malicious user
+I'm like hey I'm going to add a family
+member to your family which is like
+weird but it's a stepping stone for
+another attack so why is this so hard to
+get right why is authorization on the
+API security. 10 number one let me walk
+you through the process of how people
+often Implement authorization which I
+wish was totally fictional but is
+unfortunately based on uh me talking to
+developers during security assessments
+and seeing these things in practice so
+what are we doing here I have a created
+like a a recreation of the smart scale
+problem we have an add family member
+function um it's Java so my apologies
+for that if you're a net developer but
+everybody can read Java so we're we're
+all good so um what are we doing we're
+adding a family member we have a family
+we have an ID we have a I mean this is
+straightforward right and we Implement
+role-based Access Control what we're
+basically going to do is we're going to
+enforce that to do that you must be the
+family owner that's authorization in
+action all right that's how this starts
+out however over time you'll get more
+something like this you'll have not only
+the family owner but also a parent and
+an admin and this and that and that and
+that highlights one of the problems with
+role-based Access Control managing roles
+is hard you'll end up with a problem
+that we call roll explosion which is a
+very dramatic name uh but it basically
+means means that you'll have a lot of
+similar roles that have permissions and
+it becomes really hard to assess a
+security policy like this it's hard to
+audit a policy like this it's hard to
+maintain if you want to add a new role
+in your application now you have to go
+through your entire code base and be
+like or has roll this or has roll this
+and it's just a mess and this is a very
+silly problem to have but it's
+unfortunately a very realistic problem
+because arback is very widely supported
+across all languages and
+Frameworks to improve this to make this
+more maintainable more auditable you can
+do like a very simple thing you can add
+a layer of IND Direction in between
+which we call permissions so instead of
+mapping roles to endpoints we map rols
+to permissions and we map permissions to
+endpoints and now if you look at this
+code if you have to audit this you don't
+have to have the full model in mind like
+which role can do what you can check
+like hey add family member has
+permission add family member like yeah
+that makes sense a security audit like
+this easy and straightforward like yes
+API code makes sense step one step two
+what does the policy say like oh these
+roles can have these permissions like
+yeah that makes sense to me as well and
+this very simple step very silly step on
+PowerPoint but very powerful in practice
+actually decouples permissions um well
+decouples roles from endpoints by adding
+permissions in between that's
+essentially how we improve
+authorization right and at this point
+you're thinking like yeah that wasn't
+that hard like what the hell is wrong
+with the smart scale people like why why
+is this API security top 10 number one
+well what we've done so far is we added
+function level
+authorization right we added a check
+whether a family member is allowed to
+add a member to a family so if I want to
+add a member to my family I'm going to
+create like post request SL family/ one
+member with the data and Bam new member
+is created if I want to add a member to
+your family I'm going to take this
+request in burp I'm going to delete a
+one I'm going to replace a one with a
+two which is like a sophisticated attack
+I'm going to send a request out and all
+of a well a seven actually I'm going to
+replace a one with a seven and all of a
+sudden I'm creating a a member in your
+family because we've implemented the
+check that an owner me can add a family
+member that's good function level
+authorization but we never checked which
+family I'm adding something to and
+that's object level authorization so
+missing functional level authorization
+missing this basic check is O API SC
+time number five but missing the check
+to Which object you're adding something
+to or Which object you're accessing
+that's o API created up then number one
+broken object level authorization and
+this problem is everywhere you will find
+this with simple IDs like accessing a
+family that's what a smart scale was
+doing wrong you'll find this with
+multitenant deployments where you have
+like a header saying like customer ID uh
+something something well an attacker can
+be like H customer ID today is uh 35 bam
+and it sends a request and if your
+backend doesn't check that the user
+actually belongs to that customer I'm
+now creating admins in somebody else's
+customer taking control of that customer
+and you're now in deep deep trouble o
+API security to them number one
+all right so how do we fix this and
+that's where the things get a bit tricky
+to fix this you need to add additional
+logic because depending on why the user
+has this add family member permission
+you need to check certain things like it
+it becomes something like this is a Mess
+by the way you get code like this like
+yeah yeah check at family member it's
+like oh why do you have that oh if
+you're an admin then of course you can
+do that if you're a family owner then
+we'll make sure that you're the owner of
+this exact family and you have to add a
+check and so on and so on and this code
+is in no way representative of how you
+write actual production code first of
+all smiley faces are not good for
+exception handling in case you're
+wondering that's not how you do that uh
+for one but also there's no Deni by
+default being used and so on and so on
+this is a bad example in all uh for all
+intents and purposes this is not good
+all right I have that on the slides just
+to make sure that you understand this um
+this policy by the way is impossible to
+audit for security you have to do this I
+strongly recommend this exercise at your
+company what you do is you grab a
+colleague from a different team to bring
+them to your like on a Friday afternoon
+and you show them your authorization
+logic and you're like do you understand
+this does this make sense to you and if
+they can't immediately say like yeah I I
+mostly get a gist of it if your code is
+Litter with checks like this they're
+going to be like I have no idea man I I
+don't know and that means your
+authorization logic is not
+auditable which means if you can't audit
+it how will you know if it's secure
+you don't it's kind of a best guess like
+I'm thinking this is good until somebody
+finds that one check that you forgot and
+Bam you have a broken object level
+authorization issue just right there and
+trust me I've been in that meeting more
+than once and I ask questions about that
+and and I asked like how do you check
+this where do you check and people open
+up the code like yeah we have this here
+and sometimes they go quiet and get like
+a bit red-faced and sometimes they rip
+out the code editor and like oh yeah
+let's add this additional rule that we
+forgot like on the on the Fly it's like
+no no no no no that's absolutely not
+what you're supposed to be doing so how
+can we approve this this is not the
+depressing talk about how miserable your
+life is supposed to be this is about
+improving things and making things
+better for yourself and a very simple
+thing here that you can do is you can
+centralize this logic you can take away
+all of these dirty checks and move them
+into a single location we call that a
+policy engine which is a very F that's
+how you sell this to your boss like we
+need a policy
+engine in reality you can make this
+super simp simple can make this like one
+class one file with static methods and
+the static methods can be check
+permission or check can add family
+member or whatever but what we're doing
+here is we're making our endpoints
+prettier easier to audit and manageable
+because if you have an audit this code
+that you see on the slide now all it
+takes is like add member we check
+permission add family member like yeah
+this makes sense to me if I have to
+audit this I'm going to be like yeah
+that's that's a good check you can even
+add Like rules in your linting tools or
+set codee analysis tools that every
+endpoint has to call policy. check
+permission or the Bild breaks good now
+you can't forget authorization checks
+perfect second step in outting this you
+go to that policy file and you check
+what are the rules that are enforced
+here do they make
+sense very important second thing you
+can do you can enable Version Control
+like source code protection on that file
+so that only the people from the
+security team are allowed to update this
+awesome third thing you can do and
+that's really powerful you can write
+unit tests against your authorization
+policy because all you have is these
+check permission or can add family
+member methods and you can write unit
+tests to make sure that they enforce
+what you think they enforce and that
+gives you a lot of power over your
+authorization logic and makes all of
+this
+manageable and on top of that It
+prepares you for the next step because
+sometimes most people can get away with
+this most applications I've seen they
+can get away with this and they're good
+to go easy straightforward cheap perfect
+however sometimes you have this complex
+application complex authorization logic
+maybe you have to check like a whole
+bunch of relationships to see whether
+this is possible and that's where
+external policy engines come into play
+that's where you want to externalize
+this authorization logic into something
+like an open policy agent or some
+something custom or open fga if you're
+using that and where you check that
+authorization logic and that way now you
+have a real policy engine Now we move it
+outside to an actual service which uses
+in opas case REO as an expression
+language to write your authorization
+logic but that's the next step that's an
+advance use case and to be honest most
+applications don't need to go that far
+you may want to do that that's on you
+that's perfectly possible but very often
+you don't have to go that far just
+centralizing the logic in your codebase
+is enough for most use cases all right
+and that's a takeaway here you want to
+centralize that authorization logic you
+want to simplify the aiting of your
+authorization policies to ensure that
+you can keep everything under control
+and that you can assess the security of
+what you're enforcing and that's the way
+how to fight broken object level
+authorization all right second takeaway
+here is Empower auditability make this
+possible do the exercise with your
+colleagues it's super valuable to figure
+out or to observe how somebody else's
+view somebody else views your
+authorization logic and guess what if
+your colleague spends like an afternoon
+with you and they can't understand your
+authorization logic then something is
+wrong maybe you pick the wrong colleague
+that's also an option but assuming that
+you have competent colleagues the
+problem is with your authorization logic
+not with your colleague all right
+good let's talk about authorization
+right we talked about one and five but
+there's another authorization seriously
+authorization is a mess there's a third
+authorization issue in the O API
+security. 10 and that's number three
+broken object property level
+authorization and the abbreviation for
+that is Bula in case you're wondering I
+don't know who makes this thing up but
+it's broken object property level
+authorization and guess who had that
+problem smart scale of
+course sorry if you're actually the
+developer of this I I don't want to do
+this but it it's just the way things are
+so it's um that's just the way things
+are so what happened here and that's the
+second step in the attack so what I Thea
+really figured out is we can add family
+members to your family and now we have
+an account that we control that's a
+member of your family so we can
+authenticate as that account and guess
+what we can do next we can list the
+other family members in your family
+which is kind of normal that's yeah of
+course you can it's like yes if you're a
+child you can see your parents and your
+sister and brother and it's like
+perfectly fine except the smart scale
+when you listed the users manage to
+expose like the full user
+object not just like a name and an age
+no no the full user object including
+access tokens and refr I I don't even
+know why these values are in there but
+they were and everything was listed and
+you're laughing with this like oh my
+god what the hell sorry for the
+language oh my freaking God what the
+hell is wrong here and I wish that I
+could say like oh yeah it's just a smart
+nobody else is doing this but it's
+everywhere even Uber had that
+vulnerability a while ago where they
+were leaking this uh information on user
+accounts we' seen password hashes being
+leaked location information being leaked
+that was know by the application and
+location information that's kind of a
+critical feature like many dating apps
+they have location information that's
+something you never ever want to leak to
+malicious users in practice so yeah this
+is a major
+issue why do we have that like what the
+hell is wrong with us why do we create
+these vulnerabilities well actually we
+don't really create them it's just the
+nature of the the game of trans
+transforming data into Json and so on
+because nobody in their right mind
+writes Jason by hand well maybe some of
+you like are really miserable and you're
+like yes I write Jason by hand but most
+people don't and what we do instead is
+we translate model object like a user
+that we have in our system and a model
+and we translate that into Json by
+telling the framework here's the list of
+users go figure it out the framewor is
+like yeah awesome it's a Java object I
+can translate this property into Json
+and so on and so on and we have
+something like that and I have an
+example here which is not the smart
+scale but it's an API security swag shop
+where you can buy cool things about API
+security and they have a list of online
+users and the list of online users in
+the front end it's based on the API
+response like it calls to/ online users
+and it gets a list with user objects
+like id5 um ID3 sorry name John and
+that's the information that we list
+there and that's how these form
+abilities come into life they're not
+like in the front end we're not
+displaying like all the information in
+the front end no the information is in
+the API response so we call this
+endpoint we get an API response we take
+some values and everything else is
+ignored in the front end but it's there
+in the back end so somebody uh doing
+this attack which goes as follows like
+open def tools in the browser go to the
+network tab click on the API request
+look at the response and all the data is
+there that's how the attack like this
+works and I encourage you again I have
+another exercise for you later on to
+look at actual applications you use day
+in day out open up an application like
+your banking app and go look at the API
+responses the amount of data that's
+there is astonishing it's crazy I've
+done that I was like what the hell is
+going on like there's so much
+information that the front that never
+uses that we expose in API responses
+that's exactly this problem that's
+what's going on so where do we get that
+from here's
+another okay yes here's another example
+um
+again it's Java but whatever uh what we
+do here is we get a list of online users
+it's a list of an array of user objects
+you you kind of know how this works it's
+a list sorry not an area and we trans we
+throw that into the response and Magic
+happens and Json comes out and you can
+see the user on the left we have the
+name and the address and we're exposing
+the address information here or the
+access token and refresh token whatever
+the smart scale was doing that's how
+this happens in practice so how do we
+fix this we can annotate this with Jason
+ignore like hey Jason translator thingy
+we don't really want to expose this
+property so just pretend it doesn't
+exist right um I'm not a fan of this
+this is kind of a Band-Aid approach like
+oh yeah whoops this one shouldn't be
+exposed but you can't scale this you
+can't do this for your entire API it's
+going to be a mess you're going to
+forget Fields it's going to be a problem
+so how do you do that instead you use a
+dto right a data transfer object or if
+your language doesn't have dtto you can
+have like schema validation and so on
+that's that's a similar approach and
+that dto is now called public user info
+and it makes it hard to make a mistake
+because whenever you're writing this
+like public user info you're going to be
+like hm xess token yeah put it in there
+no it's going to help you remind
+yourself like oh yeah this is supposed
+to be public user info and that way we
+map our users to this dto we expose the
+dto and the problem goes away all right
+very simple approach a bit takes a bit
+of effort to do that but it it's
+recommended to do that effort because it
+really gives you strong security
+properties all right
+now I talked to a lot of developers I
+work with a lot of developers and this
+is something that very often comes up
+when we talk about API security and
+they're like yeah yeah we're using dto
+I'm like okay show me always always ask
+them like show me that's very important
+just using dto itself no no show me and
+it's like yeah here's the dto and I'm
+like okay where do we get it from was
+dto with a lot of properties and we're
+like where do you get this from yes we
+autogenerate this from our model classes
+like the model translates automatically
+into D it's like that's not what you're
+supposed to be doing and you can do a
+similar thing with open API
+specification where you define exactly
+what you expect and so on and I was
+talking about this at a workshop last
+week and somebody phrased this very
+accurately so I'm going to steal that
+and use that from now on and he said
+like yeah somewhere in the process
+somebody has to do the thinking like
+somebody has to be thinking like what do
+we want to expose because all of these
+automatic generation tools are awesome
+but if you generate your open API spec
+from your dtos or from your model
+classes without ever thinking at some
+point like do we want to expose this
+you're going to have a bad time that's
+essentially what's going on so what
+you're supposed to be doing is you're
+supposed to be using dto but either if
+you autogenerate them you have to
+manually review them you have to go
+through and check if this makes sense
+but my advice is do not generate them
+write them yourself because you'll have
+different versions of a dto like admin
+users will see more properties than a
+regular user so they have separate dto
+with separate uh sets of fields that are
+exposed do the thinking
+that is essentially I should add that as
+a takeaway slide I haven't done that but
+do the thinking that should be the main
+takeway from this part but in this case
+it's avoid sensitive data exposure you
+have to go through I'm very certain we
+have a full room here like a few hundred
+people if you go through apis I'm fairly
+certain that you will find quite a few
+of these instances that's how common
+these things really are and they're
+invisible mostly unless you go look at
+your actual Jason responses you won't
+see this at all until somebody finds
+this and you get embarrassed in my
+slides because you're now one of the
+stories so that's essentially how that
+comes into play now there's a right
+version of this vulnerability as well so
+this is the read version where you
+expose too much data but the same goes
+on I don't have slides about that uh
+because I'm running out of time but the
+same goes on with the right version
+where the user provides more properties
+than you expect and you overwrite these
+fields in the database and that's called
+Mass assignment and it's also part of
+broken object property level
+authorization all right and the same
+defense applies you use dto there to
+avoid accepting more information than
+you should and that is essentially how
+you solve this problem all right so um
+it's getting rough up here on stage
+because the pizza stand is below and
+it's smelling delicious so I'm super
+hungry but let me come back to this ohas
+API security top 10 uh we talked about
+quite a few of these issues uh these
+things are there for a reason all right
+the fact that broken object level
+authorization is number one it's not
+because this is the a case in the smart
+scale is because this is everywhere so
+please take this away from this
+application go look at your apis
+probably on Monday because it's a 3-day
+conference so that's perfectly fine but
+go to back to your apis on Monday and
+review your authorization Logic for
+these things make sure you can improve
+that all right key takeaways what do we
+what did we learn here or what do I
+think you learn here H let's put it like
+that the best authorization policy is
+understandable and auditable like if
+it's complex and Scatter throughout the
+code it's going to be a mess it's going
+to be really hard to protect or to
+assess whether it's secure make it
+understandable really really important
+the easier it is the better analyze your
+apis for data leakage and Brute Force
+attack factors and these are again very
+common something you definitely want to
+look out for and keep in mind that
+perimeter security cannot be your only
+defense perimeter security is good you
+should shield things as much as you can
+but be aware that attackers have ways to
+breach the perimeter in legitimate
+purposes like service side requests or
+loading like a page in a browser from
+within the perimeter all of that is
+enough to give the attacker a foothold
+within the perimeter make sure you have
+additional defenses at play that prevent
+this from being abused all right if you
+liked what I had to say here I'm
+actually doing that two-day workshop I
+did the previous days in the future NC
+events so if you want to go to
+Copenhagen or Porto very tough place to
+be at Porto or NC Security here in OA
+next year um feel free to sign up and
+I'll see you there and with that I want
+to thank you enjoy the pizza and have a
+great conference

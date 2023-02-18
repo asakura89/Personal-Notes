@@ -2,7 +2,7 @@
 tags:
 - Research
 - Concept
-- Unfinished-note
+- Draft
 date: 2022-07-22
 ---
 
@@ -54,6 +54,19 @@ $clientScreenSize
 $remoteAddr;
 $createdAt;
 ```
+
+
+
+> [https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/](https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/ "https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/")
+
+> **Tracker** → fitur dari analytics yang punya method atau api buat nge-record semua interaction termasuk page visit oleh visitor
+>         **Visitor** → user yang di-record/di-track dan disimpen sbg contact, apakah anonymous atau identified. kalo identified biasanya ada email-nya. apakah dia login, atau dia input email seawaktu subscribe
+> **Interaction** → hal yang dilakuin user di website / device yang dipasangi tracker. biasanya interaction ini lebih kaya hal-hal yang dilakuin dalam satu waktu.
+> misal, ada user buka google.com di 1 tab. selama tab itu gak di-close akan di-record sebagai 1 interaction. di dalam interaction akan ada banyak **Page Event**. klik button kah, buka link kah, download kah, visit sebuah url kah.
+> **Personalization** → biasanya user/visitor/contact main identifier-nya adalah email (kalo identified). kalo anonymous, maka analytics bakal ngelakuin **profiling** / **fingerprinting** si user anonymous ini.
+> gimana caranya?
+> contact punya **dimensions** namanya. dimension ini adalah data kecil banget (atomic) yang dipake buat mengidentifikasi suatu contact. user agent dari browser, ip address, browser window/tab size, jenis device kalo bisa kedetect, negara yang diambil dari ip, dan hal lain yang bisa dipake buat nge-identify user.
+> kalo user-nya udah di identify, kita bisa bikin 1 set aturan-aturan / rule yang bisa diterapin ke user tertentu. misal, kita bisa bikin 1 rule personalization kalo ada user yang keranjang belanjaannya isinya elektronik yang masuk kategori hape. munculin pop up hape-hape top 10 paling laku.
 
 
 
@@ -128,14 +141,7 @@ doesnt matter, just use the visitor id
 
 
 
+### Open Source ones
 
-> [https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/](https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/ "https://codeconcerns.com/dimensions-segments-metrics-sitecore-experience-analytics/")
-
-> **Tracker** → fitur dari analytics yang punya method atau api buat nge-record semua interaction termasuk page visit oleh visitor
->         **Visitor** → user yang di-record/di-track dan disimpen sbg contact, apakah anonymous atau identified. kalo identified biasanya ada email-nya. apakah dia login, atau dia input email seawaktu subscribe
-> **Interaction** → hal yang dilakuin user di website / device yang dipasangi tracker. biasanya interaction ini lebih kaya hal-hal yang dilakuin dalam satu waktu.
-> misal, ada user buka google.com di 1 tab. selama tab itu gak di-close akan di-record sebagai 1 interaction. di dalam interaction akan ada banyak **Page Event**. klik button kah, buka link kah, download kah, visit sebuah url kah.
-> **Personalization** → biasanya user/visitor/contact main identifier-nya adalah email (kalo identified). kalo anonymous, maka analytics bakal ngelakuin **profiling** / **fingerprinting** si user anonymous ini.
-> gimana caranya?
-> contact punya **dimensions** namanya. dimension ini adalah data kecil banget (atomic) yang dipake buat mengidentifikasi suatu contact. user agent dari browser, ip address, browser window/tab size, jenis device kalo bisa kedetect, negara yang diambil dari ip, dan hal lain yang bisa dipake buat nge-identify user.
-> kalo user-nya udah di identify, kita bisa bikin 1 set aturan-aturan / rule yang bisa diterapin ke user tertentu. misal, gue bikin 1 rule personalization kalo ada user yang keranjang belanjaannya isinya elektronik yang masuk kategori hape. munculin pop up hape-hape top 10 paling laku.
+1. [GitHub - vinceanalytics/vince: Self Hosted Alternative To Google Analytics](https://github.com/vinceanalytics/vince)
+2. [plausible/analytics: Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.](https://github.com/plausible/analytics)

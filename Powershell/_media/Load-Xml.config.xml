@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <smtpConfig>
+    <server>smtp.orenosaito.co.jp</server>
+    <port>587</port>
+    <userName>SmtpUser_Admin</userName>
+    <password>100%SmtpPwd4Admin</password>
+    <useSsl>true</useSsl>
+    <useTls>false</useTls>
+  </smtpConfig>
+  <mailConfig>
+    <from email="dontreply_notif@orenosaito.co.jp" name="DO_NOT_REPLY Automated Script" />
+    <recipients>
+      <email>menolakreply@orenosaito.co.jp</email>
+    </recipients>
+    <ccs>
+      <!--
+        <email>menolakreply@orenosaito.co.jp</email>
+      -->
+    </ccs>
+    <subject>[Automated Script] Reminder</subject>
+    <body>
+      <![CDATA[
+        <div id='outer-container'
+          style='
+            color:#333333;
+            font-family:Arial,sans-serif;
+            font-size:14px;
+            line-height:1.4285715'>
+
+          <div id='inner-container'
+            style='
+              width:60%;
+              padding:20px'>
+
+            <div id='gray-rectangle'
+              style='
+                border:2px solid #dfe1e6;
+                border-radius:10px;
+                border:2px solid #dfe1e6;
+                padding:20px'>
+
+              <!-- This Subtitle and Subtitle Link should be optional -->
+              <!-- <span id='sub-title'>
+                <a id='sub-title-link'
+                  href='${SubTitleLink}'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style='text-transform:uppercase;
+                  text-decoration:none;
+                  color:#0052cc;
+                  font-size:14px;
+                  color:#3b73af;
+                  text-decoration:none'>
+                  ${SubTitle}
+                </a>
+              </span> --> <!-- sub-title -->
+
+              <h1 id='title'
+                style='margin-top:5px;
+                  font-size:26px;
+                  color:#091e42;
+                  margin:10px 0 0;
+                  font-size:24px;
+                  font-weight:normal;
+                  line-height:1.25;
+                  margin:40px 0 0;
+                  font-size:24px;
+                  color:#091e42;
+                  margin-top:5px'>
+                ${Title}
+              </h1> <!-- title -->
+
+              <div id='spacer' style='margin-bottom:20px'></div>
+
+              <p id='body'
+                style='
+                  font-size:14px;
+                  font-weight:normal;
+                  font-stretch:normal;
+                  font-style:normal;
+                  line-height:1.5;
+                  letter-spacing:normal;
+                  color:#172b4d;
+                  margin:10px 0 0'>
+                ${Body}
+              </p>
+            </div> <!-- gray-rectangle -->
+          </div> <!-- inner-container -->
+
+          <span id='app-identifier'
+            style='
+              font-size:11px!important;
+              font-weight:normal!important;
+              font-stretch:normal!important;
+              font-style:normal!important;
+              line-height:1.45!important;
+              letter-spacing:normal!important;
+              color:#7a869a!important;
+              padding-left:42px'>
+            This message was sent by <em>[Automated Script] Reminder</em>
+          </span>
+        </div> <!-- outer-container -->
+      ]]>
+    </body>
+  </mailConfig>
+</configuration>

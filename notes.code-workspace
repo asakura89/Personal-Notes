@@ -1,19 +1,28 @@
 {
     "folders": [
         {
+            "path": "_temp"
+        },
+        {
             "path": "_templates"
         },
         {
-            "path": "All Things .NET"
+            "path": "AI Tools"
         },
         {
-            "path": "Code Snippet"
-        },
-        {
-            "path": "Colors"
+            "path": "Coffee"
         },
         {
             "path": "Communication"
+        },
+        {
+            "path": "CSharp"
+        },
+        {
+            "path": "Design"
+        },
+        {
+            "path": "Economic"
         },
         {
             "path": "Excel"
@@ -22,13 +31,28 @@
             "path": "Git"
         },
         {
+            "path": "Go"
+        },
+        {
+            "path": "IIS"
+        },
+        {
             "path": "Java"
         },
         {
-            "path": "Markdown"
+            "path": "Javascript"
+        },
+        {
+            "path": "Life"
+        },
+        {
+            "path": "LINQPad"
         },
         {
             "path": "Office 365"
+        },
+        {
+            "path": "Powershell"
         },
         {
             "path": "Programming Concept"
@@ -37,7 +61,13 @@
             "path": "Sitecore"
         },
         {
-            "path": "Time Management"
+            "path": "SQL"
+        },
+        {
+            "path": "Statistics"
+        },
+        {
+            "path": "Tech"
         },
         {
             "path": "Work"
@@ -47,48 +77,38 @@
         "[html]": {
             "editor.defaultFormatter": "vscode.html-language-features"
         },
-        "[css]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[javascript]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[vue]": {
-            "editor.defaultFormatter": "octref.vetur"
-        },
         "[json]": {
             "editor.defaultFormatter": "vscode.json-language-features"
         },
         "[markdown]": {
             "editor.wordWrap": "on",
-            "editor.lineNumbers": "off",
+            "editor.lineNumbers": "on",
             "editor.quickSuggestions": {
                 "comments": "off",
                 "strings": "off",
                 "other": "off"
             },
-            "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+            "editor.defaultFormatter": null,
+            "diffEditor.ignoreTrimWhitespace": false
         },
         "blockman.n01LineHeight": 0,
         "blockman.n04ColorComboPreset": "Classic Light (Gradients)",
-
         "breadcrumbs.enabled": true,
-
-        "clock.dateFormat": "hh:MM TT / dd.mm.yyyy",
-
+        "comments.visible": false,
         "debug.console.closeOnEnd": true,
-        "debug.console.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        "debug.console.fontFamily": "'JetBrains Mono Light', 'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
         "debug.inlineValues": "on",
         "debug.toolBarLocation": "floating",
-
+        "diffEditor.experimental.showMoves": true,
+        "diffEditor.hideUnchangedRegions.enabled": true,
         "diffEditor.ignoreTrimWhitespace": false,
         "diffEditor.renderSideBySide": true,
-        "diffEditor.wordWrap": "off",
-
+        "diffEditor.useInlineViewWhenSpaceIsLimited": false,
         "editor.accessibilitySupport": "off",
-        "editor.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        "editor.fontFamily": "'Cascadia Code', 'Cascadia Code Light', 'JetBrains Mono', 'JetBrains Mono Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
         "editor.fontLigatures": true,
-        "editor.fontSize": 16,
+        "editor.fontSize": 18,
+        "editor.glyphMargin": false,
         "editor.guides.bracketPairs": false,
         "editor.guides.indentation": false,
         "editor.inlayHints.enabled": "off",
@@ -99,20 +119,20 @@
         "editor.renderControlCharacters": true,
         "editor.renderLineHighlight": "all",
         "editor.renderWhitespace": "all",
+        "editor.showFoldingControls": "always",
         "editor.stablePeek": true,
+        "editor.stickyScroll.enabled": true,
         "editor.suggest.filterGraceful": false,
+        "editor.suggest.showIcons": false,
         "editor.suggestSelection": "first",
-        "editor.tabSize": 4,
         "editor.trimAutoWhitespace": true,
         "editor.unicodeHighlight.invisibleCharacters": false,
         "editor.wordWrap": "off",
-
         "explorer.autoReveal": false,
         "explorer.confirmDelete": false,
-        "explorer.openEditors.visible": 2,
-
+        "explorer.openEditors.minVisible": 5,
+        "explorer.openEditors.visible": 0,
         "extensions.ignoreRecommendations": true,
-
         "files.associations": {
             "**/*.asax": "html",
             "**/*.ascx": "html",
@@ -144,162 +164,55 @@
             "logs/*.txt": "log",
             "logs/*.log": "log",
             "Logs/*.txt": "log",
-            "Logs/*.log": "log"
+            "Logs/*.log": "log",
+            "*.txt": "markdown"
         },
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 100,
         "files.exclude": {
-            "**/*tmp*": true,
-            "**/.DS_Store": true,
             "**/.git": true,
-            "**/bower_components": false,
+            "**/.DS_Store": true,
+            "**/*tmp*": true,
+            "**/obj/**": true,
             "**/node_modules": false,
-            "**/obj/**": true
+            "**/bower_components": false
         },
         "files.trimTrailingWhitespace": false,
-
-        "javascript.format.enable": false,
+        "git.enableSmartCommit": true,
+        "git.enableStatusBarSync": false,
         "javascript.format.semicolons": "insert",
-
         "markdown-editor.imageSaveFolder": "_media",
-
         "markdown.extension.italic.indicator": "_",
         "markdown.extension.print.imgToBase64": true,
         "markdown.extension.syntax.decorationFileSizeLimit": 10000000,
         "markdown.extension.tableFormatter.normalizeIndentation": true,
         "markdown.extension.toc.updateOnSave": false,
-
         "markdown.preview.breaks": true,
         "markdown.preview.doubleClickToSwitchToEditor": false,
-
         "notebook.showFoldingControls": "always",
-
-        "partialDiff.enableTelemetry": false,
-
         "search.searchEditor.defaultNumberOfContextLines": 2,
         "search.searchEditor.reusePriorSearchConfiguration": true,
         "search.searchOnType": false,
         "search.showLineNumbers": true,
-
-        "telemetry.telemetryLevel": "off",
-
-        "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "terminal.integrated.cursorBlinking": true,
-        "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
-
-        "todo-tree.defaultHighlight": {},
-
-        "todo.colors.dark": {
-            "cancelled": "#dd1144",
-            "code": "#eb6000",
-            "comment": "#434241",
-            "done": "#87a924",
-            "project": "#24adff",
-            "projectStatistics": "#0067a5",
-            "tag": "#eb6000",
-            "tags": {
-                "background": [
-                    "#e54545",
-                    "#e54545",
-                    "#e59f45",
-                    "#e59f45",
-                    "#4d91d6",
-                    "#4d91d6",
-                    "#e5d145",
-                    "#e5d145",
-                    "#ae81ff",
-                    "#ae81ff"
-                ],
-                "foreground": [
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333"
-                ]
-            }
-        },
-        "todo.colors.light": {
-            "cancelled": "#dd1144",
-            "code": "#eb6000",
-            "comment": "#434241",
-            "done": "#87a924",
-            "project": "#24adff",
-            "projectStatistics": "#0067a5",
-            "tag": "#eb6000",
-            "tags": {
-                "background": [
-                    "#e54545",
-                    "#e54545",
-                    "#e59f45",
-                    "#e59f45",
-                    "#4d91d6",
-                    "#4d91d6",
-                    "#e5d145",
-                    "#e5d145",
-                    "#ae81ff",
-                    "#ae81ff"
-                ],
-                "foreground": [
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333",
-                    "#333"
-                ]
-            }
-        },
-        "todo.embedded.provider": "ag",
-        "todo.symbols.box": "[ ]",
-        "todo.symbols.cancelled": "[-]",
-        "todo.symbols.done": "[x]",
-        "todo.tags.names": [
-            "critical",
-            "Critical",
-            "high",
-            "High",
-            "medium",
-            "Medium",
-            "low",
-            "Low",
-            "today",
-            "Today"
-        ],
-
-        "todo.timekeeping.created.format": "DD.MM.YYYY HH:mm",
-        "todo.timekeeping.finished.format": "DD.MM.YYYY HH:mm",
-        "todo.timekeeping.started.format": "DD.MM.YYYY HH:mm",
-
+        "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', Consolas, Monospace",
+        "testing.gutterEnabled": false,
         "typescript.format.enable": false,
         "typescript.format.semicolons": "insert",
-
-        "update.mode": "manual",
-
-        "vscode-json-editor.theme": "dark",
-
-        "vsicons.projectDetection.autoReload": true,
-
+        "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
         "window.titleSeparator": " • ",
         "window.zoomLevel": 0,
-
         "workbench.colorCustomizations": {
             "editor.lineHighlightBackground": "#1073cf2d",
             "editor.lineHighlightBorder": "#9fced11f"
         },
-        "workbench.colorTheme": "Office Theme (Word)",
+        "workbench.colorTheme": "GitHub Light",
         "workbench.editor.enablePreview": false,
         "workbench.editor.enablePreviewFromQuickOpen": false,
-        "workbench.editor.pinnedTabSizing": "shrink",
+        "workbench.editor.historyBasedLanguageDetection": false,
+        "workbench.editor.languageDetection": false,
+        "workbench.editor.pinnedTabSizing": "compact",
+        "workbench.editor.showIcons": false,
         "workbench.editor.untitled.hint": "hidden",
         "workbench.editor.untitled.labelFormat": "name",
         "workbench.iconTheme": "file-icons",
@@ -307,7 +220,10 @@
         "workbench.panel.defaultLocation": "bottom",
         "workbench.productIconTheme": "fluent-icons",
         "workbench.sideBar.location": "right",
+        "workbench.editor.highlightModifiedTabs": true,
+        "window.commandCenter": false,
+        "workbench.statusBar.visible": false,
         "workbench.tree.indent": 16,
-        "editor.stickyScroll.enabled": true
+        "workbench.activityBar.location": "hidden"
     }
 }
