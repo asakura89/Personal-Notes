@@ -13,7 +13,7 @@ date: 2021-05-01
 Kebutuhan dan keperluan buat belajar _Workflow engine_ ini gak mesti pake framework yang gede dan banyak fitur kaya _Actor Pattern_, _Messaging Query_, dan fitur lainnya yang dipunyai workflow framework yang gede. Cuma butuh library kecil yang bisa di-embed dimanapun.
 
 1. [workflow core](https://github.com/danielgerlag/workflow-core)
-2. [elsa](https://github.com/elsa-workflows/elsa-core) — elsa gue pertimbangin sebagai gray area antara framework yang gede dan simple library
+2. [elsa](https://github.com/elsa-workflows/elsa-core) — elsa masuk pertimbangan sebagai gray area antara framework yang gede dan simple library
 3. [easy flows](https://github.com/j-easy/easy-flows)
 
 

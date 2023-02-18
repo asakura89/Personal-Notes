@@ -1,30 +1,33 @@
 ---
 tags:
-- Communicate
+- Communication
 - English
 date: 2022-12-11
 ---
 
-# English — Moving Forward
+# Moving Forward
 
 ## Makna
+
 Biasanya dipake di urusan formal atau bisnis. Maksudnya untuk menjelaskan sesuatu yang akan diterapkan menjadi suatu prosedur baru atau gimana operasi harian berubah kedepannya. Terjemahan harfiahnya, "kedepannya akan" atau sesimpel "kedepannya".
 
 
 
 ## Kata Ganti
-_**Going forward**_
+
+<ins>Going forward</ins>
 Going ahead
-_**From this point on**_
+<ins>From this point on</ins>
 From now on
 Proceeding
 Advancing
 Moving on from this
-_**From here**_
+<ins>From here</ins>
 Looking forward
-_**In the future**_
+<ins>In the future</ins>
 
 
 
-References:
+**References:**
+
 - https://grammarhow.com/other-words-for-moving-forward/

@@ -1,0 +1,120 @@
+---
+tags:
+- Javascript
+- Regex
+date: 2023-12-18
+---
+
+# GUID validation
+
+Regex: `(?:\{)?(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32})(?:\})?`
+
+Code:
+
+```javascript
+console.log(
+    [
+        "d1e62e82-14a1-4443-9cd6-6f0ddd0798ce",
+        "d1e62e8214a144439cd66f0ddd0798ce",
+        "(d1e62e82-14a1-4443-9cd6-6f0ddd0798ce)",
+        "{d1e62e82-14a1-4443-9cd6-6f0ddd0798ce}",
+        "{0xd1e62e82,0x14a1,0x4443,{0x9c,0xd6,0x6f,0x0d,0xdd,0x07,0x98,0xce}}",
+        "D1E62E82-14A1-4443-9CD6-6F0DDD0798CE",
+        "D1E62E8214A144439CD66F0DDD0798CE",
+        "(D1E62E82-14A1-4443-9CD6-6F0DDD0798CE)",
+        "{D1E62E82-14A1-4443-9CD6-6F0DDD0798CE}",
+        "826463ad-20e6-4fd9-bb2c-bf77b7780220",
+        "826463ad20e64fd9bb2cbf77b7780220",
+        "(826463ad-20e6-4fd9-bb2c-bf77b7780220)",
+        "{826463ad-20e6-4fd9-bb2c-bf77b7780220}",
+        "{0x826463ad,0x20e6,0x4fd9,{0xbb,0x2c,0xbf,0x77,0xb7,0x78,0x02,0x20}}",
+        "826463AD-20E6-4FD9-BB2C-BF77B7780220",
+        "826463AD20E64FD9BB2CBF77B7780220",
+        "(826463AD-20E6-4FD9-BB2C-BF77B7780220)",
+        "{826463AD-20E6-4FD9-BB2C-BF77B7780220}",
+        "a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63",
+        "a75976a7b0fe4e3eb1dd435dbb2e7c63",
+        "(a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63)",
+        "{a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63}",
+        "{0xa75976a7,0xb0fe,0x4e3e,{0xb1,0xdd,0x43,0x5d,0xbb,0x2e,0x7c,0x63}}",
+        "A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63",
+        "A75976A7B0FE4E3EB1DD435DBB2E7C63",
+        "(A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63)",
+        "{A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63}",
+        "86fd2265-c2e3-4850-8153-81bcfc2b07b7",
+        "86fd2265c2e34850815381bcfc2b07b7",
+        "(86fd2265-c2e3-4850-8153-81bcfc2b07b7)",
+        "{86fd2265-c2e3-4850-8153-81bcfc2b07b7}",
+        "{0x86fd2265,0xc2e3,0x4850,{0x81,0x53,0x81,0xbc,0xfc,0x2b,0x07,0xb7}}",
+        "86FD2265-C2E3-4850-8153-81BCFC2B07B7",
+        "86FD2265C2E34850815381BCFC2B07B7",
+        "(86FD2265-C2E3-4850-8153-81BCFC2B07B7)",
+        "{86FD2265-C2E3-4850-8153-81BCFC2B07B7}",
+        "814153d5-dea8-414c-afeb-d89525df9698",
+        "814153d5dea8414cafebd89525df9698",
+        "(814153d5-dea8-414c-afeb-d89525df9698)",
+        "{814153d5-dea8-414c-afeb-d89525df9698}",
+        "{0x814153d5,0xdea8,0x414c,{0xaf,0xeb,0xd8,0x95,0x25,0xdf,0x96,0x98}}",
+        "814153D5-DEA8-414C-AFEB-D89525DF9698",
+        "814153D5DEA8414CAFEBD89525DF9698",
+        "(814153D5-DEA8-414C-AFEB-D89525DF9698)",
+        "{814153D5-DEA8-414C-AFEB-D89525DF9698}"
+    ]
+    .map(item => {
+        let matching = item.match(/(?:\{)?(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32})(?:\})?/g);
+        return matching === null ? null : matching[0];
+    })
+);
+```
+
+Output-nya
+
+```javascript
+[
+  'd1e62e82-14a1-4443-9cd6-6f0ddd0798ce',
+  'd1e62e8214a144439cd66f0ddd0798ce',
+  'd1e62e82-14a1-4443-9cd6-6f0ddd0798ce',
+  '{d1e62e82-14a1-4443-9cd6-6f0ddd0798ce}',
+  null,
+  'D1E62E82-14A1-4443-9CD6-6F0DDD0798CE',
+  'D1E62E8214A144439CD66F0DDD0798CE',
+  'D1E62E82-14A1-4443-9CD6-6F0DDD0798CE',
+  '{D1E62E82-14A1-4443-9CD6-6F0DDD0798CE}',
+  '826463ad-20e6-4fd9-bb2c-bf77b7780220',
+  '826463ad20e64fd9bb2cbf77b7780220',
+  '826463ad-20e6-4fd9-bb2c-bf77b7780220',
+  '{826463ad-20e6-4fd9-bb2c-bf77b7780220}',
+  null,
+  '826463AD-20E6-4FD9-BB2C-BF77B7780220',
+  '826463AD20E64FD9BB2CBF77B7780220',
+  '826463AD-20E6-4FD9-BB2C-BF77B7780220',
+  '{826463AD-20E6-4FD9-BB2C-BF77B7780220}',
+  'a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63',
+  'a75976a7b0fe4e3eb1dd435dbb2e7c63',
+  'a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63',
+  '{a75976a7-b0fe-4e3e-b1dd-435dbb2e7c63}',
+  null,
+  'A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63',
+  'A75976A7B0FE4E3EB1DD435DBB2E7C63',
+  'A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63',
+  '{A75976A7-B0FE-4E3E-B1DD-435DBB2E7C63}',
+  '86fd2265-c2e3-4850-8153-81bcfc2b07b7',
+  '86fd2265c2e34850815381bcfc2b07b7',
+  '86fd2265-c2e3-4850-8153-81bcfc2b07b7',
+  '{86fd2265-c2e3-4850-8153-81bcfc2b07b7}',
+  null,
+  '86FD2265-C2E3-4850-8153-81BCFC2B07B7',
+  '86FD2265C2E34850815381BCFC2B07B7',
+  '86FD2265-C2E3-4850-8153-81BCFC2B07B7',
+  '{86FD2265-C2E3-4850-8153-81BCFC2B07B7}',
+  '814153d5-dea8-414c-afeb-d89525df9698',
+  '814153d5dea8414cafebd89525df9698',
+  '814153d5-dea8-414c-afeb-d89525df9698',
+  '{814153d5-dea8-414c-afeb-d89525df9698}',
+  null,
+  '814153D5-DEA8-414C-AFEB-D89525DF9698',
+  '814153D5DEA8414CAFEBD89525DF9698',
+  '814153D5-DEA8-414C-AFEB-D89525DF9698',
+  '{814153D5-DEA8-414C-AFEB-D89525DF9698}'
+]
+```

@@ -1,8 +1,9 @@
 {
-  "theme": "moonstone",
+  "theme": "system",
   "enabledCssSnippets": [],
   "interfaceFontFamily": "Segoe UI",
   "textFontFamily": "Cambria",
-  "monospaceFontFamily": "JetBrains Mono",
-  "cssTheme": "Things"
+  "monospaceFontFamily": "Cascadia Mono SemiLight,JetBrains Mono",
+  "cssTheme": "Things",
+  "accentColor": "#7a4ce6"
 }

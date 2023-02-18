@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <app title="Simple Configuration UI">
+    <text:database-provider default="SQLClient" />
+    <number:rety-max default="10" />
+    <boolean:enable-mfa default="true" />
+    <sselect:binding default="http-artifact">
+      <item:http-binding value="http" />
+      <item:http-artifact value="artifact" />
+    </sselect:binding>
+    <mselect:attributes default="fqn;email">
+      <item:fqn value="Fully Qualified Name" />
+      <item:email value="Email" />
+      <item:role value="Role" />
+    </mselect:attributes>
+  </app>
+  <data>
+    <item:database-provider value="PostgresClient" />
+  </data>
+</configuration>

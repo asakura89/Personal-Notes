@@ -1,18 +1,15 @@
 ---
 tags:
-- Communicate
+- Communication
 date: 2022-07-25
 ---
 
 # English
 
-## Improve English
-
-1. [English Grammar: The Prepositions ON, AT, IN, BY - YouTube](https://www.youtube.com/watch?v=sN5H7YTo_IQ)  
-2. [Improve your Vocabulary: Stop saying VERY! - YouTube](https://www.youtube.com/watch?v=PCoyTwltu5g)  
-3. [Improve your Vocabulary: Stop saying I KNOW! - YouTube](https://www.youtube.com/watch?v=FXjvpR02uNg)  
-4. [4 ways to improve your English speaking... ALONE \#athome! - YouTube](https://www.youtube.com/watch?v=N0qEHuyTTp8)  
-5. [Conversation Skills: What's your communication style? - YouTube](https://www.youtube.com/watch?v=9ybqVmp1p6s)
+- [Pronunciation](#pronunciation)
+- [Writing](#writing)
+- [Listening](#listening)
+- [Reference examples](#reference-examples)
 
 
 
@@ -33,3 +30,31 @@ Nah tapi fiturnya apa nih si google translate? Di pojok kiri bawah dari kotak tr
 Writing ini harusnya adalah kemampuan yang paling umum untuk lebih baik daripada kemampuan pronounce. Karena ketika kita ngebaca, ngeliat, tulisan dari Inggris, kita bisa langsung pake tanpa mikirin bunyinya apa. Pronounce-nya apa. Tap yang jadi masalah ketika mau nulis untuk corporate atau enterprise. Karena grammar dan struktur harus bener.
 
 Tool-tool bantuan buat ngebantu nulis Inggris, ada 2 yang pernah gue coba. Microsoft Editor dan Grammarly. Buat Microsoft Editor di-bundle sama Microsoft 365. Jadi gak bisa dibilang gratis lah ya. Kalo Grammarly ada yang gratis dengan fitur terbatas pastinya. Tapi overall, 2 tool ini ngebantu banget.
+
+
+
+## Listening
+
+Cara kita dengan gampang buat mengingat banyak perbendaharaan kata, dan ini berlaku untuk semua bahasa, adalah belajar mendengar. Listening ada banyak cara.
+
+Jaman dulu dengan cara dengerin lagu-lagu barat. Dengerin kaset percakapan bahasa Inggris. Jaman sekarang lebih banyak lagi caranya.
+1. Podcast bahasa Inggris
+    1. https://www.allearsenglish.com/
+    2. https://www.americanenglishpodcast.com/
+    3. dan banyak lagi yang lain
+2. Film bahasa Inggris
+3. Game
+4. Audiobook
+5. Lagu barat
+
+Dan yang paling efektif adalah dengerin audiobook dan dengerin lagu-lagu barat. Karena Audiobook, ya, buku. Jadi ada versi teks dan ada versi audio. Begitupun Lagu barat, ada lirik dan ada lagunya. Karena bahasa Inggris itu bukan bahasa yang fonetik. Artinya apa yang ditulis sama bunyinya dengan yang disebut, kaya bahasa Jepang atau bahasa Indo.
+
+
+
+## Reference examples
+
+1. [English Grammar: The Prepositions ON, AT, IN, BY - YouTube](https://www.youtube.com/watch?v=sN5H7YTo_IQ)  
+2. [Improve your Vocabulary: Stop saying VERY! - YouTube](https://www.youtube.com/watch?v=PCoyTwltu5g)  
+3. [Improve your Vocabulary: Stop saying I KNOW! - YouTube](https://www.youtube.com/watch?v=FXjvpR02uNg)  
+4. [4 ways to improve your English speaking... ALONE \#athome! - YouTube](https://www.youtube.com/watch?v=N0qEHuyTTp8)  
+5. [Conversation Skills: What's your communication style? - YouTube](https://www.youtube.com/watch?v=9ybqVmp1p6s)

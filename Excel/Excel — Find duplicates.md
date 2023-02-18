@@ -2,9 +2,7 @@
 tags:
 - How-to
 - Excel
-- Unfinished-note
-links:
-- https://www.excel-easy.com/examples/find-duplicates.html
+- Draft
 date: 2022-07-08
 ---
 
@@ -13,19 +11,23 @@ date: 2022-07-08
 ## Conditional Formatting
 
 1. Pilih dulu data-nya
-![[Excel/_media/Pasted image 20220708200433.png]]
-
+   ![img](_media/Pasted%20image%2020220708200433.png)
 2. Pilih _Conditional Formatting_ ›› _Highlight Cell Rules_ ›› _Duplicate Values_
-![[Excel/_media/Pasted image 20220708202005.png]]
-![[Excel/_media/Pasted image 20220708202235.png]]
+   ![img](_media/Pasted%20image%2020220708202005.png)
+   ![img](_media/Pasted%20image%2020220708202235.png)
 3. Di _Format cells that contain:_, pilih _Duplicate_ dan pewarnaannya
-![[Excel/_media/Pasted image 20220708202700.png]]
-
-
+   ![img](_media/Pasted%20image%2020220708202700.png)
 4. Hasil akhir
-![[Excel/_media/Pasted image 20220708202955.png]]
-
-
+   ![img](_media/Pasted%20image%2020220708202955.png)
 
 ## VLOOKUPS
+
+
+
+
+
+
+**References:**
+
+- [How to Find Duplicates in Excel (Easy Tutorial) (excel-easy.com)](https://www.excel-easy.com/examples/find-duplicates.html)
 

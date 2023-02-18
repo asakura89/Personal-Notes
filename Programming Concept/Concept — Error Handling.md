@@ -3,14 +3,12 @@ tags:
 - Research
 - Concept
 - Thoughts
+- Draft
 date: 2021-05-01
 ---
 
-# Logging
+# Error Handling
 
-## Konsep logging Stackify
+Kalo di .NET mungkin sebutannya jadi Exception Handling
 
 
-> Quote here.
->
-> &mdash; <cite>Benjamin Franklin</cite>

@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:#Git",
+      "query": "tag:#Thought",
       "color": {
         "a": 1,
         "rgb": 14069084
@@ -29,7 +29,7 @@
       }
     },
     {
-      "query": "tag:#Time-Management",
+      "query": "tag:#Planning",
       "color": {
         "a": 1,
         "rgb": 10050774
@@ -57,10 +57,10 @@
       }
     },
     {
-      "query": "tag:#DotNet",
+      "query": "tag:#CSharp",
       "color": {
         "a": 1,
-        "rgb": 14048429
+        "rgb": 6170956
       }
     },
     {
@@ -71,10 +71,24 @@
       }
     },
     {
-      "query": "tag:#ASP",
+      "query": "tag:#Javascript",
       "color": {
         "a": 1,
         "rgb": 14048429
+      }
+    },
+    {
+      "query": "tag:#Life",
+      "color": {
+        "a": 1,
+        "rgb": 9395414
+      }
+    },
+    {
+      "query": "tag:#Team-Lead",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
       }
     }
   ],
@@ -88,6 +102,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.42967809143425245,
-  "close": true
+  "scale": 0.35492448296232343,
+  "close": false
 }
