@@ -4,7 +4,7 @@ tags:
 date: 2022-07-25
 ---
 
-# All Things .NET — IIS Auto recycle
+# IIS Auto recycle
 
 Jadi ternyata IIS punya jadwal recycle otomatis. Yaitu 29 jam sekali. Artinya recycle ini bisa berjalan kapan aja. Hari pertama mungkin berjalan jam 5 pagi. Hari kedua jalan jam 6 pagi. Dan seterusnya.
 

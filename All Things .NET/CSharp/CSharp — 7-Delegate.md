@@ -1,20 +1,23 @@
+---
+tags:
+- CSharp
+- C#
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# Delegate
 
-
-
-## [.Net] Delegate
 `Delegate` ini adalah konsep `function pointer` yang ada di .Net. Dengan adanya `delegate` ini malah ngebawa konsep `functional` ke bahasa yang berkonsep `object oriented` kaya C# ini. 
 Apa sebenernya `function pointer`? `function pointer` adalah jenis khusus dari variabel yang digunakan untuk menyimpan reference / memory address dari sebuah method. Jadi method yang biasanya kitab pake dengan cara dipanggil, sekarang bisa juga ditampung jadi sebuah variabel buat dipanggil nanti. 
 Atau malah buat dikirim sebagai `parameter` ke method yang lain.  
@@ -90,7 +93,10 @@ public String ManusiaBerpindahTempat() => "Dengan cara berjalan.";
 public String SupermanBerpindahTempat() => "Dengan cara terbang.";
 ```
 
-### 1. Action
+
+
+## 1. Action
+
 `function` / `Method` sendiri ada 4 jenis.  
 1. Tanpa return value
 2. Dengan parameter dan tanpa return value
@@ -161,7 +167,8 @@ Menghilang
 
 
 
-### 2. Func
+## 2. Func
+
 Kebalikan dari `Action`, `Func` termasuk kategori no. 3 dan 4. `Func` adalah `delegate` yang merujuk ke `Method` yang punya return value.  
 
 Bedanya sama `Action`, karena `Func` ini punya return value, jadi gak ada `Func` yang tanpa Generic. Jadi pasti seminimal mungkin adanya `Func<T>`. `T` disini adalah type dari return value-nya, dan tanpa parameter. Terus yang pake parameter gimana? Yang pake parameter, jumlah `T`-nya mulai dari 2 atau lebih dengan maksimal `T` sampe 17 atau `Func<T1, T2, . . . T16, TResult>`. Dimana 16 `T` yang pertama adalah parameter maksimal, `T` yang terakhir adalah `T` untuk return value.  
@@ -197,7 +204,8 @@ public String CaraBerpindahTempat(IDictionary<String, String> aksiPindah, String
 
 
 
-### 3. Predicate
+## 3. Predicate
+
 Predicate ini secara general adalah `Func` yang return value-nya selalu `Boolean`. Dan bisa dibilang `class` khusus, karena .Net nyediain class `Predicate<T>`.
 
 Cara pakenya? apa? apa? cara pakenya? gampang!
@@ -246,7 +254,8 @@ if (anggotaBanyak)
 
 
 
-### 4. IIFE
+## 4. IIFE
+
 `IIFE` tu apa sik? `IIFE` adalah singkatan dari Immediately Invoked Function Expression.  
 
 Sebenernya `IIFE` ini awal mulanya dari javascript. Javascript sendiri memang menganggap `function` adalah first-class citizen. Artinya `function` yang bisa disimpen di dalem variabel, `function` yang dilempar jadi parameter `function` yang lain itu semua udah biasa banget. Normal. Gadak yang aneh.  

@@ -1,20 +1,23 @@
+---
+tags:
+- CSharp
+- C#
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# Collection Pipeline
 
-
-
-## [.Net] Collection Pipeline
 `Collection` secara general me-refer ke `Array`, `List`, `Dictionary` atau object yang memiliki anak yang lebih dari 1 dan bisa diiterasi / loop. 
 Sedangkan `Pipeline` me-refer ke fungsi dari suatu code / app yang bisa menerima input dari fungsi / app lain lalu memprosesnya kemudian menghasilkan output yang masih bisa diproses oleh fungsi lain. 
 Kalau digabungkan, `Collection Pipeline` adalah `Pipeline` yang menerima input dan menghasilkan output dalam bentuk `Collection`.  
@@ -26,12 +29,13 @@ Semuanya me-refer ke `Collection Pipeline`. Buat bahasan di .Net kita akan pake 
 
 
 
-### 1. Select
+## 1. Select
+
 Secara konsep fungsi `Select` ini disebut juga `Map`. `Select` / `Map` ini tugasnya adalah menerima `Collection`, mentransformasi si input tadi menjadi `Collection` dalam bentuk yang berbeda.  
 
 Flow-nya adalah kaya di bawah ini.  
 
-![Select flow](img\BungaMatahari-CollectionPipeline-Select.png)
+![Select flow](_media\BungaMatahari-CollectionPipeline-Select.png)
 
 Misal, kita punya data kaya gini.  
 
@@ -285,11 +289,12 @@ Yaitu menggunakan dollar-sign `$` di depan `string`-nya terus menggunakan kurung
 
 
 
-### 2. Where
+## 2. Where
+
 `Where` juga disebut `Filter`. `Where` / `Filter` ini tugasnya adalah menerima `Collection`, memilih si input tadi berdasarkan kriteria / predikat, lalu menghasilkan output `Collection` yang sesuai dengan kriteria / predikat yang disebutkan.  
 Flow-nya adalah kaya di bawah ini.  
 
-![Where flow](img\BungaMatahari-CollectionPipeline-Where.png)
+![Where flow](_media\BungaMatahari-CollectionPipeline-Where.png)
 
 Misal lagi nih, dari data nama-nama tersebut mau diambil yang memiliki kata-kata 'el'.
 
@@ -431,11 +436,12 @@ Di numbering-nya, karena di posisi ketiga kita nge-filter nama yang udah tertran
 
 
 
-### 3. Sort
+## 3. Sort
+
 Sort di .Net menggunakan method `OrderBy`, `ThenBy`, `OrderByDescending`, dan `ThenByDescending`. Tugasnya? udah pasti buat ngurutin data berdasarkan `key`. 
 Flow-nya kaya di bawah ini.
 
-![Sort flow](img\BungaMatahari-CollectionPipeline-Sort.png)
+![Sort flow](_media\BungaMatahari-CollectionPipeline-Sort.png)
 
 Nah, `key` ini apa? `Key` ini adalah object yang digunakan sebagain acuan urutan. Misal, kalo di kelas dulu sewaktu preman sama boss preman masih sekolah. 
 Mereka diabsen secara berurutan berdasarkan abjad pertama dari nama mereka. 
@@ -589,13 +595,13 @@ Hasil run-nya adalaaaaahh ... jeng jeng jeng jeng ...
 
 
 
-### 4. Aggregate
+## 4. Aggregate
 
 Secara konsep `Aggregate` ini sering disebut `Reduce`.  `Reduce` seperti nama panggilannya, tugasnya adalah me-reduce atau mengurangi. Atau lebih tepatnya memperciut. Apa yang diperciut? Adalah jumlah butir (item) dari sebuah`Collection`.
 
 Flow-nya kaya di bawah ini.
 
-![Aggregate flow](img\BungaMatahari-CollectionPipeline-Aggregate.png)
+![Aggregate flow](_media\BungaMatahari-CollectionPipeline-Aggregate.png)
 
 Contoh paling dekat adalah fungsi `SUM` yang ada di bahasa SQL. `SUM` memperciut butir `Collection` yang tadinya ada sekian menjadi hanya sebuah atau satu hasil. Misalkan ada `Collection` yang berisikan 3 butir `integeter`, dengan `SUM` 3 butir tadi dijumlahkan menjadi satu hasil.
 
@@ -713,3 +719,7 @@ Dan semuanya setuju, dan pada akhirnya semua anak buah mendapat bantuan dengan m
 Begitulah kehidupan Bos Preman dan anak buahnya berjalan seperti biasa kembali.
 
 
+
+Resources:
+
+- [Draw.io diagram](_media/BungaMatahari-CollectionPipeline.xml)

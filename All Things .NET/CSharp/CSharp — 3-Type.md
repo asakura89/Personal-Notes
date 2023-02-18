@@ -1,21 +1,25 @@
+---
+tags:
+- CSharp
+- C#
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# Type
 
+## 1. `var`
 
-
-## [.Net] Type
-### 1. `var`
 Keyword `var` biasanya rame di bahasa-bahasa pemrograman yang dynamic. Dynamic disini maksudnya adalah bahasa yang weakly-typed atau loosely-typed. Apa bahasa weakly-typed? Bahasa weakly-typed adalah bahasa pemrograman yang gak harus nulis type dari variable sewaktu deklarasi dan inisialisasi. Sedangkan C# .Net adalah bahasa yang harus ditulis type-nya sewaktu deklarasi dan inisialisasi. Maka dari itu, C# .Net ini strong-typed.
 
 ```c#
@@ -129,7 +133,8 @@ var situs = new[] {
 
 
 
-### 2. `dynamic`
+## 2. `dynamic`
+
 `dynamic` adalah keyword yang dikenalin di C# 4. Ini untuk mengakomodasi semua fitur bahasa dynamic ke C#. YEEEEEEEYYY!!
 
 `dynamic` ini juga dibawa tandem dengan DLR (Dynamic Language Runtime) yang dibangun di atas CLR (Common Language Runtime)-nya .Net.
@@ -154,7 +159,8 @@ Kenapa error? Karena type aktual dari `var` akan ditentukan ketika value-nya dii
 
 
 
-### 3. Anonymous
+## 3. Anonymous
+
 Anonymous type, juga dikelanin semenjak C# 3, adalah type yang enggak ada actual class-nya sebagain template.
 
 Ini contoh normal type.

@@ -4,7 +4,7 @@ tags:
 date: 2022-07-25
 ---
 
-# All Things .NET — IIS Log Investigation
+# IIS Log Investigation
 
 ## IIS Log / Event Log tools
 

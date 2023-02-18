@@ -1,23 +1,29 @@
+---
+tags:
+- CSharp
+- C#
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# CSharp String
 
-
-
-## [.Net] String
 Tipe data `string` memang paling populer dan paling gampang untuk dipake. Apapun data yang mau dipake di app, paling gampang make tipe data `string` buat nampung nilainya. 
 
-### 1. Dasar
+
+
+## 1. Dasar
+
 `String` paling dasar adalah variabel yang diisi dengan value yang diapit oleh kutip dua. Kalo di dalem suatu `string` ada karakter `\` (backslash) maka akan diperlakukan sebagai `character escapes`. Jadi kalo mau meng-include karakter backslash sebagai bagian dari `string`, harus di-escape pake backslash lagi. Kalo enggak nanti karakter setelah backslash-nya akan di-escape. 
 `Characted escapes` yang paling sering dipake adalah:
 
@@ -47,7 +53,8 @@ Karena kombinasi `\r\n` adalah Enter kalo di Windows. Sedangkan di Linux atau ya
 
 
 
-### 2. Multi-line String
+## 2. Multi-line String
+
 Multi-line string sebenernya bisa didapet dengan banyak cara. Salah satunya contoh `string` di atas. Pake `\r\n`. Atau bisa juga pake `verbatim string`. 
 
 Apa itu `verbatim string`? `Verbatim string` adalah `string` yang gak perlu di-escape. Kecualiiiii, kecuali nih double quote `"`. Karena walaupun gak perlu di-escape, pada dasarnya kan `string` sendiri diapit double-quote.  
@@ -85,7 +92,8 @@ Kunci multi-line-nya ada di method `AppendLine()`. Dan buat menghasilkan `string
 
 
 
-### 3. Interpolation / penyisipan kata
+## 3. Interpolation / penyisipan kata
+
 Sebelum ada `String Interpolation` dari C# 6, kita kalo mau nyisipin variabel ke dalem `string` tertentu, seringnya `String.Format` yang dipake.
 
 ```C#
@@ -162,7 +170,8 @@ Ikan Tongkol
 
 
 
-### 4. Concatenation / rentetan kata
+## 4. Concatenation / rentetan kata
+
 Rentetan kata atau penggabungan kata paling simpel udah pasti pake operator plus (`+`).  
 
 ```C#
@@ -203,7 +212,8 @@ var hamlet = new StringBuiler()
 
 
 
-### 5. Split
+## 5. Split
+
 Suatu hari Bang Preman disuruh sama boss-nya buat nyairin duit dari invoice yang ditemuin di tengah jalan depan warung Mpok Romlah. Jadi invoice ini adalah tagihan buat dagangan yang dititipin penjual aslinya ke warung Mpok Romlah. Boss-nya pesen kalo buat bisa nyairin nota tagihan ini, Mpok Romlah bakal nanya informasi seputar dagangannya.  
 
 Boss Preman yang cerdik langsung ngeuh kalo informasi dagangan untuk nota tagihan yang dipegang oleh Bang Preman itu berbentuk `String` unik. `String` unik yang dimaksud tidak lain dan tidak bukan 2 baris pertama dari nota. Karena baris ketiganya adalah total yang ditagih.  
@@ -274,7 +284,8 @@ var terpotong = stringUnik.Split('-', StringSplitOptions.RemoveEmptyEntries);
 
 
 
-### 6. Substring
+## 6. Substring
+
 Setelah `String` uniknya dipotong-potong pake `.Split()`, Bang Preman pun ngelanjutin dengan nyomot-nyomot `String`-nya pake `Subtring`. 2 Digit di depan dan 2 digit setelahnya.  
 
 ```C#
@@ -350,7 +361,8 @@ Setelah itu, Bang Prem dan Boss Prem meraup keuntungan dan bisa ongkang-ongkang 
 
 
 
-### 7. Awalan dan akhiran
+## 7. Awalan dan akhiran
+
 Biasanya kalo ada `String` yang terformat dengan pola tertentu, kita akan gampang ngolahnya. Mungkin cuma dengan `Split` sama `Substring` aja kita udah dapet hasil yang kita mau. Selain itu ada juga yang cuma butuh prefix dan postfix dari `String` tersebut untuk dapet hasil yang sesuai.  
 
 Misal ada kasus dimana kita lagi butuh nyusun file-file log yang kita ambil dari server. Contoh name file-nya mungkin kaya di bawah ini.  
@@ -428,7 +440,8 @@ D:\temp\analysis\log\prod\APC\personal-blog\u_ex201010_x.log
 
 
 
-### 8. Replace
+## 8. Replace
+
 Dari file-file log tadi kita mau tau tanggal dari masing-masing log, karena penamaan log file-nya udah sesuai tanggal misalnya.  
 
 Kita bisa manfaatin `.Replace()` buat ganti kata-kata tertentu jadi kata-kata yang kita mau. Dalam kasus log file ini kita mau ganti semua yang bukan tanggal jadi `String` kosong misalnya.  

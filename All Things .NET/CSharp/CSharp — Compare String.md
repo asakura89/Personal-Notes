@@ -1,6 +1,6 @@
 ---
 tags:
-- Snippet
+- C#
 - CSharp
 - Benchmark
 date: 2022-12-24

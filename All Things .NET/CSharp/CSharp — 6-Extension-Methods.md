@@ -1,20 +1,23 @@
+---
+tags:
+- CSharp
+- C#
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# Extension Methods
 
-
-
-## [.Net] Extension Methods
 `Extension Methods` merupakan salah satu fitur C# 3 yang paling membantu. Kenapa? karena, `Extension Methods` bisa bikin seakan suatu `class` punya suatu `method` yang kita define tanpa harus ngerubah isi `class` tersebut. 
 `Extension Methods` ini biasanya dipake buat memodifikasi `class` yang gak bisa diubah langsung. Atau paling sering dipake buat `util class` / `helper class` (`class`-`class` kecil yang dipake dan dipanggil dari berbagai macam `class` lain yang punya logic yang simple dan digunakan sebagai alat pembantu). 
 Syarat `Extension Methods` ini adalah harus ditaro di `static class`, terus harus berupa `static method`, harus menggunakan keyword `this` pada parameter pertama yang mana parameter pertamanya adalah `class` yang mau di-extend.  

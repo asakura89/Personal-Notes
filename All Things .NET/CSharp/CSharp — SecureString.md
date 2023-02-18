@@ -1,6 +1,6 @@
 ---
 tags:
-- Snippet
+- C#
 - CSharp
 - Security
 date: 2022-11-29

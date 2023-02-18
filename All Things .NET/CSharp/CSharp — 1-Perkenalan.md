@@ -1,21 +1,26 @@
+---
+tags:
+- CSharp
+- C#
+- Unfinished-note
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
+# Perkenalan CSharp
 
+## 1. Entry Point
 
-
-## [.Net] Perkenalan
-### 1. Entry Point
 Semua apps yang dibuat pake C# .Net, atau .Net tanpa memandang bahasa lebih tepatnya, memiliki entry point. Terkecuali web, atau yang dibuat dengan ASP.Net. 
 Karena web apps memiliki life cycle (urutan seuatu web app dieksekusi). Apps yang berjenis desktop, kaya WinForm, WPF, dan Console, entry point-nya dimulai dari method `Main`.  
 
@@ -29,7 +34,8 @@ class Program {
 
 
 
-### 2. Constructor
+## 2. Constructor
+
 Sewaktu class dipanggil, baris code yang pertama kali dijalanin adalah baris code yang ada di `constructor`. `constructor` adalah method dengan nama yang sama dengan nama class, tapi gak punya return value. 
 Atau gak ada nilai yang balikin dari method itu. Biasanya method ini punya keyword `void` (method yang gak balikin nilai). Tapi `constructor` ini method khusus, jadi gak punya keyword `void` juga.  
 
@@ -49,7 +55,8 @@ class Program {
 
 
 
-### 3. Deklarasi
+## 3. Deklarasi
+
 Tahap deklarasi adalah tahapan sewaktu variabel dibuat. Apakah diberi nilai atau enggak.
 
 ```c#
@@ -64,7 +71,8 @@ class Program {
 
 
 
-### 4. Inisialisasi
+## 4. Inisialisasi
+
 Tahap inisialisasi adalah tahapan sewaktu variabel diberi nilai.
 
 ```c#
@@ -86,7 +94,8 @@ class Program {
 }
 ```
 
-#### 4.1. Array Initializers
+### 4.1. Array Initializers
+
 ```c#
 class Program {
     static void Main(string[] args) {
@@ -116,7 +125,8 @@ class Program {
 
 
 
-#### 4.2. Object Initializers
+### 4.2. Object Initializers
+
 ```c#
 public class Koordinat {
     public Double Lintang { get; set; }
@@ -162,15 +172,16 @@ class Program {
 
 
 
-#### 4.3. Property Initializers
+### 4.3. Property Initializers
 
 
 
-#### 4.4. Index Initializers
+### 4.4. Index Initializers
 
 
 
-### 5. Print to Console
+## 5. Print to Console
+
 Apa itu `Console`? `Console` adalah program yang beroperasi di lingkungan text hitam putih. Biasanya program-program yang dibuat bekerja di lingkungan ini adalah program yang kecil, simpel, dan melakukan operasi yang gak kompleks. 
 Atau bisa juga untuk program yang gak perlu banyak input dari pengguna.  
 
@@ -185,11 +196,12 @@ class Program {
 }
 ```
 
-![Print to Console](img\2020-03-27_22-20-53.png)
+![Print to Console](_media\2020-03-27_22-20-53.png)
 
 
 
-### 6. Membuat Library
+## 6. Membuat Library
+
 Library disini adalah file `.dll`. Atau file yang bisa digunakan program yang lain. 
 Misalkan ada program A mau nampilin kalimat "Budi pergi ke Sekolah". Terus ada program B mau nampilin kalimat yang mirip, yaitu "Sakha pergi ke Sekolah".
 Karena secara pola, kedua program itu sama-sama ngelakuin hal yang sama, cuma beda di nama orangnya aja. 
@@ -250,11 +262,12 @@ class ProgramB {
 }
 ```
 
-![Library](img\2020-03-27_22-52-45.png)
+![Library](_media\2020-03-27_22-52-45.png)
 
 
 
-### 7. Membuat variabel dan memberi nilai
+## 7. Membuat variabel dan memberi nilai
+
 Semua operasi app pasti butuh variabel. Semua nilai yang di dibaca dari file, diambil dari database, atau bisa juga dari internet, disimpan ke memory untuk dipake di dalem app dengan menggunakan variabel. 
 
 ```c#
@@ -276,7 +289,8 @@ class Program {
 
 
 
-### 8. Nilai standar
+## 8. Nilai standar
+
 Kalo variabel gak diberi nilai, secara otomatis variabel itu akan diberi nilai standar / default value.
 
 ```c#
@@ -314,11 +328,12 @@ Kalo mau ngeliat nilai standar sebelum diinisialisai, cuma bisa diliat lewat `de
 Karena kalo variabelnya ditampilin / di-print ke console, bakal ada error message sewaktu di-compile. Jadi gak bisa di-compile terus dijalanin. 
 Error ini adalah error dari compiler yang ditampilin sewaktu ada variabel yang mau dipake tapi gak diinisialisasi dulu.
 
-![Nilai standar](img\2020-03-28_19-16-35.png)
+![Nilai standar](_media\2020-03-28_19-16-35.png)
 
 
 
-### 9. Nilai tetap
+## 9. Nilai tetap
+
 Sama kaya namanya, nilai tetap ini gak bisa diubah setelah diberi nilai. Ada 2 nilai tetap di C#. Yang satu `readonly`. Yang satu lagi `const`. 
 Bedanya kalo `const`, nilainya sama sekali gak bisa diubah dan gak diambil dari variabel manapun. Jadi nilainya adalah nilai dirinya sendiri. 
 Sedangkan `readonly`, nilainya cuma bisa diberi / diisi sebaris / inline sewaktu deklarasi atau di `constructor`.
@@ -348,11 +363,12 @@ class Program {
 }
 ```
 
-![Nilai tetap](img\2020-05-17_204428.png)
+![Nilai tetap](_media\2020-05-17_204428.png)
 
 
 
-### 10. Field
+## 10. Field
+
 Misalkan, ada objek nyata bernama Orang memiliki atribut Tinggi, Berat, Mata, Rambut. Semua atribut ini memiliki nilai. Jika dipetakan ke sebuah OOP template atau class di C#, maka disebut juga dengan `Field`. Atribut ini adalah sifat dari OOP. Coba lihat contoh di bawah ini.
 
 ```C#
@@ -382,7 +398,8 @@ public class Orang {
 
 
 
-### 11. Property
+## 11. Property
+
 Awalnya di programming language Java, ada istilah `getter` dan `setter`. Apa itu? `getter` adalah method yang digunakan sebuah object untuk menyamarkan implementasi dari pemberian nilai atau pengambilan nilai pada sebuah atribut atau `Field`. Kok harus disamarkan? Ini mengacu pada `Encapsulation` dari OOP. Yang berhak tau implementasi dari pemberian dan pengambilan nilai pada `Field`, adalah object itu sendiri. Bukan object lain. 
 
 Contohnya adalah object clarissa di *section 10. Field* di atas. Mungkin bisa lihat code di bawah biar lebih jelas penggambarannya.
