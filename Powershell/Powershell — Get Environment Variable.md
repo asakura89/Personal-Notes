@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - Powershell
 - Env-Var
 - Env

@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - Powershell
 - Random
 date: 2020-05-25

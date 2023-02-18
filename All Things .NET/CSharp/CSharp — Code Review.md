@@ -1,6 +1,5 @@
 ---
 tags:
-- .NET
 - CSharp
 - C#
 date: 2021-12-13
@@ -12,13 +11,15 @@ Sebelum mulai, mari tanamkan dalam hati bahwasanya gak ada code yang salah. Kare
 
 
 
-**1. Magic String, Magic Number, Magic Value**
+## 1. Magic String, Magic Number, Magic Value
 
-**Penjelasan**
+### Penjelasan
 
 Magic value ini adalah value yang fixed (bukan gak akan berubah, tapi jarang berubah) dengan tipe data apapun. Nilai ini bisa ditaro di constant kalo memang gak pernah berubah. Atau taro di config file. Cara lain bisa juga ditaro di database.
 
-**Contoh kasus**
+
+
+### Contoh kasus
 
 System login di App yang lagi di-develop pake system Claims. Claims yang dibalikin dari Identity Provider (IDP) punya 3 type. `App.Custom.Claim.Username`, `App.Custom.Claim.Email`, dan `App.Custom.Claim.Role`. Karena 3 type Claim ini gakkan berubah, maka bbisa aja kita taro sbg constant.
 
@@ -32,7 +33,9 @@ Boolean hasRoleClaim = HttpContext
     .HasClaim(claim => claim.Type == "App.Custom.Claim.Role");
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 public class AppClaim {
@@ -47,7 +50,8 @@ Boolean hasEmailClaim = HttpContext
 ```
 
 
-**Contoh kasus #2**
+
+### Contoh kasus #2
 
 App yang lagi di-develop, bisa login dengan 3 cara yang berbeda. OIDC, SAML, dan Custom Claim-based login. Tapi claim yang dibutuhin cuma 3, yaitu Username, Email, dan Role. Maka, value tadi bisa dimasukin ke config / database. Artinya configurable. Dan ada mapping-nya. Masing-masing `ClaimService` bakal punya `GetUsernameClaim` atau `GetEmailClaim` dan `GetRoleClaim`-nya sendiri-sendiri.
 
@@ -73,7 +77,9 @@ public static class AppConstant {
 }
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 Claim oidcUsernameClaim = new OIDCClaimService().GetUsernameClaim();
@@ -98,15 +104,17 @@ public class SAMLClaimService {
 
 
 
-**2. Menggabungkan constant dalam satu class**
+## 2. Menggabungkan constant dalam satu class
 
-**Penjelasan**
+### Penjelasan
 
 Constant yang digabung dalam 1 class enggak menunjukkan separation of concern. Separation of concern adalah hanya class tertentu yang tau untuk melakukan suatu hal. Misal, ada Edit User, maka class yang punya pengetahuan untuk memodifikasi user ya `UserService` misalnya. Begitupun constant.
 
 Tapi biasanya constant ini enggak berdisi sendiri. Misal ada `UserService` terus ada `UserContant`. Atau ada `DbConstant` atau constant-constant yang lain. Karena biasanya constant ini dipake dengan tujuan yang sejalan dengan class yang manggil constant ini.
 
-**Contoh kasus**
+
+
+### Contoh kasus
 
 Ada 2 cara mengambil `UsernameClaim`, dengan OIDC atau dengan SAML.
 
@@ -132,7 +140,9 @@ public static class AppConstant {
 }
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 Claim oidcUsernameClaim = new OIDCClaimService().GetUsernameClaim();
@@ -157,13 +167,15 @@ public class SAMLClaimService {
 
 
 
-**3. String yang hanya dipanggil sekali**
+## 3. String yang hanya dipanggil sekali
 
-**Penjelasan**
+### Penjelasan
 
 String yang dipanggil sekali, ghak perlu dijadiin constant. Karena tujuan constant adalah biar gak typo dimana-mana.
 
-**Contoh kasus**
+
+
+### Contoh kasus
 
 Ada 2 cara mengambil `UsernameClaim`, dengan OIDC atau dengan SAML.
 
@@ -188,7 +200,9 @@ public class SAMLClaimService {
 }
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 Claim oidcUsernameClaim = new OIDCClaimService().GetUsernameClaim();
@@ -209,13 +223,15 @@ public class SAMLClaimService {
 
 
 
-**4. Linq `.Any()`**
+## 4. Linq `.Any()`
 
-**Penjelasan**
+### Penjelasan
 
 Code `.Count() > 0` atau `.Count() != 0` atau `.Length > 0` atau `.Length != 0`, umum banget untuk nentuin suatu list atau array ada isinya atau enggak. Sah-sah aja. Tapi ada cara lain yang lebih gampang buat dibaca. Pake `.Any()`
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 IList<String> selectedUsernameList = ListBoxUser
@@ -235,7 +251,9 @@ if (selectedUsernameArray.Length > 0)
     return "Users were selected.";
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 IList<String> selectedUsernameList = ListBoxUser
@@ -257,19 +275,23 @@ if (selectedUsernameArray.Any())
 
 
 
-**5. `using namespace`**
+## 5. `using namespace`
 
-**Penjelasan**
+### Penjelasan
 
 Kadang ada aja developer yang kebiasaan manggil class beserta namespace-nya. Ya gak salah. Tapi jadi bikin panjang code-nya jadi makin ke kana aja. Dan harus scroll-scroll.
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 System.Data.DataTable employeData = employeeService.GetAllEmployeeData();
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 using System.Data;
@@ -279,13 +301,15 @@ DataTable employeData = employeeService.GetAllEmployeeData();
 
 
 
-**6. Pemanggilan method langsung di flow control**
+## 6. Pemanggilan method langsung di flow control
 
-**Penjelasan**
+### Penjelasan
 
 Ini bakal bikin hasil dari method tersebut gak bisa di-debug dengan gampang. Dan kalo nama method-nya panjang bisa jadi sulit dibaca logic-nya.
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 if (new EmployeeService().GetAllEmployeeData() != null) {
@@ -298,7 +322,9 @@ else if (new EmployeeService().GetAllEmployeeData().Rows.Count() > 0) {
 
 Selain dari `.GetAllEmployeeData()` dipanggil 2x, class `EmployeeService` juga di-create 2x. Kalo operasi ini memakan resource, apakah CPU, RAM, atau log running task, ya bakal ngaruh banget ke performance dari App.
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 var employeeService = new EmployeeService();
@@ -314,13 +340,15 @@ else if (employeData.Rows.Count() > 0) {
 
 
 
-**7. Penamaan lambda parameter**
+## 7. Penamaan lambda parameter
 
-**Penjelasan**
+### Penjelasan
 
 Ini adalah contoh paling banyak kejadiannya. Nama parameter yang umum dipake biasanya `x`, `fld`, `field`.
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 String contactName = dbContext
@@ -329,7 +357,9 @@ String contactName = dbContext
     .FirstOrDefault(fld => fld.Name);
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 String contactName = dbContext
@@ -340,13 +370,15 @@ String contactName = dbContext
 
 
 
-**8. Logic control flow / predicate yang terlalu panjang**
+## 8. Logic control flow / predicate yang terlalu panjang
 
-**Penjelasan**
+### Penjelasan
 
 Antara gunakan maksimal hanya 2 predicate dalam 1 control flow atau parameter yang menerima predicate untuk mengurangi kompleksit. Atau boleh di-enter ke bawah untuk readability.
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 IEnumerable<String> contacts = dbContext
@@ -359,7 +391,9 @@ if (contacts != null && contacts.Count() != 0 && contacts.Count() > 0) {
 }
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 IEnumerable<String> contacts = dbContext
@@ -377,7 +411,9 @@ if (isntNull && hasItems) {
 }
 ```
 
-**Atau**
+
+
+### Atau
 
 ```C#
 Func<Contact, Boolean> createdBeforeDec2021 = contact => contact.CreatedDate < new DateTime(2021, 12, 1);
@@ -399,7 +435,9 @@ if (isntNull && hasItems) {
 }
 ```
 
-**Atau**
+
+
+### Atau
 
 ```C#
 Func<Contact, Boolean> createdBeforeDec2021 = contact => contact.CreatedDate < new DateTime(2021, 12, 1);
@@ -425,37 +463,47 @@ if (validContacts) {
 
 
 
-**9. Penggabungan String yang panjang**
+## 9. Penggabungan String yang panjang
 
-**Penjelasan**
+### Penjelasan
 
 Dynamic String adalah kewajiban. Dan umum banget dimana-mana. Menaggulanginya bisa dengan 2 cara, string interpolation (c# 6 ke atas) atau `StringBuilder`. Ini untuk meningkatkan readability. Walaupun sebenernya udah ada `String.Format` tapi untuk readability masih lebih baik string interpolation.
 
-**Contoh**
+
+
+### Contoh
 
 ```C#
 String apiUrl = "https://api.orenosaito.co.jp/" + apiVersion + "/user/" + userId;
 ```
 
-**Atau**
+
+
+### Atau
 
 ```C#
 String apiUrl = String.Format("https://api.orenosaito.co.jp/{0}/user/{1}", apiVersion, userId);
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 String apiUrl = $"https://api.orenosaito.co.jp/{apiVersion}/user/{userId}";
 ```
 
-**Contoh lain**
+
+
+### Contoh lain
 
 ```C#
 String errorMessage = "Operation cannot be carried out becaus of: " + reason + ", by user: " + username + " with role: " + role + "\r\nOriginal exception was: " + ex.Message + "with stack trace: " + ex.StackTrace;
 ```
 
-**Seharusnya**
+
+
+### Seharusnya
 
 ```C#
 String errorMessage = new StringBuilder()

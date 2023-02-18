@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - Powershell
 - Directory
 date: 2022-09-04

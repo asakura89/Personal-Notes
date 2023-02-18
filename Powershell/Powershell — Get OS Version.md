@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - Powershell
 - OS Version
 date: 2020-05-25

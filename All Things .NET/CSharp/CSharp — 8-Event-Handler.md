@@ -1,17 +1,20 @@
+---
+tags:
+- CSharp
+- C#
+- Unfinished-note
+date: 2021-08-14
+---
+
 <p>
-  <h1 align="center">Kelompok Belajar Bunga Matahari</h1>
-  <h3 align="center" style="margin-top: -2em;">Coding sudah seharusnya menyenangkan!</h3>
-  <h5 align="center" style="margin-top: -0.5em;">
-    <a href="https://github.com/asakura89/BisaCSharp.git">asakura89</a> /
-    <a href="https://choosealicense.com/licenses/unlicense/">UNLICENSE</a>
+  <h1 style="text-align:center;font-size:1.25em;margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25">Kelompok Belajar Bunga Matahari</h1>
+  <h3 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">Coding sudah seharusnya menyenangkan!</h3>
+  <h5 style="text-align:center;font-size:16px;margin-top:0;margin-bottom:16px;line-height:1.5">
+    <a href="https://github.com/asakura89">asakura89</a> /
+    <a href="https://opensource.org/licenses/0BSD">BSD Zero Clause</a>
   </h5>
-  <!-- use MistyLightWindows theme -->
 </p>
 
 
 
-[TOC]
-
-
-
-## [.Net] Event Handler
+# Event Handler

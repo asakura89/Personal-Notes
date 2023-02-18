@@ -1,3 +1,13 @@
+---
+tags:
+- CSharp
+- C#
+date: 2020-06-28
+---
+
+# Type dari string
+
+```C#
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -92,3 +102,4 @@ namespace TypeDariString {
         }
     }
 }
+```

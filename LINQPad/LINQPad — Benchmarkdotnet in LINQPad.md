@@ -1,6 +1,5 @@
 ---
 tags:
-- Snippet
 - CSharp
 - LINQPad
 date: 2022-12-24
