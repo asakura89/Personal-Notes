@@ -2,6 +2,7 @@
 tags:
 - Research
 - Learn
+- Unfinished-note
 date: 2023-02-26
 ---
 
@@ -76,9 +77,23 @@ Debugging is an act to track down programming errors
 
 ## Visual Studio (Low level debugging)
 
+### Analyze logic flow
+
 1. Use breakpoints
 2. Use conditional breakpoints
-3. Use Watch window
-4. Use Locals window
-5. Use Call-stack (optional to breakpoints step-through)
-6. Use Diagnostic tools
+3. Use Call-stack (optional to breakpoints step-through)
+
+
+
+### Analyze variable/data values
+
+1. Use Watch window
+2. Use Locals window
+3. Use Data visualizer
+
+
+
+### Analyze performance and hidden logic flow
+
+1. Use Diagnostic tools
+

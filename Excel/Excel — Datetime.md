@@ -1,9 +1,6 @@
 ---
 tags:
-- How-to
 - Excel
-links:
-https://exceltrick.com/how_to/subtract-dates-and-times-in-excel#Get_Difference_Between_Two_Dates_with_Time_in_Hours
 date: 2023-02-25
 ---
 
@@ -23,4 +20,9 @@ Hasilnya:
 
 ![img](_media/20230225_185829_image.png)
 
+
+
+References:
+
+1. [How to Subtract Dates and Times in Excel (exceltrick.com)](https://exceltrick.com/how_to/subtract-dates-and-times-in-excel#Get_Difference_Between_Two_Dates_with_Time_in_Hours)
 
