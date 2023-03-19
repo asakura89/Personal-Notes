@@ -3,6 +3,7 @@ tags:
 - Research
 - Concept
 - Thoughts
+- Unfinished-note
 date: 2021-05-01
 ---
 
@@ -11,6 +12,10 @@ date: 2021-05-01
 ## Konsep logging Stackify
 
 
-> Quote here.
->
-> &mdash; <cite>Benjamin Franklin</cite>
+## Jenis logging
+
+### Info
+
+### Debug
+
+### Error
