@@ -33,3 +33,21 @@ Nah tapi fiturnya apa nih si google translate? Di pojok kiri bawah dari kotak tr
 Writing ini harusnya adalah kemampuan yang paling umum untuk lebih baik daripada kemampuan pronounce. Karena ketika kita ngebaca, ngeliat, tulisan dari Inggris, kita bisa langsung pake tanpa mikirin bunyinya apa. Pronounce-nya apa. Tap yang jadi masalah ketika mau nulis untuk corporate atau enterprise. Karena grammar dan struktur harus bener.
 
 Tool-tool bantuan buat ngebantu nulis Inggris, ada 2 yang pernah gue coba. Microsoft Editor dan Grammarly. Buat Microsoft Editor di-bundle sama Microsoft 365. Jadi gak bisa dibilang gratis lah ya. Kalo Grammarly ada yang gratis dengan fitur terbatas pastinya. Tapi overall, 2 tool ini ngebantu banget.
+
+
+
+## Listening
+
+Cara kita dengan gampang buat mengingat banyak perbendaharaan kata, dan ini berlaku untuk semua bahasa, adalah belajar mendengar. Listening ada banyak cara.
+
+Jaman dulu dengan cara dengerin lagu-lagu barat. Dengerin kaset percakapan bahasa Inggris. Jaman sekarang lebih banyak lagi caranya.
+1. Podcast bahasa Inggris
+    1. https://www.allearsenglish.com/
+    2. https://www.americanenglishpodcast.com/
+    3. dan banyak lagi yang lain
+2. Film bahasa Inggris
+3. Game
+4. Audiobook
+5. Lagu barat
+
+Dan yang paling efektif adalah dengerin audiobook dan dengerin lagu-lagu barat. Karena Audiobook, ya, buku. Jadi ada versi teks dan ada versi audio. Begitupun Lagu barat, ada lirik dan ada lagunya. Karena bahasa Inggris itu bukan bahasa yang fonetik. Artinya apa yang ditulis sama bunyinya dengan yang disebut, kaya bahasa Jepang atau bahasa Indo.
