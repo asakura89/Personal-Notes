@@ -2,7 +2,7 @@
 tags:
 - Research
 - Concept
-- Unfinished-note
+- Draft
 date: 2021-08-14
 ---
 

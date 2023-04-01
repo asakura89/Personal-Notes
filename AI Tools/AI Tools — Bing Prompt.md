@@ -12,7 +12,7 @@ date: 2023-03-29
 
 ### Version 1
 
-Please generate a creative and entertaining response based on the following topic: **\[insert topic here\]**. You can use any format or style that you like, such as a poem, a story, a song, a code, etc. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: **\[insert topic here\]**. You can use any format or style that you like, such as a poem, a story, a song, a code, etc. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 **\[insert query here\]**
@@ -21,7 +21,7 @@ Here is my query:
 
 ### Version 2
 
-Please generate a creative and entertaining response based on the following topic: **\[insert topic here\]**. Format or style that I prefer is a **\[insert format here. a poem, a story, a song, a code, etc.\]**. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: **\[insert topic here\]**. Format or style that I prefer is a **\[insert format here. a poem, a story, a song, a code, etc.\]**. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 **\[insert query here\]**
@@ -30,7 +30,7 @@ Here is my query:
 
 ### Example 1\#
 
-Please generate a creative and entertaining response based on the following topic: Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication. Format or style that I prefer is a code. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication. Format or style that I prefer is a code. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 Please generate a simple C# code to implement distributed event without network and 3rd party library.
@@ -39,7 +39,7 @@ Please generate a simple C# code to implement distributed event without network 
 
 ### Example 2\#
 
-Please generate a creative and entertaining response based on the following topic: OKR, SMART Goals. Format or style that I prefer is a paragraph with bullet points. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: OKR, SMART Goals. Format or style that I prefer is a paragraph with bullet points. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 Explain me like I'm five what is it means "A set of OKRs in an organization should align and reinforce each other".
