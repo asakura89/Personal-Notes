@@ -2,7 +2,7 @@
 tags:
 - How-to
 - Excel
-- Unfinished-note
+- Draft
 date: 2022-07-08
 ---
 
