@@ -2,7 +2,7 @@
 tags:
 - CSharp
 - C#
-- Unfinished-note
+- Draft
 date: 2021-08-14
 ---
 
@@ -94,7 +94,7 @@ class Program {
 }
 ```
 
-### 4.1. Array Initializers
+### 4.1. Array Initializer
 
 ```c#
 class Program {
@@ -103,7 +103,7 @@ class Program {
         var arrayKedua = new string[3] { "Ini", "array", "kedua" };
         var arrayKetiga = new string[] { "Ini", "aray", "ketiga" };
         var arrayKeempat = new[] { "Ini", "array", "keempat" };
-        var arrayKelima = { "Ini", "array", "kelima" }; // → tidak akan ter-compile karena tidak ada informasi type. walaupun C# udah mulai merambah ke dynamic typing, sejatinya C# tetap bahasa strong-typed.
+        var arrayKelima = { "Ini", "array", "kelima" }; // → gak akan bisa di-compile karena gak ada informasi type. walaupun C# udah mulai merambah ke dynamic typing, sejatinya C# tetap bahasa strong-typed.
         string[] arrayKeenam = { "Ini", "array", "keenam" };
     }
 }
@@ -125,7 +125,61 @@ class Program {
 
 
 
-### 4.2. Object Initializers
+### 4.2. Collection Initializer
+
+Ini mirip sama `Array Initializer`. Cuma, ini untuk collection, bukan untuk array.
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var collectionPertama = new List<String> { "Ini", "collection", "kedua" };
+        var collectionKedua = new Dictionary<Int32, String> {
+            { 1, "One" },
+            { 2, "Two" },
+            { 3, "Three" }
+        };
+
+        List<String> collectionKetiga = { "Ini", "collection", "kedua" };  // → gak akan bisa di-compile karena bagian initialize value-nya akan otomatis dideteksi sebagai `Array Initializer`.
+        List<String> collectionKeempat = new { "Ini", "collection", "kedua" };  // → gak akan bisa di-compile karena bagian initialize value-nya akan otomatis dideteksi sebagai `Anonymous Type Initializer`.
+
+        Dictionary<Int32, String> collectionKelima = {
+            { 1, "One" },
+            { 2, "Two" },
+            { 3, "Three" }
+        }; // → gak akan bisa di-compile karena bagian initialize value-nya akan otomatis dideteksi sebagai `Array Initializer`.
+
+        Dictionary<Int32, String> collectionKeenam = new {
+            { 1, "One" },
+            { 2, "Two" },
+            { 3, "Three" }
+        }; // → gak akan bisa di-compile karena bagian initialize value-nya akan dianggap syntax error.
+    }
+}
+```
+
+Bandingin sama yang ini
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        List<String> collectionPertama = new List<String>();
+        collectionPertama.Add("Ini");
+        collectionPertama.Add("collection");
+        collectionPertama.Add("kedua" );
+
+        Dictionary<Int32, String> collectionKedua = new Dictionary<Int32, String>();
+        collectionKedua.Add(1, "One");
+        collectionKedua.Add(2, "Two");
+        collectionKedua.Add(3, "Three");
+    }
+}
+```
+
+Uniknya dari `Array Initializer` dan `Collection Initializer` udah ada dari jaman C# 1.0 dan .NET Framework 1.0.
+
+
+
+### 4.3. Object Initializer
 
 ```c#
 public class Koordinat {
@@ -144,6 +198,12 @@ class Program {
             Bujur = 106.8249641,
             NamaTempat = "Monumen Nasional"
         };
+
+        var tujuanAnon = new {
+            Lintang = -6.1753924,
+            Bujur = 106.8249641,
+            NamaTempat = "Monumen Nasional"
+        }; // → ini juga valid. ini disebut Anonymous Type Initializer.
     }
 }
 ```
@@ -170,13 +230,99 @@ class Program {
 }
 ```
 
-
-
-### 4.3. Property Initializers
+Object Initializer ini bisa dipake buat nge-initialize Property atau Field ketika suatu Object di-create.
 
 
 
-### 4.4. Index Initializers
+### 4.4. Property Initializer
+
+Property Initializer ini memungkinkan untuk menetapkan nilai standar buat `auto-implemented property`.
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var clarissa = new Clarissa();
+        Console.WriteLine(clarissa.Tinggi);
+        Console.WriteLine(clarissa.Berat);
+        Console.WriteLine(clarissa.Mata);
+        Console.WriteLine(clarissa.Rambut);
+    }
+
+    public class Clarissa {
+        public Single Tinggi { get; set; } = 152.0f;
+        public Single Berat { get; set; } = 87.8f;
+        public String Mata { get; set; } = "Hitam";
+        public String Rambut { get; set; } = "Hitam";
+        public String CatRambut { get; set; }
+    }
+}
+```
+
+Terus. Terus. Kalo property-nya mau di-set nanti aja gimana? Ya bisa aja. Silakan aja tergantung kebutuhan.
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var clarissa = new Clarissa();
+        Console.WriteLine(clarissa.Tinggi);
+        Console.WriteLine(clarissa.Berat);
+        Console.WriteLine(clarissa.Mata);
+        Console.WriteLine(clarissa.Rambut);
+
+        clarissa.CatRambut = "Ungu Cerah";
+        Console.WriteLine(clarissa.CatRambut);
+    }
+
+    public class Clarissa {
+        public Single Tinggi { get; set; } = 152.0f;
+        public Single Berat { get; set; } = 87.8f;
+        public String Mata { get; set; } = "Hitam";
+        public String Rambut { get; set; } = "Hitam";
+        public String CatRambut { get; set; }
+    }
+}
+```
+
+Ini sangat berguna ketika kita ingin memastikan bahwa suatu objek selalu memiliki status yang valid misalnya, bahkan walaupun beberapa properti tidak di-set secara eksplisit.
+
+
+
+### 4.5. Index Initializer
+
+Object yang mau implemen Index Initializer ini, `class`-nya harus punya accessible `Indexer`.
+
+Misal kaya gini
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var collectionPertama = new List<String>(3) {
+            [0] = "Ini",
+            [1] = "collection",
+            [2] = "pertama"
+        }; // → Ini compile error. Walaupun IList punya Indexer, tapi dia gak bisa pake Index Initializer. Karena Ketika List di-initialize, isinya masih kosong sampe diisi dengan `value` menggunakan method `.Add`.
+
+        var collectionKedua = new List<String>(3);
+        Int32 idx = 0;
+        while (idx < 3) {
+            collectionKedua.Add(null);
+            idx++;
+        }
+        collectionKedua[0] = "Ini";
+        collectionKedua[1] = "collection";
+        collectionKedua[2] = "kedua";
+         // ^ Ini code yang valid, tapi ini bukan teknik `Index Initializer`
+
+        var collectionKetiga = new Dictionary<Int32, String> {
+            [1] = "One",
+            [2] = "Two",
+            [3] = "Three"
+        };
+    }
+}
+```
+
+Fitur ini baru mulai ada dari C# 6 dan butuh .NET Framework 4.6 atau .NET Core 1.0.
 
 
 
@@ -467,6 +613,10 @@ public class Clarissa : Orang {
 
 Yang berhak tau dari pengambilan dan proses sebelum pengambilan nilai dari atributnya adalah object clarissa sendiri. Bukan object lain. Dengan kata lain, yang object lain cukup tau adalah apa yang di-expose sebagai `public` aja. Kecuali untuk warna rambut. Object clarissa membolehkan object lain untuk memberi nilai warna rambutnya.
 
+
+
+### 11.1 Property Normal
+
 Code di atas adalah code primitive sewaktu Java mengenalkan konsep `getter`/`setter`. Di C# sendiri, `getter`/`setter` udah built-in di dalam syntax-nya. Jadi code di atas bisa di-refactor dengan menggunakan code berikut.
 
 ```C#
@@ -550,3 +700,229 @@ public class Clarissa : Orang {
 ```
 
 
+
+### 11.2 Auto-Implemented Property
+
+Auto-implemented properties memungkinkan untuk membuat property dengan backing field secara langsung.
+
+Kalo dengan backing field itu kaya yang ada di *section 11.1 Property Normal* di atas.
+
+Yang tanpa backing field ditulis secara langsung contohnya kaya di bawah ini.
+
+```c#
+class Program {
+    static void Main(string[] args) { }
+
+    public class Clarissa {
+        public Single Tinggi { get; set; }
+        public Single Berat { get; set; }
+        public String Mata { get; set; }
+        public String Rambut { get; set; }
+        public String CatRambut { get; set; }
+    }
+}
+```
+
+Perbedaan antara auto-implemented property dan normal property, kalo auto-implemented property, compiler bakal otomatis bikin backing field-nya. Sedangkan normal property, kita harus eksplisit nulis code backing field dan nulis code yang ngeakses backing field-nya.
+
+```c#
+class Program {
+    static void Main(string[] args) { }
+
+    public class Clarissa {
+        Single tinggi;
+        Single berat;
+        Single mata;
+        Single rambut;
+        Single catRambut;
+
+        public Single Tinggi {
+            get { return tinggi; }
+            set { tinggi = value; }
+        }
+
+        public Single Berat {
+            get { return berat; }
+            set { berat = value; }
+        }
+
+        public String Mata {
+            get { return mata; }
+            set { mata = value; }
+        }
+
+        public String Rambut {
+            get { return rambut; }
+            set { rambut = value; }
+        }
+
+        public String CatRambut {
+            get { return catRambut; }
+            set { catRambut = value; }
+        }
+    }
+}
+```
+
+Kalo kita gak butuh logic khusus buat diterapin di getter sama setter-nya, auto-implemented property ini sangat memudahkan.
+
+
+
+## 12. Indexer
+
+Walaupun `Index Initializer` dikenalin di C# 6 dan .NET Framework 4.6, tapi fitur Indexer sendiri dikenalin dari sejak C# 1.0 dan .NET Framework 1.0.
+
+Indexer adalah property special yang dipake buat ngeakses data lewat index. Contoh yang paling umum ya Array sama Dictionary. Padahal jenis Collection lain juga bisa pake Indexer. Contohnya List.
+
+Cara bikin Indexer itu kaya gini ya.
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var data = new IndexedData {
+            [0] = "Zero",
+            [1] = "One",
+            [2] = "Two",
+            [6] = "Six"
+        };
+
+        for (Int32 idx = 0; idx <= 2; idx++)
+            Console.WriteLine(data[idx]);
+
+        Console.WriteLine(data[6]);
+    }
+
+    public class IndexedData {
+        Dictionary<Int32, String> data = new Dictionary<Int32, String>();
+
+        public String this[Int32 index] {
+            get => data[index];
+            set => data[index] = value;
+        }
+    }
+}
+```
+
+Atau bisa gini
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var data = new IndexedData(3) {
+            [0] = 1,
+            [1] = 2,
+            [2] = 3
+        };
+
+        for (Int32 idx = 0; idx <= 2; idx++)
+            Console.WriteLine(data[idx].ToString());
+    }
+
+    public class IndexedData {
+        Int32[] data;
+
+        public IndexedData(Int32 size) {
+            data = new Int32[size];
+        }
+
+        public Int32 this[Int32 index] {
+            get => data[index];
+            set => data[index] = value;
+        }
+    }
+}
+```
+
+Atau juga bisa gini
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var data = new IndexedData {
+            [0] = "Zero",
+            [1] = "One",
+            [2] = "Two",
+            [6] = "Six"
+        };
+
+        for (Int32 idx = 0; idx <= 6; idx++)
+            Console.WriteLine(data[idx]);
+    }
+
+    public class IndexedData {
+        List<String> data;
+
+        public IndexedData() {
+            data = new List<String>();
+        }
+
+        public String this[Int32 index] {
+            get => data[index];
+            set {
+                if (index >= data.Count)
+                    for (Int32 idx = data.Count; idx <= index; idx++)
+                        data.Add(null);
+
+                data[index] = value;
+            }
+        }
+    }
+}
+```
+
+Atau mau sok jago? bikin sendiri? gini nih
+
+```c#
+class Program {
+    static void Main(string[] args) {
+        var data = new IndexedString();
+        data[0] = "a";
+        data[10] = "3";
+        data[15] = "X";
+        
+        for (Int32 idx = 0; idx < data.Length -1; idx++) {
+            String value = data[idx] == null ? "null" : data[idx].ToString();
+            String message = $"{idx.ToString()}: {value}";
+            Console.WriteLine(message);
+        }
+    }
+
+    public class IndexedString {
+        const Int32 DefaultDataIncrement = 3;
+        String[] internalData;
+
+        public IndexedString() {
+            internalData = new String[DefaultDataIncrement];
+            Length = DefaultDataIncrement;
+        }
+        
+        public Int32 Length { get; private set; }
+
+        public String this[Int32 index] {
+            get {
+                if (internalData.Length >= index +1)
+                    return internalData[index];
+
+                return null;
+            }
+
+            set {
+                if (internalData.Length < index +1) {
+                    Int32 length = internalData.Length;
+                    while (length < index +1)
+                        length += DefaultDataIncrement;
+                
+                    var temp = new String[length];
+                    for (Int32 internalIndex = 0; internalIndex < internalData.Length -1; internalIndex++)
+                        temp[internalIndex] = internalData[internalIndex];
+
+                    internalData = temp;
+                    Length = temp.Length;
+                }
+
+                internalData[index] = value;
+            }
+        }
+    }
+}
+```
