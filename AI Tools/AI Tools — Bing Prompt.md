@@ -136,3 +136,14 @@ public class Clarissa {
     public String Rambut { get; set; }
     public String CatRambut { get; set; }
 }
+
+
+
+#### Example 6\#
+
+Buatkan email balasan untuk atasan dengan poin-poin berikut, menggunakan bahasa inggris:
+- mohon maap
+- ujian tanggal 13 Januari
+- ujian sertifikasi saya tidak memuaskan
+- tidak lulus ujian
+- dengan nilai 63 dari minimum nilai 80
