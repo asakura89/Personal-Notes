@@ -6,13 +6,25 @@ date: 2023-01-15
 
 # Feeling down
 
-Ini permasalahan semua orang. Gak ada orang yang gak pernah feeling down. Apakah karena sedih, kecewa, terluka. Apapun kisahnya, suka bikin uring-uringan dan gak ada semangat. Cara biar bersemangat lagi ya adalah kembali ke kenyataan dan penerimaan. Ketika udah nerima maka harusnya gak akan segampang itu buat merasa jatuh lagi.
+## Overcoming it
+
+Ini permasalahan umum semua orang. Gak ada orang yang gak pernah feeling down. Apakah karena sedih, kecewa, terluka. Apapun kisahnya, suka bikin uring-uringan dan gak ada semangat. <u>Salah satu cara</u> biar bersemangat lagi ya <u>adalah kembali ke kenyataan dan penerimaan</u> atau <u>accept the reality and move on</u>.
 
 
 
-## Things to consider
+## Things to consider to learn the power of acceptance
 
-1. Buat bisa menerima sepenuh hati, kita bisa coba debug akar masalahnya. Terus coba bikin daftar pro-kontranya
+<u>Buat bisa menerima sepenuh hati</u>, mungkin berasa susah, banget malah. Tapi ini langkah penting biar bisa move on. <u>Caranya dengan debug/ngeidentifikasi/cari tau akar penyebab masalahnya dan juga menimbang-nimbang pro kontranya</u>. Buat dapetin sudut pandang yang lengkap atau bisa dibilang Birdview, jadi kita bisa ngerti lebih baik soal situasi kita dan belajar mulai menerima. Proses ini dilalui dengan langkah yang gak cuma satu atau dua langkah. Atau dalam waktu yang mungkin bisa dibilang bertahap.
+1. Mulai dari ngobrol sama terapis atau temen-temen yang paling dipercaya dalam hal megang rahasia atau dipercaya secara nasehat.
+2. Bikin jurnal atau nulis tentang semua pikiran-pikiran dan perasaan-perasaan kita.
+3. Berlatih kesadaran diri, atau kalo kata kumpeni Practice Mindfulness. Yaitu sengaja memusatkan perhatian kita pada saat ini, tanpa penilaian atau menilai berdasarkan subjektifitas, dan dengan rasa ingin tau dan terbuka sama segala masukan. Ini dilakuin dengan cara sadar sama pikiran kita, perasaan kita, dan semua sensasi fisik, dan mengamati semuanya tanpa terpaku sama efeknya lalu bereaksi (merasa marah, tersindir, dsb). Karena tujuannya cuma buat mengamati.
+4. Dan inget, langkah-langkah itu bukan buat menghilangkan perasaan feeling down, tapi buat nyari tau akar masalah.
+
+Ketika kita udah bisa nerima, harusnya gak akan segampang itu buat merasa jatuh lagi. Juga kita jadinya bisa buat mulai memperkuat diri kita biar bisa memperbaiki masalah di masa sekarang dan ngambil sikap positif dan berpikir positif dimasa depan.
+
+Misalnya, kalo kita merasa sedih karena kita gak cukup bahagia sama kerjaan kita di kantor, cara penerimaannya mungkin dengan cara sadar kalo kerjaan kita sekarag gak memuaskan. Cari tau kenapanya atau akar masalahnya kita gak puas sama kerjaan kita. Apakah memang dari segi job desk-nya atau malah memang kita harus nerima kalo semua hal-hal gak memuaskan itu adalah bagian dari resiko kerja. Karena di semua lini kerjaan pasti ada resiko kerjanya. Sejauh apa kita bisa mentolerir resiko-resiko ini. Kalo kita gak sanggup ya kita bisa eksplor karir-karii lainnya. Bukan berarti kita lemah karena kita gak bisa sanggup menjalani, tapi kita sadar dengan kesanggupan kita saat ini dengan secara sadar mempelajari pikiran, perasaan, dan semua sensasi fisik yang kita dapet sewaktu kita menjalani kerjaan ini.
+
+Contoh lain, kalo kita sedih karena masalah hubungan, penerimaannya beda lagi. Mungkin melibatkan komunikasi secara terbuka dengan pasangan, dan bareng-bareng mikirin solusi untuk menyelesaikan masalah bersama. Berjalan bersama bukan mau menerima keadaan kita satu sama lain saat ini. Tapi dengan sadar dan mau menerima masa lalu, masa sekarang dan masa mendatang semua perubahan yang bakal ditujukin sama pasangan. Kalo kita gak sanggup, ya balik lagi kalo dengan sadar kita udah mengkaji kesanggupan kita dari segala sisi.
 
 
 
@@ -53,27 +65,6 @@ Jadi gimana cara kita bisa happy lagi? semangatin lah diri sendiri. Ketika satu 
 
 
 
-
-Edit something for me
-
-Sure! What would you like me to edit? 😊
-
-Edit my essay.
-
-Sure! Can you please provide me with the text of your essay so I can take a look? 😊
-
-{feelin down}
-
-Here is an edited version of your essay:
-
-# Feeling Down
-
-Feeling down is a common problem that everyone experiences. Whether it's due to sadness, disappointment, or hurt, it can make us feel irritable and unmotivated. One way to regain motivation is to accept reality and move on. Once we accept our situation, it should be harder for us to fall back into feeling down.
-
-## Things to Consider
-
-1. To fully accept our situation, we can try to identify the root cause of our problem and make a list of its pros and cons.
-
 ## Daily Driver
 
 A daily driver is anything that can drive or boost our motivation every day. People with hobbies can usually find things that can motivate them again because they can distract themselves from what's making them feel down. However, some people may struggle to find a hobby or may find that their hobby doesn't help alleviate their feelings of being down.
@@ -100,14 +91,6 @@ Can you make it more persuasive?
 
 Sure! Here is a more persuasive version of your essay:
 
-# Overcoming Feeling Down
-
-Feeling down is a universal experience that affects everyone at some point in their lives. Whether it's due to sadness, disappointment, or hurt, it can leave us feeling irritable and unmotivated. However, there is a way to overcome these feelings and regain our motivation: acceptance.
-
-## The Power of Acceptance
-
-Accepting our situation may seem difficult, but it's a crucial step in moving forward. By identifying the root cause of our problem and weighing its pros and cons, we can gain a better understanding of our situation and begin to accept it. Once we accept our situation, it becomes much harder for us to fall back into feeling down.
-
 ## Finding Your Daily Driver
 
 A daily driver is anything that can drive or boost our motivation every day. For some people, this may be a hobby that provides a distraction from what's making them feel down. For others, it may be something as simple as taking a shower or listening to relaxing music.
@@ -129,17 +112,7 @@ add new section "how to be happy again" and please expand the topic
 
 Sure! Here is a new section on "How to Be Happy Again" with expanded details:
 
-# Overcoming Feeling Down
 
-Feeling down is a universal experience that affects everyone at some point in their lives. Whether it's due to sadness, disappointment, or hurt, it can leave us feeling irritable and unmotivated. However, there is a way to overcome these feelings and regain our motivation: acceptance.
-
-## The Power of Acceptance
-
-Accepting our situation may seem difficult, but it's a crucial step in moving forward. By identifying the root cause of our problem and weighing its pros and cons, we can gain a better understanding of our situation and begin to accept it. This process may involve talking to a therapist or trusted friend, journaling our thoughts and feelings, or practicing mindfulness.
-
-Once we accept our situation, it becomes much harder for us to fall back into feeling down. Acceptance allows us to let go of negative emotions and focus on the present moment. It also empowers us to take positive action towards improving our situation.
-
-For example, if we're feeling down because we're unhappy with our job, acceptance may involve acknowledging that our current job isn't fulfilling and exploring other career options. If we're feeling down because of a relationship issue, acceptance may involve communicating openly with our partner and working towards resolving the issue.
 
 ## Finding Your Daily Driver
 
@@ -173,9 +146,6 @@ sorry can you add new section "manage others expectation of us" amd expand it
 
 Sure! Here is a new section on "Managing Others' Expectations of Us" with expanded details:
 
-# Overcoming Feeling Down
-
-Feeling down is a universal experience that affects everyone at some point in their lives. Whether it's due to sadness, disappointment, or hurt, it can leave us feeling irritable and unmotivated. However, there is a way to overcome these feelings and regain our motivation: acceptance.
 
 ## The Power of Acceptance
 

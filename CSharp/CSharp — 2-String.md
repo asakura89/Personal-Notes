@@ -15,6 +15,20 @@ date: 2021-08-14
 </p>
 
 
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [CSharp String](#csharp-string)
+  - [1. Dasar](#1-dasar)
+  - [2. Multi-line String](#2-multi-line-string)
+  - [3. Interpolation / penyisipan kata](#3-interpolation--penyisipan-kata)
+  - [4. Concatenation / rentetan kata](#4-concatenation--rentetan-kata)
+  - [5. Split](#5-split)
+  - [6. Substring](#6-substring)
+  - [7. Awalan dan akhiran](#7-awalan-dan-akhiran)
+  - [8. Replace](#8-replace)
+
+
 
 # CSharp String
 

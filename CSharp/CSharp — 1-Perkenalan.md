@@ -17,6 +17,31 @@ date: 2021-08-14
 
 
 
+# Table of Contents
+
+- [Perkenalan CSharp](#perkenalan-csharp)
+  - [1. Entry Point](#1-entry-point)
+  - [2. Constructor](#2-constructor)
+  - [3. Deklarasi](#3-deklarasi)
+  - [4. Inisialisasi](#4-inisialisasi)
+    - [4.1. Array Initializer](#41-array-initializer)
+    - [4.2. Collection Initializer](#42-collection-initializer)
+    - [4.3. Object Initializer](#43-object-initializer)
+    - [4.4. Property Initializer](#44-property-initializer)
+    - [4.5. Index Initializer](#45-index-initializer)
+  - [5. Print to Console](#5-print-to-console)
+  - [6. Membuat Library](#6-membuat-library)
+  - [7. Membuat variabel dan memberi nilai](#7-membuat-variabel-dan-memberi-nilai)
+  - [8. Nilai standar](#8-nilai-standar)
+  - [9. Nilai tetap](#9-nilai-tetap)
+  - [10. Field](#10-field)
+  - [11. Property](#11-property)
+    - [11.1 Property Normal](#111-property-normal)
+    - [11.2 Auto-Implemented Property](#112-auto-implemented-property)
+  - [12. Indexer](#12-indexer)
+
+
+
 # Perkenalan CSharp
 
 ## 1. Entry Point
@@ -926,3 +951,5 @@ class Program {
     }
 }
 ```
+
+
