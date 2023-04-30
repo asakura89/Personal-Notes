@@ -56,3 +56,4 @@ Ini beberapa saran, resolusi, hal-hal yang bisa ngejaga kita tetep sehat, waras,
 6. Engage arts and humanities
 7. Mimic deaf people, they don't listen (but do listen constructive feedback)
 
+

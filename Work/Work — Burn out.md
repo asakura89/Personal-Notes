@@ -4,7 +4,7 @@ tags:
 date: 2023-02-17
 ---
 
-# chatGPT — Burn out
+# Burn out
 
 Iseng ngobrol sama chatGPT soal burn out.
 
