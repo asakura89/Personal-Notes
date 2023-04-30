@@ -17,7 +17,7 @@ date: 2021-08-14
 
 
 
-# Table of Contents
+# Daftar isi
 
 - [Perkenalan CSharp](#perkenalan-csharp)
   - [1. Entry Point](#1-entry-point)

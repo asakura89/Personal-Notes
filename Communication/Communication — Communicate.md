@@ -7,11 +7,13 @@ date: 2022-12-11
 # Communicate
 
 ## What is
+
 Komunikasi itu masalah yang penting banget di dunia ini. Dimana pun. Lagi ngapain pun.
 
 
 
 ## Organization
+
 Di organisasi kayanya orang yang paling bisa komunikasi pasti jadi orang yang paling berhasil. Dalem artian bakal memudahkan siapapun yang ada di lingkup kelompok atau tim dimana orang itu berada. Karena ketika suatu tim atau suatu orang jadi pusat dari komunikasi ke orang lain atau tim lain atau bagian lain dari suatu organisasi, dan dia bisa me-maintain komunikasi itu, harusnya hal apapun yang lagi jadi fokus tim atau orang tersebut bakalan lancar dan tanpa masalah. Apakah project, apakah event, apakah urusan apapun.
 
 
