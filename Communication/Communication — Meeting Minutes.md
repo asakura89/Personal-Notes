@@ -123,7 +123,7 @@ Abis meeting terus lupa. Ada bangeet. Abis meeting terus miscomm. Bisa bangeeeet
 
 
 
-## Another template implementation example
+## Another template implementation example from Microsoft Loop
 
 **Thu, Feb 1, 2024 — Second Sales Manager, can we afford one?**
 

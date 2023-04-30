@@ -7,7 +7,7 @@ date: 2023-03-26
 
 # Propose ideas
 
-Dengan seiring bertambahnya usia, pengetahuan, dan kebijakan, pastinya kita sadar kalo misalkan kita mau ngajuin satu ide kita butuh juga nyodorin impact analysis. Apa pros and cons, apa keunggulan dan kekurangan.  
+Dengan seiring bertambahnya usia, pengetahuan, dan kebijaksanaan, pastinya kita sadar kalo misalkan kita mau ngajuin satu ide kita butuh juga nyodorin impact analysis. Apa pros and cons, apa keunggulan dan kekurangan.  
 
 Dan pastinya kita juga butuh nyari tau solusi sejenis. Yang mungkin sebenernya cons-nya udah di-handle sama ide sejenis tersebut. Atau malah pros-nya lebih banyak ada di ide sejenis tersebut tapi untuk kasus spesifik yang lagi di-handle sekarang butuh pros yang ada di ide yang sekarang. Atau dengan mengevaluasi tujuan yang mau dicapai, bisa juga sebagai bahan pertimbangan untuk ngajuin ide yang sekarang ketimbang ide sejenis walaupun pros lebih banyak di ide sejenis.
 
@@ -33,7 +33,7 @@ Dan pastinya kita juga butuh nyari tau solusi sejenis. Yang mungkin sebenernya c
 
 
 
-#### Impacted feature
+#### Impacted feature (Business impact for end-user)
 1. \<Impacted feature 1\>
    \<description\>
 2. \<Impacted feature 2\>
@@ -41,7 +41,7 @@ Dan pastinya kita juga butuh nyari tau solusi sejenis. Yang mungkin sebenernya c
 
 
 
-#### Impacted architecture
+#### Impacted architecture (Technical impact for code maintenance)
 1. \<Impacted architecture 1\>
    \<description\>
 2. \<Impacted architecture 2\>
@@ -67,7 +67,7 @@ Dan pastinya kita juga butuh nyari tau solusi sejenis. Yang mungkin sebenernya c
 
 
 
-#### Impacted feature
+#### Impacted feature (Business impact for end-user)
 1. \<Impacted feature 1\>
    \<description\>
 2. \<Impacted feature 2\>
@@ -75,7 +75,7 @@ Dan pastinya kita juga butuh nyari tau solusi sejenis. Yang mungkin sebenernya c
 
 
 
-#### Impacted architecture
+#### Impacted architecture (Technical impact for code maintenance)
 1. \<Impacted architecture 1\>
    \<description\>
 2. \<Impacted architecture 2\>

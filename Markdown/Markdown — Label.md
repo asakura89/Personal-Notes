@@ -210,6 +210,6 @@ Link
 
 Reference:
 
-- [Kube UI Framework 7](https://github.com/imperavi/kubeframework)
-- [Buttons · Bootstrap (getbootstrap.com)](https://getbootstrap.com/docs/4.0/components/buttons/)
+- [Kube UI Framework 7](https://github.com/imperavi/kubeframework) — [MIT License](https://github.com/imperavi/kubeframework/blob/master/LICENSE.md)
+- [Buttons · Bootstrap (getbootstrap.com) v4.0](https://getbootstrap.com/docs/4.0/components/buttons/) — [MIT License](https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE)
 
