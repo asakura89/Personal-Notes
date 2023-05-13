@@ -9,7 +9,7 @@ date: 2023-01-15
 - [Overcoming it](#overcoming-it)
 - [The power of acceptance](#the-power-of-acceptance)
 - [Finding your daily driver](#finding-your-daily-driver)
-- [Managing others' expectations of us](#managing-others-expectations-of-us)
+- [Managing others's expectations of us](#managing-otherss-expectations-of-us)
 - [The path to happiness](#the-path-to-happiness)
 
 
@@ -72,7 +72,7 @@ Intinya sih cari aktivitas yang sesuai dan cocok. Experiment dengan macem-macem 
 
 
 
-## Managing others' expectations of us
+## Managing others's expectations of us
 
 Salah satu sumber yang paling sering bikin stres dan perasaan cemas adalah tekanan untuk memenuhi ekspektasi orang lain terhadap kita. Entah itu ekspektasi orang tua, temen, temen kerja, atau orang lain. Syusah syekali buat bisa memenuhi, menyeimbangkan kebutuhan dan keinginan kita sendiri dengan ekspektasi atau harapan orang-orang di sekitar kita. Apa sih yang bisa kita lakuin sebenernya?
 1. <u>Berkomunikasilah dengan terbuka:</u> Jujur aja sama orang lain soal apa yang bisa dan gak bisa kita lakuin. Soal kebutuhan dan batasan kita. Jadi bukan cuma yang gak bisa kita lakuin tapi juga yang gak mau kita lakuin.
