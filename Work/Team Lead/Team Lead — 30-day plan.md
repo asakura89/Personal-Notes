@@ -6,6 +6,7 @@ date: 2023-05-13
 ---
 
 
+<!--
 Sure, I can help you with that. Here is a 30-day plan to help you learn team leading from scratch:
 
 # Day 1: Introduction to Team Leadership
@@ -304,3 +305,5 @@ Yes, there are methods to manage team member workload in a micro-manage manner. 
 * **Be supportive.** Be there to support your team members when they need it. This could mean providing them with resources, helping them to solve problems, or simply being a listening ear.
 
 It is important to note that micro-management can be counterproductive if it is taken to an extreme. If you are too controlling, your team members may feel stifled and they may not be able to reach their full potential. It is important to find a balance between being supportive and being too controlling.
+
+-->

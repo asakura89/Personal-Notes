@@ -28,7 +28,7 @@ Here is my query:
 
 
 
-#### Example 1\#
+#### Example \#1
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: <u>Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication</u>. Format or style that I prefer <u>is a code</u>. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -37,7 +37,7 @@ Please generate a simple C# code to implement distributed event without network 
 
 
 
-#### Example 2\#
+#### Example \#2
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: <u>OKR, SMART Goals</u>. Format or style that I prefer <u>is a paragraph with bullet points</u>. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -46,7 +46,7 @@ Explain me like I'm five what is it means "A set of OKRs in an organization shou
 
 
 
-#### Example 2\# result
+#### Example \#2 result
 
 OKRs stands for Objectives and Key Results. It's a way for people in an organization to set goals and measure how well they're doing. Think of it like a game where you have to complete different levels to win. Each level has its own objectives and key results that you need to achieve to move on to the next level.
 
@@ -68,7 +68,7 @@ Here is my query:
 
 
 
-#### Example 3\#
+#### Example \#3
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is an paragraph with bullet points but in a conversational way.
 
@@ -77,7 +77,7 @@ How I can built good or even great architecture that can withstand earthquake?
 
 
 
-#### Example 3\# result
+#### Example \#3 result
 
 Hello, this is Bing. I can try to generate a paragraph with bullet points for you. Here is my attempt:
 
@@ -98,7 +98,7 @@ Source: Conversation with Bing, 4/2/2023(1) How Earthquake-proof Buildings Are D
 
 
 
-#### Example 4\#
+#### Example \#4
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is an paragraph with bullet points but in a conversational way. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -107,7 +107,7 @@ According to your opinion or knowledge, how can AI such as yourself can help hum
 
 
 
-#### Example 4\# result
+#### Example \#4 result
 
 Hello, this is Bing. I can try to generate a paragraph with bullet points for you. Here is my attempt:
 
@@ -123,12 +123,13 @@ These are some of the ways that AI such as myself can help humans to build good 
 
 
 
-#### Example 5\#
+#### Example \#5
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is a code.
 
 Here is my query:
 Please translate this code to normal c# property with backing fields
+```c#
 public class Clarissa {
     public Single Tinggi { get; set; }
     public Single Berat { get; set; }
@@ -136,10 +137,11 @@ public class Clarissa {
     public String Rambut { get; set; }
     public String CatRambut { get; set; }
 }
+```
 
 
 
-#### Example 6\#
+#### Example \#6
 
 Buatkan email balasan untuk atasan dengan poin-poin berikut, menggunakan bahasa inggris:
 - mohon maap
@@ -147,3 +149,17 @@ Buatkan email balasan untuk atasan dengan poin-poin berikut, menggunakan bahasa 
 - ujian sertifikasi saya tidak memuaskan
 - tidak lulus ujian
 - dengan nilai 63 dari minimum nilai 80
+
+
+
+## To plan for learning something
+
+Yo Bing, design a comprehensive 30-day plan to help me learn **\[insert topic or skill here\]** from scratch. Break down the plan into daily tasks, incorporating learning resources, hands-on exercises, progress checks, and rest days to ensure a balanced, sustainable, and progressive learning journey.
+
+
+
+## Example \#1
+
+Yo Bing, design a comprehensive 30-day plan to help me learn Team Leading from scratch. Break down the plan into daily tasks, incorporating learning resources, hands-on exercises, progress checks, and rest days to ensure a balanced, sustainable, and progressive learning journey.
+
+
