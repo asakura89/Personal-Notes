@@ -35,7 +35,7 @@ Secara konsep fungsi `Select` ini disebut juga `Map`. `Select` / `Map` ini tugas
 
 Flow-nya adalah kaya di bawah ini.  
 
-![Select flow](_media\BungaMatahari-CollectionPipeline-Select.png)
+![Select flow](_media/BungaMatahari-CollectionPipeline-Select.png)
 
 Misal, kita punya data kaya gini.  
 
@@ -294,7 +294,7 @@ Yaitu menggunakan dollar-sign `$` di depan `string`-nya terus menggunakan kurung
 `Where` juga disebut `Filter`. `Where` / `Filter` ini tugasnya adalah menerima `Collection`, memilih si input tadi berdasarkan kriteria / predikat, lalu menghasilkan output `Collection` yang sesuai dengan kriteria / predikat yang disebutkan.  
 Flow-nya adalah kaya di bawah ini.  
 
-![Where flow](_media\BungaMatahari-CollectionPipeline-Where.png)
+![Where flow](_media/BungaMatahari-CollectionPipeline-Where.png)
 
 Misal lagi nih, dari data nama-nama tersebut mau diambil yang memiliki kata-kata 'el'.
 
@@ -441,7 +441,7 @@ Di numbering-nya, karena di posisi ketiga kita nge-filter nama yang udah tertran
 Sort di .Net menggunakan method `OrderBy`, `ThenBy`, `OrderByDescending`, dan `ThenByDescending`. Tugasnya? udah pasti buat ngurutin data berdasarkan `key`. 
 Flow-nya kaya di bawah ini.
 
-![Sort flow](_media\BungaMatahari-CollectionPipeline-Sort.png)
+![Sort flow](_media/BungaMatahari-CollectionPipeline-Sort.png)
 
 Nah, `key` ini apa? `Key` ini adalah object yang digunakan sebagain acuan urutan. Misal, kalo di kelas dulu sewaktu preman sama boss preman masih sekolah. 
 Mereka diabsen secara berurutan berdasarkan abjad pertama dari nama mereka. 
@@ -601,7 +601,7 @@ Secara konsep `Aggregate` ini sering disebut `Reduce`.  `Reduce` seperti nama pa
 
 Flow-nya kaya di bawah ini.
 
-![Aggregate flow](_media\BungaMatahari-CollectionPipeline-Aggregate.png)
+![Aggregate flow](_media/BungaMatahari-CollectionPipeline-Aggregate.png)
 
 Contoh paling dekat adalah fungsi `SUM` yang ada di bahasa SQL. `SUM` memperciut butir `Collection` yang tadinya ada sekian menjadi hanya sebuah atau satu hasil. Misalkan ada `Collection` yang berisikan 3 butir `integeter`, dengan `SUM` 3 butir tadi dijumlahkan menjadi satu hasil.
 

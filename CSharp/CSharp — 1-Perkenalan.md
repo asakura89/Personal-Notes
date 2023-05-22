@@ -367,7 +367,7 @@ class Program {
 }
 ```
 
-![Print to Console](_media\2020-03-27_22-20-53.png)
+![Print to Console](_media/2020-03-27_22-20-53.png)
 
 
 
@@ -433,7 +433,7 @@ class ProgramB {
 }
 ```
 
-![Library](_media\2020-03-27_22-52-45.png)
+![Library](_media/2020-03-27_22-52-45.png)
 
 
 
@@ -499,7 +499,7 @@ Kalo mau ngeliat nilai standar sebelum diinisialisai, cuma bisa diliat lewat `de
 Karena kalo variabelnya ditampilin / di-print ke console, bakal ada error message sewaktu di-compile. Jadi gak bisa di-compile terus dijalanin. 
 Error ini adalah error dari compiler yang ditampilin sewaktu ada variabel yang mau dipake tapi gak diinisialisasi dulu.
 
-![Nilai standar](_media\2020-03-28_19-16-35.png)
+![Nilai standar](_media/2020-03-28_19-16-35.png)
 
 
 
@@ -534,7 +534,7 @@ class Program {
 }
 ```
 
-![Nilai tetap](_media\2020-05-17_204428.png)
+![Nilai tetap](_media/2020-05-17_204428.png)
 
 
 
