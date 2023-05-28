@@ -40,7 +40,7 @@ Udah gitu masukin ke `$data`. Terus tampilin ke layar dengan manggil `$data` lag
 
 
 
-Btw, karena bakalan di-_run_ di _Server_, jadinya gue _save_ ke `Script.ps1`. Terus _run_!!
+Btw, karena bakalan di-_run_ di _Server_, jadi better di-_save_ ke `Script.ps1`. Terus _run_!!
 
 
 
@@ -203,7 +203,7 @@ _Output_-nya gini.
 
 
 
-Nyadar gak kalo di atas gue pake `.ToLower()` sama `.Contains()`-nya `.Net`
+Nyadar gak kalo di atas ada method `.ToLower()` sama `.Contains()`-nya `.Net`
 Yuhuuu. Cadas ye gak? 👍
 
 
@@ -282,7 +282,7 @@ Nanti hasilnya jadi gini.
 ## 4. Aggregate / Reduce
 
 `Reduce` di `Powershell` rada beda ya. Soalnya dia pake keyword `ForEach-Object`. Padahal kan ya `foreach` itukan buat `iterate / looping` pada umumnya
-Tapi di `Powershell` sendiri ada `ForEarch-Object` ada `ForEach` _statement_. Gue gakkan bahas disini biar bahasannya gak meluas
+Tapi di `Powershell` sendiri ada `ForEarch-Object` ada `ForEach` _statement_. KIta gak perlu bahas disini biar bahasannya gak meluas
 
 
 
@@ -290,7 +290,7 @@ Nah, `ForEach-Object` punya `Begin`, `Process`, dan `End`. 3 fitur ini yang bisa
 
 
 
-Karena ini fungsi terakhir jadi gue _combine_ aja semua fungsi-fungsi di atas. _Here goes!_
+Karena ini fungsi terakhir, jadi kita _combine_ aja semua fungsi-fungsi di atas. _Here goes!_
 
 ```powershell
  $counter = 1;
