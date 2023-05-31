@@ -28,6 +28,7 @@ Get-Command |
 
 
 Contoh hasil run
+
 ```powershell
 CmdL: Add-ADSConfigurationItemsToApplication
 CmdL: Add-AzureRmDataLakeStoreItemContent

@@ -37,6 +37,7 @@ $secondSeeds |
 
 
 Contoh hasil run
+
 ```powershell
 -34908
 -27215
@@ -104,6 +105,7 @@ $secondRands
 
 
 Contoh hasil run
+
 ```powershell
 1
 6

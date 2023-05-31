@@ -37,7 +37,32 @@ Write-Host $json.CurrentDirGetLocation.GetLocation.Provider
 
 
 Contoh hasil run
+
 ```powershell
 C:\WINDOWS\system32
 Microsoft.PowerShell.Core\FileSystem
+```
+
+
+
+Json buat contoh code di atas
+
+```json
+{
+  "cards": [{
+    "header": {
+      "title": "Build machine",
+      "subtitle": "Processing Build"
+    },
+    "sections": [{
+      "widgets": [{
+        "keyValue": {
+          "topLabel": "Activity",
+          "contentMultiline": "true",
+          "content": "Pulling code from source control."
+        }
+      }]
+    }]
+  }]
+}
 ```

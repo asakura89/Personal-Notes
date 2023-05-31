@@ -20,6 +20,7 @@ atau sesimpel `[System.Environment]::OSVersion.Version.ToString()`
 
 
 Contoh hasil run
+
 ```powershell
 10.0.19044.0
 ```
@@ -36,6 +37,7 @@ Clear-Host
 
 
 Contoh hasil run
+
 ```powershell
 Platform ServicePack Version      VersionString                    
 -------- ----------- -------      -------------                    
@@ -54,6 +56,7 @@ Clear-Host
 
 
 Contoh hasil run
+
 ```powershell
 10
 ```

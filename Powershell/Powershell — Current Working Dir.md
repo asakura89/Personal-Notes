@@ -33,6 +33,7 @@ ConvertTo-Json
 
 
 Contoh hasil run
+
 ```json
 {
     "CurrentDirGetLocation": {
@@ -64,7 +65,8 @@ Write-Host (Get-Item $PSCommandPath).Directory
 
 
 
-contoh hasil run
+Contoh hasil run
+
 ```powershell
 D:\temp
 ```

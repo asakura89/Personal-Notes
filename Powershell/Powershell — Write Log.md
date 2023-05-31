@@ -50,6 +50,7 @@ Log ".:: Finish Script ::."
 
 
 Contoh hasil run
+
 ```powershell
 [2023.05.26.20:45:35] `:: Start Script ::'
 [2023.05.26.20:45:35] Doing something ...

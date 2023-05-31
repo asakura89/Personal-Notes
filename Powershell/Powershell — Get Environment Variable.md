@@ -21,6 +21,7 @@ Get-ChildItem Env:*
 
 
 Contoh hasil run
+
 ```powershell
 Name                           Value                                                                                          
 ----                           -----                                                                                          
@@ -92,6 +93,7 @@ $Env:Path -Split ";" | Select-String "java|jdk"
 
 
 Contoh hasil run
+
 ```powershell
 C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin
 C:\Program Files (x86)\Common Files\Oracle\Java\javapath
@@ -124,6 +126,7 @@ Format-List
 
 
 Contoh hasil run
+
 ```powershell
 Name  : UserProfile
 Value : C:\Users\ASMNetworkLabUsr
@@ -169,6 +172,7 @@ Write-Host $filename
 
 
 Contoh hasil run
+
 ```powershell
 asmnetworklabusr_202207111736
 ```
