@@ -16,12 +16,52 @@ help me to find similar phrase in **\[insert dest. language here\]** for "**\[in
 
 
 
-#### Example
+### Example
 
 help me to find similar phrase in US english for "banting setir" in bahasa
 
 
 
-#### Result
+### Result
 
 The phrase "banting setir" in Bahasa refers to making a sudden change in direction or shifting one's focus abruptly. In American English, a similar phrase could be "turning on a dime" or "changing gears." Both of these phrases imply a quick and sudden shift in direction or focus, just like "banting setir" in Bahasa.
+
+
+
+## Generate Q&A for better learning
+
+### Prompt
+
+Please create two-column spreadsheet with question and corresponding answer for these topics with 5 questions each. And drop the pre-text.
+- **\[insert 1st topic\]**
+- **\[insert 2nd topic\]**
+
+
+
+### Example
+
+Please create two-column spreadsheet with question and corresponding answer for these topics with 5 questions each. And drop the pre-text.
+- Set clear goals and expectations
+- Identify and solve problems
+
+
+
+### Result
+
+Topic: Set clear goals and expectations
+
+| Question                                                       | Answer                                                          |
+| -------------------------------------------------------------- | --------------------------------------------------------------- |
+| How can setting clear goals benefit a team's performance?       | Setting clear goals provides focus and direction for the team.    |
+
+_. . . dipotong biar gak kepanjangan . . ._
+
+
+
+Topic: Identify and solve problems
+
+| Question                                                       | Answer                                                          |
+| -------------------------------------------------------------- | --------------------------------------------------------------- |
+| Why is it important to proactively identify and solve problems? | Proactive problem-solving prevents issues from escalating and improves efficiency. |
+
+_. . . dipotong biar gak kepanjangan . . ._
