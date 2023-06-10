@@ -15,10 +15,10 @@ Individual Contributor atau disebut juga IC, itu professional tanpa role managem
 ## IC Skill
 
 Buat bisa jadi IC yang bener dan meng-execute kerjaan dengan bener, maka skill-skill ini lumayan penting buat dipunyai IC.
-- [Communication](Communication/Communication%20%E2%80%94%20Communicate.md)
-- [Time Management](Time%20Management/Time%20Management%20Index.md)
+- [Communication](/Communication/Communication%20%E2%80%94%20Communicate.md)
+- [Time Management](/Time%20Management/Time%20Management%20Index.md)
     Ini bagian penting dari semua kerjaan atau semau posisi. Kalo seorang IC bisa manage waktunya dengan baik, maka dia bakal bisa deliver kerjaannya dengan baik dan bisa diandalkan oleh semua temen-temen se-team dan sekantornya karena kerjaannya selalu konsisten.
-- [Collaboration](Work/Work%20Index.md)
+- [Collaboration](/Work/Work%20Index.md)
     Buat bisa collab sama divisi apapun, departemen apapun, team apapun, yang penting dari collab adalah mendengarkan dengan baik bisa gak miskom dan sampein suatu apapun dengan data bukan berdasarkan asumsi. Jangan lupa untuk selalu follow up kerjaan yang bolanya bukan di kita biar gak ada kasus suatu task terbiarkan tanpa ada yang nge-follow up.
 - Ability to maintain autonomy
     Harus bisa bekerja sendiri dalam waktu yang lama sambil tetap efisien dalam ngerjain semua tugas dan konsisten menghasilkan kualitas yang tinggi. Otonomi membutuhkan pengelolaan waktu sendiri yang efisien. Kemampuan buat punya contingency plans dan bisa mengeksekusinya. Juga bisa mengerjakan banyak project atau task sekaligus tanpa peraturan.
