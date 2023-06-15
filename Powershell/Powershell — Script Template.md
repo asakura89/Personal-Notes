@@ -20,10 +20,12 @@ function GetScriptInfo() {
     }
 }
 
+#:< Log >:#
 function Log($message, $starting = $false, $writeToScreen = $true) {
-    $scriptInfo = GetScriptInfo
-    $logname = "$($scriptInfo.Name)_$([System.DateTime]::Now.ToString("yyyyMMddHHmm")).log"
-    $logfile = [System.IO.Path]::Combine($scriptInfo.Directory, $logname)
+    $scriptfile = (Get-Item $PSCommandPath)
+    $logdir = $scriptfile.Directory
+    $logname = "$($scriptfile.BaseName)_$([System.DateTime]::Now.ToString("yyyyMMddHHmm")).log"
+    $logfile = [System.IO.Path]::Combine($logdir, $logname)
 
     $logmsg = "[$([System.DateTime]::Now.ToString("yyyy.MM.dd.HH:mm:ss"))] $($message)"
     If ($writeToScreen) {
@@ -38,6 +40,45 @@ function Log($message, $starting = $false, $writeToScreen = $true) {
     }
 }
 
+function CleanupLog() {
+    $scriptInfo = GetScriptInfo
+    $logdir = $scriptInfo.Directory
+
+    $maxDay = "-"+$logage -As [System.Int32]
+    $date = (Get-Date).AddDays($maxDay)
+
+    $logfolderFiles = Get-ChildItem -Path $logdir -Recurse -File
+    ForEach ($file in $logfolderFiles) {
+        If ($file.Extension -Eq ".log") { 
+            If($file.LastWriteTime -lt $date){
+                Remove-Item -Path $file.PSPath
+            }
+        }
+    }
+}
+
+#:< Log >:#
+
+#:< GetException >:#
+function GetExceptionMessage([System.Exception]$ex) {
+    $errorList = New-Object System.Text.StringBuilder
+    [System.Exception]$current = $ex;
+    While ($current -Ne $null) {
+        [void]$errorList.AppendLine()
+        [void]$errorList.AppendLine("Exception: $($current.GetType().FullName)")
+        [void]$errorList.AppendLine("Message: $($current.Message)")
+        [void]$errorList.AppendLine("Source: $($current.Source)")
+        [void]$errorList.AppendLine($current.StackTrace)
+        [void]$errorList.AppendLine()
+
+        $current = $current.InnerException
+    }
+
+    Return $errorList.ToString()
+}
+#:< GetException >:#
+
+#:< Load Xml >:#
 function LoadXml([System.String]$xmlContent) {
     $content = $xmlContent.Trim()
     If ([System.String]::IsNullOrEmpty($content)) {
@@ -72,6 +113,18 @@ function GetAttribute([System.Xml.XmlNode]$node, $name) {
     Return $null
 }
 
+function AssignAttributeTo([System.Xml.XmlDocument]$xmlDoc, [System.Xml.XmlNode]$node, $name, $value) {
+    If ($xmlDoc -Ne $null -And $node -Ne $null) {
+        $attr = GetAttribute $node $name
+        If ($attr -Eq $null) {
+            $attr = $xmlDoc.CreateAttribute($name)
+            $node.Attributes.Append($attr)
+        }
+
+        $attr.Value = $value
+    }
+}
+
 function GetAttributeValue([System.Xml.XmlNode]$node, $name) {
     $attr = GetAttribute $node $name
     If ($attr -Ne $null) {
@@ -86,7 +139,7 @@ function GetNodeValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
     Return $node.InnerText
 }
 
-function GetNodesValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
+function GetMultipleNodeValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
     $values = New-Object System.Collections.Generic.List[System.String]
     $docs = $xmlDoc.SelectNodes($selector)
     ForEach ($doc In $docs) {
@@ -95,6 +148,7 @@ function GetNodesValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
 
     Return $values
 }
+#:< Load Xml >:#
 
 function GetConfig() {
     $scriptInfo = GetScriptInfo
