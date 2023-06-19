@@ -9,7 +9,7 @@ date: 2022-12-15
 
 ## In the face of ownself
 
-Baca [Work — Individual Contributor](Work%20%E2%80%94%20Individual%20Contributor.md)
+Baca [Work — Individual Contributor](/Work/Work%20%E2%80%94%20Individual%20Contributor.md)
 
 
 
@@ -30,7 +30,7 @@ Ketika kita ada di dalam sebuah team, jangan pernah membiarkan temen se-team bua
 Ini mirip sama _Help each other_. Jangan cuma diem aja ngeliat temen kita kesusahan. Atau jangan diem aja ngeliat suatu masalah gak terselesaikan. Kalo tau ada masalah, maka esacalate ke atas untuk diselesaikan bareng. Atau kalo memang bisa nyelesein sendiri. Lapor dulu keatas kalo kita mau nyelesein masalahnya. Jangan ngelakuin diem-diem. Karena nanti bisa jadi aksi kita gak di-support dan malah jadi masalah yang lain lagi.
 
 #### Link lain
-- [Communication — Communicate](Communication/Communication%20%E2%80%94%20Communicate.md)
+- [Communication — Communicate](/Communication/Communication%20%E2%80%94%20Communicate.md)
 
 
 
