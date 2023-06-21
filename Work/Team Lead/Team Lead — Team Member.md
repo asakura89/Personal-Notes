@@ -130,5 +130,8 @@ If I would rephrase brain employee and muscle employee, I might call them:
 
 - Brain employee: A thinker or a planner. An employee who can generate ideas, strategies, and plans for themselves and others.
 - Muscle employee: A doer or a performer. An employee who can execute actions, tasks, and projects for themselves and others.
--
+
+
+
+Brain and Labor
 -->
