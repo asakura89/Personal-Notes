@@ -2,7 +2,7 @@
 tags:
 - Powershell
 - Hash
-- FileHash
+- File
 date: 2023-02-21
 ---
 

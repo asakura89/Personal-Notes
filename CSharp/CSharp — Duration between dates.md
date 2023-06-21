@@ -44,6 +44,8 @@ Menghasilkan inih
 # Total duration
 
 ```c#
+using System.Globalization;
+
 void Main() {
     var list = new List<(Int32, Int32)> {
         GetDuration(new DateTime(2006, 6, 1), new DateTime(2008, 6, 1)),

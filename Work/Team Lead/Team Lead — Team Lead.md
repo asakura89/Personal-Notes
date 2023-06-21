@@ -167,6 +167,58 @@ I hope you find these additional questions and answers helpful. Remember, these 
 —
 
 
+## User
+Hi Bing, I have these points. These are directed to team leaders. Help me extract the actionables from each point, directed to team members instead of team leaders. Here are the points:
+ - Set clear goals and expectations: Team Leaders should define the goals and expectations for their team and ensure that every team member understands them.
+ - Plan and organize: Team Leaders should develop a plan and organize resources to achieve the goals and objectives of the project or task at hand.
+ - Communicate effectively: Team Leaders should communicate effectively with their team members, stakeholders, and other relevant parties.
+ - Provide guidance and support: Team Leaders should provide guidance and support for their team members, helping them overcome obstacles and providing them with the resources they need.
+ - Identify and solve problems: Team Leaders should identify and solve problems that arise during the project, taking corrective actions as necessary.
+ - Ensure accountability and performance: Team Leaders are responsible for ensuring that each of their team members is held accountable for their tasks and that they are performing at an expected level
+ - Encourage open communication: Team Leaders should foster a culture of trust where team members feel comfortable sharing their thoughts and opinions without fear of judgment.
+ - Provide regular feedback: Team Leaders should provide regular feedback to their team members through one-on-one meetings and daily stand-up meetings.
+ - Hold team members accountable for their commitments: Team Leaders should hold their team members accountable for delivering their assigned modules on time with good quality.
+ - Establish a close feedback loop: Team Leaders and Project Executives should work closely together to monitor progress and make adjustments as needed.
+ - Appreciate success stories: Team Leaders should appreciate and reward team members who demonstrate accountability and achieve their goals.
+
+## Bing
+Here are the actionables for team members based on the points you provided:
+ - Understand and align with the goals and expectations set by the Team Leader.
+ - Follow the plan and utilize resources effectively to achieve project goals and objectives.
+ - Communicate effectively with the Team Leader, stakeholders, and other relevant parties.
+ - Seek guidance and support from the Team Leader to overcome obstacles and access necessary resources.
+ - Identify and report problems that arise during the project, and take corrective actions as directed by the Team Leader.
+ - Be accountable for assigned tasks and perform at an expected level.
+ - Foster a culture of trust by openly communicating thoughts and opinions without fear of judgment.
+ - Actively participate in one-on-one meetings and daily stand-up meetings to receive regular feedback from the Team Leader.
+ - Deliver assigned modules on time with good quality, being accountable for commitments.
+ - Work closely with the Team Leader and Project Executives to monitor progress and make adjustments as needed.
+ - Demonstrate accountability and strive to achieve goals to be appreciated and rewarded by the Team Leader.
+
+Is there anything else you would like me to help with?
+## User
+Please give me at least 5 ways on how to achieve each point.
+## Bing
+Here are some ways to achieve each point:
+ - Set clear goals and expectations:
+ - Maintain open communication 
+ - Establish a shared goal 
+ - Ensure all team members stay committed 
+ - Prepare your team to adapt together 
+ - Create an environment of respect
+
+ - Plan and organize:
+ - Define people's boundaries of responsibility 
+ - Lead people and manage tasks 
+ - Delegate, don't abdicate 
+ - Trust your gut and get curious 
+ - Schedule biweekly team debriefs
+
+
+
+—
+
+
 
 ### 10min summary of #160 TKP Insights: Leadership from The Knowledge Project with Shane Parrish
 
