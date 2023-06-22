@@ -1,0 +1,1094 @@
+## User
+Hi Bing, I have this xml data:
+<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+
+  <app title="Simple Configuration UI">
+
+    <text:database-provider default="SQLClient" />
+    <number:rety-max default="10" />
+    <boolean:enable-mfa default="true" />
+    <sselect:binding default="http-artifact">
+      <item:http-binding value="http" />
+      <item:http-artifact value="artifact" />
+    </sselect:binding>
+
+    <mselect:attributes default="fqn;email">
+      <item:fqn value="Fully Qualified Name" />
+      <item:email value="Email" />
+      <item:role value="Role" />
+    </mselect:attributes>
+
+  </app>
+
+  <data>
+
+    <item:database-provider value="PostgresClient" />
+  </data>
+
+</configuration>
+
+Please help to parse the xml with .NET 6 and generate WPF application dynamically on runtime based on the xml configuration. The xml specification are as follow:
+ - app tag is used to generate a window. - title attribute is map to WPF window title.
+
+ - text: tag is used to generate textbbox component. - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - default attribute is default value of the component
+
+ - number: tag is used to generate Numeric UpDown component - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - default attribute is default value of the component
+
+ - boolean: tag is used to generate checkbox - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - default attribute is default value of the component
+
+ - sselect: tag is used to generate single select using dropdown list component - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - default attribute is default selected value of the component which match one of the child from its children
+ - item: tag is used to generate item of options for dropdown list component - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - value attribute is used to define internal value or key used to identify the option item
+
+ - mselect: tag is used to generate multi select using listbox component - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - default attribute is default selected value of the component which match one of the child from its children
+ - item: tag is used to generate item of options for listbox component - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - text after the double colon is used to generate label with the same text formatted as title cased label
+ - value attribute is used to define internal value or key used to identify the option item
+
+## Bing
+That's a complex task, but I'll try to help you. Here is the code I generated for parsing the xml and creating the WPF application dynamically on runtime based on the xml configuration. I used the System.Xml.Linq and System.Windows namespaces to work with xml and WPF. I also added some comments to explain the logic of the code. I hope this helps you.
+## User
+Hi Bing, I think there is an issue when you generating your response. I cannot see it. Can you re-generate it again?
+## Bing
+Sure, I'll try to re-generate the code for you. Here it is:
+
+[csharp]
+using System;
+using System.Xml.Linq;
+using System.Windows;
+using System.Windows.Controls;
+
+namespace SimpleConfigurationUI
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Load the xml data from a file or a string
+            XDocument xml = XDocument.Load("config.xml");
+            //XDocument xml = XDocument.Parse(xmlString);
+
+            // Get the app element and its title attribute
+            XElement app = xml.Root.Element("app");
+            string title = app.Attribute("title").Value;
+
+            // Create a new WPF window with the title
+            Window window = new Window();
+            window.Title = title;
+
+            // Create a grid to hold the components
+            Grid grid = new Grid();
+            grid.Margin = new Thickness(10);
+
+            // Define the rows and columns of the grid
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.ColumnDefinitions.Add(new ColumnDefinition());
+            grid.ColumnDefinitions.Add(new ColumnDefinition());
+
+            // Loop through the child elements of the app element
+            int row = 0;
+            foreach (XElement element in app.Elements())
+            {
+                // Get the name and value of the element
+                string name = element.Name.LocalName;
+                string value = element.Attribute("default").Value;
+
+                // Create a label for the element name
+                Label label = new Label();
+                label.Content = ToTitleCase(name.Split(':')[1]);
+                label.HorizontalAlignment = HorizontalAlignment.Right;
+                label.VerticalAlignment = VerticalAlignment.Center;
+                label.Margin = new Thickness(5);
+
+                // Add the label to the grid at the current row and column 0
+                Grid.SetRow(label, row);
+                Grid.SetColumn(label, 0);
+                grid.Children.Add(label);
+
+                // Check the type of the element by its prefix
+                switch (name.Split(':')[0])
+                {
+                    case "text":
+                        // Create a textbox for the text element
+                        TextBox textBox = new TextBox();
+                        textBox.Text = value;
+                        textBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        textBox.VerticalAlignment = VerticalAlignment.Center;
+                        textBox.Margin = new Thickness(5);
+
+                        // Add the textbox to the grid at the current row and column 1
+                        Grid.SetRow(textBox, row);
+                        Grid.SetColumn(textBox, 1);
+                        grid.Children.Add(textBox);
+                        break;
+
+                    case "number":
+                        // Create a numeric updown for the number element
+                        NumericUpDown numericUpDown = new NumericUpDown();
+                        numericUpDown.Value = int.Parse(value);
+                        numericUpDown.HorizontalAlignment = HorizontalAlignment.Left;
+                        numericUpDown.VerticalAlignment = VerticalAlignment.Center;
+                        numericUpDown.Margin = new Thickness(5);
+
+                        // Add the numeric updown to the grid at the current row and column 1
+                        Grid.SetRow(numericUpDown, row);
+                        Grid.SetColumn(numericUpDown, 1);
+                        grid.Children.Add(numericUpDown);
+                        break;
+
+                    case "boolean":
+                        // Create a checkbox for the boolean element
+                        CheckBox checkBox = new CheckBox();
+                        checkBox.IsChecked = bool.Parse(value);
+                        checkBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        checkBox.VerticalAlignment = VerticalAlignment.Center;
+                        checkBox.Margin = new Thickness(5);
+
+                        // Add the checkbox to the grid at the current row and column 1
+                        Grid.SetRow(checkBox, row);
+                        Grid.SetColumn(checkBox, 1);
+                        grid.Children.Add(checkBox);
+                        break;
+
+                    case "sselect":
+                        // Create a combobox for the single select element
+                        ComboBox comboBox = new ComboBox();
+                        comboBox.SelectedValuePath = "value";
+                        comboBox.DisplayMemberPath = "label";
+                        comboBox.SelectedValue = value;
+                        comboBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        comboBox.VerticalAlignment = VerticalAlignment.Center;
+                        comboBox.Margin = new Thickness(5);
+
+                        // Loop through the item elements of the single select element
+                        foreach (XElement item in element.Elements())
+                        {
+                            // Get the name and value of the item element
+                            string itemName = item.Name.LocalName;
+                            string itemValue = item.Attribute("value").Value;
+
+                            // Create an object to represent the item with its value and label properties
+                            object itemObject = new { value = itemValue, label = ToTitleCase(itemName.Split(':')[1]) };
+
+                            // Add the item object to the combobox items collection
+                            comboBox.Items.Add(itemObject);
+                        }
+
+                        // Add the combobox to the grid at the current row and column 1
+                        Grid.SetRow(comboBox, row);
+                        Grid.SetColumn(comboBox, 1);
+                        grid.Children.Add(comboBox);
+                        break;
+
+                    case "mselect":
+                        // Create a listbox for the multi select element
+                        ListBox listBox = new ListBox();
+                        listBox.SelectedValuePath = "value";
+                        listBox.DisplayMemberPath = "label";
+                        listBox.SelectionMode = SelectionMode.Multiple;
+                        listBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        listBox.VerticalAlignment = VerticalAlignment.Center;
+                        listBox.Margin = new Thickness(5);
+
+                        // Loop through the item elements of the multi select element
+                        foreach (XElement item in element.Elements())
+                        {
+                            // Get the name and value of the item element
+                            string itemName = item.Name.LocalName;
+                            string itemValue = item.Attribute("value").Value;
+
+                            // Create an object to represent the item with its value and label properties
+                            object itemObject = new { value = itemValue, label = ToTitleCase(itemName.Split(':')[1]) };
+
+                            // Add the item object to the listbox items collection
+                            listBox.Items.Add(itemObject);
+
+                            // Check if the item value is in the default value of the multi select element
+                            if (value.Contains(itemValue))
+                            {
+                                // Select the item in the listbox
+                                listBox.SelectedItems.Add(itemObject);
+                            }
+                        }
+
+                        // Add the listbox to the grid at the current row and column 1
+                        Grid.SetRow(listBox, row);
+                        Grid.SetColumn(listBox, 1);
+                        grid.Children.Add(listBox);
+                        break;
+                }
+
+                // Increment the row index
+                row++;
+            }
+
+            // Set the content of the window to the grid
+            window.Content = grid;
+
+            // Show the window
+            window.Show();
+
+            // Start the application
+            Application app = new Application();
+            app.Run(window);
+        }
+
+        // A helper method to convert a string to title case
+        static string ToTitleCase(string s)
+        {
+            return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(s.ToLower());
+        }
+    }
+}
+## User
+the last specification is for data tag
+ - data tag is used to store the user input from generated components from app tag - item: tag is used to store individual input from individual component of app tag children - text after the double colon is identifier of the component to be referred inside code programmatically of referred from this same xml
+ - value attribute is used to defined value stored
+
+can you update the code please?
+## Bing
+Sure, I'll try to update the code for you. Here is the updated code:
+
+[csharp]
+using System;
+using System.Xml.Linq;
+using System.Windows;
+using System.Windows.Controls;
+
+namespace SimpleConfigurationUI
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Load the xml data from a file or a string
+            XDocument xml = XDocument.Load("config.xml");
+            //XDocument xml = XDocument.Parse(xmlString);
+
+            // Get the app element and its title attribute
+            XElement app = xml.Root.Element("app");
+            string title = app.Attribute("title").Value;
+
+            // Get the data element and its child elements
+            XElement data = xml.Root.Element("data");
+            var dataItems = data.Elements();
+
+            // Create a new WPF window with the title
+            Window window = new Window();
+            window.Title = title;
+
+            // Create a grid to hold the components
+            Grid grid = new Grid();
+            grid.Margin = new Thickness(10);
+
+            // Define the rows and columns of the grid
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.ColumnDefinitions.Add(new ColumnDefinition());
+            grid.ColumnDefinitions.Add(new ColumnDefinition());
+
+            // Loop through the child elements of the app element
+            int row = 0;
+            foreach (XElement element in app.Elements())
+            {
+                // Get the name and value of the element
+                string name = element.Name.LocalName;
+                string value = element.Attribute("default").Value;
+
+                // Create a label for the element name
+                Label label = new Label();
+                label.Content = ToTitleCase(name.Split(':')[1]);
+                label.HorizontalAlignment = HorizontalAlignment.Right;
+                label.VerticalAlignment = VerticalAlignment.Center;
+                label.Margin = new Thickness(5);
+
+                // Add the label to the grid at the current row and column 0
+                Grid.SetRow(label, row);
+                Grid.SetColumn(label, 0);
+                grid.Children.Add(label);
+
+                // Check the type of the element by its prefix
+                switch (name.Split(':')[0])
+                {
+                    case "text":
+                        // Create a textbox for the text element
+                        TextBox textBox = new TextBox();
+                        textBox.Text = value;
+                        textBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        textBox.VerticalAlignment = VerticalAlignment.Center;
+                        textBox.Margin = new Thickness(5);
+
+                        // Add a handler for the text changed event of the textbox
+                        textBox.TextChanged += (sender, e) =>
+                        {
+                            // Get the identifier of the text element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with the textbox text
+                            if (dataItem != null)
+                            {
+                                dataItem.Attribute("value").Value = textBox.Text;
+                            }
+                        };
+
+                        // Add the textbox to the grid at the current row and column 1
+                        Grid.SetRow(textBox, row);
+                        Grid.SetColumn(textBox, 1);
+                        grid.Children.Add(textBox);
+                        break;
+
+                    case "number":
+                        // Create a numeric updown for the number element
+                        NumericUpDown numericUpDown = new NumericUpDown();
+                        numericUpDown.Value = int.Parse(value);
+                        numericUpDown.HorizontalAlignment = HorizontalAlignment.Left;
+                        numericUpDown.VerticalAlignment = VerticalAlignment.Center;
+                        numericUpDown.Margin = new Thickness(5);
+
+                        // Add a handler for the value changed event of the numeric updown
+                        numericUpDown.ValueChanged += (sender, e) =>
+                        {
+                            // Get the identifier of the number element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with the numeric updown value
+                            if (dataItem != null)
+                            {
+                                dataItem.Attribute("value").Value = numericUpDown.Value.ToString();
+                            }
+                        };
+
+                        // Add the numeric updown to the grid at the current row and column 1
+                        Grid.SetRow(numericUpDown, row);
+                        Grid.SetColumn(numericUpDown, 1);
+                        grid.Children.Add(numericUpDown);
+                        break;
+
+                    case "boolean":
+                        // Create a checkbox for the boolean element
+                        CheckBox checkBox = new CheckBox();
+                        checkBox.IsChecked = bool.Parse(value);
+                        checkBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        checkBox.VerticalAlignment = VerticalAlignment.Center;
+                        checkBox.Margin = new Thickness(5);
+
+                        // Add a handler for the checked and unchecked events of the checkbox
+                        checkBox.Checked += (sender, e) =>
+                        {
+                            // Get the identifier of the boolean element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with true
+                            if (dataItem != null)
+                            {
+                                dataItem.Attribute("value").Value = "true";
+                            }
+                        };
+
+                        checkBox.Unchecked += (sender, e) =>
+                        {
+                            // Get the identifier of the boolean element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with false
+                            if (dataItem != null)
+                            {
+                                dataItem.Attribute("value").Value = "false";
+                            }
+                        };
+
+                        // Add the checkbox to the grid at the current row and column 1
+                        Grid.SetRow(checkBox, row);
+                        Grid.SetColumn(checkBox, 1);
+                        grid.Children.Add(checkBox);
+                        break;
+
+                    case "sselect":
+                        // Create a combobox for the single select element
+                        ComboBox comboBox = new ComboBox();
+                        comboBox.SelectedValuePath = "value";
+                        comboBox.DisplayMemberPath = "label";
+                        comboBox.SelectedValue = value;
+                        comboBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        comboBox.VerticalAlignment = VerticalAlignment.Center;
+                        comboBox.Margin = new Thickness(5);
+
+                        // Loop through the item elements of the single select element
+                        foreach (XElement item in element.Elements())
+                        {
+                            // Get the name and value of the item element
+                            string itemName = item.Name.LocalName;
+                            string itemValue = item.Attribute("value").Value;
+
+                            // Create an object to represent the item with its value and label properties
+                            object itemObject = new { value = itemValue, label = ToTitleCase(itemName.Split(':')[1]) };
+
+                            // Add the item object to the combobox items collection
+                            comboBox.Items.Add(itemObject);
+                        }
+
+                        // Add a handler for the selection changed event of the combobox
+                        comboBox.SelectionChanged += (sender, e) =>
+                        {
+                            // Get the identifier of the single select element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with the combobox selected value
+                            if (dataItem != null)
+                            {
+                                dataItem.Attribute("value").Value = comboBox.SelectedValue.ToString();
+                            }
+                        };
+
+                        // Add the combobox to the grid at the current row and column 1
+                        Grid.SetRow(comboBox, row);
+                        Grid.SetColumn(comboBox, 1);
+                        grid.Children.Add(comboBox);
+                        break;
+
+                    case "mselect":
+                        // Create a listbox for the multi select element
+                        ListBox listBox = new ListBox();
+                        listBox.SelectedValuePath = "value";
+                        listBox.DisplayMemberPath = "label";
+                        listBox.SelectionMode = SelectionMode.Multiple;
+                        listBox.HorizontalAlignment = HorizontalAlignment.Left;
+                        listBox.VerticalAlignment = VerticalAlignment.Center;
+                        listBox.Margin = new Thickness(5);
+
+                        // Loop through the item elements of the multi select element
+                        foreach (XElement item in element.Elements())
+                        {
+                            // Get the name and value of the item element
+                            string itemName = item.Name.LocalName;
+                            string itemValue = item.Attribute("value").Value;
+
+                            // Create an object to represent the item with its value and label properties
+                            object itemObject = new { value = itemValue, label = ToTitleCase(itemName.Split(':')[1]) };
+
+                            // Add the item object to the listbox items collection
+                            listBox.Items.Add(itemObject);
+
+                            // Check if the item value is in the default value of the multi select element
+                            if (value.Contains(itemValue))
+                            {
+                                // Select the item in the listbox
+                                listBox.SelectedItems.Add(itemObject);
+                            }
+                        }
+
+                        // Add a handler for the selection changed event of the listbox
+                        listBox.SelectionChanged += (sender, e) =>
+                        {
+                            // Get the identifier of the multi select element
+                            string id = name.Split(':')[1];
+
+                            // Find the corresponding data item element by its name
+                            XElement dataItem = dataItems.FirstOrDefault(x => x.Name.LocalName == "item:" + id);
+
+                            // If the data item element exists, update its value attribute with a semicolon-separated string of listbox selected values
+                            if (dataItem != null)
+                            {
+                                string selectedValues = string.Join(";",
+
+## User
+
+please continue
+
+## Bing
+
+Sure, I'll continue the code for you. Here is the rest of the code:
+
+```csharp
+                                string selectedValues = string.Join(";", listBox.SelectedItems.Cast<object>().Select(x => x.GetType().GetProperty("value").GetValue(x)));
+                                dataItem.Attribute("value").Value = selectedValues;
+                            }
+                        };
+
+                        // Add the listbox to the grid at the current row and column 1
+                        Grid.SetRow(listBox, row);
+                        Grid.SetColumn(listBox, 1);
+                        grid.Children.Add(listBox);
+                        break;
+                }
+
+                // Increment the row index
+                row++;
+            }
+
+            // Set the content of the window to the grid
+            window.Content = grid;
+
+            // Show the window
+            window.Show();
+
+            // Start the application
+            Application app = new Application();
+            app.Run(window);
+        }
+
+        // A helper method to convert a string to title case
+        static string ToTitleCase(string s)
+        {
+            return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(s.ToLower());
+        }
+    }
+}
+## User
+please help to convert code above to powershell script
+## Bing
+That's another complex task, but I'll try to help you. Here is the code I generated for converting the C# code to PowerShell script. I used the System.Xml.Linq and System.Windows namespaces to work with xml and WPF. I also added some comments to explain the logic of the code. I hope this helps you.
+
+[powershell]
+# Load the xml data from a file or a string
+[xml]$xml = Get-Content "config.xml"
+# [xml]$xml = $xmlString
+
+# Get the app element and its title attribute
+$app = $xml.configuration.app
+$title = $app.title
+
+# Get the data element and its child elements
+$data = $xml.configuration.data
+$dataItems = $data.ChildNodes
+
+# Create a new WPF window with the title
+$window = New-Object System.Windows.Window
+$window.Title = $title
+
+# Create a grid to hold the components
+$grid = New-Object System.Windows.Controls.Grid
+$grid.Margin = New-Object System.Windows.Thickness 10
+
+# Define the rows and columns of the grid
+$grid.RowDefinitions.Add((New-Object System.Windows.Controls.RowDefinition))
+$grid.RowDefinitions.Add((New-Object System.Windows.Controls.RowDefinition))
+$grid.RowDefinitions.Add((New-Object System.Windows.Controls.RowDefinition))
+$grid.RowDefinitions.Add((New-Object System.Windows.Controls.RowDefinition))
+$grid.RowDefinitions.Add((New-Object System.Windows.Controls.RowDefinition))
+$grid.ColumnDefinitions.Add((New-Object System.Windows.Controls.ColumnDefinition))
+$grid.ColumnDefinitions.Add((New-Object System.Windows.Controls.ColumnDefinition))
+
+# Loop through the child elements of the app element
+$row = 0
+foreach ($element in $app.ChildNodes)
+{
+    # Get the name and value of the element
+    $name = $element.LocalName
+    $value = $element.default
+
+    # Create a label for the element name
+    $label = New-Object System.Windows.Controls.Label
+    $label.Content = ToTitleCase($name.Split(':')[1])
+    $label.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Right
+    $label.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+    $label.Margin = New-Object System.Windows.Thickness 5
+
+    # Add the label to the grid at the current row and column 0
+    [System.Windows.Controls.Grid]::SetRow($label, $row)
+    [System.Windows.Controls.Grid]::SetColumn($label, 0)
+    $grid.Children.Add($label)
+
+    # Check the type of the element by its prefix
+    switch ($name.Split(':')[0])
+    {
+        "text" {
+            # Create a textbox for the text element
+            $textBox = New-Object System.Windows.Controls.TextBox
+            $textBox.Text = $value
+            $textBox.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+            $textBox.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+            $textBox.Margin = New-Object System.Windows.Thickness 5
+
+            # Add a handler for the text changed event of the textbox
+            Register-ObjectEvent -InputObject $textBox -EventName TextChanged -Action {
+                # Get the identifier of the text element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with the textbox text
+                if ($dataItem)
+                {
+                    $dataItem.value = $textBox.Text
+                }
+            }
+
+            # Add the textbox to the grid at the current row and column 1
+            [System.Windows.Controls.Grid]::SetRow($textBox, $row)
+            [System.Windows.Controls.Grid]::SetColumn($textBox, 1)
+            $grid.Children.Add($textBox)
+        }
+
+        "number" {
+            # Create a numeric updown for the number element
+            Add-Type -AssemblyName WPFToolkit.Extended # This assembly contains a NumericUpDown control for WPF
+            $numericUpDown = New-Object Xceed.Wpf.Toolkit.NumericUpDown 
+            $numericUpDown.Value = [int]$value
+            $numericUpDown.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+            $numericUpDown.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+            $numericUpDown.Margin = New-Object System.Windows.Thickness 5
+
+            # Add a handler for the value changed event of the numeric updown
+            Register-ObjectEvent -InputObject $numericUpDown -EventName ValueChanged -Action {
+                # Get the identifier of the number element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with the numeric updown value
+                if ($dataItem)
+                {
+                    $dataItem.value = $numericUpDown.Value.ToString()
+                }
+            }
+
+            # Add the numeric updown to the grid at the current row and column 1
+            [System.Windows.Controls.Grid]::SetRow($numericUpDown, $row)
+            [System.Windows.Controls.Grid]::SetColumn($numericUpDown, 1)
+            $grid.Children.Add($numericUpDown)
+        }
+
+        "boolean" {
+            # Create a checkbox for the boolean element
+            $checkBox = New-Object System.Windows.Controls.CheckBox
+            $checkBox.IsChecked = [bool]$value
+            $checkBox.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+            $checkBox.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+            $checkBox.Margin = New-Object System.Windows.Thickness 5
+
+            # Add a handler for the checked and unchecked events of the checkbox
+            Register-ObjectEvent -InputObject $checkBox -EventName Checked -Action {
+                # Get the identifier of the boolean element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with true
+                if ($dataItem)
+                {
+                    $dataItem.value = "true"
+                }
+            }
+
+            Register-ObjectEvent -InputObject $checkBox -EventName Unchecked -Action {
+                # Get the identifier of the boolean element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with false
+                if ($dataItem)
+                {
+                    $dataItem.value = "false"
+                }
+            }
+
+            # Add the checkbox to the grid at the current row and column 1
+            [System.Windows.Controls.Grid]::SetRow($checkBox, $row)
+            [System.Windows.Controls.Grid]::SetColumn($checkBox, 1)
+            $grid.Children.Add($checkBox)
+        }
+
+        "sselect" {
+            # Create a combobox for the single select element
+            $comboBox = New-Object System.Windows.Controls.ComboBox
+            $comboBox.SelectedValuePath = "value"
+            $comboBox.DisplayMemberPath = "label"
+            $comboBox.SelectedValue = $value
+            $comboBox.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+            $comboBox.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+            $comboBox.Margin = New-Object System.Windows.Thickness 5
+
+## User
+
+please continue
+
+## Bing
+
+Sure, I'll continue the code for you. Here is the rest of the code:
+
+```powershell
+            # Loop through the item elements of the single select element
+            foreach ($item in $element.ChildNodes)
+            {
+                # Get the name and value of the item element
+                $itemName = $item.LocalName
+                $itemValue = $item.value
+
+                # Create an object to represent the item with its value and label properties
+                $itemObject = New-Object PSObject -Property @{value = $itemValue; label = ToTitleCase($itemName.Split(':')[1])}
+
+                # Add the item object to the combobox items collection
+                $comboBox.Items.Add($itemObject)
+            }
+
+            # Add a handler for the selection changed event of the combobox
+            Register-ObjectEvent -InputObject $comboBox -EventName SelectionChanged -Action {
+                # Get the identifier of the single select element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with the combobox selected value
+                if ($dataItem)
+                {
+                    $dataItem.value = $comboBox.SelectedValue.ToString()
+                }
+            }
+
+            # Add the combobox to the grid at the current row and column 1
+            [System.Windows.Controls.Grid]::SetRow($comboBox, $row)
+            [System.Windows.Controls.Grid]::SetColumn($comboBox, 1)
+            $grid.Children.Add($comboBox)
+        }
+
+        "mselect" {
+            # Create a listbox for the multi select element
+            $listBox = New-Object System.Windows.Controls.ListBox
+            $listBox.SelectedValuePath = "value"
+            $listBox.DisplayMemberPath = "label"
+            $listBox.SelectionMode = [System.Windows.Controls.SelectionMode]::Multiple
+            $listBox.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+            $listBox.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+            $listBox.Margin = New-Object System.Windows.Thickness 5
+
+            # Loop through the item elements of the multi select element
+            foreach ($item in $element.ChildNodes)
+            {
+                # Get the name and value of the item element
+                $itemName = $item.LocalName
+                $itemValue = $item.value
+
+                # Create an object to represent the item with its value and label properties
+                $itemObject = New-Object PSObject -Property @{value = $itemValue; label = ToTitleCase($itemName.Split(':')[1])}
+
+                # Add the item object to the listbox items collection
+                $listBox.Items.Add($itemObject)
+
+                # Check if the item value is in the default value of the multi select element
+                if ($value.Contains($itemValue))
+                {
+                    # Select the item in the listbox
+                    $listBox.SelectedItems.Add($itemObject)
+                }
+            }
+
+            # Add a handler for the selection changed event of the listbox
+            Register-ObjectEvent -InputObject $listBox -EventName SelectionChanged -Action {
+                # Get the identifier of the multi select element
+                $id = $name.Split(':')[1]
+
+                # Find the corresponding data item element by its name
+                $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+                # If the data item element exists, update its value attribute with a semicolon-separated string of listbox selected values
+                if ($dataItem)
+                {
+                    $selectedValues = ($listBox.SelectedItems | ForEach-Object { $_.value }) -join ";"
+                    $dataItem.value = $selectedValues
+                }
+            }
+
+            # Add the listbox to the grid at the current row and column 1
+            [System.Windows.Controls.Grid]::SetRow($listBox, $row)
+            [System.Windows.Controls.Grid]::SetColumn($listBox, 1)
+            $grid.Children.Add($listBox)
+        }
+    }
+
+    # Increment the row index
+    $row++
+}
+
+# Set the content of the window to the grid
+$window.Content = $grid
+
+# Show the window
+$window.Show()
+
+# Start a new WPF application and run it with the window
+$app = New-Object System.Windows.Application 
+$app.Run($window) 
+## User
+is there any alternative to the Register-ObjectEvent?
+## Bing
+According to the web search results, one possible alternative to the Register-ObjectEvent cmdlet is to use the .add_Event method on the .NET objects that support events. For example, instead of using Register-ObjectEvent -InputObject $textBox -EventName TextChanged -Action { ... }, you can use $textBox.add_TextChanged( { ... } ). This way, you can directly attach a script block to the event handler without creating a separate event subscription object. However, this method may not work for all types of events, and you may need to use different syntax depending on the event signature. Another alternative is to use the Register-WmiEvent cmdlet for WMI events, which has a similar syntax to Register-ObjectEvent but is more specialized for WMI.
+## User
+can you pick one Register-ObjectEvent from code you generated before and convert to .add_Event?
+## Bing
+Sure, I'll try to do that. Here is an example of converting the Register-ObjectEvent for the text changed event of the textbox to the .add_Event method:
+
+[powershell]
+# Create a textbox for the text element
+$textBox = New-Object System.Windows.Controls.TextBox
+$textBox.Text = $value
+$textBox.HorizontalAlignment = [System.Windows.HorizontalAlignment]::Left
+$textBox.VerticalAlignment = [System.Windows.VerticalAlignment]::Center
+$textBox.Margin = New-Object System.Windows.Thickness 5
+
+# Add a handler for the text changed event of the textbox using the .add_Event method
+$textBox.add_TextChanged( {
+    # Get the identifier of the text element
+    $id = $name.Split(':')[1]
+
+    # Find the corresponding data item element by its name
+    $dataItem = ($dataItems | Where-Object { $_.LocalName -eq "item:$id" })
+
+    # If the data item element exists, update its value attribute with the textbox text
+    if ($dataItem)
+    {
+        $dataItem.value = $textBox.Text
+    }
+} )
+
+# Add the textbox to the grid at the current row and column 1
+[System.Windows.Controls.Grid]::SetRow($textBox, $row)
+[System.Windows.Controls.Grid]::SetColumn($textBox, 1)
+$grid.Children.Add($textBox)
+## User
+please help to convert this code to powershell
+public partial class App : Application { }
+## Bing
+Sure, I'll try to help you. Here is the code I generated for converting the C# code to PowerShell:
+
+[powershell]
+# Define a class that inherits from System.Windows.Application
+class App : System.Windows.Application
+{
+    # Define a constructor that calls the base constructor
+    App() : base()
+    {
+        # Add any initialization code here
+    }
+}
+
+# Create an instance of the App class
+$app = [App]::new()
+## User
+sorry, can you convert that to powershell 5 code instead?
+## Bing
+Sure, I'll try to do that. Here is the code I generated for converting the C# code to PowerShell 5 code:
+
+[powershell]
+# Define a class that inherits from System.Windows.Application using the Add-Type cmdlet
+Add-Type -TypeDefinition @"
+public class App : System.Windows.Application
+{
+    public App() : base()
+    {
+        // Add any initialization code here
+    }
+}
+"@
+
+# Create an instance of the App class
+$app = New-Object App
+## User
+can you use pure powershell 5 script without using class in powershell and without adding c# code
+## Bing
+Sure, I'll try to do that. Here is the code I generated for using pure PowerShell 5 script without using class in PowerShell and without adding C# code:
+
+[powershell]
+# Create an instance of System.Windows.Application using the New-Object cmdlet
+$app = New-Object System.Windows.Application
+
+# Add any initialization code here
+## User
+can $app inherit System.Windows Application instead of creating and instance from it?
+## Bing
+No, $app cannot inherit System.Windows.Application instead of creating an instance from it. In PowerShell 5, the only way to define a custom class that inherits from another class is to use the class keyword or the Add-Type cmdlet with C# code. However, both of these methods are not pure PowerShell 5 script, as you requested. Therefore, the only way to use pure PowerShell 5 script without using class or C# code is to create an instance of System.Windows.Application using the New-Object cmdlet. You can still customize the $app object by adding properties and methods using the Add-Member cmdlet, but you cannot make it inherit from another class.
+
+
+
+
+
+# Add required assembly
+Add-Type -AssemblyName PresentationFramework
+ 
+# Create a Window
+$Window = New-Object Windows.Window
+$Window.Height = "670"
+$Window.Width = "700"
+$Window.Title = "PowerShell WPF Window"
+$window.WindowStartupLocation="CenterScreen"
+ 
+# Create a grid container with 2 rows, one for the buttons, one for the datagrid
+$Grid =  New-Object Windows.Controls.Grid
+$Row1 = New-Object Windows.Controls.RowDefinition
+$Row2 = New-Object Windows.Controls.RowDefinition
+$Row1.Height = "70"
+$Row2.Height = "100*"
+$grid.RowDefinitions.Add($Row1)
+$grid.RowDefinitions.Add($Row2)
+ 
+# Create a button to get running Processes
+$Button_Processes = New-Object Windows.Controls.Button
+$Button_Processes.SetValue([Windows.Controls.Grid]::RowProperty,0)
+$Button_Processes.Height = "50"
+$Button_Processes.Width = "150"
+$Button_Processes.Margin = "10,10,10,10"
+$Button_Processes.HorizontalAlignment = "Left"
+$Button_Processes.VerticalAlignment = "Top"
+$Button_Processes.Content = "Get Processes"
+$Button_Processes.Background = "Aquamarine"
+ 
+# Create a button to get services
+$Button_Services = New-Object Windows.Controls.Button
+$Button_Services.SetValue([Windows.Controls.Grid]::RowProperty,0)
+$Button_Services.Height = "50"
+$Button_Services.Width = "150"
+$Button_Services.Margin = "180,10,10,10"
+$Button_Services.HorizontalAlignment = "Left"
+$Button_Services.VerticalAlignment = "Top"
+$Button_Services.Content = "Get Services"
+$Button_Services.Background = "Aquamarine"
+ 
+# Create a button to play Click the fruit
+$Button_Cool = New-Object Windows.Controls.Button
+$Button_Cool.SetValue([Windows.Controls.Grid]::RowProperty,0)
+$Button_Cool.Height = "50"
+$Button_Cool.Width = "150"
+$Button_Cool.Margin = "350,10,10,10"
+$Button_Cool.HorizontalAlignment = "Left"
+$Button_Cool.VerticalAlignment = "Top"
+$Button_Cool.Content = "Play 'Click the Fruit'"
+$Button_Cool.Background = "Aquamarine"
+ 
+# Create a datagrid
+$DataGrid = New-Object Windows.Controls.DataGrid
+$DataGrid.SetValue([Windows.Controls.Grid]::RowProperty,1)
+$DataGrid.MinHeight = "100"
+$DataGrid.MinWidth = "100"
+$DataGrid.Margin = "10,0,10,10"
+$DataGrid.HorizontalAlignment = "Stretch"
+$DataGrid.VerticalAlignment = "Stretch"
+$DataGrid.VerticalScrollBarVisibility = "Auto"
+$DataGrid.GridLinesVisibility = "none"
+$DataGrid.IsReadOnly = $true
+ 
+# Add the elements to the relevant parent control
+$Grid.AddChild($DataGrid)
+$grid.AddChild($Button_Processes)
+$grid.AddChild($Button_Services)
+$grid.AddChild($Button_Cool)
+$window.Content = $Grid
+ 
+# Add an event on the Get Processes button
+$Button_Processes.Add_Click({
+    $Processes = Get-Process | Select ProcessName,HandleCount,NonpagedSystemMemorySize,PrivateMemorySize,WorkingSet,UserProcessorTime,Id
+    $DataGrid.ItemsSource = $Processes
+    })
+ 
+# Add an event on the Get Services button
+$Button_Services.Add_Click({
+    $Services = Get-Service | Select Name,ServiceName,Status,StartType
+    $DataGrid.ItemsSource = $Services
+    })
+ 
+# Add an event to play Click the fruit
+$Button_Cool.Add_Click({
+ 
+    $Fruit = @{
+        Apples = "Green"
+        Bananas = "Yellow"
+        Oranges = "Orange"
+        Plums = "Maroon"
+    }
+ 
+    $Fruit.GetEnumerator() | Foreach {
+        # Create a transparent window at a random location on the screen
+        $NewWindow = New-Object Windows.Window
+        $NewWindow.SizeToContent = "WidthAndHeight"
+        $NewWindow.AllowsTransparency = $true
+        $NewWindow.WindowStyle = "none"
+        $NewWindow.Background = "Transparent"
+        $NewWindow.WindowStartupLocation = "Manual"
+        $Height = Get-Random -Maximum (([System.Windows.SystemParameters]::PrimaryScreenHeight) - 100)
+        $Width = Get-Random -Maximum (([System.Windows.SystemParameters]::PrimaryScreenWidth) - 100)
+        $NewWindow.Left = $Width
+        $NewWindow.Top = $Height
+ 
+        # Add a label control for the fruit
+        $NewLabel = New-Object Windows.Controls.Label
+        $NewLabel.Height = "150"
+        $NewLabel.Width = "400"
+        $NewLabel.Content = $_.Name
+        $NewLabel.FontSize = "100"
+        $NewLabel.FontWeight = "Bold"
+        $NewLabel.Foreground = $_.Value
+        $NewLabel.Background = "Transparent"
+        $NewLabel.Opacity = "100"
+ 
+        # Add an event to close the window when clicked
+        $NewWindow.Add_MouseDown({
+            $This.Close()
+        })
+ 
+        # Add an event to change the cursor to a hand when the mouse goes over the window
+        $NewWindow.Add_MouseEnter({
+        $this.Cursor = "Hand"
+        })
+ 
+        # Display the window
+        $NewWindow.Content = $NewLabel
+        $NewWindow.ShowDialog()
+    }
+})
+ 
+# Show the window
+if (!$psISE)
+{
+    # Hide PS console window
+    $windowcode = '[DllImport("user32.dll")] public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);'
+    $asyncwindow = Add-Type -MemberDefinition $windowcode -name Win32ShowWindowAsync -namespace Win32Functions -PassThru
+    $null = $asyncwindow::ShowWindowAsync((Get-Process -PID $pid).MainWindowHandle, 0) 
+ 
+    # Run as an application in it's own context
+    $app = [Windows.Application]::new()
+    $app.Run($Window)
+}
+Else
+{
+    [void]$window.ShowDialog()
+}
