@@ -13,6 +13,7 @@ date: 2020-05-25
 ## All Environment Variable
 
 Buat nge-list semua _env var_ bisa pake code ini
+
 ```powershell
 Clear-Host
 Get-ChildItem Env:*

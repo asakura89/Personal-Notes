@@ -10,56 +10,84 @@ date: 2021-12-22
 ```powershell
 Clear-Host
 
+#:< Script Info >:#
 function GetScriptInfo() {
-    $scriptfile = (Get-Item $PSCommandPath)
+    $workingpath = $null
+    If ($PSCommandPath -Eq [System.String]::Empty) {
+        # Note: $PSCommandPath will be empty string if it is not ran from script file
+        $workingpath = (Get-Item -Path .)
+    }
+    Else {
+        $workingpath = (Get-Item $PSCommandPath)
+    }
+
+    If ($workingpath -Eq $null) {
+        Return @{
+            Name = $null
+            FullName = $null
+            Directory = $null
+        }
+    }
+
+    If ($workingpath -Is [System.IO.DirectoryInfo]) {
+        Return @{
+            Name = $workingpath.BaseName
+            FullName = $workingpath.Name
+            Directory = $workingpath
+        }
+    }
 
     Return @{
-        Name = $scriptfile.BaseName
-        FullName = $scriptfile.Name
-        Directory = $scriptfile.Directory
+        Name = $workingpath.BaseName
+        FullName = $workingpath.Name
+        Directory = $workingpath.Directory
     }
 }
+#:< Script Info >:#
 
 #:< Log >:#
 function Log($message, $starting = $false, $writeToScreen = $true) {
-    $scriptfile = (Get-Item $PSCommandPath)
-    $logdir = $scriptfile.Directory
-    $logname = "$($scriptfile.BaseName)_$([System.DateTime]::Now.ToString("yyyyMMddHHmm")).log"
-    $logfile = [System.IO.Path]::Combine($logdir, $logname)
+    $workingpath = GetScriptInfo
+    If ($workingpath.Name -Ne $null) {
+        $logname = "$($workingpath.Name)_$([System.DateTime]::Now.ToString("yyyyMMddHHmm")).log"
+        $logfile = [System.IO.Path]::Combine($($workingpath.Directory), $logname)
 
-    $logmsg = "[$([System.DateTime]::Now.ToString("yyyy.MM.dd.HH:mm:ss"))] $($message)"
-    If ($writeToScreen) {
-        Write-Host $logmsg
-    }
+        $logmsg = "[$([System.DateTime]::Now.ToString("yyyy.MM.dd.HH:mm:ss"))] $($message)"
+        If ($writeToScreen) {
+            Write-Host $logmsg
+        }
 
-    If ($starting) {
-        $logmsg | Out-File -Encoding "UTF8" -FilePath $logfile
-    }
-    Else {
-        $logmsg | Add-Content -Encoding "UTF8" -Path $logfile
-    }
-}
-
-function CleanupLog() {
-    $scriptInfo = GetScriptInfo
-    $logdir = $scriptInfo.Directory
-
-    $maxDay = "-"+$logage -As [System.Int32]
-    $date = (Get-Date).AddDays($maxDay)
-
-    $logfolderFiles = Get-ChildItem -Path $logdir -Recurse -File
-    ForEach ($file in $logfolderFiles) {
-        If ($file.Extension -Eq ".log") { 
-            If($file.LastWriteTime -lt $date){
-                Remove-Item -Path $file.PSPath
-            }
+        If ($starting) {
+            $logmsg | Out-File -Encoding "UTF8" -FilePath $logfile
+        }
+        Else {
+            $logmsg | Add-Content -Encoding "UTF8" -Path $logfile
         }
     }
 }
 
+function CleanupLog($startDateString, $endDateString) {
+    $scriptInfo = GetScriptInfo
+    $searchedPath = "$($scriptInfo.Directory.FullName)\"
+    $format = "yyyyMMdd"
+    $start = [System.DateTime]::ParseExact($startDateString, $format, [System.Globalization.CultureInfo]::CurrentCulture)
+    $end = [System.DateTime]::ParseExact($endDateString, $format, [System.Globalization.CultureInfo]::CurrentCulture)
+    $patterns = @()
+    For ([System.DateTime]$current = $start; $current -Le $end; $current = $current.AddDays(1)) {
+        $patterns += "*_$($current.ToString($format))*.log"
+    }
+
+    $files = Get-ChildItem -Path $searchedPath -Include $patterns -Recurse -File
+    ForEach ($file in $files) {
+        Log "$($file.FullName) will be deleted"
+        # Be careful, uncomment this if you are sure
+        # Remove-Item -Path $file.FullName
+        Log "$($file.FullName) deleted"
+    }
+}
 #:< Log >:#
 
-#:< GetException >:#
+#:< Get Exception >:#
 function GetExceptionMessage([System.Exception]$ex) {
     $errorList = New-Object System.Text.StringBuilder
     [System.Exception]$current = $ex;
@@ -76,7 +104,7 @@ function GetExceptionMessage([System.Exception]$ex) {
 
     Return $errorList.ToString()
 }
-#:< GetException >:#
+#:< Get Exception >:#
 
 #:< Load Xml >:#
 function LoadXml([System.String]$xmlContent) {

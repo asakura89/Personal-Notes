@@ -20,7 +20,7 @@ $startdate = 20230528 # <-- in a yyyyMMdd format for easy math compare
 $enddate = 20230529
 
 #:< Create file to dump content >:#
-$workingpath = $Null
+$workingpath = $null
 If ($PSCommandPath -Eq [System.String]::Empty) {
     # Note: $PSCommandPath will be empty string if it is not ran from script file
     $workingpath = (Get-Item -Path .)
@@ -29,8 +29,8 @@ Else {
     $workingpath = (Get-Item $PSCommandPath)
 }
 
-$fullfilepath = $Null
-If ($workingpath -Ne $Null) {
+$fullfilepath = $null
+If ($workingpath -Ne $null) {
     $filename = "$($workingpath.BaseName)_$([System.DateTime]::Now.ToString("yyyyMMddHHmm")).txt"
     $fullfilepath = [System.IO.Path]::Combine($($workingpath.Directory), $filename)
 

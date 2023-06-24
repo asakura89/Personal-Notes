@@ -8,6 +8,8 @@ date: 2020-10-25
 
 # Load Xml
 
+## Using .NET
+
 ```powershell
 Clear-Host
 
@@ -134,4 +136,42 @@ Contoh hasil run
     "name.of.the.event",
     "name.of.the.second.event"
 ]
+```
+
+
+
+## Using Powershell native
+
+```powershell
+Clear-Host
+
+#:< global config >:#
+$configPath = "D:\Personal-Notes\Powershell\Load-Xml.config.xml"
+
+function MapConfigToSmtpSetting($configPath = $Script:configPath) {
+    [xml]$config = Get-Content $configPath
+    Return @{
+        Server = $config.configuration.smtpSettings.server
+        Port = $config.configuration.smtpSettings.port -As [System.Int32]
+        Username = $config.configuration.smtpSettings.userName
+        Password = $config.configuration.smtpSettings.password
+        UseTls = $config.configuration.smtpSettings.useTls -As [System.Boolean]
+    }
+}
+
+$smtpSettings = MapConfigToSmtpSetting
+$smtpSettings | ConvertTo-Json
+
+[xml]$xmlContent = @"
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <events>
+        <event>name.of.the.event</event>
+        <event>name.of.the.second.event</event>
+    </events>
+</configuration>
+"@
+
+$values = $xmlContent.configuration.events.event
+$values | ConvertTo-Json
 ```

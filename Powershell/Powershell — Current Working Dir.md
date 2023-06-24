@@ -26,7 +26,7 @@ Clear-Host
         GetItemDotFullName = (Get-Item -Path .).FullName
     }
 } |
-ConvertTo-Json
+    ConvertTo-Json
 
 ```
 

@@ -10,6 +10,7 @@ date: 2020-05-25
 ## OS Version
 
 OS version bisa make command ini
+
 ```powershell
 Clear-Host
 Write-Host $([System.Environment]::OSVersion.Version)

@@ -7,7 +7,9 @@ tags:
 date: 2020-04-25
 ---
 
-# Search PSCommand
+# PSCommand
+
+## Search PSCommand
 
 ```powershell
 Clear-Host
@@ -142,4 +144,117 @@ Othr: Set-AdlStoreItemPermission
 Othr: Set-ASRReplicationProtectedItem
 Othr: Test-AdlCatalogItem
 Othr: Test-AdlStoreItem
+```
+
+
+
+## Get specific command
+
+```powershell
+Clear-Host
+
+Get-Command |
+    Select-Object @{`
+        L="SimpleName"; `
+        E={ $(`
+            If ($_.CommandType -Eq "Function"){ "Func" } `
+            ElseIf ($_.CommandType -Eq "Cmdlet") { "CmdL" } `
+            Else { "Othr" }) + ": " + $_.Name }`
+        } |
+    Select-Object -ExpandProperty SimpleName |
+    Sort-Object @{E={ $_ }} |
+    Select-String '^CmdL.+(Format|Out)-.+'
+```
+
+
+
+Contoh hasil run
+
+```powershell
+CmdL: Format-Custom
+CmdL: Format-List
+CmdL: Format-SecureBootUEFI
+CmdL: Format-Table
+CmdL: Format-Wide
+CmdL: Out-Default
+CmdL: Out-File
+CmdL: Out-GridView
+CmdL: Out-Host
+CmdL: Out-Null
+CmdL: Out-Printer
+CmdL: Out-String
+```
+
+
+
+## Top 10
+
+```powershell
+Clear-Host
+
+Get-Command |
+    Select-Object @{`
+        L="SimpleName"; `
+        E={ $(`
+            If ($_.CommandType -Eq "Function"){ "Func" } `
+            ElseIf ($_.CommandType -Eq "Cmdlet") { "CmdL" } `
+            Else { "Othr" }) + ": " + $_.Name }`
+        } |
+    Select-Object -ExpandProperty SimpleName |
+    Sort-Object @{E={ $_ }} |
+    Select-Object -First 10
+```
+
+
+
+Contoh hasil run
+
+```powershell
+CmdL: Add-AASScalableTarget
+CmdL: Add-ACMCertificateTag
+CmdL: Add-ADSConfigurationItemsToApplication
+CmdL: Add-AGResourceTag
+CmdL: Add-ALXBDeviceToRoom
+CmdL: Add-ALXBResourceTag
+CmdL: Add-ALXBSkillGroupToRoom
+CmdL: Add-AppvClientConnectionGroup
+CmdL: Add-AppvClientPackage
+CmdL: Add-AppvPublishingServer
+```
+
+
+
+## Top 5 Last 5
+
+```powershell
+Clear-Host
+
+Get-Command |
+    Select-Object @{`
+        L="SimpleName"; `
+        E={ $(`
+            If ($_.CommandType -Eq "Function"){ "Func" } `
+            ElseIf ($_.CommandType -Eq "Cmdlet") { "CmdL" } `
+            Else { "Othr" }) + ": " + $_.Name }`
+        } |
+    Select-Object -ExpandProperty SimpleName |
+    Sort-Object @{E={ $_ }} |
+    Select-Object -First 5 -Last 5
+```
+
+
+
+Contoh hasil run
+
+```powershell
+CmdL: Add-AASScalableTarget
+CmdL: Add-ACMCertificateTag
+CmdL: Add-ADSConfigurationItemsToApplication
+CmdL: Add-AGResourceTag
+CmdL: Add-ALXBDeviceToRoom
+Othr: Write-CFGEvaluations
+Othr: Write-CSDDocuments
+Othr: Write-CTEventSelectors
+Othr: Write-CWLLogEvents
+Othr: Write-FileSystemCache
 ```
