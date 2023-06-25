@@ -18,6 +18,8 @@ The concept of smart notes is introduced as a way to address the illusion of com
 **Atomic Notes: Thinking in 3D**
 The essay highlights the importance of organizing notes in an atomic manner. Unlike traditional note-taking, where ideas are consolidated into one document, atomic notes separate each idea into individual units. This approach enables multidimensional thinking and enhances the ability to remember and connect ideas. The essay contrasts atomic notes with traditional note-taking methods and emphasizes the advantages of the former.
 
+_Note: Atomic Notes ini bagus biar gak terlalu bulky kalo bikin note tertentu. Tapi jadinya gak ada flow-nya. Flow ini harusnya terbentuk tanpa harus bikin connecting-nya. Biar dalem 1 notes ini isinya atomic notes disusun dengan flow yang bener jadi connected ideas._
+
 **Connected Ideas: Combating the Illusion of Competence**
 The essay argues that smart notes should not only connect ideas within a particular text but also link new ideas to existing knowledge. This approach helps combat the illusion of competence by ensuring new ideas are firmly anchored to familiar ones. The essay introduces the compass of the Zettelkasten thinking as a method to connect ideas. The compass involves thinking in four different directions: north (origins of the idea), west (similar concepts), east (competing ideas or missing elements), and south (future connections). By applying this method, individuals can enhance their understanding and generate new insights.
 
