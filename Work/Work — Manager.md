@@ -1,6 +1,8 @@
 ---
 tags:
 - Work
+- Manager
+- Team Lead
 date: 2023-01-07
 ---
 
@@ -18,3 +20,20 @@ Dan selain task managerial di atas, Manager juga harus udah punya dan ahli dalam
 
 References:
 - [What Is an Individual Contributor? (Definition and Examples)](https://www.indeed.com/career-advice/finding-a-job/what-is-an-individual-contributor)
+
+
+
+## Team Leader
+
+1. Leadership is an art form that can be learned, not taught.
+2. Leadership involves embracing the idea of seeing what needs to be done and then exercising the art of getting people to want to join in and help.
+3. Leaders take responsibility for the situation and take action, rather than being bystanders.
+4. Leaders must be able to motivate and inspire others to join them in their cause.
+
+_Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-translation_
+
+
+
+References:
+- [TKP Insights: Leadership [The Knowledge Project Ep. #160] - Farnam Street (fs.blog)](https://fs.blog/knowledge-project-podcast/tkp-insights-leadership/)
+- [10min summary of #160 TKP Insights: Leadership from The Knowledge Project with Shane Parrish (snipd.com)](https://share.snipd.com/episode/6c52b2f9-4cbf-41c6-8fb0-ceda0dc80507/summary)

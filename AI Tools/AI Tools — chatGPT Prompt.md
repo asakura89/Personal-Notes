@@ -65,3 +65,10 @@ Topic: Identify and solve problems
 | Why is it important to proactively identify and solve problems? | Proactive problem-solving prevents issues from escalating and improves efficiency. |
 
 _. . . dipotong biar gak kepanjangan . . ._
+
+
+
+## Summary Podcast transcription or Youtube subtitle
+
+Please assess this essay, provide 2 kind of responses. The 1st one is to provide summary with main points and key messages. The 2nd one is to convert the essay to paragraph with sections or chapters with bolded key messages. Here is the essay:
+**\[insert essay, subtitle, transcription here\]**
