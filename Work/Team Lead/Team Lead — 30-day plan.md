@@ -6,6 +6,10 @@ date: 2023-05-13
 ---
 
 
+{Content}
+
+_isi dengan point-point yang didapet dari belajar course online_
+
 <!--
 Sure, I can help you with that. Here is a 30-day plan to help you learn team leading from scratch:
 

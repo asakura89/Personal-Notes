@@ -1,6 +1,7 @@
 ---
 tags:
 - Life
+- Thought
 date: 2023-02-01
 ---
 

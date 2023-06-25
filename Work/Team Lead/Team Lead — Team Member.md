@@ -5,6 +5,11 @@ tags:
 date: 2023-05-14
 ---
 
+# Team Member
+
+{Content}
+
+_isi dengan responsibility team member_
 
 <!--
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is a paragraph with bullet points. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want. Here is my query: what is ownership and proactiveness as an employee as well as a team member?
@@ -125,5 +130,8 @@ If I would rephrase brain employee and muscle employee, I might call them:
 
 - Brain employee: A thinker or a planner. An employee who can generate ideas, strategies, and plans for themselves and others.
 - Muscle employee: A doer or a performer. An employee who can execute actions, tasks, and projects for themselves and others.
--
+
+
+
+Brain and Labor
 -->

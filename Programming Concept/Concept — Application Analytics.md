@@ -138,4 +138,4 @@ doesnt matter, just use the visitor id
 > **Personalization** → biasanya user/visitor/contact main identifier-nya adalah email (kalo identified). kalo anonymous, maka analytics bakal ngelakuin **profiling** / **fingerprinting** si user anonymous ini.
 > gimana caranya?
 > contact punya **dimensions** namanya. dimension ini adalah data kecil banget (atomic) yang dipake buat mengidentifikasi suatu contact. user agent dari browser, ip address, browser window/tab size, jenis device kalo bisa kedetect, negara yang diambil dari ip, dan hal lain yang bisa dipake buat nge-identify user.
-> kalo user-nya udah di identify, kita bisa bikin 1 set aturan-aturan / rule yang bisa diterapin ke user tertentu. misal, gue bikin 1 rule personalization kalo ada user yang keranjang belanjaannya isinya elektronik yang masuk kategori hape. munculin pop up hape-hape top 10 paling laku.
+> kalo user-nya udah di identify, kita bisa bikin 1 set aturan-aturan / rule yang bisa diterapin ke user tertentu. misal, kita bisa bikin 1 rule personalization kalo ada user yang keranjang belanjaannya isinya elektronik yang masuk kategori hape. munculin pop up hape-hape top 10 paling laku.

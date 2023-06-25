@@ -5,26 +5,7 @@ tags:
 date: 2022-07-25
 ---
 
-# All Things .NET Index
+# IIS Index
 
-## DotNet
-
-```dataview
-List
-From #DotNet
-```
-
-## IIS
-
-```dataview
-List
-From #IIS
-```
-
-## ASP .NET
-
-```dataview
-List
-From #ASP
-```
-No newline at end of file
+- [IIS — Auto recycle](IIS%20%E2%80%94%20Auto%20recycle.md)
+- [IIS — Log Investigation](IIS%20%E2%80%94%20Log%20Investigation.md)

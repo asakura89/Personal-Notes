@@ -10,6 +10,7 @@ date: 2020-05-25
 ## Random Seeds
 
 Generate random seeds dengan trik random _Guid_ dan Feigenbaum (46692016)
+
 ```powershell
 Clear-Host
 
@@ -37,6 +38,7 @@ $secondSeeds |
 
 
 Contoh hasil run
+
 ```powershell
 -34908
 -27215
@@ -104,6 +106,7 @@ $secondRands
 
 
 Contoh hasil run
+
 ```powershell
 1
 6

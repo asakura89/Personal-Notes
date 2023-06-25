@@ -43,7 +43,7 @@ Abis meeting terus lupa. Ada bangeet. Abis meeting terus miscomm. Bisa bangeeeet
 
 1. Tanggal meeting
 2. Daftar hadir
-3. Action items/actionables sebagai hasil dari meeting
+3. Action items/actionables sebagai hasil dari meeting, jangan lupa put PIC name dan deadline buat masing-masing item
 4. Going forward items yang menentukan atau mendefinisikan prosedur baru atau aturan-aturan baru sebagai hasil dari meeting
 5. Hal-hal yang jadi sorotan utama bisa dikasi garis bawah dan ditebelin buat ngasi awareness ke peserta meeting
 

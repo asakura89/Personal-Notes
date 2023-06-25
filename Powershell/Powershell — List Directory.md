@@ -25,6 +25,7 @@ Get-ChildItem -Path . |
 
 
 Contoh hasil run
+
 ```powershell
 .obsidian
 All Things .NET
