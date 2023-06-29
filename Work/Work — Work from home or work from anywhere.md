@@ -23,5 +23,5 @@ Anda tahu perasaannya.  Semua orang duduk mengelilingi meja, ide dibangun di ata
 
 References:
 
-1. Remote - Office not required, Jason Fried
+- Remote - Office not required, Jason Fried
 

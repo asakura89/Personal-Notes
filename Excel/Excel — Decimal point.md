@@ -48,5 +48,5 @@ Hasilnya:
 
 References:
 
-1. [Round a number to the decimal places I want - Microsoft Support](https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b)
+- [Round a number to the decimal places I want - Microsoft Support](https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b)
 

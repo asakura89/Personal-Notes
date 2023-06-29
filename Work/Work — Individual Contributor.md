@@ -32,4 +32,5 @@ Kalo dipikir-pikir, 5 skills ini itu bukan cuma harus dipunyai IC. Ini adalah sk
 
 
 References:
-1. [What Is an Individual Contributor? (Definition and Examples)](https://www.indeed.com/career-advice/finding-a-job/what-is-an-individual-contributor)
+
+- [What Is an Individual Contributor? (Definition and Examples)](https://www.indeed.com/career-advice/finding-a-job/what-is-an-individual-contributor)

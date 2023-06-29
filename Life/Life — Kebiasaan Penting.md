@@ -20,6 +20,7 @@ date: 2023-06-25
 
 
 References:
+
 - [Three Habits for a Better Life | 4min snip from The School of Greatness](https://share.snipd.com/snip/f5a646c5-506f-42d8-9a41-cb0795f1dd3d)
 - [Three Habits for a Better Life - transcription](_media/Three%20Habits%20for%20a%20Better%20Life%20-%20transcription.md)
 - [3 Daily Habits To Improve Your Life w/ James Clear EP 1395](https://share.snipd.com/episode/396e56e0-56f2-4a2c-8b68-a29bd1ec51ae)

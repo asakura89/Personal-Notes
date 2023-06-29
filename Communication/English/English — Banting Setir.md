@@ -24,4 +24,5 @@ Yes, another layman's phrase in American English that could be used to convey th
 
 
 References:
-- chatGPT
+
+- ChatGPT

@@ -29,4 +29,5 @@ These phrases convey a positive response to the review request and indicate that
 
 
 References:
-- chatGPT
+
+- ChatGPT

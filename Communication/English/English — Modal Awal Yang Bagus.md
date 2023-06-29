@@ -18,4 +18,5 @@ As for a layman's phrase, you could say "a good starting point" or "a solid fina
 
 
 References:
-- chatGPT
+
+- ChatGPT

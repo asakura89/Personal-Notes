@@ -1,7 +1,7 @@
 ---
 tags:
 - Work
-- Team Lead
+- Team-Lead
 date: 2023-05-14
 ---
 
