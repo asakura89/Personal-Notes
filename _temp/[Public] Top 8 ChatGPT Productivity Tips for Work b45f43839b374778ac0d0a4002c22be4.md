@@ -16,6 +16,17 @@ ChatGPT is only as good as the prompts you use, so it’s important to use **Pro
 
 ### Table of Contents 🧠
 
+- [Crafting the perfect self-evaluation](#crafting-the-perfect-self-evaluation)
+- [Create an onboarding plan](#create-an-onboarding-plan)
+- [Structure a strong project brief](#structure-a-strong-project-brief)
+- [Help with Feedback Analysis](#help-with-feedback-analysis)
+- [Give amazing presentations](#give-amazing-presentations)
+- [Write engaging social media posts](#write-engaging-social-media-posts)
+- [Land a full-time offer](#land-a-full-time-offer)
+- [Brainstorm inclusive team-building activities](#brainstorm-inclusive-team-building-activities)
+
+
+
 ## Video tutorial
 
 ---
