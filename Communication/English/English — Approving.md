@@ -7,11 +7,7 @@ date: 2022-04-28
 
 # Approving
 
-**please help to phrase or list at least 10 alternatives phrases to say "I'm ok" or "I'm fine" in context of approving review request**
-
-
-
-Sure, here are 10 alternative phrases that could be used to indicate approval of a review request:
+Menyetujui sesuai selain bilang "ok approved", biasanya semacam "gue ok" atau "gue udah ok". Nah cuma bahasa inggrisnya nih apa gitu.
 
 1. Sounds good to me!
 2. That works for me.
@@ -23,8 +19,6 @@ Sure, here are 10 alternative phrases that could be used to indicate approval of
 8. I'm comfortable moving forward with this.
 9. This looks good to me.
 10. Consider it approved!
-
-These phrases convey a positive response to the review request and indicate that you are comfortable with the proposed changes or recommendations.
 
 
 

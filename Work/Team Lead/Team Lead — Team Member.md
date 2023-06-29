@@ -17,12 +17,7 @@ Employees and team members are the key to the success of any organization. They 
 
 ## Ownership
 
-Ownership is the quality of taking responsibility for one's own work and actions, and being accountable for the results and outcomes. Ownership also involves having a sense of pride and commitment to the work, and caring about the quality and impact of the work.
-
-Some benefits of having ownership are:
-- It can increase one's motivation, engagement, and satisfaction at work. When one feels ownership of their work, they are more likely to enjoy it, put more effort into it, and achieve better results.
-- It can enhance one's performance, productivity, and efficiency at work. When one takes ownership of their work, they are more likely to set high standards, meet deadlines, and solve problems.
-- It can foster a positive and collaborative work culture, where everyone contributes and supports each other. When one shows ownership of their work, they are more likely to respect others' work, share feedback, and acknowledge achievements.
+Baca [Work — Ownership](/Work/Work%20%E2%80%94%20Ownership.md)
 
 
 
