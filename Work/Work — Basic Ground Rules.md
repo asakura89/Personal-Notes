@@ -2,6 +2,8 @@
 tags:
 - Work
 - Draft
+- Employee
+- Ways-of-Work
 date: 2022-12-15
 ---
 
