@@ -1,0 +1,6 @@
+
+https://github.com/isaacOjeda/MinimalApiArchitecture
+https://github.com/Elfocrash/DotnetDocsShow.MinimalApis/blob/main/DotnetDocsShow.NewWebApi/Controllers/WeatherForecastController.cs
+https://github.com/anuraj/MinimalApi/blob/main/Source/Program.cs
+https://github.com/DamianEdwards/MinimalApiPlayground
+https://github.com/search?l=C%23&p=2&q=minimal+API&type=Repositories
