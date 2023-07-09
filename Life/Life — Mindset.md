@@ -44,3 +44,14 @@ Jangan pernah mengedepankan ego karena ini adalah sumber terbesar dari miskomuni
 
 
 Ada yang bilang kalo mindset atau pola pikir itu magnet. Kalo kita berpikiran positif terus, maka hal-hal positif bakal ketarik ke kehidupan kita. Kalo kita berpikiran masalah terus, ya masalah bakal datang menghampiri.
+
+
+
+## Jalani aja dulu
+
+— if you keep doing what you love, you’ll connect  with people who appreciate it.
+— Don't let metrics (followers,likes,reach) define the quality of your creation
+— Never give up on your passion
+— It's okay to take a break, but never quit
+— Build a habit around your passion
+— Set goals and chase it - One percent every day
