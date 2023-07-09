@@ -26,6 +26,6 @@ Jangan, sekalipun, jadi bystander. Bystander tu orang yang cuma ngeliatin doang 
 
 ## Summarize
 
-Meringkas ini poin penting di tiap komunikasi sih. Jadi usahain selalu meringkas hasil percakapan, hasil diskusi, hasil pertemuan. Biar siapapun gak ada yang salah tangkep termasuk diri kita sendiri. Gak ada yang berasumsi. Karena asumsi ini berbahaya sekali. Karena akan sangat berpengaruh dengan jalannya suatu event, acara, project, atau hal yang jadi fokus dan mempengaruhi hasilnya. Maka sebisa mungkin buat selalu memastikan dan mengklarifikasi semua hal dan hindari berasumsi.
+Meringkas ini adalah poin penting di tiap komunikasi sih. Jadi usahain selalu meringkas hasil percakapan, hasil diskusi, hasil pertemuan. Biar siapapun gak ada yang salah tangkep termasuk diri kita sendiri. Gak ada yang berasumsi. Karena asumsi ini berbahaya sekali. Karena akan sangat berpengaruh dengan jalannya suatu event, acara, project, atau hal yang jadi fokus dan mempengaruhi hasilnya. Maka sebisa mungkin buat selalu memastikan dan mengklarifikasi semua hal dan hindari berasumsi.
 
-Contoh ringkasan tuh bisa kek gini [Communication — Meeting Minutes](Communication%20%E2%80%94%20Meeting%20Minutes.md).
+Contoh ringkasan tuh bisa kek gini [Communication — Meeting Minutes](Communication%20%E2%80%94%20Meeting%20Minutes.md). Atau bisa juga pake format ini [Communication — Article or Paragraph](Communication%20%E2%80%94%20Article%20or%20Paragraph.md)

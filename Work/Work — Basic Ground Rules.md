@@ -31,7 +31,10 @@ Ketika kita ada di dalam sebuah team, jangan pernah membiarkan temen se-team bua
 
 Ini mirip sama _Help each other_. Jangan cuma diem aja ngeliat temen kita kesusahan. Atau jangan diem aja ngeliat suatu masalah gak terselesaikan. Kalo tau ada masalah, maka esacalate ke atas untuk diselesaikan bareng. Atau kalo memang bisa nyelesein sendiri. Lapor dulu keatas kalo kita mau nyelesein masalahnya. Jangan ngelakuin diem-diem. Karena nanti bisa jadi aksi kita gak di-support dan malah jadi masalah yang lain lagi.
 
+
+
 #### Link lain
+
 - [Communication — Communicate](/Communication/Communication%20%E2%80%94%20Communicate.md)
 
 
@@ -39,6 +42,8 @@ Ini mirip sama _Help each other_. Jangan cuma diem aja ngeliat temen kita kesusa
 ## In the face of tasks or job desks
 
 ## Ownership
+
+Baca [Work — Ownership](/Work/Work%20%E2%80%94%20Ownership.md)
 
 
 
