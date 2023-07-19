@@ -74,8 +74,6 @@ Log "Doing another thing ..."
 Log ".:: Finish Script ::."
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -173,8 +171,6 @@ CleanupLog "20200504" "20200507"
 
 Log ":: Finish Script ::"
 ```
-
-
 
 Contoh hasil run
 

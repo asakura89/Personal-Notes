@@ -23,8 +23,6 @@ $app.Run($window)
 ```
 Ternyata `$app.Run($window)` dan `[void]$window.ShowDialog()` punya fungsi yang sama, sama-sama bisa nampilin window dialog. Terus kalo run script ini di Powershell ISE, gakkan bisa create instance Application lagi (Application punya WPF App). Jadi script-nya bakal error. Karena Powershell ISE udah create instance-nya dan gak bisa create 2 Application instance di dalem 1 AppDomain.
 
-
-
 Ini error-nya.
 
 ```powershell

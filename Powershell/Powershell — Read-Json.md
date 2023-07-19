@@ -34,16 +34,12 @@ Write-Host $json.CurrentDirGetLocation.GetLocation.Provider
 >:#>
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
 C:\WINDOWS\system32
 Microsoft.PowerShell.Core\FileSystem
 ```
-
-
 
 Json buat contoh code di atas
 

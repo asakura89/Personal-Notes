@@ -47,8 +47,6 @@ function GetScriptInfo() {
 GetScriptInfo
 ```
 
-
-
 Contoh hasil run kalo script di-save ke file
 
 ```powershell
@@ -58,8 +56,6 @@ FullName        Test.ps1
 Name            Test                             
 Directory       D:\project\release\PSScratchpad  
 ```
-
-
 
 Contoh hasil run kalo script gak di-save ke file
 
@@ -91,8 +87,6 @@ Clear-Host
 } | 
     Format-List
 ```
-
-
 
 Contoh hasil run. Dan ini cuma bisa di-run tanpa error kalo script di-save ke file. Karena `$PSCommandPath` bakal null kalo script-nya gak di-save
 

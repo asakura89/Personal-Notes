@@ -285,7 +285,7 @@ Flow is the same as OAuth 2.0 standard from Front Channel to Back Channel with d
 
 
 
-References:
+**References:**
 
 - [Identity and Access Management: Technical Overview - YouTube](https://www.youtube.com/watch?v=Tcvsefz5DmA)
 - [OAuth 2.0 &amp; OpenID Connect (OIDC): Technical Overview - YouTube](https://www.youtube.com/watch?v=rTzlF-U9Y6Y)

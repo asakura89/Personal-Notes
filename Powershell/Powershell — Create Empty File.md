@@ -20,8 +20,6 @@ $(Get-ChildItem $files).ForEach({ $_.LastWriteTime = Get-Date })
 # ^ will output 0 kb file
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -40,11 +38,7 @@ Mode                 LastWriteTime         Length Name
 
 ```
 
-
-
 Tapi kalo file dengan nama yang sama udah ada, script-nya bakal nge-output-in error
-
-
 
 Terus kan script ini masih nge-output-in list file yang di-create, kalo mau di-silent bisa diginiin
 
@@ -56,23 +50,17 @@ New-Item -ItemType File $files | Out-Null  # <-- line yang di-modify
 $(Get-ChildItem $files).ForEach({ $_.LastWriteTime = Get-Date })
 ```
 
-
-
 Atau diginiin.
 
 ```powershell
 $null = New-Item -ItemType File $files
 ```
 
-
-
 Atau juga bisa digiin
 
 ```powershell
 [void](New-Item -ItemType File $files)
 ```
-
-
 
 Kalo gak terlalu saklek harus 0 kb, bisa pake oneliner gini sebetulnya
 

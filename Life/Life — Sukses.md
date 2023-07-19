@@ -13,6 +13,4 @@ date: 2023-06-01
 [0]: https://www.goodreads.com/quotes/718623-if-you-love-your-work-if-you-enjoy-it-you-re
 [1]: https://www.goodreads.com/book/show/6249329-living-an-abundant-life
 
-
-
 Maaaaakk, aku udah sukses maaaakk

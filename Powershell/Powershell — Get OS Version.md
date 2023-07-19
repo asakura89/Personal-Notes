@@ -18,8 +18,6 @@ Write-Host $([System.Environment]::OSVersion.Version)
 
 atau sesimpel `[System.Environment]::OSVersion.Version.ToString()`
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -34,8 +32,6 @@ Contoh hasil run
 Clear-Host
 [System.Environment]::OSVersion
 ```
-
-
 
 Contoh hasil run
 
@@ -54,12 +50,9 @@ Clear-Host
 [System.Environment]::OSVersion.Version.Major
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
 10
 ```
-
 

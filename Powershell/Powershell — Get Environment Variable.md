@@ -19,8 +19,6 @@ Clear-Host
 Get-ChildItem Env:*
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -73,15 +71,11 @@ PUBLIC                         C:\Users\Public
 
 Path di _env var_ adalah hal yang paling sering dicari atau dicek. Karena kadang ada console app yang udah di-update version-nya tapi masih gak ke-update di command prompt / Powershell karena path-nya ketimpa duplikat misalnya.
 
-
-
 Ini command buatr nge-list semua path
 ```powershell
 Clear-Host
 $Env:Path -Split ";"
 ```
-
-
 
 Kalo butuh buat nyari path tertentu bisa pake `Select-String`
 misal, butuh buat nyari java path
@@ -90,8 +84,6 @@ bisa pake comand ini
 Clear-Host
 $Env:Path -Split ";" | Select-String "java|jdk"
 ```
-
-
 
 Contoh hasil run
 
@@ -124,8 +116,6 @@ Clear-Host
 Format-List
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -154,8 +144,6 @@ Name  : AppDataRoaming3
 Value : C:\Users\ASMNetworkLabUsr\AppData\Roaming
 ```
 
-
-
 Contoh untuk generate file name bisa pake script di bawah
 ```powershell
 Clear-Host
@@ -169,8 +157,6 @@ $filename = "$($cleanedUname)_$($datetime)"
 
 Write-Host $filename
 ```
-
-
 
 Contoh hasil run
 

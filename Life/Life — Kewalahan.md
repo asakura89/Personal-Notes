@@ -23,7 +23,7 @@ Itu kenapa kita harus bisa nerapin konsep having a second brain. Pindahin semua 
 
 
 
-References:
+**References:**
 
 Conversation with Bing, 5/26/2023
 - [Apa itu Overwhelmed dalam Psikologi dan Cara Mengatasinya.](https://kumparan.com/berita-hari-ini/apa-itu-overwhelmed-dalam-psikologi-dan-cara-mengatasinya-1zFjaDbF5vd) Accessed 5/26/2023.

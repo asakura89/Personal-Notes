@@ -15,8 +15,6 @@ $path = "C:\Users\ASMNetworkLabUsr\Project\656eb24c36a609fe8fb8e41c6a5f276347793
 $(Get-FileHash -Path $path -Algorithm "SHA256").Hash
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -40,8 +38,6 @@ Write-Host "Hash MD5:" $hashMD5.Hash.ToLowerInvariant()
 Write-Host "Hash 256:" $hash256.Hash.ToLowerInvariant()
 Write-Host "Hash 512:" $($hash512.Hash.ToLowerInvariant())
 ```
-
-
 
 Contoh hasil run
 

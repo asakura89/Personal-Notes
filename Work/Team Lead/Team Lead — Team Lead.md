@@ -14,7 +14,7 @@ date: 2023-06-04
 
 
 
-References:
+**References:**
 
 - [TKP Insights: Leadership [The Knowledge Project Ep. #160] - Farnam Street (fs.blog)](https://fs.blog/knowledge-project-podcast/tkp-insights-leadership/)
 - [10min summary of #160 TKP Insights: Leadership from The Knowledge Project with Shane Parrish (snipd.com)](https://share.snipd.com/episode/6c52b2f9-4cbf-41c6-8fb0-ceda0dc80507/summary)

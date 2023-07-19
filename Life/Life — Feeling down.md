@@ -31,15 +31,9 @@ Ini permasalahan umum semua orang. Gak ada orang yang gak pernah feeling down. A
 5. <u>Hadapi masalahnya:</u> Langkah utama buat nyelesein masalah adalah dengan menghadapinya, bukan menghindarinya.
 6. <u>Cari mentor:</u> Masih nyambung sama poin no. 1. Buat bisa ngelakuin hal-hal positif di atas, kita butuh orang yang bisa ngedampingin yang ngebantu kita buat selalu ngasi dukungan dan menjadi pengingat kalo kita bisa terus maju dengan ngelakuin poin-poin tadi.
 
-
-
 Dan inget, langkah-langkah itu bukan buat menghilangkan perasaan feeling down atau perasaan negatif, tapi buat nyari tau akar masalah. Ketika kita udah bisa nerima, harusnya gak akan segampang itu buat merasa jatuh lagi. Juga kita jadinya bisa buat mulai memperkuat diri kita biar bisa memperbaiki masalah di masa sekarang dan ngambil sikap positif dan berpikir positif dimasa depan.
 
-
-
 Misalnya, kalo kita merasa sedih karena kita gak cukup bahagia sama kerjaan kita di kantor, cara penerimaannya mungkin dengan cara sadar kalo kerjaan kita sekarag gak memuaskan. Cari tau kenapanya atau akar masalahnya kita gak puas sama kerjaan kita. Apakah memang dari segi job desk-nya atau malah memang kita harus nerima kalo semua hal-hal gak memuaskan itu adalah bagian dari resiko kerja. Karena di semua lini kerjaan pasti ada resiko kerjanya. Sejauh apa kita bisa mentolerir resiko-resiko ini. Kalo kita gak sanggup ya kita bisa eksplor karir-karir lainnya. Bukan berarti kita lemah karena kita gak bisa sanggup menjalani, tapi kita sadar dengan kesanggupan kita saat ini dengan secara sadar mempelajari pikiran, perasaan, dan semua sensasi fisik yang kita dapet sewaktu kita menjalani kerjaan ini.
-
-
 
 Contoh lain, kalo kita sedih karena masalah hubungan, penerimaannya beda lagi. Mungkin melibatkan komunikasi secara terbuka dengan pasangan, dan bareng-bareng mikirin solusi untuk menyelesaikan masalah bersama. Berjalan bersama bukan mau menerima keadaan kita satu sama lain saat ini. Tapi dengan sadar dan mau menerima masa lalu, masa sekarang dan masa mendatang semua perubahan yang bakal ditujukin sama pasangan. Kalo kita gak sanggup, ya balik lagi kalo dengan sadar kita udah mengkaji kesanggupan kita dari segala sisi.
 
@@ -49,8 +43,6 @@ Contoh lain, kalo kita sedih karena masalah hubungan, penerimaannya beda lagi. M
 
 Daily driver ini adalah hal, apapun, yang bisa nge-drive atau ngangkat motivasi kita tiap hari. Orang yang punya hobi, biasanya bakal bisa nemuin hal-hal yang bisa bikin dia termotivasi lagi. Karena mereka akan bisa nyari pengalihan dari hal yang bikin mereka ngerasa down. Tapi ada juga yang masih bingung buat nyari sesuatu buat bisa dijadiin hobi. Atau malah sebenernya walaupun udah punya hobi, hobinya tetep gak bisa bantuin buat bikin reda perasaan down-nya.
 
-
-
 Hal utama yang bisa dilakuin adalah cari hal-hal yang bisa bikin rileks. Mungkin hal-hal ini bisa ngebantu.
 1. <u>Siram kepala pake air dingin:</u> Katanya, katanya nih, kata dokter deket rumah, kalo kita nyiram kepala pake air dingin, itu bisa bikin rileks. Efeknya sama kaya kalo lagi sakit kepala terus rambut yang daerah sakit kepalanya ditarik.
 2. <u>Menyeduhlah:</u> Seduh Teh. Bukan anak teh? Ngopi. Bukan anak senja yang doyan ngopi? Bikin susu anget. Enggak juga? Coklat anget deh. Udah gausah banyak komplen.
@@ -59,15 +51,11 @@ Hal utama yang bisa dilakuin adalah cari hal-hal yang bisa bikin rileks. Mungkin
 5. <u>Olahraga rileks:</u> Ngelakuin Yoga. Biasanya cewe-cewe nih. Ada juga Tai chi. Biasanya orang tua-orang tua nih 🤭.
 6. <u>Ngelakuin aktivitas kreatif:</u> Misalnya ngelukis, nulis. Bahkan di toko buku sekarang, banyak buku-buku mewarnai untuk orang dewasa.
 
-
-
 Penting juga buat <u>memprioritasin perawatan diri</u>. Perawatan diri ini bukan cuma soal kaya meni-pedi ya. Tapi merawat diri dengan meluangkan diri untuk ngelakuin aktivitas-aktivitas yang menyehatkan tubuh dan pikiran.
 1. <u>Perhatiin tidur:</u> Tidur dengan cukup. Tidur di jam yang sama setiap hari, dan bangun di jam yang sama setiap hari. Punya kebiasaan tidur yang rutin kaya gini, maksudnya yang sehat dan konsisten, bisa bikin kualitas tidur jadi lebi baik juga kan sebenernya berpengaruh sama kesehatan secara keseluruhan.
 2. <u>Perhatiin makanan:</u> Menjaga pola makan yang sehat dan seimbang adalah semacam kalimat yang selalu disebut sama semua dokter. Caranya gimana? Banyakin sayur, kurangi gula, kurangi tepung. Tidak semudah membalikkan telapak tangan, tapi bisa dan mungkin sekali buat dilakuin.
 3. <u>Berolahraga teratur:</u> Pemanasan simpel pun cukup, asal rutin tiap hari. Kenapa? karena bisa mengurangi stres dan meningkatkan mood. Jadi semangat terus tiap hari.
 4. <u>Ngelakuin aktivitas relaksasi:</u> Kaya deep breathing atau progressive muscle relaxation.
-
-
 
 Intinya sih cari aktivitas yang sesuai dan cocok. Experiment dengan macem-macem aktivitas sampe nemu satu yang bisa bikin rileks dan naikin motivasi lagi. Maka carilah daily driver, biar kita bisa bangkit lagi di tiap harinya. Yaaayyy!! 🙌 🙌
 
@@ -87,11 +75,7 @@ Salah satu sumber yang paling sering bikin stres dan perasaan cemas adalah tekan
 
 Feeling down ini kan perasaan emosi yang berpengaruh ke mental kita. Perasaan-perasaan dan emosi-emosi negatif. Kalo ngomongin mental, katanya, katanya nih, yang bisa nyembuhin penyakit mental itu diri kita sendiri. Psikolog atau orang terdekat kita itu cuma bisa dengerin, bantu nyari tau masalahnya dimana. Udah, gitu doang. Ibarat kata, mereka cuma bisa bantu debug, yang bisa bug-fix cuma diri kita sendiri.
 
-
-
 Jadi gimana cara kita bisa happy lagi? semangatin lah diri sendiri. Ketika satu dunia ini turn their back on us atau againts us at all, yang bisa bantu dan nyelametin diri kita adalah diri kita sendiri. Dan inget, kita punya kekuatan buat mengatasi semua itu. Tinggal kitanya mau atau enggak.
-
-
 
 Di bagian [The power of acceptance](#the-power-of-acceptance), tadi udah dibahas kalo nyari kebahagiaan itu perjalanan panjang. Bukan sekedar satu dua langkah. Poin-poin yang disebut di atas mungkin bisa dibilang poin-poin awal yang ketika kita udah mulai dalam kondisi gak down lagi, kita bisa lanjutin dengan ngelakuin ini:
 1. <u>Maafkanlah:</u> Belajar memaafkan orang lain ini bukan buat meringankan beban mental orang lain itu, tapi buat ngebantu kesehatan mental kita sendiri.

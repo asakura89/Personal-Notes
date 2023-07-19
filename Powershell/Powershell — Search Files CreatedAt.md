@@ -10,6 +10,8 @@ date: 2023-05-28
 
 Sebelum masuk ke topik _Directory_ atau _File_, umumnya untuk ngambil list item dari working directory (folder yang lagi dibuka) bisa pake `Get-ChildItem`. Kalo dipanggil tanpa parameter maka bakal nge-list semua item dan menghasilkan output yang sama dengan batch command `dir`.
 
+
+
 ## First Level
 
 ```powershell
@@ -52,8 +54,6 @@ $filelist = Get-ChildItem -Path $searchedpath -Recurse -File |
 
 $filelist | Add-Content -Encoding UTF8 -Path $fullfilepath
 ```
-
-
 
 Contoh hasil file output
 ```powershell

@@ -37,8 +37,6 @@ Log $result
 Log ":: Finish Script ::"
 ```
 
-
-
 Contoh hasil run
 
 ```powershell

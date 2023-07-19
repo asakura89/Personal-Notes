@@ -68,9 +68,9 @@ Nah makanya penggunaan `var` disini malah bikin developer lain yang baca code in
 
 ```C#
 class Configuration {
-	String Get(String name);
-	Object GetFromSessions(String name);
-	T Get<T>(String name);
+    String Get(String name);
+    Object GetFromSessions(String name);
+    T Get<T>(String name);
 }
 
 // tidak baik

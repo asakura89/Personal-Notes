@@ -42,7 +42,7 @@ In conclusion, if you want to get ahead in your career and take it to the next l
 
 
 
-References:
+**References:**
 
 - Why Your Less-Experienced Colleagues Are Promoted Instead of You! ([Video](https://www.youtube.com/watch?v=OPiXobBnCKI), [Subtitle](_media/Why%20Your%20Less-Experienced%20Colleagues%20Are%20Promoted%20Instead%20of%20You!%20-%20English.srt.md))
 

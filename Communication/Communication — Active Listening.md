@@ -67,6 +67,6 @@ In this blog post, we shared some tips and techniques from experts on how to be 
 
 
 
-References:
+**References:**
 
 - The Art of Active Listening | The Harvard Business Review Guide ([Video](https://www.youtube.com/watch?v=aDMtx5ivKK0), [Subtitle](_media/The%20Art%20of%20Active%20Listening%20_%20The%20Harvard%20Business%20Review%20Guide%20-%20English.srt.md))

@@ -228,8 +228,6 @@ $decrypted = Decrypt $encrypted $key $salt
 Write-Host "Decrypted: $($decrypted)"
 ```
 
-
-
 Contoh hasil run
 
 ```powershell

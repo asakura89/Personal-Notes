@@ -55,6 +55,4 @@ Remove-Variable -Name CONFeigenbaumConst -Force
 Write-Host $CONFeigenbaumConst
 ```
 
-
-
 Terus langsung mikir, ini kan powershell. Ngapain pake constant. Mon maap, kebiasaan pake OOP.

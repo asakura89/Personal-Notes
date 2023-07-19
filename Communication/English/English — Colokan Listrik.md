@@ -14,8 +14,6 @@ date: 2023-05-22
    - Power Jack
    - Power Plug
 
-
-
 2. Terminal colokan/Colokan sambung
    
    American-English:
@@ -25,6 +23,6 @@ date: 2023-05-22
 
 
 
-References:
+**References:**
 
 - Bing Chat

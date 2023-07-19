@@ -27,7 +27,7 @@ date: 2022-07-08
 
 
 
-References:
+**References:**
 
 - [How to Find Duplicates in Excel (Easy Tutorial) (excel-easy.com)](https://www.excel-easy.com/examples/find-duplicates.html)
 

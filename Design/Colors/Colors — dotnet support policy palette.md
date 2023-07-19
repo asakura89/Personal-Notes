@@ -46,6 +46,6 @@ date: 2022-12-08
 
 
 
-References:
+**References:**
 
 - https://dotnet.microsoft.com/en-us/platform/support/policy

@@ -531,6 +531,6 @@ As a manager, you want to know how well your team is performing and achieving th
 
 
 
-References:
+**References:**
 
 - [Essential Lessons for First-Time Managers](https://www.linkedin.com/learning/essential-lessons-for-first-time-managers/?autoplay=false&resume=false)

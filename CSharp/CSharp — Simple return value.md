@@ -8,7 +8,7 @@ date: 2016-01-18
 
 Awalnya return value ini dipake buat return value dari ASP.NET MVC Controller ketika dipanggil jQuery buat render html Partial View atau buat kirim simple data. Tapi ternyata bisa dipake buat banyak kasus.
 
-## Contoh Code
+**Contoh Code:**
 
 ```c#
 void Main() {
@@ -90,7 +90,7 @@ Code retrun value-nya bisa diambil dari sini [[Link]](https://github.com/asakura
 
 
 
-Output
+**Output:**
 
 ```markdown
 Info → Start

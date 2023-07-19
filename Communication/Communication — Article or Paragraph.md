@@ -160,7 +160,7 @@ Format yang lumayan bagus buat ngebikin tulisan.
 
 
 
-References:
+**References:**
 
 - [Choose the right Java runtime for the job - IBM Developer](https://developer.ibm.com/articles/choose-the-right-java-runtime-for-the-job/)
 - [Java licensing has changed, and you could be affected - IBM Developer](https://developer.ibm.com/blogs/java-licensing-is-changing-and-you-could-be-affected/)

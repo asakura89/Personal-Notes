@@ -27,8 +27,6 @@ Get-Command |
     Select-String "Item"
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -166,8 +164,6 @@ Get-Command |
     Select-String '^CmdL.+(Format|Out)-.+'
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -205,8 +201,6 @@ Get-Command |
     Select-Object -First 10
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -241,8 +235,6 @@ Get-Command |
     Sort-Object @{E={ $_ }} |
     Select-Object -First 5 -Last 5
 ```
-
-
 
 Contoh hasil run
 

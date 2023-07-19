@@ -20,8 +20,6 @@ Clear-Host
 Write-Host
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -44,8 +42,6 @@ $msgBuilder = (New-Object System.Text.StringBuilder) |
 
 Write-Host $msgBuilder.ToString()
 ```
-
-
 
 Contoh hasil run
 

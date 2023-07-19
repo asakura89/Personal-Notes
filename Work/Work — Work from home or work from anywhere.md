@@ -21,7 +21,7 @@ Anda tahu perasaannya.  Semua orang duduk mengelilingi meja, ide dibangun di ata
  memperlakukan langka.  Mereka menjadi sesuatu untuk dinikmati, sesuatu yang istimewa.  Bersantaplah sesekali di pesta-pesta itu dan pertahankan diri Anda untuk sementara waktu dalam percakapan "kudapan" yang dimungkinkan oleh teknologi.  Itu akan memberi Anda semua keajaiban yang bisa Anda tangani.
  -->
 
-References:
+**References:**
 
 - Remote - Office not required, Jason Fried
 

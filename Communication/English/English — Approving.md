@@ -22,6 +22,6 @@ Menyetujui sesuai selain bilang "ok approved", biasanya semacam "gue ok" atau "g
 
 
 
-References:
+**References:**
 
 - ChatGPT

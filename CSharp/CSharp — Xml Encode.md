@@ -11,7 +11,7 @@ date: 2023-06-19
 
 ## 1. Original
 
-### Code
+**Code:**
 
 ```c#
 var xmlString = @"<?xml version=""1.0"" encoding=""utf-8"" ?>
@@ -28,9 +28,7 @@ var xmlString = @"<?xml version=""1.0"" encoding=""utf-8"" ?>
 Console.WriteLine(xmlString);
 ```
 
-
-
-### Output
+**Output:**
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -45,15 +43,13 @@ Console.WriteLine(xmlString);
 </configuration>
 ```
 
-
-
 Perlu dicatet kalo XML di atas ini adalah invalid XML. Kenapa? karena ada char `>`, `<`, dan `&` yang enggak di-encode di node `password`. Tapi kita gakkan permasalahin karena memang bukan mau divalidasi, melainkan di-encode.
 
 
 
 ## 2. `HttpUtility.HtmlEncode`
 
-### Code
+**Code:**
 
 ```c#
 using System.Web; // harus refer System.Web.dll
@@ -72,9 +68,7 @@ var xmlString = @"<?xml version=""1.0"" encoding=""utf-8"" ?>
 Console.WriteLine(HttpUtility.HtmlEncode(xmlString));
 ```
 
-
-
-### Output
+**Output:**
 
 ```xml
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
@@ -93,7 +87,7 @@ Console.WriteLine(HttpUtility.HtmlEncode(xmlString));
 
 ## 3. `HttpUtility.HtmlAttributeEncode`
 
-### Code
+**Code:**
 
 ```c#
 using System.Web; // harus refer System.Web.dll
@@ -112,9 +106,7 @@ var xmlString = @"<?xml version=""1.0"" encoding=""utf-8"" ?>
 Console.WriteLine(HttpUtility.HtmlAttributeEncode(xmlString));
 ```
 
-
-
-### Output
+**Output:**
 
 ```xml
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?>
@@ -129,8 +121,6 @@ Console.WriteLine(HttpUtility.HtmlAttributeEncode(xmlString));
 &lt;/configuration>
 ```
 
-
-
 Perbedaan antara `HttpUtility.HtmlEncode` dan `HttpUtility.HtmlAttributeEncode` adalah:
 
 | `HttpUtility.HtmlEncode`                        | `HttpUtility.HtmlAttributeEncode`                                                                                                                                                                                                                                                                                                                                 |
@@ -141,7 +131,7 @@ Perbedaan antara `HttpUtility.HtmlEncode` dan `HttpUtility.HtmlAttributeEncode` 
 
 
 
-References:
+**References:**
 
 Conversation with Bing, 6/19/2023
 - [asp.net mvc - What is the difference between html.AttributeEncode vs ....](https://stackoverflow.com/questions/2244079/what-is-the-difference-between-html-attributeencode-vs-html-encode).
@@ -153,7 +143,7 @@ Conversation with Bing, 6/19/2023
 
 ## 4. `SecurityElement.Escape`
 
-### Code
+**Code:**
 
 ```c#
 using System.Security;
@@ -172,9 +162,7 @@ var xmlString = @"<?xml version=""1.0"" encoding=""utf-8"" ?>
 Console.WriteLine(SecurityElement.Escape(xmlString));
 ```
 
-
-
-### Output
+**Output:**
 
 ```xml
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
@@ -189,15 +177,13 @@ Console.WriteLine(SecurityElement.Escape(xmlString));
 &lt;/configuration&gt;
 ```
 
-
-
 Hasilnya sama dengan `HttpUtility.HtmlEncode`.
 
 
 
 ## 5. `XmlConvert.EncodeName`
 
-### Code
+**Code:**
 
 ```c#
 using System.Security;
@@ -218,13 +204,11 @@ Console.WriteLine(XmlConvert.EncodeName(xmlString));
 
 
 
-### Output
+**Output:**
 
 ```xml
 _x003C__x003F_xml_x0020_version_x003D__x0022_1.0_x0022__x0020_encoding_x003D__x0022_utf-8_x0022__x0020__x003F__x003E__x000D__x000A__x003C_configuration_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x003C_smtpSettings_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x003C_server_x003E_smtp.supermailservice.com_x003C__x002F_server_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x003C_port_x003E_587_x003C__x002F_port_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x003C_userName_x003E_SmtpUser_Admin_x003C__x002F_userName_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x003C_password_x003E_100_x0025_SmtpPwd4Admin_x003E__x003C__x0026__x003C__x002F_password_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x003C_useTls_x003E_false_x003C__x002F_useTls_x003E__x000D__x000A__x0020__x0020__x0020__x0020__x003C__x002F_smtpSettings_x003E__x000D__x000A__x003C__x002F_configuration_x003E_
 ```
-
-
 
 Perbedaan antara `HttpUtility.HtmlEncode` dan `XmlConvert.EncodeName` adalah:
 
@@ -236,7 +220,7 @@ Perbedaan antara `HttpUtility.HtmlEncode` dan `XmlConvert.EncodeName` adalah:
 
 
 
-References:
+**References:**
 
 Conversation with Bing, 6/19/2023
 - [What is the difference between AntiXss.HtmlEncode and HttpUtility ....](https://stackoverflow.com/questions/1608854/what-is-the-difference-between-antixss-htmlencode-and-httputility-htmlencode).

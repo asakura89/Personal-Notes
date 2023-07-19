@@ -22,8 +22,6 @@ Get-ChildItem -Path . |
     Format-List
 ```
 
-
-
 Contoh hasil run
 
 ```powershell

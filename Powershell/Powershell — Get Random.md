@@ -35,8 +35,6 @@ $secondSeeds |
     Sort-Object { $_ }
 ```
 
-
-
 Contoh hasil run
 
 ```powershell
@@ -102,8 +100,6 @@ ForEach ($seed In $secondSeeds) {
 
 $secondRands
 ```
-
-
 
 Contoh hasil run
 

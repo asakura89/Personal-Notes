@@ -24,12 +24,10 @@ Ini beberapa teknik yang bisa banget dipake buat chatGPT atau generative AI lain
 13. Pake chatGPT buat code review dan menjelaskan code
 14. Memanfaatkan transkripsi video untuk summarize poin-poin penting. Mirip poin \#9
 
-
-
 Dengan adanya generative-AI inim belajar jadi lebih gampang sih. Tinggal gimana kita bisa manfaatin aja.
 
 
 
-References:
+**References:**
 
 - [Learn Anything FASTER With ChatGPT (13 ChatGPT Prompts For Studying) - YouTube](https://www.youtube.com/watch?v=TEq5chOb4is)

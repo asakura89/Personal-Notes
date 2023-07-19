@@ -8,6 +8,8 @@ date: 2022-11-28
 
 Lokasi-lokasi file config untuk debug log di Sitecore 9.1 XP.
 
+
+
 ## Sitecore Content Management dan Sitecore Reporting
 
 1. `<site_root>/App_Config/Sitecore.config`  

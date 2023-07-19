@@ -50,8 +50,6 @@ Catch {
 }
 ```
 
-
-
 Contoh hasil run
 
 ```powershell

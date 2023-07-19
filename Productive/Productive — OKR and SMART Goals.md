@@ -104,6 +104,6 @@ When choosing which method to use consider the following qualities of your endea
 Tips for setting OKRs and SMART goals include choosing your goals carefully, creating team and individual goals, writing down goals.
 
 
-References:
+**References:**
 
 - https://www.smartsheet.com/content/okr-vs-smart-goals

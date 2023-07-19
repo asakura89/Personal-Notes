@@ -30,8 +30,6 @@ Clear-Host
 
 ```
 
-
-
 Contoh hasil run
 
 ```json

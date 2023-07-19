@@ -39,7 +39,9 @@ While focused on cloud implementation for Azure, Microsoft Build of OpenJDK stil
 
 JRE must be manually built by using CI/CD pipeline provided.
 
-References:
+
+
+**References:**
 
 - [Will you provide a JRE? · Discussion #6 · microsoft/openjdk](https://github.com/microsoft/openjdk/discussions/6)
 
@@ -49,7 +51,9 @@ References:
 
 But you can use OpenJFX from Oracle OpenJDK.
 
-References:
+
+
+**References:**
 
 - [Add JavaFX support in Microsoft OpenJDK? · Discussion #286 · microsoft/openjdk](https://github.com/microsoft/openjdk/discussions/286)
 - [openjdk/jfx: JavaFX mainline development](https://github.com/openjdk/jfx)
@@ -62,7 +66,9 @@ At this time it will be mostly the same as others. But MSFT will focus for deliv
 
 There will be improvements in the future, but not all of those will be accepted upstream (Oracle OpenJDK). But differences will be marked clearly and released as part of MSFT Build of OpenJDK.
 
-References:
+
+
+**References:**
 
 - [What&#39;s so special about the Microsoft builds of OpenJDK? · Discussion #158 · microsoft/openjdk](https://github.com/microsoft/openjdk/discussions/158)
 - [What&#39;s the difference between this and AdoptOpenJDK for users and developers? · Discussion #15 · microsoft/openjdk](https://github.com/microsoft/openjdk/discussions/15)

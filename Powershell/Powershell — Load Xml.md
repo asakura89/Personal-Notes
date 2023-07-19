@@ -103,8 +103,6 @@ $values = (GetNodesValue $xml "configuration/events/event")
 $values | ConvertTo-Json
 ```
 
-
-
 Isi dari `Load-Xml.config.xml` adalah
 
 ```xml
@@ -119,8 +117,6 @@ Isi dari `Load-Xml.config.xml` adalah
     </smtpSettings>
 </configuration>
 ```
-
-
 
 Contoh hasil run
 

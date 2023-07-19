@@ -38,6 +38,6 @@ The essay discusses the concept of "smart notes" and how they can improve learni
 
 
 
-References:
+**References:**
 
 - How To Take Smart Notes (3 methods no one&#39;s talking about) - YouTube ([Video](https://www.youtube.com/watch?v=5O46Rqh5zHE), [Subtitle](_media/How%20To%20Take%20Smart%20Notes%20(3%20methods%20no%20one's%20talking%20about).srt.md))

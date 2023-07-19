@@ -15,6 +15,4 @@ Rename-Item -Path .\Simple_Db.mdf -NewName .\Simple_Db_20200223.mdf
 
 ```
 
-
-
 Script ini gak ada output-nya, jadi bisa langsung dicek aja file-nya langsung udah berubah atau belom nama file-nya
