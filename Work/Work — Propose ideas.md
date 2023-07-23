@@ -20,68 +20,68 @@ Juga jangan lupa buat mikirin ini buat tambahan. Jadinya impact analysis jadi ma
 
 ## Template
 
-### Solution 1 — \<Solution name\>
-
-\<description of the solution\>
-
-
-
-#### Pros
-1. \<Pro 1\>
-2. \<Pro 2\>
-
-
-
-#### Cons
-1. \<Con 1\>
-2. \<Con 2\>
-
-
-
-#### Impacted feature (Business impact for end-user)
-1. \<Impacted feature 1\>
-   \<description\>
-2. \<Impacted feature 2\>
-   \<description\>
-
-
-
-#### Impacted architecture (Technical impact for code maintenance)
-1. \<Impacted architecture 1\>
-   \<description\>
-2. \<Impacted architecture 2\>
-   \<description\>
-
-
-
-### Solution 2 — \<Solution name\>
-
-\<description of the solution\>
-
-
-
-#### Pros
-1. \<Pro 1\>
-2. \<Pro 2\>
-
-
-
-#### Cons
-1. \<Con 1\>
-2. \<Con 2\>
-
-
-
-#### Impacted feature (Business impact for end-user)
-1. \<Impacted feature 1\>
-   \<description\>
-2. \<Impacted feature 2\>
-   \<description\>
-
-
-
-#### Impacted architecture (Technical impact for code maintenance)
-1. \<Impacted architecture 1\>
-   \<description\>
-2. \<Impacted architecture 2\>
-   \<description\>
+> ### Solution 1 — \<Solution name\>
+> 
+> \<description of the solution\>
+> 
+> 
+> 
+> #### Pros
+> 1. \<Pro 1\>
+> 2. \<Pro 2\>
+> 
+> 
+> 
+> #### Cons
+> 1. \<Con 1\>
+> 2. \<Con 2\>
+> 
+> 
+> 
+> #### Impacted feature (Business impact for end-user)
+> 1. \<Impacted feature 1\>
+>    \<description\>
+> 2. \<Impacted feature 2\>
+>    \<description\>
+> 
+> 
+> 
+> #### Impacted architecture (Technical impact for code maintenance)
+> 1. \<Impacted architecture 1\>
+>    \<description\>
+> 2. \<Impacted architecture 2\>
+>    \<description\>
+> 
+> 
+> 
+> ### Solution 2 — \<Solution name\>
+> 
+> \<description of the solution\>
+> 
+> 
+> 
+> #### Pros
+> 1. \<Pro 1\>
+> 2. \<Pro 2\>
+> 
+> 
+> 
+> #### Cons
+> 1. \<Con 1\>
+> 2. \<Con 2\>
+> 
+> 
+> 
+> #### Impacted feature (Business impact for end-user)
+> 1. \<Impacted feature 1\>
+>    \<description\>
+> 2. \<Impacted feature 2\>
+>    \<description\>
+> 
+> 
+> 
+> #### Impacted architecture (Technical impact for code maintenance)
+> 1. \<Impacted architecture 1\>
+>    \<description\>
+> 2. \<Impacted architecture 2\>
+>    \<description\>

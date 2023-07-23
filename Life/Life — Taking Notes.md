@@ -7,34 +7,35 @@ date: 2023-06-25
 
 # Taking Notes
 
-## Smart Notes
+- [Smart Notes: Active Restructuring](#smart-notes-active-restructuring)
+- [Atomic Notes: Thinking in 3D](#atomic-notes-thinking-in-3d)
+- [Connected Ideas: Combating the Illusion of Competence](#connected-ideas-combating-the-illusion-of-competence)
 
-**Introduction**
-The essay begins by addressing the problem individuals face when trying to explain what they have learned from a book or text. This challenge, known as the illusion of competence, occurs when people underline, highlight, and take notes without fully comprehending the material. The essay emphasizes the need for a solution to this problem.
 
-**Smart Notes: Active Restructuring**
-The concept of smart notes is introduced as a way to address the illusion of competence. Smart notes involve actively restructuring other people's thoughts into one's own structure. It is suggested that the Q/E/C method (Question, Evidence, Conclusion) is an effective framework for taking smart notes. This method allows individuals to find the essential elements in any reading material, regardless of the author's organization.
 
-**Atomic Notes: Thinking in 3D**
-The essay highlights the importance of organizing notes in an atomic manner. Unlike traditional note-taking, where ideas are consolidated into one document, atomic notes separate each idea into individual units. This approach enables multidimensional thinking and enhances the ability to remember and connect ideas. The essay contrasts atomic notes with traditional note-taking methods and emphasizes the advantages of the former.
+Di era internet yang segala informasi bisa dikonsumsi dan diterima secara masif dengan cepat, gak mungkin otak kita bisa keep up. Semua harus bisa dipilah-pilah, mana yang penting mana yang enggak. Terus kalo udah dapet yang penting gimana? Diinget? Enggak-enggak. Gak bisa. Gak kuat. Otak kita itu ibarat komputer, tugasnya sama kaya processor. Yaitu berpikir, memproses, bukan mengingat dan menyimpan informasi. Terus informasi yang penting tadi disimpen dimana? Di-outsource ke penyimpanan lainnya. Buku catetan. Mau yang analog, mau yang digital, pokoknya catet. 
 
-_Note: Atomic Notes ini bagus biar gak terlalu bulky kalo bikin note tertentu. Tapi jadinya gak ada flow-nya. Flow ini harusnya terbentuk tanpa harus bikin connecting-nya. Biar dalem 1 notes ini isinya atomic notes disusun dengan flow yang bener jadi connected ideas._
 
-**Connected Ideas: Combating the Illusion of Competence**
-The essay argues that smart notes should not only connect ideas within a particular text but also link new ideas to existing knowledge. This approach helps combat the illusion of competence by ensuring new ideas are firmly anchored to familiar ones. The essay introduces the compass of the Zettelkasten thinking as a method to connect ideas. The compass involves thinking in four different directions: north (origins of the idea), west (similar concepts), east (competing ideas or missing elements), and south (future connections). By applying this method, individuals can enhance their understanding and generate new insights.
 
-**Conclusion**
-The essay concludes by reiterating the benefits of smart notes, atomic organization, and connected ideas. It encourages readers to explore the Zettelkasten method further for advanced smart note-taking techniques. The essay emphasizes the importance of connecting ideas and suggests that by implementing these strategies, individuals can enhance their learning and thinking abilities.
+## Smart Notes: Active Restructuring
 
-**Summary:**
-The essay discusses the concept of "smart notes" and how they can improve learning and understanding. It begins by highlighting the problem of the illusion of competence that occurs when people underline, highlight, and take notes without truly absorbing the material. The solution presented is to take smart notes, which involves actively restructuring other people's thoughts into one's own structure. The Q/E/C (Question, Evidence, Conclusion) method is introduced as a helpful framework for taking smart notes. The essay emphasizes the importance of organizing notes in an atomic manner, allowing for multidimensional thinking and better retention of information. Finally, the concept of connecting ideas is discussed, suggesting that new ideas should be linked to existing ones to combat the illusion of competence. The essay concludes by mentioning the Zettelkasten method as a way to enhance smart note-taking and encourages readers to explore it further.
+Smart notes ini konsep yang dibikin buat mengatasi ilusi kompetensi. Smart notes ini adalah merestrukturisasi secara aktif semua informasi yang diterima, lalu diproses dan dirangkum menjadi struktur yang bisa kita pahami dengan menggunakan kata-kata kita sendiri. Ada struktur umum atau framework yang efektif yang disarankan buat bikin smart notes ini. Yaitu, Q/E/C atau Question, Evidence, Conclusion. Metode ini memungkinkan kita untuk bisa menemukan elemen-elemen penting dalam bahan bacaan apa pun, terlepas dari struktur yang dibuat oleh penulis aslinya.
 
-**Key messages:**
-1. The illusion of competence can hinder true learning despite underlining and note-taking.
-2. Smart notes involve actively restructuring thoughts and using the Q/E/C method.
-3. Atomic notes enable multidimensional thinking and better retention.
-4. Connecting new ideas to existing knowledge enhances understanding.
-5. The Zettelkasten method can elevate smart note-taking.
+
+
+## Atomic Notes: Thinking in 3D
+
+Dari framework Q/E/C tadi, kita pisahin semua Q, semua E, dan semua C. Jadi masing-masing Q/E/C adalah atomic notes yang seakan berdiri sendiri. Konsep atomic notes ini beda banget sama konsep tradisional dimana ide-ide disusun bersama dalam satu dokumen (contohnya tulisan ini dan tulisan lain di workspace ini termasuk tradisional). Atomic notes memisahkan masing-masing ide jadi unit individu kecil-kecil (hence: atomic). Dengan cara ini, memungkinkan bepikir secara multidimensional dan menigkatkan daya ingat dan menghubungkan bermacam ide. Thinking in 3D artinya kita bisa menghubungkan ide yang lagi kita pikirkan ke atas, bawah, kiri dan kanan, atau utara, selatan, timur dan barat.
+
+Mungkin sedikit counter-opinion, atomic notes ini bagus biar gak terlalu bulky kalo bikin note tertentu. Tapi jadinya gak ada flow-nya. Flow ini harusnya terbentuk tanpa harus bikin connecting-nya apa atau mikirin connecting-nya gimana. Dengan cara tradisional yang dalem satu notes ada banyak ide, bisa jadi ada poin plus, yaitu ada flow-nya. Mungkin bisa dikombinasi keduanya, pake note bulky yang isinya Q/E/C dari suatu topik (biar gak bulky, cukup batasi ke satu topik aja), isinya atomic notes disusun dengan flow yang bener jadi connected ideas.
+
+
+
+## Connected Ideas: Combating the Illusion of Competence
+
+Atomic notes yang udah dibikin tadi seharusnya gak cuma menghubungkan ide-ide dalam suatu teks tertentu, tapi juga menghubungkan ide-ide baru ke knowledge yang udah ada atau ide-ide yang udah ada. Dengan cara ini kita bisa melawan ilusi kompetensi dengan memastikan ide-ide baru ter-connect sama kenowledge dan ide-ide yang udah ada.
+
+Di luar dari atomic notes yang berupa Q/E/C yang atomic, kita bisa 3D thinking dengan cara pake Kompas Zettelkasten. Misal, pilih satu ide dari tumpukan Q/E/C tadi, lalu berpikir ke arah utara adalah asal-usul dari ide. Ke arah barat adalah konsep yang serupa dengan ide tersebut. Ke timur, adalah ide-ide lain yang bersaing dengan ide yang lagi kita pikirkan ini, atau elemen yang hilang dari ide-ide lain. Selatan, koneksi kedepannya. Dengan cara ini kita bisa meningkatkan kedalaman dari hal-hal yang udah kita ngerti dan ngasi insight (wawasan baru).
 
 
 

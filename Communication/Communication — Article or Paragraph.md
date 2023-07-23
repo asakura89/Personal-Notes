@@ -22,13 +22,13 @@ Format yang lumayan bagus buat ngebikin tulisan.
 > 
 > 
 > 
-> ### Paragrah 1\#
+> ### Section 1\#
 > 
 > {Content}
 > 
 > 
 > 
-> ### Paragrah 2\#
+> ### Section 2\#
 > 
 > {Content}
 > 
@@ -37,7 +37,7 @@ Format yang lumayan bagus buat ngebikin tulisan.
 > {Content with bullet points}
 > 
 > 
-> ### Paragrah 3\#
+> ### Section 3\#
 > 
 > {Content}
 > 
