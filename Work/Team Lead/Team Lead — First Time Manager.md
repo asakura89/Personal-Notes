@@ -4,6 +4,7 @@ tags:
 - Team-Lead
 - Lead
 - Manager
+- Draft
 date: 2023-06-29
 ---
 
@@ -93,15 +94,52 @@ date: 2023-06-29
     - [Conclusion](#conclusion-12)
 - [4. The People Stuff: Leadership](#4-the-people-stuff-leadership)
   - [Connect with authenticity](#connect-with-authenticity)
+    - [How to build genuine relationships at work](#how-to-build-genuine-relationships-at-work)
+    - [The importance of authenticity](#the-importance-of-authenticity)
+    - [The rule of authenticity](#the-rule-of-authenticity)
+    - [The benefits of authenticity](#the-benefits-of-authenticity)
+    - [Conclusion](#conclusion-13)
   - [Create team and culture](#create-team-and-culture)
+    - [How to foster a positive and engaged work environment](#how-to-foster-a-positive-and-engaged-work-environment)
+    - [The tools of culture](#the-tools-of-culture)
+    - [The implementation of culture](#the-implementation-of-culture)
+    - [The involvement of culture](#the-involvement-of-culture)
+    - [Conclusion](#conclusion-14)
   - [Explain the why](#explain-the-why)
+    - [How to provide context and empower your team](#how-to-provide-context-and-empower-your-team)
+    - [The myth of Sisyphus](#the-myth-of-sisyphus)
+    - [The value of context](#the-value-of-context)
+    - [The power of empowerment](#the-power-of-empowerment)
+    - [Conclusion](#conclusion-15)
   - [Authenticity, transparency, and vulnerability](#authenticity-transparency-and-vulnerability)
+    - [How to balance authenticity, transparency, and vulnerability as a leader](#how-to-balance-authenticity-transparency-and-vulnerability-as-a-leader)
+    - [The definition of authenticity](#the-definition-of-authenticity)
+    - [The spectrum of transparency and vulnerability](#the-spectrum-of-transparency-and-vulnerability)
+    - [The balance of authenticity, transparency, and vulnerability](#the-balance-of-authenticity-transparency-and-vulnerability)
+    - [Conclusion](#conclusion-16)
 - [5. Mistakes to Avoid](#5-mistakes-to-avoid)
   - [Wrong people in the wrong seat](#wrong-people-in-the-wrong-seat)
+    - [How to hire and fire as a leader](#how-to-hire-and-fire-as-a-leader)
+    - [Getting the right people on your bus](#getting-the-right-people-on-your-bus)
+    - [Getting the wrong people off your bus](#getting-the-wrong-people-off-your-bus)
+    - [Balancing responsibility and compassion](#balancing-responsibility-and-compassion)
+    - [Conclusion](#conclusion-17)
   - [Neglecting diversity and inclusion](#neglecting-diversity-and-inclusion)
+    - [Neglecting diversity and inclusion: How to avoid this common mistake as a leader](#neglecting-diversity-and-inclusion-how-to-avoid-this-common-mistake-as-a-leader)
+    - [The definition of diversity and inclusion](#the-definition-of-diversity-and-inclusion)
+    - [The relationship between diversity and inclusion](#the-relationship-between-diversity-and-inclusion)
+    - [The techniques for diversity and inclusion](#the-techniques-for-diversity-and-inclusion)
+    - [Conclusion](#conclusion-18)
   - [Blame instead of ownership](#blame-instead-of-ownership)
-- [Conclusion](#conclusion-13)
-  - [Put yourself in their shoes](#put-yourself-in-their-shoes)
+    - [How to adopt a positive leadership mindset](#how-to-adopt-a-positive-leadership-mindset)
+    - [The problem with blame](#the-problem-with-blame)
+    - [The solution of ownership](#the-solution-of-ownership)
+    - [The practice of ownership](#the-practice-of-ownership)
+    - [Conclusion](#conclusion-19)
+- [6. Put yourself in their shoes: How to develop your personal leadership style](#6-put-yourself-in-their-shoes-how-to-develop-your-personal-leadership-style)
+  - [The golden rule of leadership](#the-golden-rule-of-leadership)
+  - [The resources for leadership](#the-resources-for-leadership)
+  - [The reward of leadership](#the-reward-of-leadership)
 
 
 
@@ -122,10 +160,10 @@ Both management and leadership are important for your success as a manager. You 
 #### Common Mistakes to Avoid
 
 As a manager, you will inevitably make some mistakes along the way. That's normal and expected. However, there are some mistakes that can be very costly and damaging for your reputation and performance as a leader. You should avoid these mistakes at all costs. Here are some examples of common mistakes that managers make:
-- <u>Micromanaging:</u> This is when you try to control every detail of your team's work, instead of giving them autonomy and trust. Micromanaging can demotivate your team, stifle their creativity, and lower their productivity. It can also make you look insecure and incompetent as a manager.
-- <u>Neglecting:</u> This is when you ignore or disregard your team's needs, concerns, or feedback. Neglecting can make your team feel unappreciated, unsupported, and disengaged. It can also make you look indifferent and uncaring as a manager.
-- <u>Blaming:</u> This is when you point fingers at your team or others for any mistakes or failures that happen under your watch. Blaming can erode your team's trust, respect, and loyalty. It can also make you look defensive and irresponsible as a manager.
-- <u>Avoiding:</u> This is when you shy away from confronting or addressing any issues or conflicts that arise within or outside your team. Avoiding can escalate the problems, create confusion, and damage your credibility. It can also make you look weak and indecisive as a manager.
+- <ins>Micromanaging:</ins> This is when you try to control every detail of your team's work, instead of giving them autonomy and trust. Micromanaging can demotivate your team, stifle their creativity, and lower their productivity. It can also make you look insecure and incompetent as a manager.
+- <ins>Neglecting:</ins> This is when you ignore or disregard your team's needs, concerns, or feedback. Neglecting can make your team feel unappreciated, unsupported, and disengaged. It can also make you look indifferent and uncaring as a manager.
+- <ins>Blaming:</ins> This is when you point fingers at your team or others for any mistakes or failures that happen under your watch. Blaming can erode your team's trust, respect, and loyalty. It can also make you look defensive and irresponsible as a manager.
+- <ins>Avoiding:</ins> This is when you shy away from confronting or addressing any issues or conflicts that arise within or outside your team. Avoiding can escalate the problems, create confusion, and damage your credibility. It can also make you look weak and indecisive as a manager.
 
 To avoid these mistakes, you need to adopt a positive and proactive attitude as a manager. You need to empower your team with clear expectations, guidance, and resources. You need to listen to your team with empathy, respect, and openness. You need to take responsibility for your team's results, both good and bad. And you need to face any challenges or difficulties with courage, honesty, and integrity.
 
@@ -133,11 +171,11 @@ To avoid these mistakes, you need to adopt a positive and proactive attitude as 
 
 Communication is one of the most important skills for any manager. Without communication, you cannot manage or lead effectively. You need to communicate with your team frequently, consistently, and clearly. You need to communicate with them in different ways and for different purposes. Here are some examples of effective communication methods that you can use as a manager:
 
-- <u>One-on-one meetings:</u> These are regular meetings that you have with each of your team members individually. They are an opportunity for you to check in on their progress, provide feedback, offer support, address any issues, and discuss their goals and development.
-- <u>Team meetings:</u> These are regular meetings that you have with your entire team collectively. They are an opportunity for you to share information, updates, announcements, or decisions that affect the whole team. They are also an opportunity for you to foster teamwork, collaboration, and alignment among your team members.
-- <u>Email:</u> This is a written form of communication that you use to send or receive messages that are not urgent or time-sensitive. Email is useful for documenting information or instructions that need to be referred back later. However, email can also be misinterpreted or ignored easily if not written well.
-- <u>Phone call:</u> This is a verbal form of communication that you use to talk to someone who is not physically present with you. Phone call is useful for conveying information or instructions that are urgent or time-sensitive. However, phone call can also be interrupted or distorted by noise or poor connection.
-- <u>Video call:</u> This is a visual and verbal form of communication that you use to talk to someone who is not physically present with you. Video call is useful for having a more personal and engaging conversation with someone, especially if you need to see their facial expressions or body language. However, video call can also be affected by technical issues or distractions.
+- <ins>One-on-one meetings:</ins> These are regular meetings that you have with each of your team members individually. They are an opportunity for you to check in on their progress, provide feedback, offer support, address any issues, and discuss their goals and development.
+- <ins>Team meetings:</ins> These are regular meetings that you have with your entire team collectively. They are an opportunity for you to share information, updates, announcements, or decisions that affect the whole team. They are also an opportunity for you to foster teamwork, collaboration, and alignment among your team members.
+- <ins>Email:</ins> This is a written form of communication that you use to send or receive messages that are not urgent or time-sensitive. Email is useful for documenting information or instructions that need to be referred back later. However, email can also be misinterpreted or ignored easily if not written well.
+- <ins>Phone call:</ins> This is a verbal form of communication that you use to talk to someone who is not physically present with you. Phone call is useful for conveying information or instructions that are urgent or time-sensitive. However, phone call can also be interrupted or distorted by noise or poor connection.
+- <ins>Video call:</ins> This is a visual and verbal form of communication that you use to talk to someone who is not physically present with you. Video call is useful for having a more personal and engaging conversation with someone, especially if you need to see their facial expressions or body language. However, video call can also be affected by technical issues or distractions.
 
 To communicate effectively with your team, you need to choose the right method for the right situation and the right purpose. You also need to follow some best practices for each method, such as:
 - For one-on-one meetings, schedule them regularly, prepare an agenda, and take notes.
@@ -513,21 +551,400 @@ As a manager, you want to know how well your team is performing and achieving th
 
 
 ## 4. The People Stuff: Leadership
+
 ### Connect with authenticity
+
+#### How to build genuine relationships at work
+
+One of the most important skills for any manager is authenticity. Authenticity is the ability to be yourself and communicate honestly and openly with your team and colleagues. Authenticity can help you create a positive work environment, foster trust and respect, and improve your team's performance. However, many managers struggle with being authentic, either because they don't know how to do it or because they fear the consequences of revealing their true selves. In this essay, I will share some tips for how you can leverage authenticity to build strong, genuine relationships at work, based on my own personal experience and learning.
+
+
+
+#### The importance of authenticity
+
+Early in my executive career, I didn't realize how important authenticity was for great management. My team's performance was struggling and the more I tried to act like how I thought an executive was supposed to act, the worse things seemed to get. The CEO saw my troubles and explained it to me. "You're not a jerk in real life, but you're playing one. Be authentic with your team and things will change." She backed up the advice with an opportunity to spend a weekend golfing and hanging out with some of the remote team members I hadn't met in person.
+
+Less than an hour into the weekend, one of the team members I was struggling with looked at me and said, "Wow, you're not half the jerk I thought you were." And she didn't use the word jerk. I'm being polite for the camera. This moment was the beginning of my love affair with leadership and a huge lesson for me. Business is about connecting with people, not about numbers, and authenticity is the only way to create a real connection.
+
+
+
+#### The rule of authenticity
+
+The simple rule of authenticity is this: be yourself. The worst thing you can do as a manager is put on a facade or front that hides the real you. Your team will intuitively know you're being fake and they won't be receptive to it. In fact, the message they're most likely to take from it is that you don't care about them as people.
+
+Additionally, if your team somehow fails to realize you're being inauthentic, they'll connect with a version of you that doesn't actually exist. This can become even more detrimental to building a relationship with your team.
+
+So be yourself. Sure, use some discretion. If you'd normally treat yourself to an expletive filled tantrum over a missed deadline if you weren't in the office, I'm not recommending you do that at work. But pretending you're not at all frustrated in that moment isn't authentic either. Find an acceptable middle ground that's based on your truth, and maybe consider working on your EQ a bit.
+
+
+
+#### The benefits of authenticity
+
+Finally, it's okay to share a bit of yourself with your team and to invite them to do the same. You're much more likely to build deep, authentic relationships talking about your kids or your favorite sports team then you will pouring over a spreadsheet deliverable.
+
+If you think these kinds of personal conversations are a distraction, they're not. Everyone has experienced a robo-boss or colleague that lives exclusively in the numbers side of the business and doesn't bother connecting.
+
+Failing to be authentic isn't just a recipe for poor results, it's a recipe for misery. Authenticity is your opportunity to make the day-to-day experience of work more comfortable, safe, and fun. Doing so doesn't only benefit you, but everyone you interact with.
+
+
+
+#### Conclusion
+
+Authenticity is a key skill for any manager who wants to build genuine relationships at work. By being yourself, communicating honestly and openly, and sharing some personal aspects of your life, you can create a positive work environment where people trust and respect you and each other. Authenticity can also improve your team's performance by increasing their engagement, motivation, and collaboration.
+
+So the next time you're getting ready to say what you think you should, but not what you want to, try a different approach and speak your truth.
+
+
+
 ### Create team and culture
+
+#### How to foster a positive and engaged work environment
+
+Culture is a term that is often used but not always well understood. Culture refers to the set of shared attitudes, values, goals, and practices that characterizes an institution or organization. Culture is a big deal because it is the single largest predictor of company and team success. As a manager, it is your responsibility to create a positive and engaged culture in your team, one that aligns with the company's vision and mission. In this essay, I will share some tips for how you can create team and culture, using some common tools such as mission statements, vision statements, core values, and operating principles.
+
+
+
+#### The tools of culture
+
+The first step in creating team and culture is to define what you want your team to stand for and strive for. This can be done using some common tools that help set a standard for culture. These are:
+- A mission statement: This explains why your team exists and what its unifying purpose is. For example, Steve Jobs' original mission statement for Apple was, "To make a contribution to the world by making tools for the mind that advance humankind." A mission statement can serve as a guidepost for making strategic team decisions.
+- A vision statement: This answers the question, "What does this team look like if it is a massive success?" For example, Stanford University's original vision statement was, "To become the Harvard of the West." A vision statement can help your team pull together and strive towards a common goal.
+- A list of core values: These are the values that you expect your team members to embrace in their decision-making. For example, some of Google's core values are "Focus on the user and all else will follow" and "You can be serious without a suit." Core values can help you hire people who are aligned with your team culture and hold them accountable for their actions.
+- A set of operating principles: These are specific behaviors that you want your team to exhibit on a day-to-day basis. For example, one of Amazon's operating principles is "Leaders are owners." Operating principles can help you mold the culture you want by providing clear expectations and feedback.
+
+
+
+#### The implementation of culture
+
+The second step in creating team and culture is to implement these tools in a way that makes them visible and relevant to your team. It is not enough to just write them down and hang them on the wall. You need to find ways to regularly bring cultural concepts into your team's consciousness and practice. Some examples of how you can do this are:
+- Reviewing one tool at a time in your team meetings or stand-ups. For example, you can discuss how your team's mission relates to a current project or challenge, or how your team's vision inspires you to do better work.
+- Recognizing and rewarding team members who demonstrate the desired values and behaviors. For example, you can give shout-outs or bonuses to those who exemplify customer service or innovation.
+- Providing coaching and feedback to team members who need to improve their alignment with the culture. For example, you can have a candid conversation with someone who is not showing enough ownership or collaboration.
+- Modeling the culture yourself as a leader. For example, you can show authenticity, humility, or curiosity in your interactions with your team and others.
+
+
+
+#### The involvement of culture
+
+The third step in creating team and culture is to involve your team in the cultural design process. You don't have to do all this work on your own. By engaging your team in defining and implementing the culture, they will be more likely to embrace it and feel ownership over it. Some ways you can involve your team are:
+- Asking for their input and feedback on the tools of culture. For example, you can use a questionnaire or a survey to gather their opinions on what they think the team's mission, vision, values, and principles should be.
+- Inviting them to share their stories and experiences related to the culture. For example, you can ask them to tell you about a time when they felt proud of being part of the team or when they learned something from another team member.
+- Encouraging them to challenge and improve the culture over time. For example, you can ask them to suggest new ideas or initiatives that can enhance the team's performance or well-being.
+
+
+
+#### Conclusion
+
+Creating team and culture is one of the most important tasks for any manager who wants to lead a successful and happy team. By using some common tools such as mission statements, vision statements, core values, and operating principles, you can define what you want your team to stand for and strive for. By implementing these tools in a way that makes them visible and relevant to your team, you can foster a positive and engaged work environment. By involving your team in the cultural design process, you can create a sense of ownership and commitment among your team members. By creating team and culture, you can not only achieve your team's goals, but also enjoy the journey along the way.
+
+
+
 ### Explain the why
+
+#### How to provide context and empower your team
+
+One of the key skills for any manager is to explain the why behind the work they assign to their team. Explaining the why means providing context and rationale for the tasks and projects that your team is working on. Explaining the why can help your team feel more motivated, engaged, and empowered in their work. In this essay, I will share some reasons why explaining the why is so important when delegating work, using an ancient Greek myth and some examples from the modern workplace.
+
+
+
+#### The myth of Sisyphus
+
+There is an ancient Greek myth about a man named Sisyphus who got a bit too clever in his business dealings and managed to get on Zeus's bad side. As a punishment for his shenanigans, Zeus sentenced Sisyphus to roll a boulder up a hill for all of eternity. Every time he got near the top of the hill, the boulder was fated to slip out of his hands and roll back to the bottom, leaving him to start his futile task over again.
+
+This myth illustrates the frustration and despair that can result from doing meaningless work without any purpose or end goal. If your team doesn't have any reasoning behind why they're doing something, it can start to feel like pointless labor rather quickly. It's up to you to provide them with the context they need to complete projects without feeling like they're eternally rolling a boulder up a hill.
+
+
+
+#### The value of context
+
+As a manager, you're the one who has a top-down view of what's going on in the organization. It's likely you understand what other teams and departments are doing, and how those projects fit together into a larger strategy. Your team may not have the same perspective. Explaining it to them will help them see the value of the work they're doing as it relates to the bigger picture.
+
+For example, consider an assignment to fill in the blank alt text fields for each image on your company website with descriptive text. Without context, it's easy to see how this task could feel like busy work. When context is added, and it's explained that visually-impaired clients can't use the site without a screen reader, the response changes drastically. The busy work has just become an opportunity to deeply help someone's experience.
+
+Context can also help your team understand the expectations and priorities of the work they're doing. For example, if you assign your team to create a new landing page for a product launch, you should explain why this landing page is important, what goals it should achieve, what audience it should target, and what timeline it should follow. This way, your team will have a clear idea of what success looks like and how to measure it.
+
+
+
+#### The power of empowerment
+
+Explaining the why is also important for your team members as it empowers them to make independent decisions. In fact, without understanding the why of things, it's very hard to make independent decisions of any sort. If you want your team to take ownership of their work and be able to make accurate and timely decisions, you must take the time to explain why they're working on what they're working on.
+
+For example, if you assign your team to research and write a report on a new market opportunity, you should explain why this research is needed, what questions it should answer, what sources it should use, and how it will inform future actions. This way, your team will have more autonomy and confidence in their work process and outcome.
+
+Empowering your team with the why can also foster creativity and innovation in your team. By explaining the why, you're inviting your team to think critically and creatively about how to achieve the desired results. You're also encouraging them to challenge assumptions and offer suggestions for improvement. This can lead to better solutions and higher quality work.
+
+
+
+#### Conclusion
+
+Explaining the why is a key skill for any manager who wants to delegate work effectively and efficiently. By explaining the why, you can provide context and rationale for the tasks and projects that your team is working on. This can help your team feel more motivated, engaged, and empowered in their work. By explaining the why, you can also improve your team's performance by increasing their alignment, decision-making, and innovation. By explaining the why, you can avoid making your team feel like Sisyphus and instead make them feel like heroes.
+
+
+
 ### Authenticity, transparency, and vulnerability
+
+#### How to balance authenticity, transparency, and vulnerability as a leader
+
+As a leader, you want to be authentic with your team. You want to speak your truth and make sure what you say is in full alignment with what you believe. However, being authentic doesn't mean you have to share everything with everyone. You also have to consider how much transparency and vulnerability you want to show in your communication. Transparency has to do with how much information you share, while vulnerability has to do with how personal the content of what you share is. In this essay, I will explain the difference between authenticity, transparency, and vulnerability, and how to balance them as a leader.
+
+
+
+#### The definition of authenticity
+
+Authenticity means speaking your truth, making sure what you say is in full alignment with what you believe. Being authentic is essential for any leader who wants to build trust and credibility with their team. Being authentic also helps you avoid cognitive dissonance, which is the mental stress that occurs when your actions don't match your beliefs.
+
+Being authentic doesn't mean you have to be blunt or rude. You can still be respectful and tactful in your communication. Being authentic also doesn't mean you have to be rigid or dogmatic. You can still be open-minded and flexible in your thinking.
+
+Being authentic means being honest and consistent in your words and deeds. It means being true to yourself and your values.
+
+
+
+#### The spectrum of transparency and vulnerability
+
+Transparency and vulnerability are two dimensions that can vary in your communication. Transparency has to do with how much information you share, while vulnerability has to do with how personal the content of what you share is.
+
+Transparency can range from low to high, depending on how much detail and data you provide to your team. For example, if you're facing a financial crisis in your business, you can choose to share only the general situation or the specific numbers.
+
+Vulnerability can also range from low to high, depending on how much emotion and intimacy you express to your team. For example, if you're facing a personal challenge in your life, you can choose to share only the facts or the feelings.
+
+Both transparency and vulnerability have pros and cons. On one hand, being transparent and vulnerable can help you connect with your team on a deeper level, show them that you care and trust them, and inspire them to follow your lead. On the other hand, being too transparent and vulnerable can expose you to risks such as losing control, credibility, or respect, or creating confusion, anxiety, or resentment among your team.
+
+
+
+#### The balance of authenticity, transparency, and vulnerability
+
+The key to balancing authenticity, transparency, and vulnerability is to find the right level for each situation and audience. There is no one-size-fits-all formula for this. You have to use your judgment and intuition to decide what is appropriate and effective for each context.
+
+To help you find the right balance, here are some questions you can ask yourself before communicating with your team:
+- What is the purpose of my communication? What do I want to achieve?
+- What is the best way to communicate my truth? How can I be honest and consistent?
+- How much information does my team need? How can I be clear and informative?
+- How personal is the content of my communication? How can I be respectful and empathetic?
+- How will my team react to my communication? How can I anticipate and address their concerns?
+
+By asking yourself these questions, you can tailor your communication style to suit each situation and audience. You can also adjust your level of transparency and vulnerability according to the feedback and response you get from your team.
+
+
+
+#### Conclusion
+
+Authenticity, transparency, and vulnerability are three important aspects of communication as a leader. By being authentic, you can speak your truth and align your actions with your beliefs. By being transparent, you can share information and data with your team. By being vulnerable, you can share emotion and intimacy with your team.
+
+However, being authentic doesn't mean you have to share everything with everyone. You also have to consider how much transparency and vulnerability you want to show in each situation and audience. You have to find the right balance that works for you and your team.
+
+By balancing authenticity, transparency, and vulnerability, you can communicate effectively and efficiently with your team. You can also create a positive and engaged work culture where people trust and respect each other.
+
 
 
 ## 5. Mistakes to Avoid
+
 ### Wrong people in the wrong seat
+
+#### How to hire and fire as a leader
+
+As a leader, one of your most important tasks is to build a strong team that can achieve your goals and vision. However, building a strong team is not just about finding people who have the right skills and qualifications. It is also about finding people who have the right fit and attitude for your team culture. In other words, you want to have the right people in the right seats on your bus.
+
+In this essay, I will share some tips for how to hire and fire as a leader, based on the bus analogy from the book "Good to Great" by Jim Collins. I will explain how to get the right people on your bus, how to get the wrong people off your bus, and how to balance your responsibility and compassion as a leader.
+
+
+
+#### Getting the right people on your bus
+
+The first step in building a strong team is to hire the right people for your bus. This means looking for two major requirements in your candidates: the ability to do the job well and a strong culture fit with your team.
+
+When evaluating ability, you want to qualify a candidate's experience, skillset, and approach to their work. A great way to do this is to ask detailed questions about past projects or deliverables that are similar to what they will need to deliver in the role you are filling. You can also describe a current business challenge you have and ask them how they would approach solving it. This will give you a feel for their approach and how they think.
+
+When evaluating culture fit, you want to assess a candidate's mindset and values to see how well they align with your team and organizational values. A good way to do this is to ask questions about challenges or adversities they faced, and how they handled them. You can also ask them about what is important to them and how they have dealt with situations where their values were challenged. This will help you gauge their attitude and personality.
+
+By using these two criteria, you should be able to find team members that are positive additions to your bus. They will not only perform well in their roles, but also contribute to the team spirit and culture.
+
+
+
+#### Getting the wrong people off your bus
+
+The second step in building a strong team is to fire the wrong people from your bus. This means letting go of team members who are not able to do their job well or who are not a good fit for your team culture.
+
+Firing someone is never easy or pleasant, but sometimes it is necessary for the sake of your team and organization. However, before you make this decision, you should first try to help them succeed. It is your responsibility as a leader to serve as a mentor and teacher. You should provide them with coaching, training, feedback, and support. You should also give them clear expectations and goals, and monitor their progress and performance.
+
+If you have done everything you can to help them, but they are still not working out in their role, then it is time to let them go. You should do this with respect and dignity, and explain the reasons for your decision. You should also be honest and compassionate, and acknowledge their strengths and contributions.
+
+By doing this, you are not only doing the right thing for your team and organization, but also for the person you are firing. You are giving them an opportunity to find a better fit for their skills and values elsewhere.
+
+
+
+#### Balancing responsibility and compassion
+
+The third step in building a strong team is to balance your responsibility and compassion as a leader. This means being aware of the impact of your hiring and firing decisions on your team members and yourself.
+
+Hiring and firing are not just technical or rational processes. They are also emotional and relational processes. They affect the feelings, morale, trust, and loyalty of your team members. They also affect your own reputation, credibility, and confidence as a leader.
+
+Therefore, you should be mindful of how you communicate and interact with your team members during these processes. You should be respectful, honest, clear, consistent, fair, and supportive. You should also be open to feedback, criticism, or questions from your team members. You should listen to their concerns and address them accordingly.
+
+You should also take care of yourself during these processes. You should acknowledge your own emotions and stress levels, and seek support or guidance if needed. You should also celebrate your successes and learn from your mistakes.
+
+By balancing your responsibility and compassion, you can build trust and respect with your team members. You can also maintain your integrity and authenticity as a leader.
+
+
+
+#### Conclusion
+
+Hiring and firing are two of the most important tasks for any leader who wants to build a strong team. By following the bus analogy from Jim Collins' book, you can learn how to get the right people on your bus and the wrong people off your bus. You can also learn how to balance your responsibility and compassion as a leader.
+
+By doing this, you can create a positive and productive work environment where your team members can thrive and achieve your goals and vision. You can also enjoy the journey of being a leader and a bus driver.
+
+
+
 ### Neglecting diversity and inclusion
+
+#### Neglecting diversity and inclusion: How to avoid this common mistake as a leader
+
+Diversity and inclusion are two of the most important factors for any team's success. Diversity refers to having people of different races, genders, identities, ages, orientations, nationalities, backgrounds, and physical ability levels on your team. Inclusion refers to creating a work environment where every team member feels welcome and safe, and where their opinions and concerns are valued and respected. Research has shown that diverse and inclusive teams are more productive, innovative, resilient, and satisfied than teams that are not.
+
+However, many leaders neglect diversity and inclusion in their teams, either because they don't understand their importance or because they don't know how to foster them. This is a huge mistake that can have negative consequences for the team's performance and morale. In this essay, I will explain how to avoid neglecting diversity and inclusion as a leader, by defining these terms, explaining how they are related, and providing some useful techniques to build your team with diversity and inclusion in mind.
+
+
+
+#### The definition of diversity and inclusion
+
+Diversity and inclusion are two related but distinct concepts that have to do with the composition and culture of your team.
+
+Diversity means having people of different races, genders, identities, ages, orientations, nationalities, backgrounds, and physical ability levels on your team. Diversity is important because it brings new and valuable ideas, opinions, and perspectives to your team. Diversity also helps your team reflect the demographics of your customers and society at large.
+
+Inclusion means creating a work environment where every team member feels welcome and safe, and where their opinions and concerns are valued and respected. Inclusion is important because it helps your team members feel engaged, motivated, and loyal to your team. Inclusion also helps your team members collaborate effectively and learn from each other.
+
+
+
+#### The relationship between diversity and inclusion
+
+Diversity and inclusion are two sides of the same coin. You cannot have one without the other. Having a diverse team is not enough if you don't create an inclusive culture where everyone can thrive. Likewise, having an inclusive culture is not enough if you don't have a diverse team that can bring different perspectives and experiences to the table.
+
+Diversity and inclusion are also mutually reinforcing. The more diverse your team is, the more inclusive you need to be to make everyone feel comfortable and valued. The more inclusive you are, the more diverse your team can become as you attract and retain people from different backgrounds and walks of life.
+
+Diversity and inclusion are also interdependent. You cannot improve one without improving the other. If you want to increase the diversity of your team, you need to create an inclusive culture that welcomes and supports people from different groups. If you want to enhance the inclusion of your team, you need to increase the diversity of your team so that everyone can benefit from the richness of diversity.
+
+
+
+#### The techniques for diversity and inclusion
+
+As a leader, you have a crucial role in fostering diversity and inclusion in your team. Here are some techniques you can use to do so:
+- When hiring new team members, look for both ability and culture fit. Ability means the experience, skillset, and approach to work that the candidates have. Culture fit means the mindset and values that the candidates have that align with your team's culture. You can assess both ability and culture fit by asking detailed questions about past projects or challenges that are relevant to the role you are filling. You can also ask questions about what is important to them and how they handle situations where their values are challenged.
+- When communicating with your team members, be respectful, honest, clear, consistent, fair, and supportive. Respect their differences and preferences in terms of communication styles, work styles, feedback styles, etc. Be honest about the situation and expectations of the work they are doing. Be clear about the goals and priorities of the work they are doing. Be consistent in your words and actions. Be fair in your decisions and evaluations. Be supportive in your coaching and feedback.
+- When creating a work environment for your team members, be mindful of their needs and preferences in terms of physical space, equipment, resources, etc. Make sure they have access to what they need to do their work effectively and comfortably. Also make sure they have opportunities to interact with each other in formal and informal settings. Encourage them to share their stories and experiences related to their work or personal lives.
+- When dealing with bias in yourself or others, be aware of it and challenge it. Bias is a personal and sometimes unreasoned judgment that can affect your perception or decision-making. Bias can be conscious or unconscious, positive or negative. As a leader, you should acknowledge that you have biases as well as everyone else does. You should also commit to identifying and reducing your biases as much as possible. You can do this by keeping a curious and open mind, asking questions, seeking more information, and listening to different perspectives. You should also coach your team members to do the same and hold them accountable for their biases.
+- When providing feedback or recognition to your team members, be specific and personalized. Specific means giving concrete examples of what they did well or what they can improve on. Personalized means tailoring your feedback or recognition to their individual strengths, weaknesses, goals, and motivations. You can also use different methods of feedback or recognition, such as verbal, written, public, or private, depending on what they prefer or respond to best.
+
+By using these techniques, you can build a diverse and inclusive team that can perform better and enjoy more their work.
+
+
+
+#### Conclusion
+
+Neglecting diversity and inclusion is a common mistake that many leaders make, but it is one that can be avoided. By understanding the definition, relationship, and techniques of diversity and inclusion, you can create a team that is more productive, innovative, resilient, and satisfied. You can also create a team that is more reflective and responsive to your customers and society. You can also create a team that is more fun and rewarding to work with.
+
+
 ### Blame instead of ownership
 
+#### How to adopt a positive leadership mindset
 
-## Conclusion
-### Put yourself in their shoes
+As a leader, you are responsible for everything that happens in your team. You are also accountable for the results and outcomes of your team's work. However, when things go wrong, you may be tempted to blame your team members or external factors for the mistakes or failures. This is a negative and counterproductive leadership mindset that can harm your team's performance and morale. Instead, you should adopt a positive leadership mindset of ownership, where you take responsibility for everything that happens in your team and look for ways to improve and learn from the errors. In this essay, I will explain why blame has no place in leadership, why ownership is the opposite of blame, and how to take ownership as a leader.
 
+
+
+#### The problem with blame
+
+Blame is a negative and destructive leadership mindset that can have serious consequences for your team's performance and morale. Blame is when you point the finger at someone or something else for the mistakes or failures that happen in your team. Blame can manifest in different ways, such as:
+- Accusing your team members of being incompetent, lazy, or dishonest
+- Complaining about the lack of resources, support, or time
+- Making excuses or rationalizations for the poor results or outcomes
+- Denying or avoiding your own role or contribution to the problem
+
+Blame has several problems as a leadership mindset. First, blame immediately puts people on the defensive. If someone feels responsible for what they are being blamed for, they often feel guilt or embarrassment. If they feel blame is misplaced, they often feel anger or resentment. These emotional states can reduce productivity and team success. They can also damage your relationship with your team members and erode their trust and respect for you.
+
+Second, blame only focuses on what went wrong and not on what can be done to fix it or prevent it from happening again. Blame does not offer any constructive feedback or solutions to the problem. Blame does not help your team learn from their mistakes or improve their skills or processes. Blame only creates a negative and pessimistic atmosphere in your team.
+
+Third, blame creates a culture of fear and finger-pointing in your team. If you point the finger at your team members, they will learn to point fingers too. They will also learn to hide their mistakes or shift the blame to others. They will not feel safe or comfortable to admit their errors or ask for help. They will not feel motivated or engaged to do their best work. They will not feel loyal or committed to your team or organization.
+
+
+
+#### The solution of ownership
+
+Ownership is a positive and constructive leadership mindset that can have significant benefits for your team's performance and morale. Ownership is when you take responsibility for everything that happens in your team and look for ways to improve and learn from the errors. Ownership can manifest in different ways, such as:
+- Acknowledging your own role or contribution to the problem
+- Apologizing for the mistakes or failures that happen in your team
+- Seeking feedback or input from your team members or stakeholders
+- Offering feedback or solutions to the problem
+- Taking action to fix the problem or prevent it from happening again
+- Learning from the mistakes or failures and applying the lessons to future situations
+
+Ownership has several advantages as a leadership mindset. First, ownership creates a culture of trust and respect in your team. When you take responsibility for everything that happens in your team, you show your team members that you care about them and their work. You also show them that you are honest and humble enough to admit your own errors and weaknesses. This will make them trust and respect you more as a leader.
+
+Second, ownership fosters a culture of learning and improvement in your team. When you look for ways to improve and learn from the errors, you show your team members that you value their growth and development. You also show them that you are open-minded and flexible enough to change your approach or strategy when needed. This will make them more willing to learn from their mistakes and improve their skills or processes.
+
+Third, ownership inspires a culture of engagement and commitment in your team. When you take action to fix the problem or prevent it from happening again, you show your team members that you are proactive and solution-oriented. You also show them that you are confident and optimistic enough to overcome any challenges or obstacles. This will make them more engaged and committed to do their best work and achieve your goals and vision.
+
+
+
+#### The practice of ownership
+
+As a leader, you have a crucial role in practicing ownership in your team. Here are some tips on how to do so:
+- When hiring new team members, look for people who have an ownership mindset as well as an ability fit and a culture fit. You can assess their ownership mindset by asking them about how they handled past mistakes or failures, how they learned from them, and how they applied the lessons to future situations.
+- When communicating with your team members, be respectful, honest, clear, consistent, fair, and supportive. Respect their differences and preferences. Be honest about the situation and expectations. Be clear about the goals and priorities. Be consistent in your words and actions. Be fair in your decisions and evaluations. Be supportive in your coaching and feedback.
+- When creating a work environment for your team members, be mindful of their needs and preferences. Make sure they have access to the resources, support, and time they need to do their work effectively and comfortably. Also make sure they have opportunities to interact with each other and with you in formal and informal settings. Encourage them to share their ideas, opinions, and concerns with you and with each other.
+- When dealing with mistakes or failures in your team, be aware of them and address them promptly. Don't ignore or avoid them. Don't blame or accuse anyone. Don't make excuses or rationalizations. Instead, acknowledge your own role or contribution to the problem. Apologize for the mistakes or failures that happen in your team. Seek feedback or input from your team members or stakeholders. Offer feedback or solutions to the problem. Take action to fix the problem or prevent it from happening again. Learn from the mistakes or failures and apply the lessons to future situations.
+
+By practicing ownership in your team, you can create a positive and productive work culture where your team members can thrive and succeed.
+
+
+
+#### Conclusion
+
+Blame is a negative and destructive leadership mindset that can harm your team's performance and morale. Blame is when you point the finger at someone or something else for the mistakes or failures that happen in your team. Blame puts people on the defensive, focuses on what went wrong, and creates a culture of fear and finger-pointing.
+
+Ownership is a positive and constructive leadership mindset that can benefit your team's performance and morale. Ownership is when you take responsibility for everything that happens in your team and look for ways to improve and learn from the errors. Ownership creates a culture of trust and respect, fosters a culture of learning and improvement, and inspires a culture of engagement and commitment.
+
+As a leader, you should avoid blame and adopt ownership in your team. You should also practice ownership in your team by hiring people who have an ownership mindset, communicating with them respectfully and honestly, creating a work environment that meets their needs and preferences, and dealing with mistakes or failures promptly and constructively.
+
+By doing this, you can create a team that is more productive, innovative, resilient, and satisfied. You can also create a team that is more fun and rewarding to work with.
+
+
+
+## 6. Put yourself in their shoes: How to develop your personal leadership style
+
+### The golden rule of leadership
+
+One of the most important principles of leadership is to follow the golden rule: "Do unto others as you would have them do unto you." This means treating your team members with respect, empathy, and kindness. It also means providing them with the support, feedback, and recognition they need to succeed.
+
+A good way to apply the golden rule is to think back to your own experiences as a team member. Think about your current manager and all the managers you have had before. What did they do right? What did they do wrong? How did they make you feel? What did you learn from them?
+
+By reflecting on your own experiences, you can identify the best practices and the worst practices of leadership. You can emulate the things you loved about your managers' style and avoid the things you hated. You can also fill in the gaps by offering the things you wish your managers had done for you.
+
+By doing this, you can build your own personal leadership style by being the leader you wish you had.
+
+
+
+### The resources for leadership
+
+Another way to develop your personal leadership style is to learn from other sources of wisdom and inspiration. There are many books, articles, podcasts, videos, and courses that can offer you valuable insights and tips on leadership. Here are some of the resources that I recommend for you:
+- Two TED Talks by Simon Sinek, a leadership thought-leader and author. The first one is on making your team feel safe and the second one is on the power of explaining the why of things. They are both eye-opening and inspiring.
+- A TED Talk by Carol Dweck, a psychologist who has spent her career researching the psychology of mindset. She highlights the difference between a growth mindset and a fixed mindset. It is a critical concept that you can use both in managing your own mindset and that of your team.
+- A book by Jocko Willink and Leif Babin, retired Navy Seals who are now management consultants. The book is called "Extreme Ownership" and it teaches you how to take responsibility for everything that happens in your team and look for ways to improve and learn from the errors.
+- My website at davelabowitz.com, where you can find more information and resources on leadership and management. You can also message me on LinkedIn or email me if you have any questions or feedback.
+
+By using these resources, you can deepen your understanding and practice of leadership. You can also discover new ideas and perspectives that can enrich your personal leadership style.
+
+
+
+### The reward of leadership
+
+The last thing I want to say is that leadership is not only a skill or a role. It is also a passion and a reward. Leadership is not only about achieving goals or solving problems. It is also about making a positive impact and creating a meaningful legacy.
+
+As a leader, you have the opportunity and the responsibility to make a difference in your team's lives. You can help them grow, learn, and achieve their potential. You can also help them enjoy their work and feel fulfilled.
+
+As a leader, you also have the opportunity and the responsibility to make a difference in your organization's success. You can contribute to its vision and mission. You can also contribute to its culture and values.
+
+As a leader, you also have the opportunity and the responsibility to make a difference in your own life. You can challenge yourself, learn new things, and overcome obstacles. You can also express yourself, share your ideas, and inspire others.
+
+By doing this, you can experience the reward of leadership: the satisfaction of knowing that you have made a positive impact and created a meaningful legacy.
 
 
 
