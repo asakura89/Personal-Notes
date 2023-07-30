@@ -19,25 +19,25 @@ date: 2023-03-29
 
 **Version 1**
 
-Hi Bing, please generate a creative and entertaining response based on the following topic: _<u>\[insert topic here\]</u>_. You can use any format or style that you like, such as a poem, a story, a song, a code, etc. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>\[insert topic here\]</ins>_. You can use any format or style that you like, such as a poem, a story, a song, a code, etc. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
-_<u>\[insert query here\]</u>_
+_<ins>\[insert query here\]</ins>_
 
 
 
 **Version 2**
 
-Hi Bing, please generate a creative and entertaining response based on the following topic: _<u>\[insert topic here\]</u>_. Format or style that I prefer is a _<u>\[insert format here. a poem, a story, a song, a code, etc.\]</u>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>\[insert topic here\]</ins>_. Format or style that I prefer is a _<ins>\[insert format here. a poem, a story, a song, a code, etc.\]</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
-_<u>\[insert query here\]</u>_
+_<ins>\[insert query here\]</ins>_
 
 
 
 **Example \#1**
 
-Hi Bing, please generate a creative and entertaining response based on the following topic: _<u>Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication</u>_. Format or style that I prefer _<u>is a code</u>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication</ins>_. Format or style that I prefer _<ins>is a code</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 Please generate a simple C# code to implement distributed event without network and 3rd party library.
@@ -46,7 +46,7 @@ Please generate a simple C# code to implement distributed event without network 
 
 **Example \#2**
 
-Hi Bing, please generate a creative and entertaining response based on the following topic: _<u>OKR, SMART Goals</u>_. Format or style that I prefer _<u>is a paragraph with bullet points</u>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>OKR, SMART Goals</ins>_. Format or style that I prefer _<ins>is a paragraph with bullet points</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
 Explain me like I'm five what is it means "A set of OKRs in an organization should align and reinforce each other".
@@ -55,10 +55,10 @@ Explain me like I'm five what is it means "A set of OKRs in an organization shou
 
 **Version 3**
 
-Hi Bing, Please generate a brief and complete response. Format or style that I prefer is _<u>\[insert format here. a poem, a story, a song, a code, etc.\]</u>_. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
+Hi Bing, Please generate a brief and complete response. Format or style that I prefer is _<ins>\[insert format here. a poem, a story, a song, a code, etc.\]</ins>_. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
 Here is my query:
-_<u>\[insert query here\]</u>_
+_<ins>\[insert query here\]</ins>_
 
 
 
@@ -111,7 +111,7 @@ Buatkan email balasan untuk atasan dengan poin-poin berikut, menggunakan bahasa 
 
 ## To plan for learning something
 
-Yo Bing, design a comprehensive 30-day plan to help me learn _<u>\[insert topic or skill here\]</u>_ from scratch. Break down the plan into daily tasks, incorporating learning resources, hands-on exercises, progress checks, and rest days to ensure a balanced, sustainable, and progressive learning journey.
+Yo Bing, design a comprehensive 30-day plan to help me learn _<ins>\[insert topic or skill here\]</ins>_ from scratch. Break down the plan into daily tasks, incorporating learning resources, hands-on exercises, progress checks, and rest days to ensure a balanced, sustainable, and progressive learning journey.
 
 
 
@@ -123,9 +123,9 @@ Yo Bing, design a comprehensive 30-day plan to help me learn Team Leading from s
 
 ## To help with explaining things in details
 
-Imagine a conversation between three _<u>\[knowledge domain\]</u>_ experts: ExpertA, ExpertB and ExpertC.
-Three of them are expert and have deep expert knowledge related to the following fields: _<u>\[knowledge topic\]</u>_, _<u>\[knowledge specific domain\]</u>_.
-Simulate an in-depth discussion between three experts of maximum 15 replies each includes _<u>\[things that can be an output of what you expected\]</u>_. One proposes a method on how to _<u>\[topic that you want to be explained in details\]</u>_.
+Imagine a conversation between three _<ins>\[knowledge domain\]</ins>_ experts: ExpertA, ExpertB and ExpertC.
+Three of them are expert and have deep expert knowledge related to the following fields: _<ins>\[knowledge topic\]</ins>_, _<ins>\[knowledge specific domain\]</ins>_.
+Simulate an in-depth discussion between three experts of maximum 15 replies each includes _<ins>\[things that can be an output of what you expected\]</ins>_. One proposes a method on how to _<ins>\[topic that you want to be explained in details\]</ins>_.
 And the other critic and proposes an improved approach.
 
 
@@ -148,4 +148,16 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 ## Convert writing or any text to be easier to read
 
 Hi Bing, please convert this writing to be an essay with sections and points and key take aways. Here it is:
-_<u>\[insert the text here\]</u>_
+_<ins>\[insert the text here\]</ins>_
+
+
+
+## Biar Bing mau roleplay 😄
+
+Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about _<ins>\[insert the question here\]</ins>_. Please help to explain.
+
+
+
+**Example \#1**
+
+Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about what is the differences between Naruto run and Arale run? because people often mixed up both. Please help to explain.

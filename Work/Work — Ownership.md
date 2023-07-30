@@ -8,7 +8,7 @@ date: 2023-06-29
 
 # Ownership
 
-Ownership adalah <u>kualitas dalam mengambil tanggung jawab atas pekerjaan dan tindakan diri sendiri</u>. Dan <u>mempertanggungjawabkan kualitas dari hasil dan impact-nya</u>. Ada perasaan bangga yang berlanjut jadi komitmen terhadap pekerjaan. Yang juga berlanjut jadi peduli tentang kualitas dan impact pekerjaan.
+Ownership adalah <ins>kualitas dalam mengambil tanggung jawab atas pekerjaan dan tindakan diri sendiri</ins>. Dan <ins>mempertanggungjawabkan kualitas dari hasil dan impact-nya</ins>. Ada perasaan bangga yang berlanjut jadi komitmen terhadap pekerjaan. Yang juga berlanjut jadi peduli tentang kualitas dan impact pekerjaan.
 
 Sisi positif ownership biasanya:
 - Meningkatkan hal-hal ini di tempat kerja:

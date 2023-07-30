@@ -7,21 +7,38 @@ date: 2023-07-23
 
 # Carrot and Stick
 
-{Content}
+## What is
+
+Apa ini Carrot and Stick? disebut-sebut di meeting.
+
+Jadi <ins>Carrot and Stick ini adalah motivational tactic rewards (carrot) dan punishments (stick)</ins>. Ini strategi dimana <ins>hal-hal positif atau insentif positif ditawarin buat meng-encourage perilaku yang diinginkan</ins>, sementara <ins>konsekuensi negatif diberlakukan buat mencegah perilaku yang gak diinginkan</ins>.
+
+Teknik ini biasanya diterapin sewaktu ada hal yang dikejer. KPI, Objective, yang membutuhkan perhatian lebih dari para member. Misal, team harus ngejer benerin bug sebanyak 3 bug seminggu. Kalo deliver, kasi carrot. Dan kalo ada yang gak bisa deliver, kasi stick.
+
+Jadi bisa dibilang juga kalo carrot buat yang meet expectation. Sedangkan stick buat yang gak meet expectation. Ini biasanya dipake di banyak konteks. Manajemen, pendidikan, politik, dan bahkan hubungan pribadi, sebagai sarana atau cara buat tadi, mendorong perilaku yang diinginkan dan mencegah tindakan yang tidak diinginkan.
+
+
+
+## Carrot
+
+Ini bisa apa aja, misalnya di bawah ini:
+1. Pujian (Praise or Affirmation)
+2. Pengakuan (Recognition)
+3. Promosi
+4. Bonus
+5. Benefit nyata lain
+
+
+
+## Stick
+
+Ini juga bisa apa aja, misalnya ini:
+1. Teguran (Reprimands)
+2. Denda (Fines)
+3. Penurunan pangkat (Demotions)
+4. Kehilangan benefit khusus (Loss of priviledges)
 
 <!--
-User
-what is carrot and stick phrase means?
-ChatGPT
-The phrase "carrot and stick" is an idiomatic expression that refers to a motivational tactic involving both rewards (the carrot) and punishments (the stick). It is often used to describe a strategy where positive incentives are offered to encourage desired behavior while negative consequences are imposed to discourage undesirable behavior.
-
-The carrot represents the reward or benefit that is promised or given to someone in order to motivate them to act in a certain way. This could be anything from praise, recognition, promotions, bonuses, or other tangible benefits.
-
-On the other hand, the stick symbolizes the punishment or penalty that is imposed when someone fails to meet expectations or behaves in an undesirable manner. The punishment can range from reprimands, fines, demotions, loss of privileges, or other negative consequences.
-
-The purpose of the carrot and stick approach is to create a balance between rewards and punishments, providing motivation to individuals by offering them an incentive to strive for positive outcomes while also emphasizing the potential negative repercussions of not meeting expectations. It is commonly used in various contexts, including management, education, politics, and even personal relationships, as a means to encourage desired behavior and discourage unwanted actions.
-
-
 
 
 User

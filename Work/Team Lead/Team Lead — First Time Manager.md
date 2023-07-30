@@ -10,6 +10,10 @@ date: 2023-06-29
 
 # First Time Manager
 
+{Content}
+
+<!--
+
 - [Introduction](#introduction)
   - [Congratulations on being a manager](#congratulations-on-being-a-manager)
     - [Introduction](#introduction-1)
@@ -951,3 +955,5 @@ By doing this, you can experience the reward of leadership: the satisfaction of 
 **References:**
 
 - [Essential Lessons for First-Time Managers](https://www.linkedin.com/learning/essential-lessons-for-first-time-managers/?autoplay=false&resume=false)
+
+-->
