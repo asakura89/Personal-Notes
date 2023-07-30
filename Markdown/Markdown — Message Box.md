@@ -80,6 +80,8 @@ jadinya gini
 > 
 > Good news announcement
 
+Ternyata dibahas juga di github-flavored markdown disini ([\[Markdown\] An option to highlight a &#34;Note&#34; and &#34;Warning&#34; using blockquote (Beta) · community · Discussion #16925 \(github.com\)](https://github.com/orgs/community/discussions/16925#discussioncomment-2827410))
+
 
 
 ## CSS-based
