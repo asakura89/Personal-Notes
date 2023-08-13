@@ -89,6 +89,11 @@ Format yang lumayan bagus buat ngebikin tulisan.
 > - **Point 1\#:** Explanation
 > - **Point 2\#:** Explanation
 > - **Point 3\#:** Explanation
+>
+> {Or we can do it like this too}
+> - <ins>Point 1\#:</ins> Explanation
+> - <ins>Point 2\#:</ins> Explanation
+> - <ins>Point 3\#:</ins> Explanation
 > 
 > 
 > 
