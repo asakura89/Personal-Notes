@@ -19,3 +19,5 @@ date: 2023-08-17
 
 # Conditional Statement
 
+Conditional statement, apalagi kalo bukan `if-else`. Ya ada `switch` sih, tapi kebanyakan `if-else` atau nested `if-else`.
+
