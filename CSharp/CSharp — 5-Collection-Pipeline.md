@@ -18,6 +18,13 @@ date: 2021-08-14
 
 # Collection Pipeline
 
+- [1. Select](#1-select)
+- [2. Where](#2-where)
+- [3. Sort](#3-sort)
+- [4. Aggregate](#4-aggregate)
+
+
+
 `Collection` secara general me-refer ke `Array`, `List`, `Dictionary` atau object yang memiliki anak yang lebih dari 1 dan bisa diiterasi / loop. 
 Sedangkan `Pipeline` me-refer ke fungsi dari suatu code / app yang bisa menerima input dari fungsi / app lain lalu memprosesnya kemudian menghasilkan output yang masih bisa diproses oleh fungsi lain. 
 Kalau digabungkan, `Collection Pipeline` adalah `Pipeline` yang menerima input dan menghasilkan output dalam bentuk `Collection`.  

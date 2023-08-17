@@ -18,6 +18,12 @@ date: 2021-08-14
 
 # Type
 
+- [1. `var`](#1-var)
+- [2. `dynamic`](#2-dynamic)
+- [3. Anonymous](#3-anonymous)
+
+
+
 ## 1. `var`
 
 Keyword `var` biasanya rame di bahasa-bahasa pemrograman yang dynamic. Dynamic disini maksudnya adalah bahasa yang weakly-typed atau loosely-typed. Apa bahasa weakly-typed? Bahasa weakly-typed adalah bahasa pemrograman yang gak harus nulis type dari variable sewaktu deklarasi dan inisialisasi. Sedangkan C# .Net adalah bahasa yang harus ditulis type-nya sewaktu deklarasi dan inisialisasi. Maka dari itu, C# .Net ini strong-typed.

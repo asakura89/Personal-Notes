@@ -18,6 +18,16 @@ date: 2021-08-14
 
 # Delegate
 
+- [1. Delegate](#1-delegate)
+- [2. Action](#2-action)
+- [3. Func](#3-func)
+- [4. Predicate](#4-predicate)
+- [5. IIFE](#5-iife)
+
+
+
+## 1. Delegate
+
 `Delegate` ini adalah konsep `function pointer` yang ada di .Net. Dengan adanya `delegate` ini malah ngebawa konsep `functional` ke bahasa yang berkonsep `object oriented` kaya C# ini. 
 Apa sebenernya `function pointer`? `function pointer` adalah jenis khusus dari variabel yang digunakan untuk menyimpan reference / memory address dari sebuah method. Jadi method yang biasanya kitab pake dengan cara dipanggil, sekarang bisa juga ditampung jadi sebuah variabel buat dipanggil nanti. 
 Atau malah buat dikirim sebagai `parameter` ke method yang lain.  
@@ -95,7 +105,7 @@ public String SupermanBerpindahTempat() => "Dengan cara terbang.";
 
 
 
-## 1. Action
+## 2. Action
 
 `function` / `Method` sendiri ada 4 jenis.  
 1. Tanpa return value
@@ -167,7 +177,7 @@ Menghilang
 
 
 
-## 2. Func
+## 3. Func
 
 Kebalikan dari `Action`, `Func` termasuk kategori no. 3 dan 4. `Func` adalah `delegate` yang merujuk ke `Method` yang punya return value.  
 
@@ -204,7 +214,7 @@ public String CaraBerpindahTempat(IDictionary<String, String> aksiPindah, String
 
 
 
-## 3. Predicate
+## 4. Predicate
 
 Predicate ini secara general adalah `Func` yang return value-nya selalu `Boolean`. Dan bisa dibilang `class` khusus, karena .Net nyediain class `Predicate<T>`.
 
@@ -254,7 +264,7 @@ if (anggotaBanyak)
 
 
 
-## 4. IIFE
+## 5. IIFE
 
 `IIFE` tu apa sik? `IIFE` adalah singkatan dari Immediately Invoked Function Expression.  
 
