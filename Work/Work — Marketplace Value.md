@@ -7,38 +7,31 @@ date: 2023-07-10
 
 # Marketplace Value
 
-## Implementation: The Lowest Level of Value
-
-The first level of value is implementation, where you are hired to do a specific task or skill. You are expected to be reliable, disciplined, focused and diligent. Implementers are important because they get things done and move things forward. However, implementation is also the lowest level of value in the marketplace, which means that you have the least influence, impact, visibility and acknowledgement. You can easily get stuck at this level if you don't move up to the next level of value.
-
-
-
-## Unification: The Middle Level of Value
-
-The second level of value is unification, where you manage people, processes and projects to achieve a goal. You are no longer the doer, but the one who unifies others to do the work. Unification is a higher level of value than implementation, which means that you have more impact, income and responsibility. However, unification also has its drawbacks. Many managers at this level feel undervalued, unappreciated and burned out. They fall into two common traps: believing that they need more education or working harder to prove themselves. These traps are based on external programming that tells us that we need to be good at what we do and prove our worth. But these traps don't lead to more recognition or opportunities. They only lead to more exhaustion and debt. To avoid these traps, you need to move up to the highest level of value.
+- [1. Implementation: The Lowest Level of Value](#1-implementation-the-lowest-level-of-value)
+- [2. Unification: The Middle Level of Value](#2-unification-the-middle-level-of-value)
+- [3. Communication: The Highest Level of Value](#3-communication-the-highest-level-of-value)
 
 
 
-## Communication: The Highest Level of Value
-
-The third and highest level of value is communication, where you use your words and presence to influence others, inspire action and create change. You are not just a manager, but a leader who communicates effectively, confidently and authentically. Communication is the highest level of value in the marketplace, which means that you have the most influence, impact, visibility and recognition. This is why you see less experienced or less educated colleagues getting ahead of you. They may not be good at what they do, but they are good at communicating what they do. They have charisma, leadership and positioning through their communication skills. They attract more opportunities, promotions and rewards because they can talk well.
+Di dunia kerja, banyak banget pelajaran-pelajaran gimana beretiket di society. Gimana berkomunikasi. Gimana bernegosiasi. Karena memang ya dasarnya berdagang juga. Dagang dengan baju kantoran. Bedanya sama berdagang di pasar tradisional ya beda baju aja. Intinya tetep sama. Yaitu implementasi, unifikasi, dan komunikasi. Pelaku dagang, pemimpin para pedagang ya harus paham 3 hal ini, nilai dalam pasar.
 
 
 
-## Conclusion
+## 1. Implementation: The Lowest Level of Value
 
-In conclusion, if you want to get ahead in your career and take it to the next level and beyond, you need to understand the three levels of value in the marketplace: implementation, unification and communication. You need to move from being a doer to being a leader who communicates well. Communication is the most important skill for your success and happiness in life. If you want to learn how to communicate effectively, authentically and powerfully as a leader and position yourself in the marketplace, I invite you to subscribe to my channel and work with me. Every week I train on communication skills as they pertain to leadership and how to achieve them.
+Level pertama dari marketplace value adalah implementasi, di mana kita dipekerjakan untuk melakukan task atau keterampilan tertentu. Ekspektasinya adalah kita bisa diandalkan, kita disiplin, fokus, dan tekun. Implementers ini punya peran penting. Karena kita get things done dan move things forward. Tapi, tapi ni, implementasi juga merupakan level paling bawah, yang berarti kita tu gak punya pengaruh, dampak, visibilitas, dan pengakuan. Mungkin ada, tapi dikit. Banyak orang yang terjebak atau stuck disini. Well, banyak faktor. Ada yang nyaman dan gak mau beranjak. Atau karena faktor di atas tadi, visibilitas dan pengakuannya kurang.
 
 
 
-## Key Takeaways
+## 2. Unification: The Middle Level of Value
 
-- There are three levels of value in the marketplace: implementation, unification and communication.
-- Implementation is the lowest level of value, where you are hired to do a specific task or skill.
-- Unification is the middle level of value, where you manage people, processes and projects to achieve a goal.
-- Communication is the highest level of value, where you use your words and presence to influence others, inspire action and create change.
-- To get ahead in your career and take it to the next level and beyond, you need to move from being a doer to being a leader who communicates well.
-- Communication is the most important skill for your success and happiness in life.
+Level keduanya unifikasi, di mana kita mengelola orang, proses, dan project untuk mencapai tujuan, to achieve goals. Kita bukan lagi pelaku atau implementers, tapi orang yang menyatukan orang lain untuk to do the work. Nah, karena unifikasi ini lebih tinggi tingkatannya ketimbang implementasi, jadi dampak, pendapatan, dan tanggung jawab juga lebih gede dong. Ya kan, ya dong, duren kan dibelah bukan dibedong. Tapi, tapi ni, unifikasi juga punya kelemahan-kelemahannya sendiri. Banyak manajer di tingkat ini merasa dianggap rendah, tidak dihargai, dan burned out. Kita masuk ke 2 lubang hitam. Yang pertama adalah percaya kalo kita perlu pendidikan lebih atau butuh belajar lagi dan lagi. Atau yang kedua kerja lebih giat buat ngebuktiin diri. Dua hal ini itu berdasarkan pemikiran-pemikiran dari pemrograman eksternal atau dikte-dikte atau sugesti yang bilang kalo kita perlu menjadi ahli dalam apa yang kita lakuin dan ngebuktiin value kita. Tapi pada akhirnya jebakan-jebakan ini gak mengarah ke pengakuan atau peluang yang lebih banyak. Justru mengarah ke burn out, exhaustion, dan debt/technical debt. Buat keluar dari lubang hitam ini kita perlu naik ke level value tertinggi.
+
+
+
+## 3. Communication: The Highest Level of Value
+
+Level ketiga, level terakhir, dan tertinggi adalah komunikasi. Di mana kita menggunakan kata-kata kita dan presence untuk meng-influence orang lain, inspire action, dan menciptakan perubahan. Kita bukan lagi hanya seorang manajer, tapi seorang pemimpin yang berkomunikasi secara efektif, secara percaya diri, dan secara autentik. Karena ini value level tertinggi, berarti kita punya pengaruh, dampak, visibilitas, dan pengakuan yang paling besar. Ini kenapa seringkali kita ngeliat orang-orang, temen sekerjaan yang kurang pengalaman dari kita bisa nyalip kita di kerjaan. Mereka mungkin jago-jago banget di bidang yang mereka kerjain, tetapi mereka bisa dan pinter mengkomunikasikan tentang apa yang mereka lakuin. Mereka punya karisma, kepemimpinan, dan bisa memposisikan diri mereka lewat kecakapan berkomunikasi mereka. Ini menarik lebih banyak peluang, promosi, dan rewards karena mereka bisa berbicara dan berkomunikasi dengan baik.
 
 
 
