@@ -235,3 +235,259 @@ else statement.
 Apps Wealth Management Engineering
 How to Write Conditional Statements like a Pro ���� | by Bagus Budi ... https://medium.com/stockbit-bibit-engineering/how-to-write-condition...
 7 of 15 17/08/2023, 06:22 PM
+
+
+
+
+
+Hey oniichan! Of course, I'd be happy to help you tidy up that text and format the code. Here's the improved version:
+
+---
+
+How to Write Conditional Statements like a Pro 🚀
+
+Tips on Writing Cleaner Conditional Statements (if else)
+
+Hey there! As an IT staff in an IT company with goals of improving your leadership skills, enhancing your English grammar, better team and time management, and coding proficiency, you're in the right place. Let's dive into some tips for writing better conditional statements!
+
+**Use Guards**
+
+As a software engineer, you probably encounter conditional statements quite often. Here, I'll share a technique to make your code cleaner and more readable. Imagine you have an `if` block like this:
+
+```javascript
+if (user.isActive) {
+    // do some process for active user
+}
+return false;
+```
+
+When the code inside the `if` block gets longer, it becomes harder to read. You can turn the `if` statement into a guard like this:
+
+```javascript
+if (!user.isActive) {
+    return false;
+}
+// do some processing
+```
+
+By doing this, you make the condition return fast and create a guard that protects the rest of the code from execution. Plus, it's easier to understand with only a single line of code in the `if` block.
+
+**Guard on If Else**
+
+Dealing with an `if else` statement? Let's see:
+
+```javascript
+if (user.isActive) {
+    // do some processing
+} else {
+    throw new Error('inactive_user');
+}
+```
+
+You can still use a guard:
+
+```javascript
+if (!user.isActive) {
+    throw new Error('inactive_user');
+}
+// do some processing
+```
+
+With this technique, you can even skip writing an `else` statement. The guard throws an error to protect the remaining code.
+
+**Guard in Loops**
+
+You can apply guards inside loops too! Here's an example with an array of products:
+
+```javascript
+const products = [
+    { id: 1, isActive: 1 },
+    { id: 2, isActive: 0 },
+    { id: 3, isActive: 1 },
+];
+for (const product of products) {
+    if (!product.isActive) continue; // this is a guard
+    // do something
+}
+```
+
+And here's a similar example with an array of carts:
+
+```javascript
+const carts = [
+    { id: 1, isActive: 1 },
+    { id: 2, isActive: 0 },
+    { id: 3, isActive: 1 },
+];
+for (const cartItem of carts) {
+    if (!cartItem.isActive) break; // this is a guard
+    // do something
+}
+```
+
+By using guards in loops, you can break or continue fast, which enhances the efficiency of your code.
+
+**Decompose Conditional Statements**
+
+When faced with a lengthy conditional statement, consider decomposing it. Here's an example:
+
+```javascript
+function processToFinalExam(student) {
+    if (
+        student.attendanceCount >= 10 &&
+        student.projects.length === 4 &&
+        student.finalProjectStatus === 'submitted'
+    ) {
+        // Calculate various scores and check eligibility
+    } else {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+    }
+}
+```
+
+To make this cleaner, you can extract the statements into functions:
+
+```javascript
+function processToFinalExam(student) {
+    if (isQualified(student)) {
+        // Calculate various scores and check eligibility
+    } else {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+    }
+}
+function isQualified(student) {
+    return (
+        student.attendanceCount >= 10 &&
+        student.projects.length === 4 &&
+        student.finalProjectStatus === 'submitted'
+    );
+}
+```
+
+And for even more clarity, you can further refine the code:
+
+```javascript
+const MIN_ATTENDANCE_COUNT = 10;
+const MIN_PROJECT_COUNT = 4;
+const FINAL_PROJECT_STATUS = {
+    SUBMITTED: 'submitted'
+};
+function isQualified(student) {
+    return (
+        student.attendanceCount >= MIN_ATTENDANCE_COUNT &&
+        student.projects.length === MIN_PROJECT_COUNT &&
+        student.finalProjectStatus === FINAL_PROJECT_STATUS.SUBMITTED
+    );
+}
+function processToFinalExam(student) {
+    if (isQualified(student)) {
+        // Calculate various scores and check eligibility
+    } else {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+    }
+}
+```
+
+This technique leads to cleaner and more readable code.
+
+**Summary**
+
+In this article, we explored two ways to refactor your `if else` statements: using guards and decomposing conditional statements. Guards act as fast return or fail points, ensuring the code's protection. Decomposing involves extracting conditions and blocks into separate functions, making your code more organized. These practices offer benefits like shorter functions focused on specific tasks, enhanced readability, and cleaner code overall.
+
+So, oniichan, I hope this article helps you on your journey to writing better and cleaner conditional statements. If you have more questions or want to dive deeper, feel free to leave a comment below. Happy coding! 🌟🚀
+
+---
+
+There you go! I hope this version makes the text tidier and the code more readable for you. If you need further assistance or have any questions, feel free to ask, oniichan! 🌟
+
+
+
+
+
+please create another paragraph about early return by using code from previous paragraph. but if it's not eonugh, please add more relevant code.
+
+
+
+Absolutely, oniichan! Let's dive into the concept of early return and how it can further improve your code, building upon the previous examples:
+
+**Early Return for Improved Readability**
+
+Early return is a fantastic technique to enhance the readability of your code. It involves placing the most common or expected conditions at the beginning of your function, so they can be dealt with first. By doing this, you avoid unnecessary nesting and create a smoother flow.
+
+Continuing with our `processToFinalExam` example, let's implement early return:
+
+```javascript
+function processToFinalExam(student) {
+    if (!isQualified(student)) {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+        return;
+    }
+
+    // Calculate various scores and check eligibility
+}
+```
+
+By placing the most common case (in this case, when the student isn't qualified) at the beginning, you make the code easier to understand. It's like clearing the path for the main logic that follows. And, on the bright side, you won't need to go deep into nested `if` blocks!
+
+**Adding More Relevant Code**
+
+Expanding on the idea of early return, let's consider another scenario. Imagine you want to handle different levels of eligibility based on student performance. You could implement this by adding an additional check for a higher level of qualification:
+
+```javascript
+const HIGH_QUALIFICATION_SCORE = 90;
+
+function processToFinalExam(student) {
+    if (!isQualified(student)) {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+        return;
+    }
+
+    if (student.totalScore >= HIGH_QUALIFICATION_SCORE) {
+        // Congratulations! Student qualifies for an advanced level
+        // Notify about advanced level benefits
+        return;
+    }
+
+    // Calculate various scores and check eligibility
+}
+```
+
+In this example, we've introduced a new check for a higher level of qualification. If the student's total score meets the high qualification score, they qualify for an advanced level. By adding this check after the early return, we keep the logic organized and easy to follow.
+
+Remember, oniichan, the key is to keep your code as straightforward as possible, and early return is a great tool to achieve that. It's all about making your code a joy to read and maintain! If you need more insights or have any questions, don't hesitate to ask. Happy coding! 🌟🚀
+
+
+
+User
+please provide another code which is the opposite of previous code without early return, with nested if-else to show the complexity without early return
+
+
+
+Absolutely, oniichan! Let's take the previous `processToFinalExam` example and show how it could look without the early return technique, using nested `if-else` statements:
+
+```javascript
+function processToFinalExam(student) {
+    if (isQualified(student)) {
+        if (student.totalScore >= HIGH_QUALIFICATION_SCORE) {
+            // Congratulations! Student qualifies for an advanced level
+            // Notify about advanced level benefits
+        } else {
+            // Calculate various scores and check eligibility
+        }
+    } else {
+        // Notify about remedial class
+        // Notify parents and generate warning letter
+    }
+}
+```
+
+In this version, we have nested the conditions inside each other. The flow becomes more complex, and as you add more conditions and actions, the nested structure can become difficult to follow and maintain.
+
+By using the early return technique from the previous example, you can avoid this kind of nesting and create a clearer and more organized code structure.
+
+Remember, oniichan, keeping your code simple and easy to read is a top priority in software development. The early return technique is a great way to achieve that goal. If you have any questions or need further assistance, feel free to ask! 🌟🚀

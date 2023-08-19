@@ -3,6 +3,7 @@ tags:
 - Work
 - Manager
 - Team-Lead
+- Draft
 date: 2023-01-07
 ---
 
@@ -42,6 +43,11 @@ _Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-tran
 
 
 
+### At which manager level I am now?
+
+Baca ini [Work — Marketplace Value](/Work/Work%20—%20Marketplace%20Value.md)
+
+<!--
 ### Am I deserved?
 
 
@@ -55,4 +61,4 @@ _Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-tran
 
 ### Can I motivate them when they go down so they rise up again?
 
-
+-->
