@@ -1,6 +1,7 @@
 ---
 tags:
 - Communicate
+- Draft
 date: 2022-12-11
 ---
 
@@ -22,7 +23,7 @@ Disini ([Work — Marketplace Value](/Work/Work%20—%20Marketplace%20Value.md))
 
 ## Help them? or just be a bystander?
 
-Jangan, sekalipun, jadi bystander. Bystander tu orang yang cuma ngeliatin doang kalo ada kejadian apa di sekitarnya. Bantulah. Tolonglah. Itu juga akan membantu dan menolong diri kita sendiri untuk bisa grow.
+Jangan. Sekalipun. Jadi bystander. Bystander tu orang yang cuma ngeliatin doang kalo ada kejadian apa di sekitarnya. Bantulah. Tolonglah. Itu juga akan ngebantu dan nolong diri kita sendiri buat bisa grow.
 
 
 
