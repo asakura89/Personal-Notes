@@ -197,6 +197,7 @@ date: 2023-08-17
 
 ### 1.2. installed
 
+- draw.io integration
 - dupchecker
 - file-icons
 - fluent icons

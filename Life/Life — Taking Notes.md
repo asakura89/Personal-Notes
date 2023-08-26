@@ -39,6 +39,10 @@ Di luar dari atomic notes yang berupa Q/E/C yang atomic, kita bisa 3D thinking d
 
 
 
+Baca juga [Work — Taking Notes](/Work/Work%20—%20Taking%20Notes.md)
+
+
+
 **References:**
 
 - How To Take Smart Notes (3 methods no one&#39;s talking about) - YouTube ([Video](https://www.youtube.com/watch?v=5O46Rqh5zHE), [Subtitle](_media/How%20To%20Take%20Smart%20Notes%20(3%20methods%20no%20one's%20talking%20about).srt.md))
