@@ -20,7 +20,7 @@ Tapi kalo mau nunjukin letak hal lain yang bukan istilah IT, bagusnya pake "on p
 
 
 
-References:
+**References:**
 
 - https://www.grammar-monster.com/easily_confused/premise_premises.htm
 - https://www.govloop.com/on-premise-vs-on-premises-the-debate-and-resolution/

@@ -118,6 +118,6 @@ Database normalization is a fundamental technique for ensuring data integrity, c
 
 
 
-References:
+**References:**
 
 - Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF - YouTube ([Video](https://www.youtube.com/watch?v=GFQaEYEc8_8), [Subtitle](_media/Learn%20Database%20Normalization%20-%201NF_%202NF_%203NF_%204NF_%205NF%20-%20English.srt.md))
