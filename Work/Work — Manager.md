@@ -43,7 +43,7 @@ _Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-tran
 
 
 
-### At which manager level I am now?
+### At which manager level am I now?
 
 Baca ini [Work — Marketplace Value](/Work/Work%20—%20Marketplace%20Value.md)
 
@@ -62,3 +62,10 @@ Baca ini [Work — Marketplace Value](/Work/Work%20—%20Marketplace%20Value.md)
 ### Can I motivate them when they go down so they rise up again?
 
 -->
+
+
+---
+
+
+
+Tonton juga ini [Essential Lessons for First-Time Managers](https://www.linkedin.com/learning/essential-lessons-for-first-time-managers/?autoplay=false&resume=false)

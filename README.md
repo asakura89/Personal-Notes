@@ -27,7 +27,7 @@ Untuk hal lain yang punya license berbeda, silakan baca license link yang disert
 
 ## Note for myself
 
-<ins>_With this note you should get new energy to do, to create, to make, to realize every ideas that might hit your head. Beacuse inspiration comes without notification. Makers gonna make!_<ins>
+<ins>_With this note you should get new energy to do, to create, to make, to realize every ideas that might hit your head. Because inspiration comes without notification. Makers gonna make!_<ins>
 
 
 
