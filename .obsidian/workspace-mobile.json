@@ -8,19 +8,158 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25aa96de035e8346",
+            "id": "d729879ff41b3d4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Communication/Communication — English.md",
+                "file": "Work/Work — Burn out.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "25bc291f9accfcc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Life/Life — Taking Notes.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "df768416517d629a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Communication/Communication — Communicate.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73d4eeb3fb56f961",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Communication/Communication — Executive Communication.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f8634fef15cca211",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Life/Life — Mindset.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86fc4fbe6944dcbb",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "072b43007d32a2fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI Tools/AI Tools — Bing Prompt.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f70f647b590e18d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Life/Life — Mindset.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d9b10daf84d17460",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Javascript — Simple Condition Parser.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3fc16570f924e3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go/Go — 1-Perkenalan.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6df7d60b71f3984",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming Concept/Concept — Reminder.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ccc69c9c5317227",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Life/Thought/Thought — Asking Question.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -53,6 +192,14 @@
             "sortOrder": "alphabetical"
           }
         }
+      },
+      {
+        "id": "769fcb733bd7bcdc",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
@@ -67,24 +214,56 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Communication/Communication — English.md"
+            "file": "Life/Thought/Thought — Asking Question.md"
           }
         }
       }
     ],
     "currentTab": 0
   },
-  "active": "25aa96de035e8346",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3ccc69c9c5317227",
   "lastOpenFiles": [
-    "Colors/Colors — Article card and text palette.md",
-    "Colors/Colors — MS Edge welcome page palette.md",
-    "Colors/Colors — Palette 0045.md",
-    "Colors/Colors — .NET Support Policy Palette.md",
-    "Colors/Colors — MS Edge Welcome Palette.md",
-    "Colors/Colors Index.md",
-    "README.md",
-    "All Things .NET/All Things .NET Index.md",
-    "Code Snippet/Powershell/Powershell Index.md",
-    "Code Snippet/Powershell/Powershell — Get Random.md"
+    "Life/Thought/Thought — Why.md",
+    "Life/Thought/Thought — Asking Question.md",
+    "Life/Thought/Thought — If I want to sell tickets.md",
+    "Life/Thought/Thought — Arale.md",
+    "Life/Life — Yang Sering Terjadi.md",
+    "Life/Life — Kebiasaan Penting.md",
+    "Life/Life — Feeling down.md",
+    "Life/Life — Mindset.md",
+    "Life/Life — Mental Illness.md",
+    "Life/Life — Sukses.md",
+    "Life/Life — Taking Notes.md",
+    "Communication/Communication — Microsoft Teams.md",
+    "Communication/Communication — Nice to e-meet you.md",
+    "Javascript/Javascript — Simple Condition Parser.md",
+    "Programming Concept/Concept — Application Analytics.md",
+    "Programming Concept/Concept — Easily Develop Features.md",
+    "Work/Work — Burn out.md",
+    "Programming Concept/Concept — High Level and Low Level.md",
+    "Programming Concept/Concept — Reminder.md",
+    "Go/Go — 1-Perkenalan.md",
+    "SQL/SQL — Database Normalization.md",
+    "Communication/English/English — On-premises.md",
+    "Go/Go — 3-Type.md",
+    "Go/Go — 5-Collection-Pipeline.md",
+    "Work/Work — Requirement Gathering.md",
+    "Communication/English/English — Dana.md",
+    "SQL/_media",
+    "Go",
+    "_media",
+    "_temp",
+    "Work/Team Lead",
+    "Untitled",
+    "Life/Common Knowledge"
   ]
 }

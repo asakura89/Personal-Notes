@@ -3,9 +3,11 @@
   "global-search",
   "switcher",
   "graph",
+  "canvas",
   "templates",
   "command-palette",
   "editor-status",
+  "bookmarks",
   "outline",
   "word-count",
   "file-recovery"
