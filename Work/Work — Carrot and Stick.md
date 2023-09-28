@@ -7,6 +7,12 @@ date: 2023-07-23
 
 # Carrot and Stick
 
+- [What is](#what-is)
+- [Carrot](#carrot)
+- [Stick](#stick)
+
+
+
 ## What is
 
 Apa ini Carrot and Stick? disebut-sebut di meeting.
