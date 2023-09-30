@@ -1,7 +1,7 @@
 ---
 tags:
 - Life
-- Thought
+- Work
 date: 2023-09-17
 ---
 
