@@ -91,3 +91,7 @@ public class AjaxController : ControllerBase {
     }
 }
 ```
+
+Coba liat juga code ini buat alternatif
+1. [Riku/Riku/Controllers/AjaxController.cs at master · asakura89/Riku](https://github.com/asakura89/Riku/blob/master/Riku/Controllers/AjaxController.cs)
+2. [Riku/Riku/Startup.cs at master · asakura89/Riku](https://github.com/asakura89/Riku/blob/master/Riku/Startup.cs#L17-L30)
