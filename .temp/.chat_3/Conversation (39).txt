@@ -1,0 +1,21 @@
+## Pengguna
+Hi Bing, do you know about saving bonds? will the interest rate varies each year? and will it changes overtime when I want to check it periodically let say every year or every month?
+## Bing
+Yes, I can provide some information about savings bonds. Savings bonds are debt securities issued by a government to finance its expenditures. Investors purchase these bonds, effectively lending money to the government in return for interest over a specified period of time.
+The interest rate on savings bonds can vary each year and it can also change over time. For instance, the U.S. government currently issues two types of savings bonds: Series EE and Series I.
+- Series EE Savings Bonds earn a fixed rate of interest. For EE bonds issued from May 1, 2023 to October 31, 2023, the current rate is 2.50%.
+- Series I Savings Bonds offer an interest rate that adjusts every six months based on inflation. The current rate is 9.62%.
+These rates are subject to change and are updated periodically by the issuing authority. Therefore, if you check the interest rate on your savings bond periodically (let's say every year or every month), you might notice changes in the rate.
+It's important to note that if you cash in your bond before 5 years, you lose the last three months of interest. So it's generally a good idea to hold onto your savings bonds for at least five years to maximize your return.
+I hope this information helps! If you have any other questions, feel free to ask.
+## Pengguna
+sorry Bing, can you rephrase "subject to change" to simpler words?
+## Bing
+Sure, "subject to change" simply means that it can change or it might not stay the same. So, when I say "the interest rates are subject to change", it means the interest rates can change or vary over time.
+## Pengguna
+can I use "accurate calculation measure" interchangeably with  "accurate calculation formula" in context of interest rate calculation?
+## Bing
+While "accurate calculation measure" and "accurate calculation formula" might seem similar, they are not exactly interchangeable, especially in the context of interest rate calculation.
+An "accurate calculation formula" typically refers to a specific mathematical equation or method used to calculate something, such as the interest rate. For example, the formula to calculate simple interest is I = PRT, where I is the interest, P is the principal amount, R is the rate of interest, and T is the time.
+On the other hand, an "accurate calculation measure" is a broader term that could encompass a formula but also includes other factors that ensure the accuracy of a calculation. This might include the precision of the input data, the appropriateness of the formula used for a specific context, or even the reliability of the computational tool used.
+So while both terms relate to making accurate calculations, a "formula" is more about the specific method used, while a "measure" could include a range of factors that contribute to accuracy. It's always important to use terms that most accurately convey your intended meaning.

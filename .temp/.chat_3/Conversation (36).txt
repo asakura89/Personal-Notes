@@ -1,0 +1,24 @@
+## Pengguna
+please translate to american-english:
+Homework buat next report
+- current total backlog berapa
+- tiket baru berapa
+- yang aging berapa
+- minta template mas fauzan buat dapet data ^
+- reaching stable state atau enggak ⇒ 0 aging, maintenance reach convergence = resolved lebih gede dari raised
+Lesson Learn from MASBA
+- bottleneck di team dev MASBA
+Summary
+- secara KPI achieve, tapi secara context data contibute ke convergence ticketnya atau enggak belom keliatan
+## Bing
+Here is the translation to American English:
+Homework for the next report:
+- What is the current total backlog?
+- How many new tickets are there?
+- How many are aging?
+- Request Fauzan's template to get this data.
+- Have we reached a stable state or not? ⇒ 0 aging, maintenance reach convergence = resolved is greater than raised.
+Lessons learned from MASBA:
+- There's a bottleneck in the MASBA dev team.
+Summary:
+- We've achieved the KPI, but it's not clear yet whether the data context contributes to the convergence of the tickets.

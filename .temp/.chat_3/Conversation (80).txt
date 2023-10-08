@@ -1,0 +1,14 @@
+## Pengguna
+Hi Bing, please create an essay from these sections and generate key take aways. Here it is:
+Solving Complex ProblemList out all the problemsDraw relations between problemsBreak each of those down to atomic levelPlan action items on those atomic level## Bing
+Solving complex problems can be a daunting task, but with the right approach, it can be done effectively. Here is an essay on how to solve complex problems:
+Solving Complex ProblemsList out all the problemsThe first step in solving complex problems is to list out all the problems. This helps to identify the scope of the problem and to ensure that all aspects of the problem are considered.
+Draw relations between problemsOnce all the problems have been listed, it is important to draw relations between them. This helps to identify any underlying connections between the problems and to see how they may be interrelated.
+Break each of those down to atomic levelAfter identifying the relationships between the problems, it is important to break each of those down to an atomic level. This means breaking down each problem into its smallest components, which can help to identify the root causes of the problem.
+Plan action items on those atomic levelOnce the problems have been broken down to an atomic level, it is time to plan action items on those atomic levels. This means identifying specific actions that can be taken to address each of the root causes of the problem.
+In summary, solving complex problems involves listing out all the problems, drawing relations between them, breaking them down to an atomic level, and planning action items on those atomic levels. By following this approach, complex problems can be effectively solved.
+Key takeaways:
+- List out all the problems.
+- Draw relations between them.
+- Break them down to an atomic level.
+- Plan action items on those atomic levels.

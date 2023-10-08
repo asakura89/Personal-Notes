@@ -1,0 +1,11 @@
+## Pengguna
+Hi Bing, what are CPUOverprovisioned, EBSIOPSOverprovisioned, EBSThroughputOverprovisioned, NetworkBandwidthOverprovisioned mean in AWS cloud services
+## Bing
+Hi, this is Bing. I'm happy to help you with AWS cloud services.😊
+According to the AWS documentation , these terms mean the following:
+- CPUOverprovisioned: The instance’s CPU configuration can be sized down while still meeting the performance requirements of your workload. This is identified by analyzing the CPUUtilization metric of the current instance during the look-back period.
+- EBSIOPSOverprovisioned: The instance’s EBS IOPS configuration can be sized down while still meeting the performance requirements of your workload. This is identified by analyzing the VolumeReadOps and VolumeWriteOps metrics of the attached EBS volumes during the look-back period.
+- EBSThroughputOverprovisioned: The instance’s EBS throughput configuration can be sized down while still meeting the performance requirements of your workload. This is identified by analyzing the VolumeReadBytes and VolumeWriteBytes metrics of the attached EBS volumes during the look-back period.
+- NetworkBandwidthOverprovisioned: The instance’s network bandwidth configuration can be sized down while still meeting the performance requirements of your workload. This is identified by analyzing the NetworkIn and NetworkOut metrics of the current instance during the look-back period.
+These terms are used as finding reason codes for EC2 instance recommendations, which you can get by using the GetEC2InstanceRecommendations action. You can also filter recommendations by these reason codes using the Filter parameter.
+I hope this helps you understand AWS cloud services better. Do you have any other questions?

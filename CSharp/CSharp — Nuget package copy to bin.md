@@ -4,6 +4,7 @@ tags:
 - C#
 date: 2023-09-06
 ---
+
 # Nuget package copy to bin
 
 By default, .NET (tested di .NET 6 dan .NET 7) gak nge-copy Nuget package ke bin folder. Nuget package di refer lewat file *.deps.json. Buat beberapa logic yang butuh load dynamic dll, ini gak bakalan bisa works. Tapi ada cara buat nge-force Nuget package ini jadi bisa di output-in ke bin folder. Pake config `<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>` taro di .prj file.

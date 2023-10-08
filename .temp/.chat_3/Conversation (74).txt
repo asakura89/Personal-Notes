@@ -1,0 +1,4 @@
+## Pengguna
+what is JIRA filter -1 and JIRA filter -9? it automatically added in the URL
+## Bing
+I'm sorry, but I couldn't find any information about JIRA filters with the specific names "-1" and "-9". Could you please provide more context or details about these filters? Are they custom filters created within your JIRA instance? If so, you may need to consult your JIRA administrator or documentation for more information.
