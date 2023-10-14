@@ -29,8 +29,8 @@ date: 2021-08-14
 Sedangkan `Pipeline` me-refer ke fungsi dari suatu code / app yang bisa menerima input dari fungsi / app lain lalu memprosesnya kemudian menghasilkan output yang masih bisa diproses oleh fungsi lain. 
 Kalau digabungkan, `Collection Pipeline` adalah `Pipeline` yang menerima input dan menghasilkan output dalam bentuk `Collection`.  
 
-`Collection Pipeline` sendiri dalam tipa-tiap teknologi atau bahasa bisa punya istilah yang beda. Misal di .Net ada istilah `Linq` atau `Lambda method`, di javascript ada istilah `Array Method`, di Powershell, Bash-shell, ataupun Windows cmd ada istilah `Pipe`. 
-Semuanya me-refer ke `Collection Pipeline`. Buat bahasan di .Net kita akan pake istilah `Linq`.  
+`Collection Pipeline` sendiri dalam tiap-tiap teknologi atau bahasa bisa punya istilah yang beda. Misal di .NET ada istilah `Linq` atau `Lambda method`, di javascript ada istilah `Array Method`, di Powershell, Bash-shell, ataupun Windows cmd ada istilah `Pipe`. 
+Semuanya me-refer ke `Collection Pipeline`. Buat bahasan di .NET kita akan pake istilah `Linq`. AndBud Watie nge-pronounce-nya `lingki` biar gak ketuker sama pronounce `link` yang sama-sama di-pronounce `ling` juga.  
 
 `Linq` yang paling sering dipake adalah `Select`, `Where`, `Sort`, `Aggregate`.  
 
@@ -72,7 +72,7 @@ var data = new[] {
 var result = data.Select(name => name[0].ToString().ToUpper() + name.Substring(1, name.Length -1));
 ```
 
-atau, kalo terlalu mager buat misahin variable data dan result, kita bisa pake cara preman (oneliner code).  
+atau, kalo terlalu mager buat misahin variable data dan result, kita bisa pake cara simplify Budie (oneliner code).  
 
 ```C#
 var result = new[] {
@@ -84,7 +84,7 @@ var result = new[] {
     .Select(name => name[0].ToString().ToUpper() + name.Substring(1, name.Length -1));
 ```
 
-atau, kalo masih terlalu panjang ke kanan, kita bisa pake cara preman sewaktu dia lagi sebel (oneliner code alternative version).  
+atau, kalo masih terlalu panjang ke kanan, kita bisa pake cara Budie sewaktu dia lagi sebel (oneliner code alternative version).  
 
 ```C#
 var result = new[] {
@@ -98,7 +98,7 @@ var result = new[] {
         name.Substring(1, name.Length -1));
 ```
 
-Tujuan preman ngelakuin ini adalah tidak lain dan tidak bukan untuk men-simplify code biar gampang dibaca.  
+Tujuannya adalah tidak lain dan tidak bukan untuk men-simplify code biar gampang dibaca.  
 
 Nah, hasil dari code di atas harusnya adalah ini.
 
@@ -175,8 +175,8 @@ Dan hasil run dari code di atas adalah, tattaraaa
 20. Patrick
 ```
 
-Dari code di atas, ternyata preman kena code review sama boss preman, dia disuruh `refactor` buat `Pipeline` yang kedua karena terlalu panjang untuk dijadikan parameter. 
-Maka akhirnya preman `refactor` jadi kaya di bawah ini.  
+Dari code di atas, ternyata Andie kena code review sama Budie, dia disuruh `refactor` buat `Pipeline` yang kedua karena terlalu panjang untuk dijadikan parameter. 
+Maka akhirnya Andie `refactor` jadi kaya di bawah ini.  
 
 ```C#
 public void Run() {
@@ -200,7 +200,7 @@ public String NumberifiedName(String name, Int32 index) {
 }
 ```
 
-Boss preman masih gak puas dan nyuruh preman buat `refactor` sekali lagi.  
+Budie masih gak puas dan nyuruh lagi buat `refactor` sekali lagi.  
 
 ```C#
 public void Run() {
@@ -227,9 +227,9 @@ public String NumberifiedName(String name, Int32 index) {
 }
 ```
 
-Lagi-lagi boss preman masih tidak puas.  
+Lagi-lagi Budie masih tidak puas.  
 
-"Baiklah!" kata preman.  
+"Baiklah!" kata Andie mendengus.  
 
 ```C#
 public void Run() {
@@ -256,12 +256,12 @@ public String NumberifiedName(String name, Int32 index) {
 }
 ```
 
-Di atas, preman menggunakan `MethodGroup`. `MethodGroup` adalah istilah yang digunakan untuk mendefinisikan kondisi sewaktu method dipanggil hanya dengan nama, tanpa menggunakan signature (parameter). 
+Di atas, Andie menggunakan `MethodGroup`. `MethodGroup` adalah istilah yang digunakan untuk mendefinisikan kondisi sewaktu method dipanggil hanya dengan nama, tanpa menggunakan signature (parameter). 
 Dari code di atas (`.Select(TitleCasedName)`), `TitleCasedName` dipanggil tanpa menyebutkan signature. 
 Karena parameter yang diterima di `Select` dan parameter yang diterima di `TitleCasedName` sama-sama berjumlah 1 dan sama-sama memiliki `Type` `String`. 
 Begitupun dengan method `NumberifiedName`.  
 
-Untung tak dapet di raih, malang tak dapat ditolak, boss preman lagi-lagi tidak puas. Akhirnya boss preman turun tangan sendiri untuk me-`refactor` code preman.  
+Untung tak dapet di raih, malang tak dapat ditolak, Budie lagi-lagi tidak puas. Akhirnya Budie turun tangan sendiri untuk me-`refactor` code Andie.  
 
 ```C#
 public void Run() {
@@ -287,11 +287,11 @@ public String NumberifiedName(String name, Int32 index) {
 }
 ```
 
-Di `TitleCasedName`, karena isi method tersebut cuma oneliner, boss preman mulai menggunakan teknik C# 6 yaitu `Expression Body`. 
+Di `TitleCasedName`, karena isi method tersebut cuma oneliner, Budie mulai menggunakan teknik C# 6 yaitu `Expression Body`. 
 `Expression Body` ini bisa digunakan untuk men-simplify code dengan membuang kurung kurawal scope-wrapper dan menggantikannya dengan lambda `=>`. 
 Karena ada `return` juga, `return` ini juga dibuang karena tidak ada scope.  
 
-Di `NumberifiedName`, karena boss preman terlalu mager buat melakukan `String Concatenation` menggunakan operator plus `+`, `return`-nya diganti menggunakan `String Interpolation`. 
+Di `NumberifiedName`, karena Budie terlalu mager buat melakukan `String Concatenation` menggunakan operator plus `+`, `return`-nya diganti menggunakan `String Interpolation`. 
 Yaitu menggunakan dollar-sign `$` di depan `string`-nya terus menggunakan kurung kurawal untuk nge-wrap variable yang digunakan didalam `string`.  
 
 
@@ -445,14 +445,13 @@ Di numbering-nya, karena di posisi ketiga kita nge-filter nama yang udah tertran
 
 ## 3. Sort
 
-Sort di .Net menggunakan method `OrderBy`, `ThenBy`, `OrderByDescending`, dan `ThenByDescending`. Tugasnya? udah pasti buat ngurutin data berdasarkan `key`. 
+Sort di .NET menggunakan method `OrderBy`, `ThenBy`, `OrderByDescending`, dan `ThenByDescending`. Tugasnya? udah pasti buat ngurutin data berdasarkan `key`. 
 Flow-nya kaya di bawah ini.
 
 ![Sort flow](_media/BungaMatahari-CollectionPipeline-Sort.png)
 
-Nah, `key` ini apa? `Key` ini adalah object yang digunakan sebagain acuan urutan. Misal, kalo di kelas dulu sewaktu preman sama boss preman masih sekolah. 
-Mereka diabsen secara berurutan berdasarkan abjad pertama dari nama mereka. 
-Atau misalkan, preman sama boss preman lagi ikut pelajaran Pendidikan Kesehatan dan Jasmani terus semua murid dibagi jadi 2 kelompok berdasarkan ganjil genap nomor absen
+Nah, `key` ini apa? `Key` ini adalah object yang digunakan sebagain acuan urutan. Misal, sewaktu AndBud baru mau mulai pelajaran. Mereka diabsen secara berurutan berdasarkan abjad pertama dari nama mereka. 
+Atau misalkan, sewaktu AndBud lagi ikut pelajaran Pendidikan Kesehatan dan Jasmani terus semua murid dibagi jadi 2 kelompok berdasarkan ganjil genap nomor absen
 
 Kasus urut berdasarkan abjad name, bisa kita ambil dari data yang udah disiapin di atas. 
 
@@ -522,7 +521,7 @@ public String NumberifiedName(String name, Int32 index) {
 }
 ```
 
-Buat kasus pembagian 2 kelompok tadi, boss preman inisiatif buat ngebagi kelompoknya. Kalo diinget-inget lagi sekarang, pembagiannya bisa dengan gampangnya dibikinin program-nya segampang membalikkan telapak tangan.  
+Buat kasus pembagian 2 kelompok tadi, Budie inisiatif buat ngebagi kelompoknya. Pembagiannya bisa dengan gampangnya dibikinin program-nya segampang membalikkan telapak tangan.  
 
 ```C#
 public void Run() {
@@ -623,11 +622,11 @@ Isi dari variable `total` adalah 28. Kenapa? Karena logika utama dari `Aggregate
 
 Oke mari ke contoh yang lain.
 
-"TUNGGUU OEE!" teriak Bos Preman dengan lantang.
+"TUNGGUU OEE!" teriak Budie dengan lantang.
 
-"JANGAN SEMBARANGAN NGODING!" masih teriakan Bos Preman yang lantang sambil berlari mendekat.
+"JANGAN SEMBARANGAN NGODING!" masih teriakan Budie yang lantang sambil berlari mendekat.
 
-Dengan cekatan Bos Premana langsung me-refactor code di atas menjadi
+Dengan cekatan Budie langsung me-refactor code di atas menjadi
 
 ```C#
 public void Run() {
@@ -638,77 +637,77 @@ public void Run() {
 public Int32 Sum(Int32 accumulated, Int32 item) => accumulated + item;
 ```
 
-Bos Preman tidak akan tinggal diam kalo ada code yang tidak bisa dimengerti dengan gampang. Itu adalah prinsip hidupnya. Walaupun simpel, harus tetap bisa dimengerti.
+Budie tidak akan tinggal diam kalo ada code yang tidak bisa dimengerti dengan gampang. Itu adalah prinsip hidupnya. Walaupun simpel, harus tetap bisa dimengerti.
 
 Oke, satu masalah terselesaikan, mari kita lanjut.
 
-Suatu hari Bos Preman dipanggil pak RT untuk mengumpulkan anak buahnya untuk menerima pembagian Bantuan Langsung Tunai dari pemerintah. Tapi sayangnya bantuan tersebut memiliki syarat. Tidak semua orang bisa mendapatkannya. Syaratnya adalah penerima harus berkeluarga dan memiliki anak lebih dari 1. Yang jadi masalah adalah Bos Preman tidak hapal berapa jumlah anak masing-masing anak buahnya.
+Suatu hari Budie dipanggil Watie buat ngumpulin temen-temen sekelas buat nerima pembagian Bubul Kacang Hejo dari Bu Guru. Tapi sayangnya bantuan tersebut memiliki syarat. Tidak semua orang bisa mendapatkannya. Syaratnya adalah penerima harus udah donor darah yang diselenggarain di kantor KepSek oleh PMI setempat. Dan yang udah donor lebih dari sekali, dapet tambahan setengah porsi lagi.
 
-Akhirnya Bos Preman teringat teknik `Reduce`. Dia akan mencari nilai terbesar dari jumlah anak yang dimiliki anak buahnya. Anak buahnya hanya perlu menulis nama dan jumlah anak saja, nanti sisanya urusan Bos Preman.
+Yang jadi masalah adalah Budie gak hapal dan tau berapa jumlah temen-temennya yang udah donor. Akhirnya Budie teringat teknik `Reduce`. Dia akan mencari nilai terbesar dari jumlah berapa kali temen-temennya donor. Temen-temennya cuma perlu nulis nama dan jumlah udah berapa kali donor darah, nanti sisanya urusan Budie.
 
 ```C#
 public void Run() {
     var bilangan = new[] {
-        new AnakBuah { Nama = "Jupri", JumlahAnak = 3 },
-        new AnakBuah { Nama = "Sapri", JumlahAnak = 2 },
-        new AnakBuah { Nama = "Mukri", JumlahAnak = 2 },
-        new AnakBuah { Nama = "Rojali", JumlahAnak = 6 },
-        new AnakBuah { Nama = "Badri", JumlahAnak = 0 }
+        new Mentemen { Nama = "Jupri", JumlahDonor = 3 },
+        new Mentemen { Nama = "Sapri", JumlahDonor = 0 },
+        new Mentemen { Nama = "Mukri", JumlahDonor = 2 },
+        new Mentemen { Nama = "Rojali", JumlahDonor = 6 },
+        new Mentemen { Nama = "Badri", JumlahDonor = 0 }
     };
 }
 
-public class AnakBuah {
+public class Mentemen {
     public String Nama;
-    public Int32 JumlahAnak;
+    public Int32 JumlahDonor;
 }
 ```
 
-Setelah terkumpul, Bos Preman mulai melancarkan aksinya untuk mencari tau apakah anak buahnya berhak menerima bantuan yang disebutkan pak RT.
+Setelah terkumpul, Budie mulai melancarkan aksinya untuk mencari tau apakah temen-temennya berhak menerima Bubul Kacang Hejo yang disebut Watie.
 
 ```C#
 public void Run() {
-    var semuaAnakBuah = new[] {
-        new AnakBuah { Nama = "Jupri", JumlahAnak = 3 },
-        new AnakBuah { Nama = "Supri", JumlahAnak = 1 },
-        new AnakBuah { Nama = "Mukri", JumlahAnak = 2 },
-        new AnakBuah { Nama = "Rojali", JumlahAnak = 6 },
-        new AnakBuah { Nama = "Badri", JumlahAnak = 0 }
+    var semuaMentemen = new[] {
+        new Mentemen { Nama = "Jupri", JumlahDonor = 3 },
+        new Mentemen { Nama = "Supri", JumlahDonor = 0 },
+        new Mentemen { Nama = "Mukri", JumlahDonor = 2 },
+        new Mentemen { Nama = "Rojali", JumlahDonor = 6 },
+        new Mentemen { Nama = "Badri", JumlahDonor = 0 }
     };
     
-    var berhak = semuaAnakBuah
+    var berhak = semuaMentemen
         .Where(YangBerhak)
         .OrderBy(item => item.Nama)
-        .Select((item, index) => new AnakBuah {
+        .Select((item, index) => new Mentemen {
             Nomor = index +1,
             Nama = item.Nama,
-            JumlahAnak = item.JumlahAnak
+            JumlahDonor = item.JumlahDonor
         })
         .Aggregate(String.Empty, SatukanDaftarNama)
         .TrimEnd(',', ' ');
     
-    var tidakBerhak = semuaAnakBuah
+    var tidakBerhak = semuaMentemen
         .Where(YangTakBerhak)
         .OrderBy(item => item.Nama)
-        .Select((item, index) => new AnakBuah {
+        .Select((item, index) => new Mentemen {
             Nomor = index +1,
             Nama = item.Nama,
-            JumlahAnak = item.JumlahAnak
+            JumlahDonor = item.JumlahDonor
         })
         .Aggregate(String.Empty, SatukanDaftarNama)
         .TrimEnd(',', ' ');
 }
 
-public String SatukanDaftarNama(String accumulated, AnakBuah item) =>
+public String SatukanDaftarNama(String accumulated, Mentemen item) =>
     $"{accumulated}{item.Nomor}: {item.Nama}, ";
 
-public Boolean YangBerhak(AnakBuah anakBuah) => anakBuah.JumlahAnak > 1;
+public Boolean YangBerhak(Mentemen mentemen) => mentemen.JumlahDonor > 1;
 
-public Boolean YangTakBerhak(AnakBuah anakBuah) => anakBuah.JumlahAnak <= 1;
+public Boolean YangTakBerhak(Mentemen mentemen) => mentemen.JumlahDonor <= 1;
 
-public class AnakBuah {
+public class Mentemen {
     public Int32 Nomor;
     public String Nama;
-    public Int32 JumlahAnak;
+    public Int32 JumlahDonor;
 }
 ```
 
@@ -719,11 +718,8 @@ Hasilnya, ada 3 yang berhak menerima dan ada 2 yang tidak berhak menerima.
 1: Badri, 2: Supri
 ```
 
-Tapi Bos Preman sudah mengantisipasi ini dengan menyuarakan jikalau seandainya ada anak buahnya yang tidak berhak mendapatkan bantuan, maka harus dibantu.
 
-Dan semuanya setuju, dan pada akhirnya semua anak buah mendapat bantuan dengan menjumlahkan semua bantuan dan membagi rata total bantuan.
-
-Begitulah kehidupan Bos Preman dan anak buahnya berjalan seperti biasa kembali.
+Begitulah kehidupan Budie dan temen-temennya berjalan seperti biasa kembali. Tapi Andie kemana ya? Dia gak ngeliat daritadi.
 
 
 

@@ -131,9 +131,9 @@ public String SebutNamaIkan(String nama) =>
     String.Format("Ikan {0}", nama);
 ```
 
-"Sebentar", preman dibegal boss preman dengan tatapan sinis
+"Sebentar", Andie dibegal temen sekelasnya Budie dengan tatapan sinis
 
-"Code macam apa?", preman cuma bisa nunduk dan melakukan `refactor`
+"Code macam apa?", Andie cuma bisa nunduk dan melakukan `refactor`
 
 ```C#
 public void Run() {
@@ -152,7 +152,7 @@ public String SebutNamaIkan(String nama) => $"Ikan {nama}";
 
 "Gak, gak. Gak gitu"
 
-"Oooookkeeeyy", preman kembali menunduk
+"Oooookkeeeyy", Andie menghela napas
 
 ```C#
 public void Run() {
@@ -178,6 +178,8 @@ Ikan Paus
 Ikan Teri
 Ikan Tongkol
 ```
+
+Budie akhirnya ngasi jempol ke atas ke Andie. Watie, ketua kelas mereka yang lagi ngeliat kejadian itu pun juga ngasi jempol ke atas.
 
 
 
@@ -219,15 +221,13 @@ var hamlet = new StringBuiler()
     .ToString();
 ```
 
-`inline code`, begitulah cara preman.  
+`inline code`, begitulah cara Budie. Si teman yang pengen semuanya serba simpel. Gak salah. Ketua kelas juga gak ngelarang. Tapi kasian temennya Andie yang selalu terhela napasnya.  
 
 
 
 ## 5. Split
 
-Suatu hari Bang Preman disuruh sama boss-nya buat nyairin duit dari invoice yang ditemuin di tengah jalan depan warung Mpok Romlah. Jadi invoice ini adalah tagihan buat dagangan yang dititipin penjual aslinya ke warung Mpok Romlah. Boss-nya pesen kalo buat bisa nyairin nota tagihan ini, Mpok Romlah bakal nanya informasi seputar dagangannya.  
-
-Boss Preman yang cerdik langsung ngeuh kalo informasi dagangan untuk nota tagihan yang dipegang oleh Bang Preman itu berbentuk `String` unik. `String` unik yang dimaksud tidak lain dan tidak bukan 2 baris pertama dari nota. Karena baris ketiganya adalah total yang ditagih.  
+Suatu hari Watie sang ketua kelas disuruh sama Bu Guru buat nyatetin peengeluaran jajan Andie sama Budie. Karena mereka ada di peringkat 2 dan 3 di kelas, jadi Bu Guru ngasi mereka hadiah jajan yang diambil dari uang kas kelas. Watie udah nyatet sebenernya, tapi itu sebulan yang lalu. Watie lupa isi catetannya apa maksudnya. Jadi dia minta bantuan Andie sama Budie buat bantuin mengingat apa isi catetannya.  
 
 2 baris pertama tadi berbunyi kaya gini.  
 
@@ -236,18 +236,18 @@ BL10-OD15-KL15
 TK10-YG05-AL10
 ```
 
-Boss Preman bilang gini, "Di tiap-tiap strip / dash (`-`), itu ada 2 digit nama barang dagangan. Dan 2 digit lagi ada jumlah barangnya. Nanti kalo Mpok Romlah nanya, jawabannya ada disitu."  
+Andie ngeuh sesuatu terus bilang gini ke Budie dan Watie, "Di tiap-tiap strip / dash (`-`), itu ada 2 digit nama jajanan. Dan 2 digit lagi ada jumlah yang dibeli." Walaupun masih cuma nebak-nebak, kayanya tebakan Andie masuk akal. Watie manggut-manggut terus nyuruh Andie bikin program kecil. "Program pemecah sandi". Tong teng tong teng. Begitu bunyi alat doraemon.  
 
-"Siap boss!" kata Bang Preman.  
+"Siap boss!" kata Andie Budie serempak serentak gemeretak.  
 
-Bang Preman pulang ke rumah, nyalain laptop terus langsung bikin program buat mecah-mecah `String` unik buat persiapan menghadapi si Mpok. Berbekal pesan si Boss, Bang Preman bikin code kaya di bawah ini.  
+Andie pulang ke rumah disusul Budie, nyalain laptop terus langsung bikin program buat mecah-mecah `String` unik buat persiapan menghadapi ngelapor lagi ke Watie. Andie Budie bikin code kaya di bawah ini.  
 
 ```C#
 var stringUnik = String.Concat("BL10-OD15-KL15", "-", "TK10-YG05-AL10");
 var terpotong = stringUnik.Split('-');
 ```
 
-Kenapa parameter `.Split()` pake petik satu? Karena umumnya tanda pemotong `String` berbentuk karakter dan bukan `String`. Dalam kasus Bang Preman, adalah strip (`-`). Dan karakter disimbolkan dengan karakter yang diapit oleh petik satu. Sedangkan `String` disimbolkan dengan satu atau lebih karakter yang diapit oleh petik dua.  
+Kenapa parameter `.Split()` pake petik satu? Karena umumnya tanda pemotong `String` berbentuk karakter dan bukan `String`. Dalam kasus catetan Watie, adalah strip (`-`). Dan karakter disimbolkan dengan karakter yang diapit oleh petik satu. Sedangkan `String` disimbolkan dengan satu atau lebih karakter yang diapit oleh petik dua.  
 
 Output-nya jadi gini
 
@@ -260,7 +260,7 @@ YG05
 AL10
 ```
 
-Seandainya, `String` unik yang ada di kertas nota tadi tulisannya kaya di bawah ini,  
+Seandainya, `String` unik yang ada di kertas catetan tadi tulisannya kaya di bawah ini,  
 
 ```
 BL10-OD15-KL15
@@ -297,7 +297,7 @@ var terpotong = stringUnik.Split('-', StringSplitOptions.RemoveEmptyEntries);
 
 ## 6. Substring
 
-Setelah `String` uniknya dipotong-potong pake `.Split()`, Bang Preman pun ngelanjutin dengan nyomot-nyomot `String`-nya pake `Subtring`. 2 Digit di depan dan 2 digit setelahnya.  
+Setelah `String` uniknya dipotong-potong pake `.Split()`, AndBud pun ngelanjutin dengan nyomot-nyomot `String`-nya pake `Subtring`. 2 Digit di depan dan 2 digit setelahnya.  
 
 ```C#
 var stringUnik = String.Concat("BL10-OD15-KL15", "-", "TK10-YG05-AL10");
@@ -316,7 +316,7 @@ foreach (var potongan in terpotong) {
 }
 ```
 
-Bang Preman berhasil mengekstrak informasi rahasia dari di penjual dagangan yang nitipin dagangannya ke Mpok Romlah. Dia tersenyum licik. Tapi kemudian senyumannya pudar setelah ngeliat output program-nya.  
+Mereka berhasil mengekstrak informasi rahasia dari di catetan Watie yang jajanannya beli di warung Mpok Romlah. Mereka tersenyum jahat karena berhasil mecahin catetan ini. Tapi kemudian senyuman mereka pudar setelah ngeliat output program-nya.  
 
 ```
 Dagangan "BL" jumlahnya 10 buah.
@@ -329,7 +329,13 @@ Dagangan "AL" jumlahnya 10 buah.
 
 Apa itu BL? apa itu TK? pikirnya.  
 
-Sebelum Bang Prem melakukan penagihan dia nyuruh temen seprofesinya untuk mengintai jualan Mpok Romlah. Dan akhirnya semua berbuah manis. Bang Prem dapet seua informasinya lengkap dari temennya dan mulai nge-update program-nya.  
+"Die, kayanya gue tau deh ini catetan tentang apa." kata Budie ke Andie  
+
+"Emang apaan?"  
+
+"Coba sini bentar deh, gue tambahin Dictionary." mata Budie gak lepas dari monitor laptop.  
+
+Budie mulai nge-update program mereka.  
 
 ```C#
 var daftar = new Dictionary<String, String> {
@@ -345,11 +351,11 @@ var stringUnik = String.Concat("BL10-OD15-KL15", "-", "TK10-YG05-AL10");
 var terpotong = stringUnik.Split('-');
 
 foreach (var potongan in terpotong) {
-    var dagangan = potongan.Substring(0, 2);
+    var jajanan = potongan.Substring(0, 2);
     var jumlah = potongan.Substring(2, 2);
     
     var keterangan = String.Concat(
-        "Dagangan \"", daftar[dagangan], "\" ",
+        "Jajanan \"", daftar[jajanan], "\" ",
         "jumlahnya ", jumlah, " buah."
     );
     
@@ -360,15 +366,15 @@ foreach (var potongan in terpotong) {
 Hasilnya adalah berikut ini.  
 
 ```
-Dagangan "Bala-bala" jumlahnya 10 buah.
-Dagangan "Onde-onde" jumlahnya 15 buah.
-Dagangan "Klepon" jumlahnya 15 buah.
-Dagangan "Teh Koci" jumlahnya 10 buah.
-Dagangan "Yogurt" jumlahnya 05 buah.
-Dagangan "Air Lemon" jumlahnya 10 buah.
+Jajanan "Bala-bala" jumlahnya 10 buah.
+Jajanan "Onde-onde" jumlahnya 15 buah.
+Jajanan "Klepon" jumlahnya 15 buah.
+Jajanan "Teh Koci" jumlahnya 10 buah.
+Jajanan "Yogurt" jumlahnya 05 buah.
+Jajanan "Air Lemon" jumlahnya 10 buah.
 ```
 
-Setelah itu, Bang Prem dan Boss Prem meraup keuntungan dan bisa ongkang-ongkang kaki untuk sebulan kedepan.  
+Setelah itu, Andie dan Budie pun melapor ke Watie. Dan Watie cuma bilang "Ohh" sambil ekspresinya kaya keinget sesuatu. Dan Watie pun ngasiin laporan AndBud ke Bu Guru.  
 
 
 

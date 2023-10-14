@@ -43,8 +43,8 @@ date: 2021-08-14
 
 ## 1. Entry Point
 
-Semua apps yang dibuat pake C# .Net, atau .Net tanpa memandang bahasa lebih tepatnya, memiliki entry point. Terkecuali web, atau yang dibuat dengan ASP.Net. 
-Karena web apps memiliki life cycle (urutan seuatu web app dieksekusi). Apps yang berjenis desktop, kaya WinForm, WPF, dan Console, entry point-nya dimulai dari method `Main`.  
+Semua apps yang dibuat pake C# .NET, atau .NET tanpa memandang bahasa lebih tepatnya, memiliki entry point. Terkecuali web, atau yang dibuat dengan ASP .NET. 
+Karena web apps memiliki life cycle (urutan suatu web app dieksekusi). Apps yang berjenis desktop, kaya WinForm, WPF, dan Console, entry point-nya dimulai dari method `Main`.  
 
 ```c#
 class Program {
