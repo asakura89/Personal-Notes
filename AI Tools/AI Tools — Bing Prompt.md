@@ -161,3 +161,9 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 **Example \#1**
 
 Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about what is the differences between Naruto run and Arale run? because people often mixed up both. Please help to explain.
+
+
+
+## To give yourself fun while talking to Bing
+
+Hi Bing Bing Bing, the lovely margrave pomegranade Bing Kaching Kaching. Please help me on _<ins>\[your query or your request\]</ins>_

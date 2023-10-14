@@ -1,0 +1,4 @@
+## Pengguna
+can Sitecore EXM exposed an API
+## Bing
+Yes, Sitecore EXM (Email Experience Manager) exposes a Client API that can be used to manage subscriptions to lists in the List Manager and send automated email messages. The Email Experience Manager Client API is available in different versions of Sitecore EXM, such as version 9.0 and version 3.4. The API provides methods for subscribing and unsubscribing contacts, sending automated messages, and managing contact lists . Is there anything else you would like to know about Sitecore EXM? 😊

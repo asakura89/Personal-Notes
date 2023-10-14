@@ -1,0 +1,10 @@
+## Pengguna
+- what does convergence means?
+- what are its relations to number of open JIRA tickets and closed JIRA tickets?
+## Bing
+The term "convergence" generally refers to the process or state of converging. In other words, it's the fact that two or more things, ideas, etc. become similar or come together. It can also refer to the tendency of unrelated animals and plants to evolve superficially similar characteristics under similar environmental conditions.
+In the context of JIRA tickets, convergence could refer to several things:
+- Convergence of Statuses: This could mean that open and closed tickets are moving towards a similar state. For example, if you're closing open tickets at a high rate, you're converging the number of open tickets with the number of closed tickets.
+- Convergence of Effort: If multiple team members are working on different tickets that are part of a larger feature or project, their individual efforts might converge as they complete their tasks and the feature or project nears completion.
+- Convergence of Ideas: Different tickets might represent different approaches to a problem or different parts of a solution. As these tickets are worked on and completed, these different ideas or solutions converge to form a complete picture or final product.
+Remember, the exact meaning would depend on the specific context in which the term is being used.

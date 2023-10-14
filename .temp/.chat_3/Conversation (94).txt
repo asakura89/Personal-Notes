@@ -1,0 +1,25 @@
+## Pengguna
+please help explain how to use VLOOKUP and give examples, somehow my formula doesn't work
+## Bing
+Sure, I can help you with that. VLOOKUP is a function in Excel that allows you to look up a value in a table and return a corresponding value from another column. For example, you can use VLOOKUP to find the price of a product by its name, or the name of an employee by their ID number.
+To use VLOOKUP, you need to provide four arguments:
+- lookup_value: the value you want to look up in the table. This can be a cell reference or a literal value.
+- table_array: the range of cells that contains the table. The first column of this range must contain the lookup_value. You can also use a named range or a table name for this argument.
+- col_index_num: the column number in the table_array that contains the value you want to return. The first column is 1, the second column is 2, and so on.
+- range_lookup: a logical value that specifies whether you want an exact match (FALSE) or an approximate match (TRUE) of the lookup_value. If you omit this argument, it defaults to TRUE.
+Here is an example of how to use VLOOKUP in Excel:
+VLOOKUP example
+In this example, we have a table of products and prices in cells B3:E8. We want to use VLOOKUP to find the price of a product by its name in cell H2. Here is the formula we can use:
+=VLOOKUP(H2,B3:E8,4,FALSE)
+This formula tells Excel to look up the value in H2 (Banana) in the first column of B3:E8 (the table_array), and return the value from the fourth column of B3:E8 (the col_index_num), which is the price. We also specify FALSE for the range_lookup argument, because we want an exact match of the product name.
+The result of this formula is 0.79, which is the price of Banana.
+If your formula doesn't work, there are some possible reasons:
+- The lookup_value is not in the first column of the table_array.
+- The col_index_num is out of range or not a valid number.
+- The range_lookup argument is TRUE or omitted, and the first column of the table_array is not sorted in ascending order.
+- The lookup_value or the table_array contains errors or blank cells.
+You can find more information and examples on how to use VLOOKUP in Excel from these sources:
+- VLOOKUP function - Microsoft Support
+- How to use VLOOKUP in Excel (In Easy Steps) - Excel Easy
+- Video: VLOOKUP - When and how to use it - Microsoft Support
+I hope this helps you understand how to use VLOOKUP in Excel. If you have any other questions, feel free to ask me 😊.
