@@ -6,53 +6,47 @@ date: 2023-10-22
 
 # Behavior Interview
 
+- [What is](#what-is)
+- [Why?](#why)
+- [The aim](#the-aim)
+
+
+
+Beberapa hari lalu, kalo gak salah di LinkedIn, ada yang share quote "Don't hire the skill but hire the attitude". Ini sangat menusuk, karena dari dulu kayanya mindset saia selalu ayo grind the skill, grind the skill. Which la;o mau diakui, my skill gak jelek-jelek banget jadinya. Tapi attitude dan behavior saia like shit.
+
+
+
+## What is
+
+1. Apa motivasi ngelamar disini?
+2. Apa individual goal yang dirimu punya?
+3. Gimana dirimu mengkomunikasiin kesulitan?
+4. Gimana dirimu bisa ngatur task?
+5. Gimana kalo ada konflik antar team members?
+6. How to escalate a problem?
+
+Kira-kira kek gini ^
+Banyak macemnya, tapi kira-kira gini ^
+
+
+
+## Why?
+
+1. Mungkin karena company culture.
+2. Mungkin karena coding interview udah terlalu umum?
+3. Mungkin karena level experience dan coding interview beda jauh?
+
+
+
+## The aim
+
+1. Interviewer pengen tau past actions dan behaviors berpengaruh ke gimana kandidat perform kedepannya.
+2. Mungkin role yang dilamar gak terlalu banyak involve in coding misal Technical Project Manager atau malah Analyst Project Manager yang mana require banyak problem solving di level persons, communication, prioritization, dan delegation.
+3. Buat ngeliat cerminan personal attribute si kandidat dan individual soft skills.
+
+
+
 <!--
-**Introduction:**
-Halo teman-teman, kembali lagi bersama saya Gogo membahas tentang ingredient untuk mendapat gaji 4 digit kali ini. Kita akan membahas tentang behavior interview, yang merupakan interview yang paling penting.
-
-**Why Behavior Interview is Important:**
-Kenapa interview ini adalah yang paling penting? Karena tidak semua company akan melakukan coding interview. Mungkin karena mereka tidak punya tim yang mampu untuk melakukan coding interview. Beberapa mungkin tidak akan melakukan sistem desain interview. Tapi semua company pasti akan melakukan interview, bahkan yang dilakukan oleh CEO atau pemimpin perusahaan.
-
-**Different Company Values:**
-Setiap company memiliki nilai-nilai yang berbeda. Misalnya, Apple dengan moto "measure twice" dan Facebook yang lebih fokus pada "move fast and break things." Ini membuat behavior interview penting karena sesuai dengan budaya dan nilai perusahaan.
-
-**What Behavior Interview Covers:**
-Behavior interview mencakup banyak aspek. Pertama, motivation, goal, dan communication. Kedua, project yang kamu banggakan dalam 2 tahun terakhir. Ketiga, proaktif dan bagaimana kamu memprioritaskan project. Keempat, cara menyelesaikan konflik dengan baik. Kelima, kemampuan untuk mengakui kesalahan dan membawa data serta argument yang kuat dalam diskusi.
-
-**Resource for Preparing:**
-Untuk persiapan, ada banyak materi yang bisa dibaca. Ada juga resource online seperti pertanyaan wawancara dan contoh jawaban yang membantu.
-
-**Conclusion:**
-Ini adalah gambaran singkat tentang wawancara behavior. Di sini, kita menekankan bahwa penting untuk memahami nilai perusahaan, bagaimana kamu berkontribusi, dan bagaimana kamu mengatasi berbagai situasi dalam pekerjaanmu. Preparasi adalah kunci, dan ada banyak resource yang bisa membantu. Next time, kita akan membahas cara mendapatkan kesempatan untuk wawancara, termasuk coding.
-
-Of course, I'd be happy to provide my insights and opinions for each section. Here's a breakdown of each section with my comments:
-
-**Introduction:**
-- **Insight:** Behavior interviews are indeed crucial in the hiring process. They focus on a candidate's past actions and behaviors to predict how they might perform in the future.
-- **Opinion:** It's a good choice to start with the importance of behavior interviews. This sets the tone for the rest of the discussion and emphasizes their significance.
-
-**Why Behavior Interview is Important:**
-- **Insight:** The absence of coding interviews in some companies is due to the nature of the role and the skills required. Not all positions demand hands-on coding.
-- **Opinion:** It's essential to understand that different job roles may require different types of interviews. Emphasizing the role-specific nature of interviews is insightful.
-
-**Different Company Values:**
-- **Insight:** Companies have unique cultures and values. Understanding these values is vital for aligning with the organization's mission and working effectively.
-- **Opinion:** Your explanation of the differing cultures at Apple and Facebook highlights the need to adapt your interview approach based on the company's culture. This flexibility is a key skill for candidates.
-
-**What Behavior Interview Covers:**
-- **Insight:** The aspects covered in behavior interviews, such as motivation, goals, and communication, reflect on an individual's soft skills and personal attributes.
-- **Opinion:** This section provides a comprehensive view of what a behavior interview encompasses, offering a solid foundation for candidates to prepare effectively.
-
-**Resource for Preparing:**
-- **Insight:** Providing resources for candidates to prepare is a valuable addition. It empowers them to proactively work on their interview skills.
-- **Opinion:** Offering resource recommendations is practical. Candidates can greatly benefit from online materials and question-answer examples when preparing for interviews.
-
-**Conclusion:**
-- **Insight:** The conclusion summarizes the key takeaways and hints at what's coming next in the discussion.
-- **Opinion:** Ending with a teaser for the next topic, like coding interviews, keeps the audience engaged and eager to continue learning. It's a good structure for your content.
-
-Feel free to ask if you have more questions or need further insights on any of these sections!
-
 
 # Understanding the Power of Behavioral Interviews
 
@@ -212,5 +206,5 @@ To prepare for interviews, the author suggests various resources for understandi
 **Conclusion:**
 In closing, the essay offers a glimpse into the significance of behavioral interviews and the key messages are reinforced – understanding what companies seek, effective communication, highlighting impact and proactivity, and the importance of conflict resolution. It encourages thorough preparation for interviews using various learning resources, underlining their value in securing job opportunities.
 
-
 -->
+

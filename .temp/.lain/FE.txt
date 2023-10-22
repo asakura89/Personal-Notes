@@ -1,0 +1,43 @@
+
+Mulai dari bawah
+
+FrontEnd Learning Material
+    FrontEnd Learning Material - Basic Training
+        [ ] FrontEnd Learning Material - Basic HTML & HTML5 Training 
+        [x] FrontEnd Learning Material - Jade/Pug Training - Skimming
+        [ ] FrontEnd Learning Material - Basic CSS Training
+        [x] FrontEnd Learning Material- Applied Visual Design Training - Skimming
+        [x] FrontEnd Learning Material - Applied Accessibility Training - Skimming
+        [x] FrontEnd Learning Material - Responsive Web Design Principles Training - Skimming
+        [x] FrontEnd Learning Material - CSS Flexbox Training - Skimming
+        [x] FrontEnd Learning Material - CSS Grid Training - Skimming
+    FrontEnd Learning Material - Mid Training
+        [x] FrontEnd Learning Material - Bootstrap Training - Skimming
+        [x] FrontEnd Learning Material - SASS Training
+        [x] FrontEnd Learning Material - jQuery Training - Skimming
+        [?] FrontEnd Learning Material - Basic JavaScript Training - Skimming
+        [?] FrontEnd Learning Material - ES6 Training
+        [X] FrontEnd Learning Material - Regular Expressions Training
+        [X] FrontEnd Learning Material - Debugging Training
+        [X] FrontEnd Learning Material - Basic Data Structures Training - Skimming
+        [X] FrontEnd Learning Material - Basic Algorithm Scripting Training - Skimming
+        [ ] FrontEnd Learning Material - Animation Using GSAP Training
+        [ ] FrontEnd Learning Material - Render Animation with Lottie Training
+    FrontEnd Learning Material - Advanced Training
+        [ ] FrontEnd Learning Material - Object Oriented Programming Training
+        [X] FrontEnd Learning Material - Functional Programming Training - Skimming
+        [X] FrontEnd Learning Material - Intermediate Algorithm Scripting Training
+        [X] FrontEnd Learning Material - Managing Package with NPM Training
+        [ ] FrontEnd Learning Material - Vue - Basic & Component Training
+        [ ] FrontEnd Learning Material - Vue - Reusability & Composition Training
+        [ ] FrontEnd Learning Material - Vue - Tooling Training
+        [ ] FrontEnd Learning Material - Vue - Scaling Up Training
+        [x] FrontEnd Learning Material - React - Basic & Concepts Training
+        [x] FrontEnd Learning Material - React - State Management Library Redux Training
+        [x] FrontEnd Learning Material - React & Redux Application Development Training
+        [x] FrontEnd Learning Material - Basic Node and Express Training
+        [ ] FrontEnd Learning Material - MongoDB & Mongoose Training
+        [x] FrontEnd Learning Material - APIs and Microservices Projects Training
+    FrontEnd Learning Material - Master Training
+        [x] FrontEnd Learning Material - Git Workflow - Skimming
+        [x] FrontEnd Learning Material - Javascript Clean Code

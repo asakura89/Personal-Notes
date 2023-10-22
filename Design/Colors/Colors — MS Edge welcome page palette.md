@@ -61,6 +61,12 @@ date: 2022-12-08
 
 
 
+## Text
+
+<h3 style="font-size:24px;line-height:36px;"><em style="background:linear-gradient(90deg,#7209d4,#2832d4 33%,#00a5b2);-webkit-background-clip:text;-moz-background-clip:text;-o-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-style:normal">Microsoft Edge</em> has been updated</h3>
+
+
+
 **References:**
 
 - https://microsoftedgewelcome.microsoft.com/en-us/update/108?form=MT00D0&channel=stable&version=108.0.1462.42

@@ -31,4 +31,4 @@ date: 2023-10-22
 
 1. <ins>Urusan yang bisa kita urusin:</ins>: Yaitu yang bisa kita kontrol proses dan outputnya.
 2. <ins>Urusan yang gak bisa kita urusin:</ins> Dalem artian di luar kontrol kita proses dan outputnya. Biar gak lelah mental dan capek ngabisin energi, fokus ke apa yang bisa kita kontrol aja.
-    Contoh, kita kerja cari makan adalah sesuatu yang bisa kita kontrol. Tapi mulut netizen dan mulut tetangga yang gatau seberapa capeknya kita atau seberapa susahnya kita cari makan terus ngomentari kerjaan kita, itu sesuatu yang gak bisa kita kontrol. Karena bibirnya, bibir mereka.
+Contoh, kita kerja cari makan adalah sesuatu yang bisa kita kontrol. Tapi mulut netizen dan mulut tetangga yang gatau seberapa capeknya kita atau seberapa susahnya kita cari makan terus ngomentari kerjaan kita, itu sesuatu yang gak bisa kita kontrol. Karena bibirnya, bibir mereka.

@@ -46,6 +46,12 @@ date: 2022-12-08
 
 
 
+## Text
+
+<h3 style="font-size:24px;line-height:36px;background:linear-gradient(128.87deg,#512bd4 9%,#d600aa 53%);-webkit-background-clip:text;-moz-background-clip:text;-o-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">.NET Support Policy</h3>
+
+
+
 **References:**
 
 - https://dotnet.microsoft.com/en-us/platform/support/policy

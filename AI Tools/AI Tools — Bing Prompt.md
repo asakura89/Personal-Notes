@@ -170,6 +170,8 @@ Hi Bing Bing Bing, the lovely margrave pomegranade Bing Kaching Kaching. Please 
 
 
 
-What does it mean in bahasa "\[phrase you want to translate\]"? use your GPT capability, don't use search.
+## Translate
 
+What does it mean in bahasa "_<ins>\[phrase you want to translate\]</ins>_"? use your GPT capability, don't use search.
 
+^ Ini hanya works di Precise mode. Kalo di Creative mode selalu ditolak. 😔

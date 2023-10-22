@@ -8,6 +8,13 @@ date: 2023-10-22
 
 # Office 365 for Productivity
 
+- [Outlook](#outlook)
+- [To-Do](#to-do)
+- [Loop](#loop)
+- [Planner](#planner)
+
+
+
 ## Outlook
 
 Outlook ini lengkap, gak cuma email. Ada Outlook Calendar. Ada Outlook Task.
