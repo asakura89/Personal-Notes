@@ -10,6 +10,7 @@
           {
             "id": "d729879ff41b3d4a",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,12 +18,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "25bc291f9accfcc7",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -30,12 +33,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "df768416517d629a",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -43,12 +48,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "73d4eeb3fb56f961",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -56,12 +63,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "f8634fef15cca211",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -69,20 +78,24 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "86fc4fbe6944dcbb",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "pinned": true
             }
           },
           {
             "id": "072b43007d32a2fc",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -90,12 +103,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "2f70f647b590e18d",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -103,12 +118,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "d9b10daf84d17460",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -116,12 +133,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "f3fc16570f924e3f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -129,12 +148,14 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "e6df7d60b71f3984",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -142,17 +163,18 @@
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "3ccc69c9c5317227",
+            "id": "d38fb0ffc724c040",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Life/Thought/Thought — Asking Question.md",
-                "mode": "preview",
+                "file": "Work/Work — Behavior Interview.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -214,7 +236,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Life/Thought/Thought — Asking Question.md"
+            "file": "Work/Work — Behavior Interview.md"
           }
         }
       }
@@ -230,8 +252,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ccc69c9c5317227",
+  "active": "d38fb0ffc724c040",
   "lastOpenFiles": [
+    "Programming Concept/Concept — Reminder.md",
+    "Work/Work — Behavior Interview.md",
+    "Work/Work — Burn out.md",
+    "Go/Go — 1-Perkenalan.md",
+    "Javascript/Javascript — Simple Condition Parser.md",
+    "Life/Life — Mindset.md",
+    "AI Tools/AI Tools — Bing Prompt.md",
+    "Communication/Communication — Executive Communication.md",
+    "Communication/Communication — Communicate.md",
+    "Life/Life — Taking Notes.md",
     "Life/Thought/Thought — Why.md",
     "Life/Thought/Thought — Asking Question.md",
     "Life/Thought/Thought — If I want to sell tickets.md",
@@ -239,25 +271,15 @@
     "Life/Life — Yang Sering Terjadi.md",
     "Life/Life — Kebiasaan Penting.md",
     "Life/Life — Feeling down.md",
-    "Life/Life — Mindset.md",
     "Life/Life — Mental Illness.md",
     "Life/Life — Sukses.md",
-    "Life/Life — Taking Notes.md",
     "Communication/Communication — Microsoft Teams.md",
     "Communication/Communication — Nice to e-meet you.md",
-    "Javascript/Javascript — Simple Condition Parser.md",
     "Programming Concept/Concept — Application Analytics.md",
     "Programming Concept/Concept — Easily Develop Features.md",
-    "Work/Work — Burn out.md",
     "Programming Concept/Concept — High Level and Low Level.md",
-    "Programming Concept/Concept — Reminder.md",
-    "Go/Go — 1-Perkenalan.md",
     "SQL/SQL — Database Normalization.md",
     "Communication/English/English — On-premises.md",
-    "Go/Go — 3-Type.md",
-    "Go/Go — 5-Collection-Pipeline.md",
-    "Work/Work — Requirement Gathering.md",
-    "Communication/English/English — Dana.md",
     "SQL/_media",
     "Go",
     "_media",
