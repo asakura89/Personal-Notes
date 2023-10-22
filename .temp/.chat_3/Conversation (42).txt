@@ -1,0 +1,27 @@
+## Pengguna
+Hi Bing, I'm a software developer. Sometimes there are times where there is a development or a new feature without clear user requirements. or let say there is user requirements, but in the end the requirements keep adding new things. here are my questions, please help to answer in paragraph with sections, and explanations:
+- what defensive plan to help my self to deliver without issues?
+- is there any software development guidelines that I can implement regarding my situation?
+- and what are things I need to do to achieve win-win solutions?
+## Bing
+Sure, I'd be happy to help. Here are some strategies you can consider:
+1. Defensive Plan for Software DevelopmentDefensive programming is an approach that can help you ensure the robustness of your code, especially in uncertain situations. Here are some steps you can take:
+- Recognize and acknowledge differences: Issues, challenges, or conflicts must be recognized and discussed. This recognition helps the team come together to find a mutually agreed upon solution or goal.
+- Inventory your repositories: Conduct a thorough inventory of all the open-source code you are running. This includes understanding the dependencies of the components you are using.
+- Understand different opinions: Try to understand the perspectives of others. This step is intended to gain insight, not necessarily to gain agreement.
+- Work to overcome the issue: Differences in opinion are acceptable and even welcome! Remember, attack the issues and not the person. As a team, what is the best solution that can help the team achieve its goals?
+- Develop a plan of action: Outline what each member of the team will do, and be extremely specific. This document will also serve as an accountability document.
+- Follow up: Put the plan into action, follow up, and revise as needed in order to optimize performance.
+2. Software Development GuidelinesThere are several best practices and guidelines that you can follow to manage changing requirements:
+- Keep it simple: Avoid overly complicated code and focus on what's needed now. This aligns with the YAGNI (You Ain't Gonna Need It) principle.
+- Have a backout plan: Always have a plan for reverting changes or handling unexpected issues.
+- Test thoroughly: Ensure that your code is well-tested. This not only helps catch bugs early but also makes it easier to accommodate changes.
+- Understand how to estimate: Accurate estimation is key to managing expectations and handling changes effectively.
+3. Achieving Win-Win SolutionsAchieving win-win solutions involves collaboration and understanding:
+- Recognize and acknowledge differences: Understand that each team member may have different opinions and ideas.
+- Gain common ground: Align everyone on the team with the team goals.
+- Understand different opinions: Try to understand others' perspectives without necessarily seeking agreement.
+- Work to overcome the issue: Focus on finding solutions that help achieve team goals without compromising individual values.
+- Develop a plan of action: Be clear about what each team member will do.
+- Follow up: Implement the plan, monitor progress, and make necessary adjustments.
+Remember, these are just guidelines. The specific strategies you adopt may vary depending on your specific situation and team dynamics. The key is to maintain open communication, foster a collaborative environment, and focus on delivering value to your users.

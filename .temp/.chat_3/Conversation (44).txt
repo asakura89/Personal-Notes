@@ -1,0 +1,7 @@
+## Pengguna
+install multiple discord android
+## Bing
+You can use multiple Discord accounts on your mobile device, Android and iOS in the same way as on a computer. Either download the app and open it on the browser, too, or open it on two browsers. Android - Google’s Play store. iOS - Apple’s App store. Also, open Discord on any browser on your mobile.  If you want to have multiple Discord accounts on the same phone, you can:
+- Use the Account Switcher feature in Discord. To access the feature, tap on your Avatar image in the bottom left corner and then select the new "Switch Account" option. Tap on "Manage Accounts" in the overflow menu and then add more accounts. You can log into five accounts using the Account Switcher.
+- Use an application such as App cloner or Parallel Space to have Multiple Discord accounts on the same phone. Download Parallel Space for Android or iPhone. Open Parallel space, a popup appears, and Install the 64bit support (If it appears).
+- Switch to a different account by looking for the 'Login' option on the welcome screen. Key in the login details of the account you wish to switch to and press 'Login'. Discord mobile allows only one active account at a time.

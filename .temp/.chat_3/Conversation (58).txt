@@ -1,0 +1,12 @@
+## Pengguna
+blazor enum dropdown
+## Bing
+Here is an example of how to use an enum in a dropdown in Blazor:
+
+<InputSelect @bind-Value="@YourEnum">
+  @foreach (var value in Enum.GetValues<YourEnumType>()) {
+    <option value="@value">@value</option>
+  }
+</InputSelect>
+
+You can replace YourEnum with the name of your enum and YourEnumType with the type of your enum. This will create a dropdown with the values of your enum as options.

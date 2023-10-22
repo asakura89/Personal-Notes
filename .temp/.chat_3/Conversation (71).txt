@@ -1,0 +1,72 @@
+## Pengguna
+generate me c# code to get filename with its extension from a fullpath string
+## Bing
+Sure, I can help you with that. Here is a possible C# code snippet that can get the filename with its extension from a fullpath string:
+
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Example of a fullpath string
+        string fullpath = @"C:\Users\Documents\Report.pdf";
+        
+        // Use the Path.GetFileName method to get the filename with extension
+        string filename = Path.GetFileName(fullpath);
+        
+        // Print the result
+        Console.WriteLine("The filename with extension is: " + filename);
+    }
+}
+
+I hope this helps. 😊
+## Pengguna
+wht if I just want to get the filename without the extension?
+## Bing
+If you just want to get the filename without the extension, you can use the Path.GetFileNameWithoutExtension method instead of the Path.GetFileName method. For example, you can modify the code snippet as follows:
+
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Example of a fullpath string
+        string fullpath = @"C:\Users\Documents\Report.pdf";
+        
+        // Use the Path.GetFileNameWithoutExtension method to get the filename without extension
+        string filename = Path.GetFileNameWithoutExtension(fullpath);
+        
+        // Print the result
+        Console.WriteLine("The filename without extension is: " + filename);
+    }
+}
+
+This will print "The filename without extension is: Report". I hope this answers your question. 😊
+## Pengguna
+what if I just want to get the fullfilepath without the extension?
+## Bing
+If you just want to get the fullpath without the extension, you can use the Path.ChangeExtension method to change the extension to null. For example, you can modify the code snippet as follows:
+
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Example of a fullpath string
+        string fullpath = @"C:\Users\Documents\Report.pdf";
+        
+        // Use the Path.ChangeExtension method to change the extension to null
+        string fullpathWithoutExtension = Path.ChangeExtension(fullpath, null);
+        
+        // Print the result
+        Console.WriteLine("The fullpath without extension is: " + fullpathWithoutExtension);
+    }
+}
+
+This will print "The fullpath without extension is: C:\Users\Documents\Report". I hope this helps. 😊

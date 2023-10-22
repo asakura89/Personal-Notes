@@ -26,7 +26,7 @@ date: 2021-08-14
 
 ## 1. `var`
 
-Keyword `var` biasanya rame di bahasa-bahasa pemrograman yang dynamic. Dynamic disini maksudnya adalah bahasa yang weakly-typed atau loosely-typed. Apa bahasa weakly-typed? Bahasa weakly-typed adalah bahasa pemrograman yang gak harus nulis type dari variable sewaktu deklarasi dan inisialisasi. Sedangkan C# .Net adalah bahasa yang harus ditulis type-nya sewaktu deklarasi dan inisialisasi. Maka dari itu, C# .Net ini strong-typed.
+Keyword `var` biasanya rame di bahasa-bahasa pemrograman yang dynamic. Dynamic disini maksudnya adalah bahasa yang weakly-typed atau loosely-typed. Apa bahasa weakly-typed? Bahasa weakly-typed adalah bahasa pemrograman yang gak harus nulis type dari variable sewaktu deklarasi dan inisialisasi. Sedangkan C# .NET adalah bahasa yang harus ditulis type-nya sewaktu deklarasi dan inisialisasi. Maka dari itu, C# .NET ini strong-typed.
 
 ```c#
 // C#
@@ -46,21 +46,21 @@ Semenjak dari C# 3, C# udah bisa pake keyword `var`. YEEEEEEEEEEE!!!
 
 Terus apa kelebihannya? toh dari bertaun-taun lalu mulai dari C# 1, 1.1 sama 2 pake strong-typed kok, dan gak ribet karena udah kebiasa. Karena memang bahasanya strong-typed.
 
-Kelebihannya ya gak perlu ngetik panjang-panjang. Karena Preman sama Bos Preman termasuk pemalas.
+Kelebihannya ya gak perlu ngetik panjang-panjang. Karena Budie termasuk pemalas dan pengen yang simpel-simpel aja.
 
-Coba seandainya Bos Preman disuruh ngetik code di bawah ini.
+Coba seandainya Budie disuruh ngetik code di bawah ini.
 
 ```c#
 IDictionary<String, IDictionary<String, String>> pengaturanPerSitus = new Dictionary<String, IDictionary<String, String>>();
 ```
 
-Pasti Bos Preman bakal ngetiknya jadi kaya gini.
+Pasti dia bakal ngetiknya jadi kaya gini.
 
 ```C#
 var pengaturanPerSitus = new Dictionary<String, IDictionary<String, String>>();
 ```
 
-Tapi, kalo Bos Preman ditanya apakah dia akan ganti semua type jadi `var` atau enggak. Jawabnya adalah enggak. Kenapa? Karena walaupun malas, Bos Preman lebih malas kalo harus ngebaca code yang readability-nya gak bagus.
+Tapi, kalo Budie ditanya apakah dia akan ganti semua type jadi `var` atau enggak. Jawabnya adalah enggak. Kenapa? Karena walaupun malas, Budie lebih malas kalo harus ngebaca code yang readability-nya gak bagus.
 
 Contohnya gini.
 
@@ -109,7 +109,7 @@ var situs = (String) Configuration.GetFromSessions("Sites");
 var situs = Configuration.Get<String>("Sites");
 ```
 
-Baiklah. Setelah kita berusaha untuk gak membuat marah Bos Preman, karena menggunakan `var` dengan baik. Ada yang gak bisa dilakukan dengan `var`. Apa itu? Berikut ini.
+Baiklah. Setelah kita berusaha untuk gak membuat Budie sebel, karena menggunakan `var` dengan baik. Ada yang gak bisa dilakukan dengan `var`. Apa itu? Berikut ini.
 
 ```C#
 // bisa
@@ -122,7 +122,7 @@ var situs = null;
 var situs;
 ```
 
-Yang terakhir, `var` ini digunakan oleh tim .Net untuk menampung anonymous type. Contohnya gini.
+Yang terakhir, `var` ini digunakan oleh tim .NET untuk menampung anonymous type. Contohnya gini.
 
 ```C#
 var situs = new[] {
@@ -143,7 +143,7 @@ var situs = new[] {
 
 `dynamic` adalah keyword yang dikenalin di C# 4. Ini untuk mengakomodasi semua fitur bahasa dynamic ke C#. YEEEEEEEYYY!!
 
-`dynamic` ini juga dibawa tandem dengan DLR (Dynamic Language Runtime) yang dibangun di atas CLR (Common Language Runtime)-nya .Net.
+`dynamic` ini juga dibawa tandem dengan DLR (Dynamic Language Runtime) yang dibangun di atas CLR (Common Language Runtime)-nya .NET.
 
 Secara simpelnya, `dynamic` ini bisa ganti type dan bisa ganti value.
 
@@ -179,7 +179,7 @@ class Orang {
     String Rambut;
 }
 
-var orangDiPulaiSeberang = new Orang {
+var orangDiPulauSeberang = new Orang {
     Tinggi = 172.0,
     Berat = 65.0,
     Mata = "Kehijau-hijauan emeral",
@@ -190,7 +190,7 @@ var orangDiPulaiSeberang = new Orang {
 Dan ini contoh anonymous type.
 
 ```C#
-var orangDiPulaiSeberang = new {
+var orangDiPulauSeberang = new {
     Tinggi = 172.0,
     Berat = 65.0,
     Mata = "Kehijau-hijauan emeral",

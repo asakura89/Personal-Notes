@@ -1,0 +1,11 @@
+## Pengguna
+excel row color based on formula
+## Bing
+You can change the color of a row in Excel based on a formula using Conditional Formatting. Here's how you can do it:
+- Select the cells that you want to apply the formatting to.
+- Go to the Home tab, and click on Conditional Formatting > New Rule.
+- In the "New Formatting Rule" dialog window that opens, choose the option "Use a formula to determine which cells to format".
+- Enter your formula in the "Format values where this formula is true" field. For example, if you want to highlight orders with quantity larger than 4 in column C, you would use the formula =$C2>4. The dollar sign $ before the cell's address is needed to keep the column letter the same when the formula gets copied across the row.
+- Click on the "Format…" button and switch to Fill tab to choose the background color. You can also use any other formatting options, such as the font color or cells border on the other tabs of the Format Cells dialog.
+- Click OK to apply your new formatting rule.
+Remember, you can apply several rules with different priorities. Also, you can change row color based on text value in a cell. For more complex scenarios, you might need to use functions like MOD or logical functions like AND and OR.

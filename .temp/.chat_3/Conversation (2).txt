@@ -1,0 +1,22 @@
+## Pengguna
+what is the ram and storage comparison of iphone x, iphone 12 mini, and iphone 13 mini
+## Bing
+Here is a comparison of the RAM and storage of iPhone X, iPhone 12 mini, and iPhone 13 mini:
+
+Model 	RAM 	Storage 	
+iPhone X 	3 GB 	64 GB / 256 GB 	
+iPhone 12 mini 	4 GB 	64 GB / 128 GB / 256 GB 	
+iPhone 13 mini 	4 GB 	128 GB / 256 GB / 512 GB 	
+
+As you can see, the iPhone X has a lower RAM capacity than the other two models. The iPhone 12 mini and iPhone 13 mini have the same RAM capacity, but the latter has a higher maximum storage capacity of up to 512 GB   .
+## Pengguna
+please compare other features of those 3 and put it in a table just like did
+## Bing
+Certainly! Here is a comparison of other features of iPhone X, iPhone 12 mini, and iPhone 13 mini:
+
+Model 	Display 	Rear Camera 	Front Camera 	Battery Life 	Water Resistance Rating 	
+iPhone X 	5.8-inch OLED, 2436 x 1125 pixels, 458 ppi 	Dual 12 MP (wide and telephoto) 	7 MP TrueDepth camera 	Up to 21 hours talk time, up to 13 hours internet use, up to 60 hours audio playback, up to 13 hours video playback 	IP67 	
+iPhone 12 mini 	5.4-inch OLED, 2340 x 1080 pixels, 476 ppi 	Dual 12 MP (wide and ultrawide) 	12 MP TrueDepth camera 	Up to 15 hours talk time, up to 10 hours internet use, up to 50 hours audio playback, up to 11 hours video playback 	IP68 	
+iPhone 13 mini 	5.4-inch OLED, 2340 x 1080 pixels, 476 ppi 	Dual 12 MP (wide and ultrawide) with Night mode on both cameras 	12 MP TrueDepth camera with Night mode and Deep Fusion 	Up to 17 hours talk time, up to 11 hours internet use, up to 55 hours audio playback, up to 13 hours video playback 	IP68 	
+
+I hope this table helps you compare the features of these three models. Let me know if you have any other questions!

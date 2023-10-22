@@ -1,0 +1,20 @@
+## Pengguna
+how to freeze excel row and column
+## Bing
+To freeze both rows and columns in Excel, you can follow these steps:
+- Select the cell below the rows and to the right of the columns you want to keep visible when you scroll.
+- Click on the View tab.
+- Select the Freeze Panes command and choose "Freeze Panes."
+This will lock the selected rows and columns in place, allowing you to scroll through the rest of the worksheet while keeping those rows and columns visible. To unfreeze rows or columns, go to the View tab, then click on Window, and select Unfreeze Panes. Is there anything else you would like to know? 😊
+## Pengguna
+I can only manage freeze either row or column but not both. how to do both?
+## Bing
+To freeze both rows and columns in Excel, you need to select the cell that is below the row you want to freeze and to the right of the column you want to freeze. For example, if you want to freeze row 1 and column A, you would select cell B2. Then, click on the View tab, select the Freeze Panes command, and choose "Freeze Panes." This will lock both row 1 and column A in place, allowing you to scroll through the rest of the worksheet while keeping those rows and columns visible. To unfreeze rows or columns, go to the View tab, then click on Window, and select Unfreeze Panes. I hope this helps! 😊
+## Pengguna
+excel month name
+## Bing
+There are several ways to get the month name from a date in Excel:
+- Using the TEXT function: The TEXT function can convert values to text using the number format that you provide. To get the month name from a date, you can use the TEXT function with a custom number format like "mmmm". For example, if you have a date in cell B4, you could use the formula =TEXT(B4,"mmmm") to get the month name.
+- Using Custom Number Formatting: If you only want to display a month name, you don't need a formula – you can use a custom number format to format the date directly. Select the date and navigate to Format cells (Ctrl + 1 or Cmd +1), then select Custom and enter one of these custom formats: "mmm" for "Jan" or "mmmm" for "January".
+- Using the CHOOSE function: For more flexibility, you can create your own month names with the CHOOSE function and MONTH function like this: =CHOOSE(MONTH(date),"Jan","Feb","Mar","Apr","May","Jun", "Jul","Aug","Sep","Oct","Nov","Dec"). The MONTH function will extract a month number, and CHOOSE will use this number to return the "nth" value in the list.
+I hope this helps! Is there anything else you would like to know? 😊

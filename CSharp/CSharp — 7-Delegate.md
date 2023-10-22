@@ -28,7 +28,7 @@ date: 2021-08-14
 
 ## 1. Delegate
 
-`Delegate` ini adalah konsep `function pointer` yang ada di .Net. Dengan adanya `delegate` ini malah ngebawa konsep `functional` ke bahasa yang berkonsep `object oriented` kaya C# ini. 
+`Delegate` ini adalah konsep `function pointer` yang ada di .NET. Dengan adanya `delegate` ini malah ngebawa konsep `functional` ke bahasa yang berkonsep `object oriented` kaya C# ini. 
 Apa sebenernya `function pointer`? `function pointer` adalah jenis khusus dari variabel yang digunakan untuk menyimpan reference / memory address dari sebuah method. Jadi method yang biasanya kitab pake dengan cara dipanggil, sekarang bisa juga ditampung jadi sebuah variabel buat dipanggil nanti. 
 Atau malah buat dikirim sebagai `parameter` ke method yang lain.  
 
@@ -84,7 +84,7 @@ public String SupermanBerpindahTempat() {
 }
 ```
 
-Kalo pake cara preman, code-nya jadi gini.  
+Kalo pake cara Budie, code-nya jadi gini.  
 
 ```C#
 delegate String CaraBerpindahTempat();
@@ -115,11 +115,11 @@ public String SupermanBerpindahTempat() => "Dengan cara terbang.";
 
 Dari keempat ini, `Action` masuk ke kategori no. 1 dan 2 yaitu tanpa return value. Apakah punya parameter atau enggak.  
 
-`Action` ini termasuk delegate yang bisa langsung pake. Jadi gak perlu di definisiin dulu. Karena udah didefinisiin dari BCL-nya (Base Class Library bukan Bunga Citra Lestari) .Net.  
+`Action` ini termasuk delegate yang bisa langsung pake. Jadi gak perlu di definisiin dulu. Karena udah didefinisiin dari BCL-nya (Base Class Library bukan Bunga Citra Lestari) .NET.  
 
 Yang paling dasar ada `Action` aja. Ini merujuk (points / sebagai pointer) ke `function` kategori no. 1. Tanpa return value dan tanpa parameter. 
 Ada juga yang `Action<T>`. `T` disini berarti memiliki parameter dengan type `T` (Generic). Ini merujuk ke `function` kategori no. 2. Untuk kategori no. 2 ini ada banyak `overload` (varian dari `function` / `Method`-nya). 
-Mulai dari `Action<T>`, atau yang parameter `T`-nya cuma satu. Sampe ke `Action<T, T2, T3 . . . T16>` yang parameter-nya sampe 16. Tapi begitupun daripada ditabokin Boss Preman, mending `refactor` deh semua `Method`-nya biar maksimal cuma punya 3 parameter. 
+Mulai dari `Action<T>`, atau yang parameter `T`-nya cuma satu. Sampe ke `Action<T, T2, T3 . . . T16>` yang parameter-nya sampe 16. Tapi begitupun daripada sebel diceramahin Budie soal simple code, mending `refactor` deh semua `Method`-nya biar maksimal cuma punya 3 parameter. 
 Gimana caranya? Jadiin semua parameternya jadi satu `class` sendiri yang khusus.  
 
 Mari langsung praktek. Kalo contoh `delegate` di atas di `refactor` jadi pake `Action`, maka jadinya kaya di bawah ini.  
@@ -216,7 +216,7 @@ public String CaraBerpindahTempat(IDictionary<String, String> aksiPindah, String
 
 ## 4. Predicate
 
-Predicate ini secara general adalah `Func` yang return value-nya selalu `Boolean`. Dan bisa dibilang `class` khusus, karena .Net nyediain class `Predicate<T>`.
+Predicate ini secara general adalah `Func` yang return value-nya selalu `Boolean`. Dan bisa dibilang `class` khusus, karena .NET nyediain class `Predicate<T>`.
 
 Cara pakenya? apa? apa? cara pakenya? gampang!
 
@@ -270,25 +270,25 @@ if (anggotaBanyak)
 
 Sebenernya `IIFE` ini awal mulanya dari javascript. Javascript sendiri memang menganggap `function` adalah first-class citizen. Artinya `function` yang bisa disimpen di dalem variabel, `function` yang dilempar jadi parameter `function` yang lain itu semua udah biasa banget. Normal. Gadak yang aneh.  
 
-Tapi buat C# di .Net? .Net sendiri punya cara untuk bikin `function` (dalam bahasa .Net disebut `Method`), jadi first-class citizen. Gimana cara .Net? Pake `delegate`.  
+Tapi buat C# di .NET? .NET sendiri punya cara untuk bikin `function` (dalam bahasa .NET disebut `Method`), jadi first-class citizen. Gimana cara .NET? Pake `delegate`.  
 
 ```C#
-Int32 anggotaPreman = 7;
-Int32 palakanPerHari = 30_000;
-Int32 totalPalakan = new Func<Int32>(() => anggotaPreman * palakanPerHari).Invoke();
+Int32 muridDatangTelatPerHariIni = 7;
+Int32 dendaDatangTelat = 30_000;
+Int32 totalPemasukanKas = new Func<Int32>(() => muridDatangTelatPerHariIni * dendaDatangTelat).Invoke();
 ```
 
-Kalo mau pake cara preman, gak perlu pake `.Invoke()`. Cukup pake `()` aja. Dengan gitu bakal jadi lebih mirip `IIFE` yang ada di javascript.  
+Kalo mau pake cara Budie, gak perlu pake `.Invoke()`. Cukup pake `()` aja. Dengan gitu bakal jadi lebih mirip `IIFE` yang ada di javascript.  
 
 ```C#
-Int32 anggotaPreman = 7;
-Int32 palakanPerHari = 30_000;
-Int32 totalPalakan = new Func<Int32>(() => anggotaPreman * palakanPerHari)();
+Int32 muridDatangTelatPerHariIni = 7;
+Int32 dendaDatangTelat = 30_000;
+Int32 totalPemasukanKas = new Func<Int32>(() => muridDatangTelatPerHariIni * dendaDatangTelat)();
 ```
 
-Apa `IIFE` cuma bisa pake `Func`? Enggak kok. Pake `Action` juga bisa. Nih, biasanya boss preman manggilin anggotanya pake ini.  
+Apa `IIFE` cuma bisa pake `Func`? Enggak kok. Pake `Action` juga bisa. Nih, biasanya Watie manggilin mentemennya pake ini.  
 
 ```C#
-new Action(() => Console.WriteLine("Woee... Kumpul klean semua sini!"))();
+new Action(() => Console.WriteLine("Woee... Kumpul klean semua sini! AndBud kalian jugaaa!"))();
 ```
 

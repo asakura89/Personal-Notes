@@ -1,0 +1,44 @@
+## Pengguna
+Hi Bing Bing Bing, the lovely margrave pomegranade Bing Kaching Kaching. Please help to summarize these conversation to extract activities and the time it carried out and then please convert to american-english. Here it is:
+[HW]
+Mas WES kenapa ya 😆😆
+[HW]
+Dia tuh kemarin bilang mau publish bnner tengah malem, tapi gajadi. Jadinya bilangnya tadi pagi
+[DAS]
+kenapa diaa?
+[HW]
+Tapi sampe jam 8 aku tungguin gaada terus, kan dia minta kita purge cdn abis dia publish
+[HW]
+Terus tadi dia update lagi pas aku chat mas dita, minta purge lagi
+[HW]
+Eh barusan WJ chat aku lagi kalo nanti WES mau update lagi 😆
+[HW]
+Padahal udah kita kasih tau cara purgenya 😆
+[DAS]
+antara emang lupaan terus atau gak mau ribet aja
+[DAS]
+jadi ini tadi ditungguin dari tadi malem baru update jam 10an?
+[HW]
+Wkwkwk iya
+[HW]
+Ngga, jadi pertama dia minta purge jam 8.30 sgt
+[HW]
+Tapi aku tungguin belum wae, jadi tadi mba ika email ke WES
+[HW]
+Jadinya dia baru publish jam 9 sgt
+[HW]
+Terus tadi ada piblish lagi jam 11 sgt
+[HW]
+Nanti mau publish lagi katanya wkkw
+## Bing
+Here's the summary of the conversation in American English:
+- Yesterday, WES mentioned that he would publish a banner at midnight, but it didn't happen. He then said it would be done this morning.
+- HW waited until 8 AM for the publication, as WES had asked them to purge the CDN after he published. However, there was no update.
+- WES updated again when HW was chatting with Dita and asked for another purge.
+- Recently, WJ informed HW that WES would update again.
+- Despite being taught how to purge, it seems WES still asks for assistance.
+- The first purge request was at 8:30 AM, but HW waited and there was no update. Therefore, Ika emailed WES.
+- Consequently, WES published at around 9 AM.
+- There was another publication at around 11 AM.
+- It is said that there will be another publication later.
+Please note that the times mentioned are based on the original conversation's timezone. If you need them converted to a different timezone, please provide the desired timezone.

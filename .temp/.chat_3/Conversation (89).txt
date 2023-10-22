@@ -1,0 +1,263 @@
+## Pengguna
+Hi Bing, I have c# code and need your help to add guard clauses and add unit testing. Here is the code:
+public class EmailMessageDrafter {
+MailMessage message = new MailMessage();
+public EmailMessageDrafter CreateDraft(String from, String to, String subject, String body) {
+    message.From = new MailAddress(from);
+    message.Subject = subject;
+    message.Body = body;
+    message.IsBodyHtml = true;
+    message.To.Add(new MailAddress(to));
+
+    return this;
+}
+
+public EmailMessageDrafter AddTo(String to) {
+    message.To.Add(new MailAddress(to));
+
+    return this;
+}
+
+public EmailMessageDrafter AddTos(IEnumerable<String> tos) {
+    foreach (String to in tos)
+        message.To.Add(new MailAddress(to));
+
+    return this;
+}
+
+public EmailMessageDrafter AddCc(String cc) {
+    message.CC.Add(new MailAddress(cc));
+
+    return this;
+}
+
+public EmailMessageDrafter AddCcs(IEnumerable<String> ccs) {
+    foreach (String cc in ccs)
+        message.CC.Add(new MailAddress(cc));
+
+    return this;
+}
+
+public EmailMessageDrafter AddBcc(String bcc) {
+    message.Bcc.Add(new MailAddress(bcc));
+
+    return this;
+}
+
+public EmailMessageDrafter AddBccs(IEnumerable<String> bccs) {
+    foreach (String bcc in bccs)
+        message.Bcc.Add(new MailAddress(bcc));
+
+    return this;
+}
+
+public EmailMessageDrafter AddAttachment(String filePath) {
+    var fileInfo = new FileInfo(filePath);
+    message.Attachments.Add(new Attachment(fileInfo.OpenRead(), fileInfo.Name));
+
+    return this;
+}
+
+public EmailMessageDrafter AddAttachments(IEnumerable<String> filePaths) {
+    foreach (String path in filePaths) {
+        var fileInfo = new FileInfo(path);
+        message.Attachments.Add(new Attachment(fileInfo.OpenRead(), fileInfo.Name));
+    }
+
+    return this;
+}
+
+public MailMessage GetDraft() => message;
+}
+## Bing
+Hello, this is Bing. I can help you with your code.😊
+Guard clauses are statements that check for invalid or unexpected input and return early or throw an exception if the input is not valid. They are useful to prevent errors and make the code more readable and maintainable.
+Unit testing is a way of testing the functionality of individual units of code, such as methods or classes, by writing automated test cases that verify the expected behavior and output of the code.
+To add guard clauses to your code, you can use the ArgumentNullException class to throw an exception if any of the parameters are null, and the ArgumentException class to throw an exception if any of the parameters are empty or invalid. For example:
+
+public EmailMessageDrafter CreateDraft(String from, String to, String subject, String body) {
+    // Guard clauses
+    if (from == null) throw new ArgumentNullException(nameof(from));
+    if (to == null) throw new ArgumentNullException(nameof(to));
+    if (subject == null) throw new ArgumentNullException(nameof(subject));
+    if (body == null) throw new ArgumentNullException(nameof(body));
+    if (from == "") throw new ArgumentException("From address cannot be empty", nameof(from));
+    if (to == "") throw new ArgumentException("To address cannot be empty", nameof(to));
+    // Rest of the code
+    message.From = new MailAddress(from);
+    message.Subject = subject;
+    message.Body = body;
+    message.IsBodyHtml = true;
+    message.To.Add(new MailAddress(to));
+
+    return this;
+}
+
+To add unit testing to your code, you can use a testing framework such as NUnit or MSTest. You will need to create a test class that inherits from the TestFixture attribute and write test methods that use the Test attribute and assert statements to verify the results of your code. For example:
+
+using NUnit.Framework;
+using System.Net.Mail;
+
+namespace EmailMessageDrafter.Tests {
+    [TestFixture]
+    public class EmailMessageDrafterTests {
+        // Test method for CreateDraft
+        [Test]
+        public void CreateDraft_ValidParameters_ReturnsEmailMessageDrafterWithCorrectProperties() {
+            // Arrange
+            var from = "sender@example.com";
+            var to = "receiver@example.com";
+            var subject = "Hello";
+            var body = "This is a test email";
+
+            // Act
+            var drafter = new EmailMessageDrafter().CreateDraft(from, to, subject, body);
+            var draft = drafter.GetDraft();
+
+            // Assert
+            Assert.AreEqual(from, draft.From.Address);
+            Assert.AreEqual(1, draft.To.Count);
+            Assert.AreEqual(to, draft.To[0].Address);
+            Assert.AreEqual(subject, draft.Subject);
+            Assert.AreEqual(body, draft.Body);
+            Assert.IsTrue(draft.IsBodyHtml);
+        }
+
+        // Test method for AddTo
+        [Test]
+        public void AddTo_ValidParameter_AddsToAddressToDraft() {
+            // Arrange
+            var from = "sender@example.com";
+            var to1 = "receiver1@example.com";
+            var to2 = "receiver2@example.com";
+            var subject = "Hello";
+            var body = "This is a test email";
+
+            // Act
+            var drafter = new EmailMessageDrafter().CreateDraft(from, to1, subject, body).AddTo(to2);
+            var draft = drafter.GetDraft();
+
+            // Assert
+            Assert.AreEqual(2, draft.To.Count);
+            Assert.AreEqual(to1, draft.To[0].Address);
+            Assert.AreEqual(to2, draft.To[1].Address);
+        }
+
+        // You can write more test methods for the other methods in your class
+    }
+}
+
+I hope this helps you with your code. If you need more assistance, please let me know.😊
+## Pengguna
+please generate me guard clauses for all methods I have on my code
+## Bing
+Sure, I can generate guard clauses for all your methods. Here is the updated code with guard clauses:
+
+public class EmailMessageDrafter {
+    MailMessage message = new MailMessage();
+
+    public EmailMessageDrafter CreateDraft(String from, String to, String subject, String body) {
+        // Guard clauses
+        if (from == null) throw new ArgumentNullException(nameof(from));
+        if (to == null) throw new ArgumentNullException(nameof(to));
+        if (subject == null) throw new ArgumentNullException(nameof(subject));
+        if (body == null) throw new ArgumentNullException(nameof(body));
+        if (from == "") throw new ArgumentException("From address cannot be empty", nameof(from));
+        if (to == "") throw new ArgumentException("To address cannot be empty", nameof(to));
+        // Rest of the code
+        message.From = new MailAddress(from);
+        message.Subject = subject;
+        message.Body = body;
+        message.IsBodyHtml = true;
+        message.To.Add(new MailAddress(to));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddTo(String to) {
+        // Guard clause
+        if (to == null) throw new ArgumentNullException(nameof(to));
+        if (to == "") throw new ArgumentException("To address cannot be empty", nameof(to));
+        // Rest of the code
+        message.To.Add(new MailAddress(to));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddTos(IEnumerable<String> tos) {
+        // Guard clause
+        if (tos == null) throw new ArgumentNullException(nameof(tos));
+        // Rest of the code
+        foreach (String to in tos)
+            message.To.Add(new MailAddress(to));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddCc(String cc) {
+        // Guard clause
+        if (cc == null) throw new ArgumentNullException(nameof(cc));
+        if (cc == "") throw new ArgumentException("Cc address cannot be empty", nameof(cc));
+        // Rest of the code
+        message.CC.Add(new MailAddress(cc));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddCcs(IEnumerable<String> ccs) {
+        // Guard clause
+        if (ccs == null) throw new ArgumentNullException(nameof(ccs));
+        // Rest of the code
+        foreach (String cc in ccs)
+            message.CC.Add(new MailAddress(cc));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddBcc(String bcc) {
+        // Guard clause
+        if (bcc == null) throw new ArgumentNullException(nameof(bcc));
+        if (bcc == "") throw new ArgumentException("Bcc address cannot be empty", nameof(bcc));
+        // Rest of the code
+        message.Bcc.Add(new MailAddress(bcc));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddBccs(IEnumerable<String> bccs) {
+        // Guard clause
+        if (bccs == null) throw new ArgumentNullException(nameof(bccs));
+        // Rest of the code
+        foreach (String bcc in bccs)
+            message.Bcc.Add(new MailAddress(bcc));
+
+        return this;
+    }
+
+    public EmailMessageDrafter AddAttachment(String filePath) {
+       // Guard clause
+       if (filePath == null) throw new ArgumentNullException(nameof(filePath));
+       if (filePath == "") throw new ArgumentException("File path cannot be empty", nameof(filePath));
+       // Rest of the code
+       var fileInfo = new FileInfo(filePath);
+       message.Attachments.Add(new Attachment(fileInfo.OpenRead(), fileInfo.Name));
+
+       return this;
+   }
+
+   public EmailMessageDrafter AddAttachments(IEnumerable<String> filePaths) {
+       // Guard clause
+       if (filePaths == null) throw new ArgumentNullException(nameof(filePaths));
+       // Rest of the code
+       foreach (String path in filePaths) {
+           var fileInfo = new FileInfo(path);
+           message.Attachments.Add(new Attachment(fileInfo.OpenRead(), fileInfo.Name));
+       }
+
+       return this;
+   }
+
+   public MailMessage GetDraft() => message;
+}
+
+I hope this is what you wanted. If you need more assistance, please let me know.😊

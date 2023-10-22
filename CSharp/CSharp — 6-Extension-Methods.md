@@ -72,7 +72,7 @@ Method `TitleCasedName`-nya dipanggil seakan-akan dia adalah method dari `string
 
 Semua itu adalah ilusi semata. Kenapa? karena ini fitur dari language C# 3. Artinya sewaktu compiler C# nanti nge-compile code yang pake `Extension Methods` (code yang kedua) dia bakal di-compile jadi code yang pake `static class` (code yang pertama).  
 
-Jadi fitur ini ada di level language-nya (C#). Bukan di level runtime-nya (.Net).
+Jadi fitur ini ada di level language-nya (C#). Bukan di level runtime-nya (.NET).
 
 
 
