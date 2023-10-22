@@ -17,6 +17,8 @@ Kalo di software developing, T model ini menggambarkan pemahaman seorang senior 
 
 Istilah lainnya yang suka kedengeran itu T-shaped skills, T-shaped persons.
 
+Baca juga [Work — Technical Breadth](/Work/Work%20%E2%80%94%20Technical%20Breadth).
+
 
 
 ## Comparing with other model
