@@ -15,7 +15,7 @@ date: 2023-10-29
 
 ## Defining
 
-Ketika nge-define item-item dari improvement plan ini, pastiin kalo di-define secara quantifiable atau terukur atau measurable. Item dari improvement plan harus jelas dan ada result-nya. Beberapa cara buat nge-define mungkin bisa pake cara yang sama dengan nge-define OKR ([Work — OKR](/Work/Work%20%E2%80%94%20OKR.md)) atau SMART Goals ([Work — SMART Goals](/Work/Work%20%E2%80%94%20SMART%20Goals.md))
+Ketika nge-define item-item dari improvement plan ini, pastiin kalo di-define secara quantifiable atau terukur. Item dari improvement plan harus jelas dan ada result-nya. Beberapa cara buat nge-define mungkin bisa pake cara yang sama dengan nge-define OKR ([Work — OKR](/Work/Work%20%E2%80%94%20OKR.md)) atau SMART Goals ([Work — SMART Goals](/Work/Work%20%E2%80%94%20SMART%20Goals.md))
 
 
 
@@ -25,7 +25,7 @@ Sebagai Lead atau Manager, udah sepatutnya kita nge-handle atau nge-approach sit
 
 1. <ins>Review the performance improvement plan:</ins> Pastiin kalo penilaian kita ke member udah adil dan akurat berdasarkan review yang mendalam dari Performance Improvement Plan tadi.
 2. <ins>Schedule a meeting:</ins> Meeting ini bukan meeting biasa. Tapi 1:1. Buat ngobrolin situasi atau keadaan yang terjadi sekarang. Jelasin masalahnya. Kasi contoh riil kesalahan yang men-trigger improvement plan ini. Dan yang paling penting, dengerin penjelasan member. Setelah ngedengerin, ada 3 hal penting yang jadi output 1:1 ini. Empatik, pengertian (dalem artian, coba liat dari kacamata member), dan tegas ketika akan memutuskan.
-3. <ins>Be clear in your explanation:</ins> Jelasin semua poin-poin improvement plan-nya dan gimana penilaian kita terhadap mereka. Walau gimanapun, mereka tetep responsible sama hadil akhir buat meet semua requirement si improvement plan ini. Kasi tau dengan jelas semua kesalahan dan perbaikan dari behavior dan attitude mereka selama periode improvement plan ini. Selalu nilai dengan adil dan akurat. Cek lagi poin nomer 1.
+3. <ins>Be clear in your explanation:</ins> Jelasin semua poin-poin improvement plan-nya dan gimana penilaian kita terhadap mereka. Walau gimanapun, mereka tetep responsible sama hasil akhir buat meet semua requirement si improvement plan ini. Kasi tau dengan jelas semua kesalahan dan perbaikan dari behavior dan attitude mereka selama periode improvement plan ini. Selalu nilai dengan adil dan akurat. Cek lagi poin nomer 1.
 4. <ins>Offer suggestions for improvement:</ins> Kasi masukan-masukan dan juga feedback-feedback gimana seharusnya mereka ngejalanin improvement plan ini dan gimana ekspektasi company. Juga gimana perbaikan yang mereka lakuin udah memenuhi ekspektasi itu atau malah melampaui karena kerja keras mereka selama improvement plan.
 Dan kalo mereka masih gak memenuhi, kasi saran-saran positif. Di titik ini, omelan dan marah-marah udah bukan fokusnya. Jadi gak ada gunanya.
 Disini fokusnya ada improvement dan apakah mereka achieve atau enggak. Fokus kesitu aja buat ngejaga penilaian kita tetep adil dan gak melenceng kemana-mana.
