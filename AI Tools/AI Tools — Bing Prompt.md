@@ -150,6 +150,9 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 Hi Bing, please convert this writing to be an essay with sections and points and key take aways. Here it is:
 _<ins>\[insert the text here\]</ins>_
 
+Ini versi alternatifnya:
+Please convert this writing to paragraph with sections with at least 500 words each. Rephrase using simple words: _<ins>\[insert the text here\]</ins>_
+
 
 
 ## Biar Bing mau roleplay 😄

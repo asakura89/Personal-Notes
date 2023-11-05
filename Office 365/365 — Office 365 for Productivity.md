@@ -1,7 +1,8 @@
 ---
 tags:
-- 365
-- Office 365
+- Office-365
+- MS-365
+- MS-Office
 - Productivity
 date: 2023-10-22
 ---
