@@ -155,6 +155,26 @@ Please convert this writing to paragraph with sections with at least 500 words e
 
 
 
+## Convert problem escalation to be easier to read
+
+Please summarize that writings using this format:  
+\# \[Title\]  
+\[Think of appropriate title for those two writing parts\]
+
+\#\# Background/What happened  
+\[Summarize the background of what happened\]
+
+\#\# Problem  
+\[Extract all the problems found in the writings and put it as bold points with explanation paragraph\]
+
+\#\# Proposed Solution  
+\[Help to think of the solutions based on your knowledge and expertise on the subject for each points in the problem section\]
+
+\#\# Request  
+\[Based on the proposed solution section, create request to top management on what resources, supports, or things required to solve the problem which cannot be done on Technical Team Lead level\]
+
+
+
 ## Biar Bing mau roleplay 😄
 
 Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about _<ins>\[insert the question here\]</ins>_. Please help to explain.
