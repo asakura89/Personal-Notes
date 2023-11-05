@@ -1,66 +1,76 @@
 ---
 tags:
-- Thought
+  - Thought
 date: 2023-06-21
 ---
 
 # If I want to sell tickets
 
-{Content}
+## Determine Pricing
 
-<!--
-## User
-Let say I have 94 website maintenance tickets in JIRA. I want to sell it. People want to buy it. Plesse come up with pricing rate based on the Priority (3 levels), Complexity (Simple, Medium, Complex), and Severity (3 levels) of the issue logged in the ticket?
-## Bing
-Based on the current web page context, which is empty, I don't have enough information to come up with a pricing rate for your website maintenance tickets in JIRA. Could you provide more details about the Priority, Complexity, and Severity levels of the issues logged in the tickets?
-## User
-Priority are consist of Low, Medium, and High. Severity also the same. Complexity are consist of Simple, Medium, and Complex.
-## Bing
-Thank you for providing more information. One way to come up with a pricing rate for your website maintenance tickets in JIRA could be to assign a numerical value to each level of Priority, Complexity, and Severity. For example, you could assign a value of 1 to Low Priority and Low Severity, and a value of 1 to Simple Complexity. Similarly, you could assign a value of 2 to Medium Priority and Medium Severity, and a value of 2 to Medium Complexity. Finally, you could assign a value of 3 to High Priority and High Severity, and a value of 3 to Complex Complexity.
-Once you have assigned these values, you could calculate the price for each ticket by adding up the values for its Priority, Complexity, and Severity levels. For example, a ticket with High Priority, Complex Complexity, and High Severity would have a price of 3 + 3 + 3 = 9.
-Of course, this is just one way to come up with a pricing rate and you may want to adjust the values or come up with a different method that better suits your needs.
-## User
-Priority are consist of Low, Medium, and High. Severity also the same. Complexity are consist of Simple, Medium, and Complex.
-## Bing
-Thank you for providing more information. One way to come up with a pricing rate for your website maintenance tickets in JIRA could be to assign a numerical value to each level of Priority, Complexity, and Severity. For example, you could assign a value of 1 to Low Priority and Low Severity, and a value of 1 to Simple Complexity. Similarly, you could assign a value of 2 to Medium Priority and Medium Severity, and a value of 2 to Medium Complexity. Finally, you could assign a value of 3 to High Priority and High Severity, and a value of 3 to Complex Complexity.
-Once you have assigned these values, you could calculate the price for each ticket by adding up the values for its Priority, Complexity, and Severity levels. For example, a ticket with High Priority, Complex Complexity, and High Severity would have a price of 3 + 3 + 3 = 9.
-Of course, this is just one way to come up with a pricing rate and you may want to adjust the values or come up with a different method that better suits your needs.
-## User
-ok. let say my base price is $5. the Simple and Low are the cheapest. can you update the formula and generate dummy table with ticket examples by using new formula?
-## Bing
-Sure! If your base price is $5 and Simple Complexity and Low Priority and Severity are the cheapest, you could adjust the formula to calculate the price for each ticket as follows: 
-Price = Base Price + (Priority Value * X) + (Complexity Value * Y) + (Severity Value * Z)
-Where X, Y, and Z are multipliers that you can adjust to reflect the importance of each factor in your pricing. For example, if you consider Priority to be twice as important as Complexity and Severity in your pricing, you could set X = 2, Y = 1, and Z = 1.
-Using this formula, a ticket with High Priority, Complex Complexity, and High Severity would have a price of $5 + (3 * 2) + (3 * 1) + (3 * 1) = $17.
-Here's a dummy table with some ticket examples:
-Ticket  	Priority  	Complexity  	Severity  	Price  	
-1  	Low  	Simple  	Low  	$8  	
-2  	Medium  	Medium  	Medium  	$11  	
-3  	High  	Complex  	High  	$17  	
-4  	Low  	Complex  	High  	$13  	
-5  	High  	Simple  	Medium  	$13  	
+Katakanlah ada 94 Issue tickets atau mungkin bug tickets. Tapi kan gak semuanya bugs. Ada yang cuma permintaan client buat ngecek possibility apa App-nya bisa diginiin, digituin. Ada juga yang langsung minta buat ditambahin fitur. Macem-macem. Ya balik lagi ke tiket yang ada 94 tadi.
 
-Please note that this is just an example and you may want to adjust the values of X, Y, and Z to better suit your needs.
-## User
-NIIICE!! THANK YOOOOOUUU
-## Bing
-You're welcome! I'm glad I could help. Is there anything else you need assistance with?
-## User
-please explain your thinking steps, how you understand what I'm talking about, until you found the formula for it.
-## Bing
-Sure! Here are the steps I took to understand your request and come up with a formula for pricing your website maintenance tickets in JIRA:
- - First, I read your initial message where you mentioned that you have 94 website maintenance tickets in JIRA and that you want to sell them. You also mentioned that you want to come up with a pricing rate based on the Priority, Complexity, and Severity of the issues logged in the tickets.
+Dari 94 tiket ini ada 3 jenis priority. Paling prioritas atau bisa dibilang urgent itu Level 1 atau disingkat L1. Ada priority Level 2, penting. Terakhir ada Level 3, yang bisa dibilang gak penting-penting amat tapi perlu buat diselesein.
 
- - In my first response, I asked for more details about the Priority, Complexity, and Severity levels of the issues logged in the tickets.
+Selain priority, ada complexity. Complexity juga ada 3, simple to do, medium to do, complex to do.
 
- - You then provided more information about the levels of Priority, Complexity, and Severity. You mentioned that Priority and Severity consist of Low, Medium, and High levels, while Complexity consists of Simple, Medium, and Complex levels.
+Ada lagi severity. Low, medium, high. Semakin tinggi severity, semakin besar impact dari issue ini ke pengguna.
 
- - Based on this information, I suggested one way to come up with a pricing rate by assigning a numerical value to each level of Priority, Complexity, and Severity. I also provided an example of how this could be done.
+Dari semua informasi ini, kira-kira gimana nih kalo semisal tiket ini mau dijual? Apa yang bisa nentuin harga 1 tiket beda sama harga tiket yang lainnya? Berarti kita mesti nentuin faktor yang memberatkan suatu tiket jadi harganya bisa melambung.
 
- - In your next message, you mentioned that your base price is $5 and that Simple Complexity and Low Priority and Severity are the cheapest. You also asked me to update the formula and generate a dummy table with ticket examples using the new formula.
+Kalo misal kita breakdown, property dari masing-masing tiket terus kita kasi faktor pemberat mungkin bisa jadi kaya gini.
 
- - Based on this new information, I adjusted the formula to include a base price and multipliers for each factor (Priority, Complexity, and Severity). I also provided an example of how this formula could be used to calculate the price for each ticket and generated a dummy table with some ticket examples.
+1. Priority:
+    - L1/High: faktor = 3
+    - L2/Medium: faktor = 2
+    - L3/Low: faktor = 1
 
-Throughout this process, I used my understanding of mathematics and pricing strategies to come up with a formula that could help you calculate the price for each ticket based on its Priority, Complexity, and Severity levels. I also made sure to ask for more information when needed and to provide clear explanations and examples to help you understand my thought process.
+2. Complexity:
+    - Simple: faktor = 1
+    - Medium: faktor = 2
+    - Complex: faktor = 3
 
--->
+3. Severity:
+    - Low: faktor = 1
+    - Medium: faktor = 2
+    - High: faktor = 3
+
+Kalo digambarin, mungkin contohnya bisa gini:
+
+| Ticket ID | Priority | Complexity | Severity | Weightage |
+|-----------|----------|------------|----------|-----------|
+| Ticket-01 | Low      | Simple     | Low      | 3         |
+| Ticket-02 | Medium   | Medium     | Medium   | 6         |
+| Ticket-03 | High     | Complex    | High     | 9         |
+| Ticket-04 | Low      | Medium     | Medium   | 5         |
+| Ticket-05 | High     | Simple     | Medium   | 6         |
+| Ticket-06 | Medium   | Simple     | Low      | 4         |
+
+Nah kalo udah ada faktor pemberat gini berarti kita bisa masuk ke tahap selanjutnya yaitu nentuin harga dasar. Seandainya kita nentuin harga dasar Rp. 5 per poin faktor, berarti tinggal kali aja faktor sama harga dasar. Tapi gimana kalo semisal ada region lain dimana secara pendapatan rata-rata di atas pendapatan rata-rata dari region awal. Mungkin bisa dimasukin juga jadi faktor pengali.
+
+| Ticket ID | Priority | Complexity | Severity | Weightage | Region | Regional Weight | Price    |
+|-----------|----------|------------|----------|-----------|--------|-----------------|----------|
+| Ticket-01 | Low      | Simple     | Low      | 3         | A      | 1               | Rp. 15   |
+| Ticket-01 | Low      | Simple     | Low      | 3         | B      | 1.5             | Rp. 22.5 |
+| Ticket-02 | Medium   | Medium     | Medium   | 6         | A      | 1               | Rp. 30   |
+| Ticket-02 | Medium   | Medium     | Medium   | 6         | B      | 1.5             | Rp. 45   |
+| Ticket-03 | High     | Complex    | High     | 9         | A      | 1               | Rp. 45   |
+| Ticket-03 | High     | Complex    | High     | 9         | B      | 1.5             | Rp. 67.5 |
+| Ticket-04 | Low      | Medium     | Medium   | 5         | A      | 1               | Rp. 25   |
+| Ticket-04 | Low      | Medium     | Medium   | 5         | B      | 1.5             | Rp. 37.5 |
+| Ticket-05 | High     | Simple     | Medium   | 6         | A      | 1               | Rp. 30   |
+| Ticket-05 | High     | Simple     | Medium   | 6         | B      | 1.5             | Rp. 45   |
+| Ticket-06 | Medium   | Simple     | Low      | 4         | A      | 1               | Rp. 20   |
+| Ticket-06 | Medium   | Simple     | Low      | 4         | B      | 1.5             | Rp. 30   |
+
+
+
+## Thinking Steps
+
+1. <ins>Understanding the problem:</ins> Ngertiin dulu problem-nya apa. Problem ini soal 94 tiket maintenance di JIRA. Dan kita mau jual tiket ini. Bisa jadi ada developer outsource yang mau ngambil satu buat dikerjain gitu yakan. Siapa tau. Nah gimana caranya Karena masing-masing tiket punya atribut atau properti yang bisa di jadiin variabel. Yang mana variabel ini bisa di-quantify.
+2. <ins>Identifying the variables:</ins> Basis dari quantifiable-nya ini bisa diambil dari variabel-variabel yang sempet disebutin tadi.
+   1. Priority
+   2. Complexity
+   3. Severity
+   4. <Atribut/properti lain>
+3. <ins>Formula creation:</ins> Dari sini kita bisa assign nilai. Nilai ini yang bikin tiket-tiket tadi bisa-calculate. Karena tiket-tiket tadi bisa di-calculate, hasil kalkulasinya yang kita bisa bikin jadi harga nantinya. Karena berdasarkan hasil kalkulasi kita jadi lebih gampang buat nentuin hasil kalkulasi tertinggi dan hasil kalkulasi terendah. Yang mana ketika di-sorting, nilai ini jadi bisa diarahin jadi ke real prioritization. Atau prioritas sebenernya yang udah mempertimbangkan faktor-faktor kaya priority, severity dkk tadi. Pengarahan si nilai hasil tadi juga bisa diarahin ke pricing. Semakin tinggi nilai hasil, semakin mahal harganya.
