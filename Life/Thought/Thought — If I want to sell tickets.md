@@ -72,5 +72,5 @@ Nah kalo udah ada faktor pemberat gini berarti kita bisa masuk ke tahap selanjut
    1. Priority
    2. Complexity
    3. Severity
-   4. <Atribut/properti lain>
+   4. \<Atribut/properti lain\>
 3. <ins>Formula creation:</ins> Dari sini kita bisa assign nilai. Nilai ini yang bikin tiket-tiket tadi bisa-calculate. Karena tiket-tiket tadi bisa di-calculate, hasil kalkulasinya yang kita bisa bikin jadi harga nantinya. Karena berdasarkan hasil kalkulasi kita jadi lebih gampang buat nentuin hasil kalkulasi tertinggi dan hasil kalkulasi terendah. Yang mana ketika di-sorting, nilai ini jadi bisa diarahin jadi ke real prioritization. Atau prioritas sebenernya yang udah mempertimbangkan faktor-faktor kaya priority, severity dkk tadi. Pengarahan si nilai hasil tadi juga bisa diarahin ke pricing. Semakin tinggi nilai hasil, semakin mahal harganya.
