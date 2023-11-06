@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - English
 date: 2023-06-21
 ---

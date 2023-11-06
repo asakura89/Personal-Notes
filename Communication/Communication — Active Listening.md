@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - Listening
 date: 2022-12-19
 ---

@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - Writing
 - Format
 date: 2023-03-29

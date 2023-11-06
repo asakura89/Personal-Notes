@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 date: 2023-07-10
 ---
 

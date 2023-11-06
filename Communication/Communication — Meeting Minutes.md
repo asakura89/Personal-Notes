@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - Format
 date: 2022-04-23
 ---

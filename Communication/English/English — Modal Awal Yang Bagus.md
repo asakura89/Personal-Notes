@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - English
 date: 2022-04-28
 ---
@@ -17,4 +17,4 @@ As for a layman's phrase, you could say "a good starting point" or "a solid fina
 
 **References:**
 
-- ChatGPT
+- Chat GPT

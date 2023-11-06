@@ -1,6 +1,6 @@
 ---
 tags:
-- Communicate
+- Communication
 - English
 date: 2022-04-28
 ---
@@ -24,4 +24,4 @@ Menyetujui sesuai selain bilang "ok approved", biasanya semacam "gue ok" atau "g
 
 **References:**
 
-- ChatGPT
+- Chat GPT

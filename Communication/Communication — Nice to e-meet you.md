@@ -1,7 +1,7 @@
 ---
 tags:
 - Chat
-- Communicate
+- Communication
 date: 2023-07-19
 ---
 

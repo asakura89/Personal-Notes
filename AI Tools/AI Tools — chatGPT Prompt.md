@@ -1,7 +1,7 @@
 ---
 tags:
 - AI
-- chatGPT
+- Chat-GPT
 - Prompt
 date: 2023-04-28
 ---
