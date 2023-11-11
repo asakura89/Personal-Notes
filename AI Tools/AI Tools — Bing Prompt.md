@@ -153,6 +153,20 @@ _<ins>\[insert the text here\]</ins>_
 Ini versi alternatifnya:
 Please convert this writing to paragraph with sections with at least 500 words each. Rephrase using simple words: _<ins>\[insert the text here\]</ins>_
 
+Kalo panjang, di-split pake parts aja, jadi gini:
+I will give you writing in parts, you will say NEXT and I will give you another part and you will do the same until I said DONECOMPLETE. when I said DONECOMPLETE, it means all parts are complete, you are to help me to convert this writing to be paragraphs with sections with at least 500 words each section. Rephrase using simple words.
+PART 1:
+_<ins>\[insert the text here\]</ins>_
+
+Bing reply
+
+PART 2:
+_<ins>\[insert the text here\]</ins>_
+
+Bing reply lagi
+
+kalo udah selese bales pake DONECOMPLETE
+
 
 
 ## Convert problem escalation to be easier to read
