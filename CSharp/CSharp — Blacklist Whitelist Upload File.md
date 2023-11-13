@@ -11,9 +11,16 @@ date: 2023-11-09
 
 **Code:**
 
+
 ```c#
 Func<String, Boolean> IsOneOfBlackListed = filename => {
-    var blacklist = new[] { ".exe", ".com", ".dll", ".bin", ".cmd" };
+    var blacklist = new[] {
+        ".application", ".bat", ".bin", ".cmd", ".com", ".cpl", ".dll", ".docm", ".exe",
+        ".gadget", ".hta", ".inf", ".jar", ".js", ".jse", ".lnk", ".msh", ".msh1", ".msh1xml",
+        ".msh2", ".msh2xml", ".mshxml", ".msi", ".msp", ".pif", ".pptm", ".ps1", ".ps1xml",
+        ".ps2", ".ps2xml", ".psc1", ".psc2", ".reg", ".scr", ".vb", ".vbe", ".vbs", ".vbscript",
+        ".ws", ".wsc", ".wsf", ".wsh", ".xlsm" };
+
     return filename
         .Split('.')
         .Select(segment => blacklist.Contains("."+segment))
