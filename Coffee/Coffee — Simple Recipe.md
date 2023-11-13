@@ -50,3 +50,44 @@ Before you begin experimenting with your pour over brewing, make sure you have a
 Daniel Horbat is a barista from Ireland, and the 2019 World Cup Tasters Champion. <ins>He sticks to the same recipe every time, instead adjusting a single variable</ins> – grind size – when experimenting. “Try to keep everything locked down and play with just a certain variable,” he says.
 
 Daniel also brews small quantities when playing around with recipes: “For me, coffee tastes better when I brew it in a small ratio of around <ins>15g to 250ml</ins>.” He recommends that everyone does this, as it allows them to use a personalised recipe every day to get consistent results.
+
+
+
+## Dari Temen
+
+Ini resep simpel buat kopi susu.
+
+<ins>Espresso konsentrat: 50gr</ins>
+<ins>Susu Oatside: 150ml</ins>
+<ins>Gula Aren: 30ml</ins>
+
+_Note: Espresso konsentrat kaya gini_
+
+![](_media/aa063ee9-39e3-4a11-be15-55e27a0534f9_jpg_webp.png)
+
+![](_media/93933c5d-ed2f-4bb2-bbb4-380a1dd89300_jpg_webp.png)
+
+![](_media/66d8f1a0-dc97-4675-ab74-d95d8e3a896d_jpg_webp.png)
+
+![](_media/51641b4b-4d11-4453-a4ad-2ccc1ff316ec_jpg_webp.png)
+
+
+
+**References:**
+
+- [Jual COLD BREW CONCENTRATE SACHETS SINGLE ORIGIN - TANAMERA COFFEE - 1 Box - Kota Tangerang Selatan - Tanamera Coffee | Tokopedia](https://www.tokopedia.com/tanameracoffee/cold-brew-concentrate-sachets-single-origin-tanamera-coffee-1-box-5195d)
+- [Jual Espresso Cair / Konsentrat Kopi 500 ml - Full Arabica - Kota Bandung - Fugol Coffee | Tokopedia](https://www.tokopedia.com/fugolcoffee/espresso-cair-konsentrat-kopi-500-ml-full-arabica)
+
+
+
+
+
+
+## Experimenting
+
+Ini resep simpel buat kopi susu.
+
+<ins>Vietnam Drip: 150ml</ins>
+<ins>Susu Oatside/Banana Milk: 100ml</ins>
+
+Keknya bisa susu apa aja deh 🤔.
