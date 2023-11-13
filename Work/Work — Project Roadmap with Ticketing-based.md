@@ -1,7 +1,6 @@
 ---
 tags:
 - Work
-- Productivity
 - Planning
 date: 2023-11-06
 ---
