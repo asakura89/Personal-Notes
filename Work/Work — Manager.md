@@ -49,7 +49,7 @@ Baca ini [Work — Marketplace Value](/Work/Work%20—%20Marketplace%20Value.md)
 
 ### Can I motivate them when they go down so they rise up again?
 
--->
+
 
 
 ## What Makes a Great Software Engineer Manager
@@ -155,6 +155,11 @@ Blaming quiet quitting on lazy workers is wrong. This data shows it's usually ab
 - Regularly self-reflect and get 360 reviews to improve your balance of driving results and supporting employees.
 
 - Make sure overworked employees get rest and support so they don't burn out. Encourage work-life balance.
+
+
+-->
+
+[The meaning of manager (linkedin.com)](https://www.linkedin.com/learning/management-excellence-at-microsoft-model-coach-care/the-meaning-of-manager-14492917)
 
 ---
 

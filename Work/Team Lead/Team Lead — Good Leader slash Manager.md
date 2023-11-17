@@ -6,7 +6,7 @@ tags:
 date: 2023-11-05
 ---
 
-# Good Lead/Manager
+# Good Leader/Manager
 
 Jadi employee dan team member yang baik aja sulitnya minta ampun. apalagi jadi manager yang baik
 

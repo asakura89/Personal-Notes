@@ -63,13 +63,21 @@ Ini resep simpel buat kopi susu.
 
 _Note: Espresso konsentrat kaya gini_
 
-![](_media/aa063ee9-39e3-4a11-be15-55e27a0534f9_jpg_webp.png)
+<img src="_media/aa063ee9-39e3-4a11-be15-55e27a0534f9_jpg_webp.png" alt="img" style="vertical-align:middle;display:block;border-radius:25px;margin-left:0;margin-right:auto;zoom:45%" />
 
-![](_media/93933c5d-ed2f-4bb2-bbb4-380a1dd89300_jpg_webp.png)
+<br/>
 
-![](_media/66d8f1a0-dc97-4675-ab74-d95d8e3a896d_jpg_webp.png)
+<img src="_media/93933c5d-ed2f-4bb2-bbb4-380a1dd89300_jpg_webp.png" alt="img" style="vertical-align:middle;display:block;border-radius:25px;margin-left:0;margin-right:auto;zoom:45%" />
 
-![](_media/51641b4b-4d11-4453-a4ad-2ccc1ff316ec_jpg_webp.png)
+<br/>
+
+<img src="_media/66d8f1a0-dc97-4675-ab74-d95d8e3a896d_jpg_webp.png" alt="img" style="vertical-align:middle;display:block;border-radius:25px;margin-left:0;margin-right:auto;zoom:45%" />
+
+<br/>
+
+<img src="_media/51641b4b-4d11-4453-a4ad-2ccc1ff316ec_jpg_webp.png" alt="img" style="vertical-align:middle;display:block;border-radius:25px;margin-left:0;margin-right:auto;zoom:45%" />
+
+<br/>
 
 
 

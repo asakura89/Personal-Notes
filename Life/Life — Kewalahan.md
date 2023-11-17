@@ -21,6 +21,8 @@ Tapi poin penting overwhelmed ini kan sebenernya adalah otak tidak berfungsi den
 
 Itu kenapa kita harus bisa nerapin konsep having a second brain. Pindahin semua informasi yang bersifat butuh diingat ke alat lain untuk ngebantu mengingat yaitu catetan. Catetan bisa pake catetan analog atau catetan digital. Tergantung kebiasaan aja.
 
+Cara lain buat ngadepin overwhelmed, coba baca ini [Life — Feeling down, Finding your daily driver](/Life/Life%20—%20Feeling%20down.md#finding-your-daily-driver) sama [Life — Feeling down, Managing others's expectations of us](/Life/Life%20—%20Feeling%20down.md#managing-otherss-expectations-of-us)
+
 
 
 **References:**

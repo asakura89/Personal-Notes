@@ -19,7 +19,8 @@ Func<String, Boolean> IsOneOfBlackListed = filename => {
         ".gadget", ".hta", ".inf", ".jar", ".js", ".jse", ".lnk", ".msh", ".msh1", ".msh1xml",
         ".msh2", ".msh2xml", ".mshxml", ".msi", ".msp", ".pif", ".pptm", ".ps1", ".ps1xml",
         ".ps2", ".ps2xml", ".psc1", ".psc2", ".reg", ".scr", ".vb", ".vbe", ".vbs", ".vbscript",
-        ".ws", ".wsc", ".wsf", ".wsh", ".xlsm" };
+        ".ws", ".wsc", ".wsf", ".wsh", ".xlsm"
+    };
 
     return filename
         .Split('.')
@@ -32,7 +33,7 @@ var result = new StringBuilder()
     .AppendLine(IsOneOfBlackListed(@"D:\CODE_PART_1 - Copy.IBB.docx.com").ToString())
     .AppendLine(IsOneOfBlackListed(@"D:\CODE_PART_1.IBB").ToString())
     .ToString();
-    
+
 Console.Write(result);
 ```
 
@@ -52,7 +53,11 @@ False
 
 ```c#
 Func<String, Boolean> IsOneOfWhiteListed = filename => {
-    var whitelist = new[] { ".pdf", ".png", ".jpg", ".jpeg", ".doc", ".docx", ".ppt", ".pptx", ".txt", ".xls", ".xlsx", ".csv" };
+    var whitelist = new[] {
+        ".pdf", ".png", ".jpg", ".jpeg", ".doc", ".docx",
+        ".ppt", ".pptx", ".txt", ".xls", ".xlsx", ".csv"
+    };
+
     return whitelist.Contains(
         Path.GetExtension(filename));
 };
@@ -62,7 +67,7 @@ var result2 = new StringBuilder()
     .AppendLine(IsOneOfWhiteListed(@"D:\CODE_PART_1 - Copy.IBB.docx.com").ToString())
     .AppendLine(IsOneOfWhiteListed(@"D:\CODE_PART_1.IBB").ToString())
     .ToString();
-    
+
 Console.Write(result2);
 ```
 

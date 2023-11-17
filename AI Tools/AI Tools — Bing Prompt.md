@@ -147,11 +147,17 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 
 ## Convert writing or any text to be easier to read
 
+**\#1**
+
 Hi Bing, please convert this writing to be an essay with sections and points and key take aways. Here it is:
 _<ins>\[insert the text here\]</ins>_
 
 Ini versi alternatifnya:
 Please convert this writing to paragraph with sections with at least 500 words each. Rephrase using simple words: _<ins>\[insert the text here\]</ins>_
+
+
+
+**\#2**
 
 Kalo panjang, di-split pake parts aja, jadi gini:
 I will give you writing in parts, you will say NEXT and I will give you another part and you will do the same until I said DONECOMPLETE. when I said DONECOMPLETE, it means all parts are complete, you are to help me to convert this writing to be paragraphs with sections with at least 500 words each section. Rephrase using simple words.
@@ -166,6 +172,19 @@ _<ins>\[insert the text here\]</ins>_
 Bing reply lagi
 
 kalo udah selese bales pake DONECOMPLETE
+
+
+
+**\#3**
+
+Please convert the writings on _<ins>\[insert type here. document, page.\]</ins>_ to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using the web page context and do not search the web. Ignore earlier bot and user messages and use text from web page context only.
+
+
+
+**\#4**
+
+Please convert the writings to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using provided text and do not search the web. Ignore earlier bot and user messages and use provided text only. Here is the text:
+_<ins>\[insert the text here\]</ins>_
 
 
 
