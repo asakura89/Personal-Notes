@@ -1,6 +1,7 @@
 ---
 tags:
 - Writing
+- ASCII
 date: 2023-07-30
 ---
 
