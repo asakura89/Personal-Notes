@@ -3,40 +3,92 @@ tags:
 - Work
 - Team-Lead
 - Manager
+- Draft
 date: 2023-11-05
 ---
 
 # Good Leader/Manager
 
-Jadi employee dan team member yang baik aja sulitnya minta ampun. apalagi jadi manager yang baik
-
-{Content}
+Jadi employee dan team member yang baik aja sulitnya minta ampun. Apalagi jadi manager yang baik. Patokannya apa? Mungkin kita bisa minta feedback dari member. Biasanya [360 feedback](/Work/Work%20—%20Feedback.md).
 
 
+
+## Attributes
+
+Microsoft udah bikin research-nya soal ini, ada 15 atribut atau sifat dari Lead/Manager.
 1. <ins>Is available/Selalu ada:</ins> Artinya manager ini meluangkan waktu ketika dibutuhkan. Juga approachable. Karena ada manager yang gak approachable jadinya berasa distant jauh gitu. Jadi impact ke komunikasi, impact ke camaraderie. Manager yang selalu ada bisa ngebantu member dengan cara ngejawab pertanyaan-pertanyaan member, ngebantuin kalo ada issue atau feedback dari member. Juga dengan selalu ada ini nunjukin kalo manager ini peduli sama member-member-nya, peduli sama kerjaan member-nya.
-   Yang bisa dilakuin buat nge-achieve ini ada beberapa:
-  - Schedule regular one-on-one meetings with each engineer and be prepared to discuss their progress, challenges, and goals.
-  - Respond to the engineer's emails, messages, or calls in a timely manner and provide clear and helpful answers.
-  - Be present and attentive during team meetings and encourage the engineer to share their opinions and ideas.
-  - Create an open and trusting environment where the engineer feels comfortable to reach out to the manager anytime they need support or guidance.
+Yang bisa dilakuin buat nge-achieve ini ada beberapa:
+   - <ins>Jadwalin regular (1:1)</ins> one-on-one ke tiap member dan diskusiin progress, challenges, and goals.
+   - <ins>Respond, jawab pertanyaan-pertanyaan member.</ins> Email-nya, call-nya, chat-nya tepat waktu. Inget, tepat waktu. Jawab dengan jelas dan memang menjawab pertanyaannya. Jangan jadi "mirror manager". Apa ity mirror manager? Manager yang kalo ditanya selalu jawab I'll look into it apapun pertanyaannya.
+   - <ins>Hadir dan penuh perhatian selama team meetings.</ins> Dorong dan minta member buat share ide dan pendapat-pendapat mereka.
+   - <ins>Buat environment yang terbuka dan saling percaya</ins> di mana member nyaman buat reach out lead/manager kapan aja mereka butuh.
 
-| Is available | To signal themselves as approachable and devote time to the engineer when needed | "I ask the manager if he has 5 minutes and he always says yes, and then 20 minutes later he is still there." |
 
 <!--
+2. <ins>Is technical:</ins> This attribute means that the manager is knowledgeable about the system and technologies the engineer is working with, understands the complexity of problems and solutions, and has input for design dilemmas. A manager who is technical can provide valuable feedback, advice, and direction to the engineer and help them improve their skills and performance. Being technical also shows that the manager respects the engineer's expertise and can communicate with them effectively. Some actionables to achieve this attribute are:
+   - Stay updated on the latest trends, tools, and best practices in the software engineering domain and share them with the engineer.
+   - Review the engineer's code, design, and architecture and provide constructive and specific feedback.
+   - Participate in technical discussions and brainstorming sessions with the engineer and offer suggestions and insights.
+   - Help the engineer troubleshoot and debug any issues or errors they encounter and explain the root causes and solutions.
+3. <ins>Enables autonomy:</ins> This attribute means that the manager provides freedom on how engineers work, shows trust and support for their decisions, and helps them be independently responsible. A manager who enables autonomy can empower the engineer to take ownership of their tasks, be creative and innovative, and learn from their mistakes. Enabling autonomy also shows that the manager values the engineer's input and contribution and does not micromanage them. Some actionables to achieve this attribute are:
+   - Communicate and explain the desired outcome and expectations for the engineer's work, but let them decide on the best approach and methods to achieve them.
+   - Delegate tasks and responsibilities to the engineer and give them the authority and resources to complete them.
+   - Encourage the engineer to experiment with new ideas and solutions and provide a safe environment for unsuccessful attempts.
+   - Support the engineer's decisions and back them up when they face any challenges or conflicts.
+4. <ins>Supports experimentation:</ins> This attribute means that the manager encourages the engineer to try out new things and signals a safe environment for unsuccessful attempts. A manager who supports experimentation can help the engineer develop their skills, discover new possibilities, and find the best solution. Supporting experimentation also shows that the manager is open-minded and flexible and does not impose rigid rules or constraints on the engineer. Some actionables to achieve this attribute are:
+   - Provide opportunities and time for the engineer to explore new technologies, tools, or techniques and learn from them.
+   - Celebrate the engineer's successes and failures and share the lessons learned with the team and the organization.
+   - Provide constructive and positive feedback to the engineer and help them improve their experimentation process and outcomes.
+   - Protect the engineer from any negative consequences or criticism that may arise from their experimentation.
+5. <ins>Grows talent:</ins> This attribute means that the manager provides opportunities for challenging work, suggests training for the engineer to gain industry relevant skills, and provides actionable feedback to improve engineer performance. A manager who grows talent can help the engineer advance and grow in their career, achieve their potential, and increase their satisfaction and engagement. Growing talent also shows that the manager is invested in the engineer's progress and career and wants them to succeed. Some actionables to achieve this attribute are:
+   - Identify the engineer's strengths and weaknesses, interests and goals, and tailor their work assignments and development plans accordingly.
+   - Recommend and support the engineer's participation in training courses, workshops, conferences, or other learning activities that can enhance their skills and knowledge.
+   - Provide regular and specific feedback to the engineer on their work performance and help them set and monitor their goals and action steps.
+   - Recognize and reward the engineer's achievements and contributions and provide them with opportunities for promotion or recognition.
+6. <ins>Is a good communicator:</ins> This attribute means that the manager is able to effectively convey information and expectations, listen to feedback and concerns, and foster open communication within the team. Some actionables to achieve this attribute are:
+   - Clearly articulate goals, expectations, and responsibilities to the engineer.
+   - Encourage open and honest communication within the team.
+   - Regularly check in with the engineer to understand their challenges and concerns.
+7. <ins>Is empathetic:</ins> This attribute means that the manager understands and shares the feelings of the engineer. Some actionables to achieve this attribute are:
+   - Show genuine interest in the engineer's well-being and work-life balance.
+   - Be understanding and supportive when the engineer is facing challenges.
+   - Foster a team culture where everyone's feelings and perspectives are respected.
+8. <ins>Is people-oriented:</ins> This attribute means that the manager values the engineer as an individual and not just as an employee. Some actionables to achieve this attribute are:
+   - Regularly acknowledge and appreciate the engineer's contributions.
+   - Invest time in building a relationship with the engineer.
+   - Show interest in the engineer's career aspirations and personal development.
+9. <ins>Is self-aware:</ins> This attribute means that the manager has a clear understanding of their own strengths and weaknesses, emotions, and drives. Some actionables to achieve this attribute are:
+   - Regularly seek feedback from the engineer and other team members.
+   - Reflect on your own behavior and its impact on the team.
+   - Be open to personal growth and learning opportunities.
+10. <ins>Is supportive of career development:</ins> This attribute means that the manager actively supports and facilitates the engineer's career growth. Some actionables to achieve this attribute are:
+    - Discuss career goals with the engineer and provide guidance.
+    - Advocate for the engineer's growth opportunities within the organization.
+    - Provide constructive feedback to help the engineer improve their skills.
+11. <ins>Is trustworthy:</ins> This attribute means that the manager is reliable, honest, and acts with integrity. Some actionables to achieve this attribute are:
+    - Be consistent and fair in your actions and decisions.
+    - Keep your promises and follow through on commitments.
+    - Be transparent and honest in your communication.
+12. <ins>Knows the engineer's job:</ins> This attribute means that the manager has a deep understanding of what the engineer does on a daily basis. Some actionables to achieve this attribute are:
+    - Spend time learning about the engineer's role and responsibilities.
+    - Understand the challenges and complexities the engineer faces in their work.
+    - Stay updated on the latest trends and technologies relevant to the engineer's job.
+13. <ins>Values the engineer's work/life balance:</ins> This attribute means that the manager respects the engineer's need for a balance between work and personal life. Some actionables to achieve this attribute are:
+    - Respect the engineer's working hours and avoid contacting them outside of these hours.
+    - Encourage the engineer to take regular breaks and vacations.
+    - Foster a team culture that values work/life balance.
+14. <ins>Is competent:</ins> This attribute means that the manager has the necessary skills and knowledge to effectively manage the team. Some actionables to achieve this attribute are:
+    - Continuously learn and improve your management skills.
+    - Understand the technical aspects of the engineer's work.
+    - Stay updated on the latest management practices and trends.
+15. <ins>Is respectful:</ins> This attribute means that the manager treats the engineer with kindness and consideration. Some actionables to achieve this attribute are:
+    - Treat the engineer with kindness and consideration.
+    - Value and respect the engineer's ideas and opinions.
+    - Foster a team culture that values diversity and inclusion.
+-->
 
-- **Software engineering management**: The paper investigates what attributes and behaviors make great managers of software engineers, and how they differ from other knowledge work domains. 
-- **Mixed methods study**: The paper uses interviews and surveys with engineers and managers at Microsoft to identify and rank 15 attributes of great engineering managers, and provide examples and strategies for each attribute. 
-- **Conceptual framework**: The paper organizes the attributes into a framework based on two dimensions: the level of interaction (with individual or team) and the manager function (cultivate, motivate, or mediate)¹[1]. 
-- **Novelty and implications**: The paper contributes a novel and contextualized perspective on software engineering management, and discusses the implications for practice and research, as well as the similarities and differences with other knowledge work domains.
-- **Being technical**: The engineering manager needs to understand the system, tools, tasks, problems, and solutions of the engineers¹[1]. Being technical helps the manager facilitate growth, discussion, and arbitration for the team.
-- **Mediates communication**: The engineering manager clears the path to execution by shielding the team from interruptions and randomization²[2]. The manager also facilitates external communication with other teams and upper management³[3]⁴[4].
-- **Drives alignment**: The engineering manager aligns the individual contributions of the engineers with the organizational goals and vision⁵[5]. The manager shares strategic information and collaborates with the team on how to achieve the desired outcomes.
-- **Threats to validity**: The authors discuss the possible limitations and biases of their methods and findings, such as the lack of a universal definition of a great engineering manager, the self-selection of the participants, the construct validity of the survey questions, and the external validity of the results from one software organization.
-- **Conclusion**: The authors summarize their contributions and suggest future work, such as exploring the actual meanings of the phrase "great software engineering manager", measuring the impact of engineering management on developer productivity and software quality, comparing with other knowledge work groups, and creating management training and assessment processes.
+---
 
-
-
-Here is the table summarizing the attributes of a great software engineering manager:
 
 | Attribute | Description | Representative Quote |
 | --- | --- | --- |
@@ -47,60 +99,41 @@ Here is the table summarizing the attributes of a great software engineering man
 | Grows talent | To provide opportunities for challenging work, suggest training for the engineer to gain industry relevant skills, and provide actionable feedback to improve engineer performance | "Your manager is your direct connection to your career; if they’re not giving you good projects you might as well not work here." |
 | Promotes fairness | To show appreciation for the engineer’s contributions, hold themselves accountable for the team’s progress, and recognize value publicly while correcting the engineer privately | "Think back to what you liked when you were 5 years old and what made you happy, what was the gold star. Cheerleading, people like it and they want it." |
 | Builds a relationship with team members | To take an interest in the employees’ life outside work, and care about them as a person | "Treat them as a friend, I think that is what I learnt, you have to build the relationship first, the work part is much easier." |
+| Recognizes individuality | To understand each engineer’s strengths and weaknesses, value diverse perspectives in the team, and fine tune the definition of success to each individual’s talents and interests | "I felt that my manager was interested in what I was doing, you feel like someone’s in your corner and they are rooting for you." |
+| Clears path to execution | To shield the engineer from randomization, remove distractions and blockers, and help to resolve issues or conflicts | "I had a manager, she kept the path clear for me to do my work, to go sit down and code for 10 hours. That was perfect." |
+| Builds team culture | To demonstrate the rules, norms, and habits of the team, and create “what this team believes in” with input from the team | "We have a culture of openness in the team; very open conversations about what works and what we should improve." |
+| Guides the team | To coach engineers on quality aspects (e.g scalability), provide guidance through appropriate questions to engineers struggling with their tasks, and help the engineer build independent decisions making skills | "If the requirements change I don’t want to redesign. I want to make sure they have thought about scalability and extensibility." |
+| Maintains a positive working environment | To provide flexibility to balance work and personal life, energize the team through organizing events, celebrate team successes, and ensure good morale | "Take them out to lunch, or have birthday cakes etc. Everyone needs to come in with energy to do their best." |
+| Inspires the team | To be viewed as a leader, to respond in situations individually rather than have general approaches, and demonstrate passion about their work, their team, and the company | "In a battle no one follows a manager into war, everyone follows a leader, and it’s about whether you are telling people what to do or if you are coaching them." |
+| Facilitates external communication | To act as a buffer with other teams and managers, negotiate what the team can provide when, and mediate their own team’s requests to other teams | "I will make sure it bubbles up and I correspond with my peers to make sure that we get what we need, but you have to not micromanage." |
+| Drives alignment | To share information about higher level context, explain the business intent for the product/service, create a mission with input from the team, and set clear goals for the trajectory | "They have to know and believe in it, it’s about what our mission is and why is that important, why does it matter." |
 
+
+
+## Importance
+
+Berdasarkan paper Microsoft, ini adalah urutan importance berdasarkan questionnaire spesifik ke software development manager
+
+| Attribute                               | Importance |
+| --------------------------------------- | ---------- |
+| Grows talent                            | 8.93       |
+| Inspires the team                       | 8.43       |
+| Drives alignment                        | 8.33       |
+| Clears path to execution                | 8.30       |
+| Guides the team                         | 8.19       |
+| Builds team culture                     | 8.13       |
+| Is technical/is domain expert           | 7.89       |
+| Facilitates external communication      | 7.86       |
+| Builds a relationship with team members | 7.41       |
 
 ---
 
+Tapi kalo berdasarkan Concpetual Framework yang disusun penulis paper, yang paling penting disini keliatan, yaitu "Is available" sama "Is technical".
 
-Ini adalah ringkasan dokumen menggunakan kata-kata sederhana dalam bahasa Indonesia:
-
-- **Manajemen rekayasa perangkat lunak**: Makalah ini meneliti apa saja atribut dan perilaku yang membuat manajer perangkat lunak hebat, dan bagaimana mereka berbeda dari bidang pekerjaan pengetahuan lainnya.
-- **Studi metode campuran**: Makalah ini menggunakan wawancara dan survei dengan insinyur dan manajer di Microsoft untuk mengidentifikasi dan menentukan peringkat 15 atribut manajer rekayasa perangkat lunak yang hebat, dan memberikan contoh dan strategi untuk setiap atribut.
-- **Kerangka konseptual**: Makalah ini mengatur atribut ke dalam kerangka berdasarkan dua dimensi: tingkat interaksi (dengan individu atau tim) dan fungsi manajer (mengembangkan, memotivasi, atau menengahi).
-- **Kebaruan dan implikasi**: Makalah ini memberikan perspektif baru dan terkontekstualisasi tentang manajemen rekayasa perangkat lunak, dan membahas implikasi untuk praktik dan penelitian, serta persamaan dan perbedaan dengan bidang pekerjaan pengetahuan lainnya.
-Berikut ini adalah bagian kedua dari ringkasan dokumen:
-
-- **Menjadi teknis**: Manajer rekayasa perlu memahami sistem, alat, tugas, masalah, dan solusi insinyur. Menjadi teknis membantu manajer memfasilitasi pertumbuhan, diskusi, dan penyelesaian untuk tim.
-- **Menengahi komunikasi**: Manajer rekayasa membersihkan jalan menuju eksekusi dengan melindungi tim dari gangguan dan randomisasi. Manajer juga memfasilitasi komunikasi eksternal dengan tim lain dan manajemen atas.
-- **Mendorong keselarasan**: Manajer rekayasa menyelaraskan kontribusi individu insinyur dengan tujuan dan visi organisasi. Manajer berbagi informasi strategis dan berkolaborasi dengan tim tentang cara mencapai hasil yang diinginkan.
-
-Dan berikut ini adalah bagian ketiga dari ringkasan dokumen:
-
-- **Ancaman terhadap validitas**: Penulis membahas kemungkinan keterbatasan dan bias metode dan temuan mereka, seperti kurangnya definisi universal tentang manajer rekayasa perangkat lunak yang hebat, pemilihan sendiri peserta, validitas konstruksi pertanyaan survei, dan validitas eksternal hasil dari satu organisasi perangkat lunak¹[1].
-- **Kesimpulan**: Penulis merangkum kontribusi mereka dan menyarankan pekerjaan masa depan, seperti mengeksplorasi makna sebenarnya dari frasa "manajer rekayasa perangkat lunak yang hebat", mengukur dampak manajemen rekayasa pada produktivitas pengembang dan kualitas perangkat lunak, membandingkan dengan kelompok kerja pengetahuan lainnya, dan menciptakan proses pelatihan dan penilaian manajemen.
+![20231126_003131_image.png](_media/20231126_003131_image.png)
 
 
-Berikut ini adalah tabel yang merangkum atribut dari manajer rekayasa perangkat lunak yang hebat:
 
-| Atribut | Deskripsi | Kutipan Representatif |
-| --- | --- | --- |
-| Tersedia | Menunjukkan diri mereka sebagai pendekatan dan meluangkan waktu untuk insinyur ketika dibutuhkan | "Saya bertanya kepada manajer apakah dia memiliki 5 menit dan dia selalu mengatakan ya, dan kemudian 20 menit kemudian dia masih di sana." |
-| Teknis | Mengetahui tentang sistem dan teknologi yang dikerjakan insinyur, memahami kompleksitas masalah dan solusi, dan memiliki masukan untuk dilema desain | "Manajer mengikuti bahasa, platform, praktik pengembangan. Jika tidak, mereka tidak akan mendapatkan rasa hormat dari tim mereka." |
-| Memungkinkan otonomi | Memberikan kebebasan tentang bagaimana insinyur bekerja, menunjukkan kepercayaan dan dukungan untuk keputusan mereka, dan membantu insinyur bertanggung jawab secara independen | "Saya memberi tahu mereka di mana saya ingin berakhir; jalan ke sana, mereka adalah orang yang lebih tahu bagaimana cara mencapainya." |
-| Mendukung eksperimen | Mendorong insinyur untuk mencoba hal baru, dan memberi sinyal lingkungan yang aman untuk upaya yang tidak berhasil | "Menemukan bahwa sesuatu tidak akan berhasil bukanlah masalah, itu tentang mengevaluasi apa solusi terbaik." |
-| Membesarkan bakat | Menyediakan peluang untuk pekerjaan yang menantang, menyarankan pelatihan untuk insinyur untuk mendapatkan keterampilan yang relevan dengan industri, dan memberikan umpan balik yang dapat diambil tindakan untuk meningkatkan kinerja insinyur | "Manajer Anda adalah koneksi langsung ke karir Anda; jika mereka tidak memberi Anda proyek yang baik, Anda mungkin juga tidak bekerja di sini." |
-| Mempromosikan keadilan | Menunjukkan penghargaan atas kontribusi insinyur, bertanggung jawab atas kemajuan tim, dan mengakui nilai secara publik sementara memperbaiki insinyur secara pribadi | "Pikirkan kembali apa yang Anda sukai ketika Anda berusia 5 tahun dan apa yang membuat Anda bahagia, apa bintang emas itu. Cheerleading, orang-orang menyukainya dan mereka menginginkannya."¹[1] |
-| Membangun hubungan dengan anggota tim | Mengambil kepentingan dalam kehidupan karyawan di luar pekerjaan, dan peduli tentang mereka sebagai orang | "Perlakukan mereka sebagai teman, saya pikir itu yang saya pelajari, Anda harus membangun hubungan terlebih dahulu, bagian kerja jauh lebih mudah." |
+**References:**
 
-Berikut adalah tabel yang merangkum atribut dari manajer rekayasa perangkat lunak yang hebat:
-
-| Atribut | Deskripsi | Kutipan Representatif |
-| --- | --- | --- |
-| Mengakui individualitas | Memahami kekuatan dan kelemahan setiap insinyur, menghargai perspektif yang beragam dalam tim, dan menyesuaikan definisi kesuksesan untuk bakat dan minat setiap individu | "Saya merasa bahwa manajer saya tertarik dengan apa yang saya lakukan, Anda merasa seperti ada seseorang di sudut Anda dan mereka mendukung Anda." |
-| Membersihkan jalan menuju eksekusi | Melindungi insinyur dari randomisasi, menghilangkan gangguan dan penghalang, dan membantu menyelesaikan masalah atau konflik | "Saya memiliki manajer, dia menjaga jalan tetap bersih bagi saya untuk melakukan pekerjaan saya, untuk duduk dan menulis kode selama 10 jam. Itu sempurna." |
-| Membangun budaya tim | Menunjukkan aturan, norma, dan kebiasaan tim, dan menciptakan "apa yang diyakini tim ini" dengan masukan dari tim | "Kami memiliki budaya keterbukaan dalam tim; percakapan yang sangat terbuka tentang apa yang berhasil dan apa yang harus kami perbaiki." |
-| Membimbing tim | Melatih insinyur tentang aspek kualitas (mis. skalabilitas), memberikan bimbingan melalui pertanyaan yang tepat kepada insinyur yang sedang berjuang dengan tugas mereka, dan membantu insinyur membangun keterampilan pengambilan keputusan yang independen | "Jika persyaratan berubah, saya tidak ingin merancang ulang. Saya ingin memastikan mereka telah memikirkan tentang skalabilitas dan ekstensibilitas." |
-| Mempertahankan lingkungan kerja yang positif | Memberikan fleksibilitas untuk menyeimbangkan pekerjaan dan kehidupan pribadi, memberi energi pada tim melalui pengorganisasian acara, merayakan keberhasilan tim, dan memastikan suasana hati yang baik | "Ajak mereka makan siang, atau memiliki kue ulang tahun dll. Semua orang perlu datang dengan energi untuk melakukan yang terbaik." |
-| Menginspirasi tim | Dilihat sebagai pemimpin, merespons dalam situasi secara individu daripada memiliki pendekatan umum, dan menunjukkan antusiasme tentang pekerjaan mereka, tim mereka, dan perusahaan | "Dalam pertempuran tidak ada yang mengikuti manajer ke dalam perang, semua orang mengikuti pemimpin, dan itu tentang apakah Anda memberi tahu orang apa yang harus dilakukan atau jika Anda melatih mereka." |
-| Memfasilitasi komunikasi eksternal | Bertindak sebagai penyangga dengan tim lain dan manajer, menegosiasikan apa yang dapat disediakan tim kapan, dan menengahi permintaan tim mereka sendiri ke tim lain | "Saya akan memastikan itu muncul dan saya berkomunikasi dengan rekan-rekan saya untuk memastikan bahwa kami mendapatkan apa yang kami butuhkan, tetapi Anda harus tidak melakukan mikromanajemen." |
-
-
-Berikut adalah tabel yang merangkum atribut dari manajer rekayasa perangkat lunak yang hebat:
-
-| Atribut | Deskripsi | Kutipan Representatif |
-| --- | --- | --- |
-| Menginspirasi tim | Dilihat sebagai pemimpin, merespons dalam situasi secara individu daripada memiliki pendekatan umum, dan menunjukkan antusiasme tentang pekerjaan mereka, tim mereka, dan perusahaan | "Dalam pertempuran tidak ada yang mengikuti manajer ke dalam perang, semua orang mengikuti pemimpin, dan itu tentang apakah Anda memberi tahu orang apa yang harus dilakukan atau jika Anda melatih mereka." |
-| Memfasilitasi komunikasi eksternal | Bertindak sebagai penyangga dengan tim lain dan manajer, menegosiasikan apa yang dapat disediakan tim kapan, dan menengahi permintaan tim mereka sendiri ke tim lain | "Saya akan memastikan itu muncul dan saya berkomunikasi dengan rekan-rekan saya untuk memastikan bahwa kami mendapatkan apa yang kami butuhkan, tetapi Anda harus tidak melakukan mikromanajemen." |
-| Mendorong keselarasan | Berbagi informasi tentang konteks tingkat tinggi, menjelaskan niat bisnis untuk produk / layanan, menciptakan misi dengan masukan dari tim, dan menetapkan tujuan yang jelas untuk lintasan | "Mereka harus tahu dan percaya padanya, itu tentang apa misi kami dan mengapa itu penting, mengapa itu penting." |
-
--->
+-  [What Makes a Great Manager of Software Engineers?](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)

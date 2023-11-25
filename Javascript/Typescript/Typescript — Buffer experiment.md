@@ -1,6 +1,6 @@
 ---
 tags:
-- Typesscript
+- Typescript
 - NodeJs
 date: 2023-11-20
 ---
