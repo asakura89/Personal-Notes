@@ -12,6 +12,16 @@ Jadi employee dan team member yang baik aja sulitnya minta ampun. apalagi jadi m
 
 {Content}
 
+
+1. <ins>Is available/Selalu ada:</ins> Artinya manager ini meluangkan waktu ketika dibutuhkan. Juga approachable. Karena ada manager yang gak approachable jadinya berasa distant jauh gitu. Jadi impact ke komunikasi, impact ke camaraderie. Manager yang selalu ada bisa ngebantu member dengan cara ngejawab pertanyaan-pertanyaan member, ngebantuin kalo ada issue atau feedback dari member. Juga dengan selalu ada ini nunjukin kalo manager ini peduli sama member-member-nya, peduli sama kerjaan member-nya.
+   Yang bisa dilakuin buat nge-achieve ini ada beberapa:
+  - Schedule regular one-on-one meetings with each engineer and be prepared to discuss their progress, challenges, and goals.
+  - Respond to the engineer's emails, messages, or calls in a timely manner and provide clear and helpful answers.
+  - Be present and attentive during team meetings and encourage the engineer to share their opinions and ideas.
+  - Create an open and trusting environment where the engineer feels comfortable to reach out to the manager anytime they need support or guidance.
+
+| Is available | To signal themselves as approachable and devote time to the engineer when needed | "I ask the manager if he has 5 minutes and he always says yes, and then 20 minutes later he is still there." |
+
 <!--
 
 - **Software engineering management**: The paper investigates what attributes and behaviors make great managers of software engineers, and how they differ from other knowledge work domains. 

@@ -22,6 +22,110 @@ _Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-tran
 - [10min summary of #160 TKP Insights: Leadership from The Knowledge Project with Shane Parrish (snipd.com)](https://share.snipd.com/episode/6c52b2f9-4cbf-41c6-8fb0-ceda0dc80507/summary)
 
 
+
+## 15 Attributes of Great Software Engineer Lead/Manager
+
+- **Is available**: This attribute means that the manager is approachable and devotes time to the engineer when needed. A manager who is available can help the engineer with any questions, issues, or feedback they may have. Being available also shows that the manager cares about the engineer and their work. Some actionables to achieve this attribute are:
+
+  - Schedule regular one-on-one meetings with each engineer and be prepared to discuss their progress, challenges, and goals.
+  - Respond to the engineer's emails, messages, or calls in a timely manner and provide clear and helpful answers.
+  - Be present and attentive during team meetings and encourage the engineer to share their opinions and ideas.
+  - Create an open and trusting environment where the engineer feels comfortable to reach out to the manager anytime they need support or guidance.
+
+- **Is technical**: This attribute means that the manager is knowledgeable about the system and technologies the engineer is working with, understands the complexity of problems and solutions, and has input for design dilemmas. A manager who is technical can provide valuable feedback, advice, and direction to the engineer and help them improve their skills and performance. Being technical also shows that the manager respects the engineer's expertise and can communicate with them effectively. Some actionables to achieve this attribute are:
+
+  - Stay updated on the latest trends, tools, and best practices in the software engineering domain and share them with the engineer.
+  - Review the engineer's code, design, and architecture and provide constructive and specific feedback.
+  - Participate in technical discussions and brainstorming sessions with the engineer and offer suggestions and insights.
+  - Help the engineer troubleshoot and debug any issues or errors they encounter and explain the root causes and solutions.
+
+- **Enables autonomy**: This attribute means that the manager provides freedom on how engineers work, shows trust and support for their decisions, and helps them be independently responsible. A manager who enables autonomy can empower the engineer to take ownership of their tasks, be creative and innovative, and learn from their mistakes. Enabling autonomy also shows that the manager values the engineer's input and contribution and does not micromanage them. Some actionables to achieve this attribute are:
+
+  - Communicate and explain the desired outcome and expectations for the engineer's work, but let them decide on the best approach and methods to achieve them.
+  - Delegate tasks and responsibilities to the engineer and give them the authority and resources to complete them.
+  - Encourage the engineer to experiment with new ideas and solutions and provide a safe environment for unsuccessful attempts.
+  - Support the engineer's decisions and back them up when they face any challenges or conflicts.
+
+- **Supports experimentation**: This attribute means that the manager encourages the engineer to try out new things and signals a safe environment for unsuccessful attempts. A manager who supports experimentation can help the engineer develop their skills, discover new possibilities, and find the best solution. Supporting experimentation also shows that the manager is open-minded and flexible and does not impose rigid rules or constraints on the engineer. Some actionables to achieve this attribute are:
+
+  - Provide opportunities and time for the engineer to explore new technologies, tools, or techniques and learn from them.
+  - Celebrate the engineer's successes and failures and share the lessons learned with the team and the organization.
+  - Provide constructive and positive feedback to the engineer and help them improve their experimentation process and outcomes.
+  - Protect the engineer from any negative consequences or criticism that may arise from their experimentation.
+
+- **Grows talent**: This attribute means that the manager provides opportunities for challenging work, suggests training for the engineer to gain industry relevant skills, and provides actionable feedback to improve engineer performance. A manager who grows talent can help the engineer advance and grow in their career, achieve their potential, and increase their satisfaction and engagement. Growing talent also shows that the manager is invested in the engineer's progress and career and wants them to succeed. Some actionables to achieve this attribute are:
+
+  - Identify the engineer's strengths and weaknesses, interests and goals, and tailor their work assignments and development plans accordingly.
+  - Recommend and support the engineer's participation in training courses, workshops, conferences, or other learning activities that can enhance their skills and knowledge.
+  - Provide regular and specific feedback to the engineer on their work performance and help them set and monitor their goals and action steps.
+  - Recognize and reward the engineer's achievements and contributions and provide them with opportunities for promotion or recognition.
+
+- **Is a good communicator**: This attribute means that the manager is able to effectively convey information and expectations, listen to feedback and concerns, and foster open communication within the team. Some actionables to achieve this attribute are:
+
+  - Clearly articulate goals, expectations, and responsibilities to the engineer.
+  - Encourage open and honest communication within the team.
+  - Regularly check in with the engineer to understand their challenges and concerns.
+
+- **Is empathetic**: This attribute means that the manager understands and shares the feelings of the engineer. Some actionables to achieve this attribute are:
+
+  - Show genuine interest in the engineer's well-being and work-life balance.
+  - Be understanding and supportive when the engineer is facing challenges.
+  - Foster a team culture where everyone's feelings and perspectives are respected.
+
+- **Is people-oriented**: This attribute means that the manager values the engineer as an individual and not just as an employee. Some actionables to achieve this attribute are:
+
+  - Regularly acknowledge and appreciate the engineer's contributions.
+  - Invest time in building a relationship with the engineer.
+  - Show interest in the engineer's career aspirations and personal development.
+
+- **Is self-aware**: This attribute means that the manager has a clear understanding of their own strengths and weaknesses, emotions, and drives. Some actionables to achieve this attribute are:
+
+  - Regularly seek feedback from the engineer and other team members.
+  - Reflect on your own behavior and its impact on the team.
+  - Be open to personal growth and learning opportunities.
+
+- **Is supportive of career development**: This attribute means that the manager actively supports and facilitates the engineer's career growth. Some actionables to achieve this attribute are:
+
+  - Discuss career goals with the engineer and provide guidance.
+  - Advocate for the engineer's growth opportunities within the organization.
+  - Provide constructive feedback to help the engineer improve their skills.
+
+- **Is trustworthy**: This attribute means that the manager is reliable, honest, and acts with integrity. Some actionables to achieve this attribute are:
+
+  - Be consistent and fair in your actions and decisions.
+  - Keep your promises and follow through on commitments.
+  - Be transparent and honest in your communication.
+
+- **Knows the engineer's job**: This attribute means that the manager has a deep understanding of what the engineer does on a daily basis. Some actionables to achieve this attribute are:
+
+  - Spend time learning about the engineer's role and responsibilities.
+  - Understand the challenges and complexities the engineer faces in their work.
+  - Stay updated on the latest trends and technologies relevant to the engineer's job.
+
+- **Values the engineer's work/life balance**: This attribute means that the manager respects the engineer's need for a balance between work and personal life. Some actionables to achieve this attribute are:
+
+  - Respect the engineer's working hours and avoid contacting them outside of these hours.
+  - Encourage the engineer to take regular breaks and vacations.
+  - Foster a team culture that values work/life balance.
+
+- **Is competent**: This attribute means that the manager has the necessary skills and knowledge to effectively manage the team. Some actionables to achieve this attribute are:
+
+  - Continuously learn and improve your management skills.
+  - Understand the technical aspects of the engineer's work.
+  - Stay updated on the latest management practices and trends.
+
+- **Is respectful**: This attribute means that the manager treats the engineer with kindness and consideration. Some actionables to achieve this attribute are:
+
+  - Treat the engineer with kindness and consideration.
+  - Value and respect the engineer's ideas and opinions.
+  - Foster a team culture that values diversity and inclusion.
+
+
+
+**References:**
+
+-  [What Makes a Great Manager of Software Engineers?](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)
+
 <!--
 Please create two-column spreadsheet with question and corresponding answer for these topics with 5 questions each
 - Set clear goals and expectations
