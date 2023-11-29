@@ -1,6 +1,7 @@
 ---
 tags:
 - Work
+- Draft
 date: 2023-06-10
 ---
 
@@ -17,3 +18,9 @@ date: 2023-06-10
 
 ## Plan action items on those atomic level
 
+
+## Specific to Software Development
+
+### Setup detailed application logging
+
+### Create Finding docs/incident report/Root Cause Analysis docs
