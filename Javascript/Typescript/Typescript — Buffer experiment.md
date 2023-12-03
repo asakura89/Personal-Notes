@@ -32,7 +32,7 @@ let exp = new BufferExperiment();
 exp.log();
 ```
 
-Outputnya
+Output-nya
 
 ```markdown
 <Buffer 79 61 68 68 61 72 6f>

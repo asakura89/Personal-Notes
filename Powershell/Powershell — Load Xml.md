@@ -14,7 +14,7 @@ date: 2020-10-25
 Clear-Host
 
 #:< global config >:#
-$configPath = "D:\Personal-Notes\Powershell\Load-Xml.config.xml"
+$configPath = "D:\\Personal-Notes\\Powershell\\Load-Xml.config.xml"
 
 function LoadXml([System.String]$xmlContent) {
     $content = $xmlContent.Trim()
@@ -142,7 +142,7 @@ Contoh hasil run
 Clear-Host
 
 #:< global config >:#
-$configPath = "D:\Personal-Notes\Powershell\Load-Xml.config.xml"
+$configPath = "D:\\Personal-Notes\\Powershell\\Load-Xml.config.xml"
 
 function MapConfigToSmtpSetting($configPath = $Script:configPath) {
     [xml]$config = Get-Content $configPath

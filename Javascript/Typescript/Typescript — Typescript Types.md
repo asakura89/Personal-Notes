@@ -77,7 +77,7 @@ console.table({
 });
 ```
 
-Outputnya
+Output-nya
 
 ```markdown
 ┌─────────┬─────────────────┐
@@ -167,7 +167,7 @@ let obj = {
 };
 ```
 
-Outputnya
+Output-nya
 
 ```markdown
 ┌─────────┬───────────────────────────────┐
@@ -211,7 +211,7 @@ let expected2BePointlikeButGotNamedInstead: Pointlike = new Named();
 console.log(expected2BePointlikeButGotNamedInstead.log());
 ```
 
-Outputnya
+Output-nya
 
 ```markdown
 Hello, Origin
@@ -225,7 +225,7 @@ let expected2BeNamedButGotPointlikeInstead: Named = new Pointlike();
 console.log(expected2BeNamedButGotPointlikeInstead.log());
 ```
 
-Outputnya
+Output-nya
 
 ```markdown
 x = 0, y = 0

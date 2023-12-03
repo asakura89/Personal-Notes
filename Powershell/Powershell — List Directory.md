@@ -27,8 +27,8 @@ Contoh hasil run
 ```powershell
 .obsidian
 All Things .NET
-Code Snippet   
-Communication  
+Code Snippet
+Communication
 Excel
 Git
 Java

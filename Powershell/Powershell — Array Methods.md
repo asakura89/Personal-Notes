@@ -5,18 +5,16 @@ tags:
 date: 2019-01-11
 ---
 
-# Daftar isi
-
-- [Array Methods](#array-methods)
-  - [0. Persiapan](#0-persiapan)
-  - [1. Map](#1-map)
-  - [2. Filter](#2-filter)
-  - [3. Sort](#3-sort)
-  - [4. Aggregate / Reduce](#4-aggregate--reduce)
-
-
-
 # Array Methods
+
+- [0. Persiapan](#0-persiapan)
+- [1. Map](#1-map)
+- [2. Filter](#2-filter)
+- [3. Sort](#3-sort)
+- [4. Aggregate / Reduce](#4-aggregate--reduce)
+- [5. Concatenate](#5-concatenate)
+
+
 
 Belajar bahasa pemrograman baru apapun itu, paling gampang mulainya yaitu dari manipulasi `Array`. Ini adalah unpopular opinion dari saia 🤣🤣🤣.
 
@@ -28,14 +26,14 @@ Pertama-tama, nyiapin data _dummy_ nih. Ngambil dari _[Online generator](http://
 Udah gitu masukin ke `$data`. Terus tampilin ke layar dengan manggil `$data` lagi
 
 ```powershell
- $data = @(
-     "Clifford", "Lewis", "Ollie", "Leah", "Kathryn", "Carolyn",
-     "Genevieve", "Adam", "Milton", "Eleanor", "Maurice", "Ethel",
-     "Charles", "Danny", "Stephen", "Gabriel", "Susan", "Donald",
-     "Isabella", "Patrick"
- )
+$data = @(
+    "Clifford", "Lewis", "Ollie", "Leah", "Kathryn", "Carolyn",
+    "Genevieve", "Adam", "Milton", "Eleanor", "Maurice", "Ethel",
+    "Charles", "Danny", "Stephen", "Gabriel", "Susan", "Donald",
+    "Isabella", "Patrick"
+)
 
- $data
+$data
 ```
 
 Btw, karena bakalan di-_run_ di _Server_, jadi better di-_save_ ke `Script.ps1`. Terus _run_!!
@@ -76,11 +74,11 @@ Kita mulai dari yang pertama dulu yaa.
 Sedangkan kalo `.Net` pake `.Select()`
 ​
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Select-Object { ("{0}. {1}" -f $counter++,$_) }
+$counter = 1;
+$mapped = $data |
+    Select-Object { ("{0}. {1}" -f $counter++,$_) }
 
- $mapped
+$mapped
 ```
 
 Hasilnya kira-kira kaya di bawah ini nih.
@@ -121,11 +119,11 @@ Nah, karena kita pake _file_ buat ngejalanin `script`-nya jadi kit pake _scope_ 
 Jadi gini nih.
 
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
+$counter = 1;
+$mapped = $data |
+    Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
 
- $mapped
+$mapped
 ```
 
 Hasilnya jadinya bener kaya di bawah ini.
@@ -163,12 +161,23 @@ Dan lagi-lagi `Filter` di `Powershell` mirip kaya yang ada di `.Net`
 Kalo di `.Net` itu `.Where()`. Kalo di `Powershell`-nya itu `Where-Object`
 
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Where-Object { $_.ToLower().Contains("an") } |
-     Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
+$counter = 1;
+$filtered = $data |
+    Where-Object { $_.ToLower().Contains("an") }
 
- $mapped
+$mapped = $filtered |
+    Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
+
+$mapped
+```
+
+Atau bisa sekalian gini
+
+```powershell
+$counter = 1;
+$data |
+    Where-Object { $_.ToLower().Contains("an") } |
+    Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
 ```
 
 _Output_-nya gini.
@@ -192,15 +201,35 @@ Nah, kali ini `Sort` di `Powershell` beda sama yang ada di `.Net`
 `.Net` punya = `.OrderBy()` atau `.OrderByDescending()`. Sedangkan `Powershell` punya = `Sort-Object` atau `Sort-Object -Descending`. Contohnya di bawah ini.
 
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Where-Object { $_.ToLower().StartsWith("le") -Or \`
-        $_.ToLower().EndsWith("el") -Or \`
-        ($_[0].ToString().ToLower() -Eq "d") } |
-     Sort-Object -Descending { $_ } |
-     Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
+$counter = 1;
+$filtered = $data |
+    Where-Object { `
+        $_.ToLower().StartsWith("le") -Or `
+        $_.ToLower().EndsWith("el") -Or `
+        ($_[0].ToString().ToLower() -Eq "d") `
+    }
 
- $mapped
+$sorted = $filtered |
+    Sort-Object -Descending { $_ }
+
+$mapped = $sorted |
+    Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
+
+$mapped
+```
+
+Atau bisa sekalian
+
+```powershell
+$counter = 1;
+$data |
+    Where-Object { `
+        $_.ToLower().StartsWith("le") -Or `
+        $_.ToLower().EndsWith("el") -Or `
+        ($_[0].ToString().ToLower() -Eq "d") `
+    } |
+    Sort-Object -Descending { $_ } |
+    Select-Object { ("{0}. {1}" -f $script:counter++,$_) }
 ```
 
 Yang mana meng-_output_-kan inih.
@@ -223,15 +252,41 @@ Apa hubungannya sama _header_ yang _suneh_ (baca: suka aneh) gitu? Itu karena `S
 Lalu gimana biar gak _anonymous_? Kita bisa pake yang namanya _computed property_ atau _calculated property_. Contohnya gini.
 
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Where-Object { $_.ToLower().StartsWith("le") -Or \`
-        $_.ToLower().EndsWith("el") -Or \`
-        ($_[0].ToString().ToLower() -Eq "d") } |
-     Sort-Object -Descending { $_ } |
-     Select-Object @{ Name = "Mapped";Expression = {"{0}. {1}" -f $script:counter++,$_} }
+$counter = 1;
+$filtered = $data |
+    Where-Object {
+        $_.ToLower().StartsWith("le") -Or `
+        $_.ToLower().EndsWith("el") -Or `
+        ($_[0].ToString().ToLower() -Eq "d") `
+    }
 
- $mapped
+$sorted = $filtered |
+    Sort-Object -Descending { $_ }
+
+$mapped = $sorted |
+    Select-Object @{
+        Name = "Mapped";
+        Expression = {"{0}. {1}" -f $script:counter++,$_}
+    }
+
+$mapped
+```
+
+Atau
+
+```powershell
+$counter = 1;
+$data |
+    Where-Object {
+        $_.ToLower().StartsWith("le") -Or `
+        $_.ToLower().EndsWith("el") -Or `
+        ($_[0].ToString().ToLower() -Eq "d") `
+    } |
+    Sort-Object -Descending { $_ } |
+    Select-Object @{ `
+        Name = "Mapped"; `
+        Expression = {"{0}. {1}" -f $script:counter++,$_} `
+    }
 ```
 
 Nanti hasilnya jadi gini.
@@ -247,6 +302,35 @@ Nanti hasilnya jadi gini.
  6. Danny
 ```
 
+Atau bisa gini
+
+```powershell
+$counter = 1;
+$filtered = $data |
+    Where-Object {
+        $_.ToLower().StartsWith("le") -Or `
+        $_.ToLower().EndsWith("el") -Or `
+        ($_[0].ToString().ToLower() -Eq "d")
+    }
+
+$sorted = $filtered |
+    Sort-Object -Descending { $_ }
+
+$mappedv1 = $sorted |
+    Select-Object @{ `
+        Name = "Mapped"; `
+        Expression = {"{0}. {1}" -f $script:counter++,$_} `
+    }
+
+$mappedv2 = $mappedv1 |
+    Select-Object @{ `
+        N="Mapped v2"; `
+        E={ $_.Mapped } `
+    }
+
+$mappedv2
+```
+
 
 
 ## 4. Aggregate / Reduce
@@ -259,29 +343,29 @@ Nah, `ForEach-Object` punya `Begin`, `Process`, dan `End`. 3 fitur ini yang bisa
 Karena ini fungsi terakhir, jadi kita _combine_ aja semua fungsi-fungsi di atas. _Here goes!_
 
 ```powershell
- $counter = 1;
- $mapped = $data |
-     Sort-Object -Descending { $_ } |
-     Select-Object \`
-         @{ Name = "Index";Expression = {($script:counter++)} }, \`
-         @{ Name = "Name";Expression = {$_} }
+$counter = 1;
+$mapped = $data |
+    Sort-Object -Descending { $_ } |
+    Select-Object `
+        @{ N="Index"; E={($script:counter++)} }, `
+        @{ N="Name"; E={$_} }
 
- $even = $mapped |
-     Where-Object { $_.Index % 2 -Eq 0 } |
-     ForEach-Object \`
-         -Begin { $start = "" } \`
-         -Process { $start = $start + $_.Index + ": " + $_.Name + ", " } \`
-         -End { $start.Substring(0, $start.Length -2) }
+$even = $mapped |
+    Where-Object { $_.Index % 2 -Eq 0 } |
+    ForEach-Object `
+        -Begin { $start = "" } `
+        -Process { $start = $start + $_.Index + ": " + $_.Name + ", " } `
+        -End { $start.Substring(0, $start.Length -2) }
 
- $odd = $mapped |
-     Where-Object { $_.Index % 2 -Ne 0 } |
-     ForEach-Object \`
-         -Begin { $start = "" } \`
-         -Process { $start = $start + $_.Index + ": " + $_.Name + ", " } \`
-         -End { $start.Substring(0, $start.Length -2) }
+$odd = $mapped |
+    Where-Object { $_.Index % 2 -Ne 0 } |
+    ForEach-Object `
+        -Begin { $start = "" } `
+        -Process { $start = $start + $_.Index + ": " + $_.Name + ", " } `
+        -End { $start.Substring(0, $start.Length -2) }
 
- $even
- $odd
+$even
+$odd
 ```
 
 Menghasilkan iniih.
@@ -289,6 +373,37 @@ Menghasilkan iniih.
 ```powershell
  2: Stephen, 4: Ollie, 6: Maurice, 8: Leah, 10: Isabella, 12: Gabriel, 14: Eleanor, 16: Danny, 18: Charles, 20: Adam
  1: Susan, 3: Patrick, 5: Milton, 7: Lewis, 9: Kathryn, 11: Genevieve, 13: Ethel, 15: Donald, 17: Clifford, 19: Carolyn
+```
+
+
+
+## 5. Concatenate
+
+```powershell
+Clear-Host
+
+[System.Collections.Generic.List[System.Int32]]$range = 1..10
+[System.Collections.Generic.List[System.Int32]]$range2 = 11..20
+
+$range3 = $range + $range2
+$range3
+
+[System.Collections.Generic.List[System.Int32]]$range4 = 45..65 + 78..98
+
+$range4
+```
+
+Jadinya gini
+
+```powershell
+1
+2
+3
+4
+. . . omitted . . .
+96
+97
+98
 ```
 
 Wuaaahhhh, pada nyangka gak kalo ternyata `Powershell` se-_mancay_ iniihh? Kadang hal-hal kecil semacam ini yang ngasi kita motivasi buat _explore_ lebih jauh lagi
