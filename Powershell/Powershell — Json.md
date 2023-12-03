@@ -2,11 +2,12 @@
 tags:
 - Powershell
 - Json
-- Read-Json
 date: 2020-04-25
 ---
 
-# Read Json
+# Json
+
+## Read Json
 
 ```powershell
 Clear-Host
@@ -61,4 +62,17 @@ Json buat contoh code di atas
     }]
   }]
 }
+```
+
+
+
+## Dump Json
+
+```powershell
+Clear-Host
+
+$dumppath = "D:\IIS-SiteName.json"
+Get-IISSite |
+    ConvertTo-Json |
+    Out-File -Encoding "UTF8" -FilePath $dumppath
 ```
