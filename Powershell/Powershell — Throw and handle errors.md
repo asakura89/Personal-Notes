@@ -125,12 +125,23 @@ Catch {
         $(GetExceptionMessage $_.Exception) `
     )
 }
+
+Try {
+    Log "Get-ExceptionMessage test start."
+    Invoke-WebRequest -Method "GET" "https://fake.webaddress.com/"
+}
+Catch {
+    Log "$(GetExceptionMessage $_.Exception)"
+}
+Finally {
+    Log "Get-ExceptionMessage test finish."
+}
 ```
 
 Contoh hasil run
 
 ```powershell
-[2023.12.03.12:43:36] Exception thrown: 
+[2023.12.03.13:23:32] Exception thrown: 
 
 Exception: System.InvalidOperationException
 Message: yaharo
@@ -138,7 +149,7 @@ Source:
 
 
 
-[2023.12.03.12:43:36] Error caught: 
+[2023.12.03.13:23:32] Error caught: 
 
 Exception: System.InvalidOperationException
 Message: yaharo
@@ -146,4 +157,14 @@ Source:
 
 
 
+[2023.12.03.13:23:32] Get-ExceptionMessage test start.
+[2023.12.03.13:23:33] 
+Exception: System.Net.WebException
+Message: The request was aborted: Could not create SSL/TLS secure channel.
+Source: Microsoft.PowerShell.Commands.Utility
+   at Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetResponse(WebRequest request)
+   at Microsoft.PowerShell.Commands.WebRequestPSCmdlet.ProcessRecord()
+
+
+[2023.12.03.13:23:33] Get-ExceptionMessage test finish.
 ```
