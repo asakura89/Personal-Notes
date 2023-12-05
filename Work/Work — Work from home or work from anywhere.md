@@ -1,6 +1,7 @@
 ---
 tags:
 - Work
+- Ways-of-Work
 - Draft
 date: 2023-03-26
 ---

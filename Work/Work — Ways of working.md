@@ -13,8 +13,6 @@ date: 2022-12-15
   - [Menghadapi diri sendiri atau ketika bekerja sendiri](#menghadapi-diri-sendiri-atau-ketika-bekerja-sendiri)
   - [Menghadapi orang lain atau ketika bekerja dengan orang lain](#menghadapi-orang-lain-atau-ketika-bekerja-dengan-orang-lain)
 - [Menghadapi tugas-tugas, perintah-perintah, dan semua hal yang ada di job desks](#menghadapi-tugas-tugas-perintah-perintah-dan-semua-hal-yang-ada-di-job-desks)
-  - [Ownership](#ownership)
-  - [Proactive](#proactive)
 - [Apa yang sebaiknya dilakukan ketika mendapat perintah/tugas?](#apa-yang-sebaiknya-dilakukan-ketika-mendapat-perintahtugas)
 - [Other ethics](#other-ethics)
 
@@ -58,15 +56,8 @@ Baca juga [Communication — Communicate](/Communication/Communication%20%E2%80%
 
 ## Menghadapi tugas-tugas, perintah-perintah, dan semua hal yang ada di job desks
 
-### Ownership
-
-Baca [Work — Ownership](/Work/Work%20%E2%80%94%20Ownership.md)
-
-
-
-### Proactive
-
-{Content}
+1. <ins>Rasa kepemilikan:</ins>  Baca [Work — Ownership](/Work/Work%20%E2%80%94%20Ownership.md)
+2. <ins>Proactive:</ins> {Content}
 
 
 

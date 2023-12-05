@@ -11,7 +11,7 @@ SPDX-License-Identifier: 0BSD
 
 ## Usage
 
-Open sebagai Vault di Obsidian.md. Atau bisa juga dengan Visual Studio Code.
+Open sebagai Vault di Obsidian.md. Atau bisa juga dengan Visual Studio Code atau text editor lainnya.
 
 
 
@@ -30,10 +30,10 @@ Untuk hal lain yang punya license berbeda, silakan baca license link yang disert
 <ins>_With this note you should get new energy to do, to create, to make, to realize every ideas that might hit your head. Because inspiration comes without notification. Makers gonna make!_<ins>
 
 
-
+<!--
 ## Index
 
-<!--
+
 ```dataview
 List From #Index
 ```
@@ -117,7 +117,6 @@ List From #Colors
 ```dataview
 List From #AI
 ```
--->
 
 - [AI Tools Index](AI%20Tools/AI%20Index.md)
 - [Colors Index](Colors/Colors%20Index.md)
@@ -138,3 +137,5 @@ List From #AI
 - [SQL Index](SQL/SQL%20Index.md)
 - [Time Management Index](Time%20Management/Time%20Management%20Index.md)
 - [Work Index](Work/Work%20Index.md)
+
+-->
