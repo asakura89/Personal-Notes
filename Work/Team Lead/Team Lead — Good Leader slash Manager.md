@@ -128,7 +128,7 @@ Berdasarkan paper Microsoft, ini adalah urutan importance berdasarkan questionna
 
 ---
 
-Tapi kalo berdasarkan Concpetual Framework yang disusun penulis paper, yang paling penting disini keliatan, yaitu "Is available" sama "Is technical".
+Tapi kalo berdasarkan Conceptual Framework yang disusun penulis paper, yang paling penting disini keliatan, yaitu "Is available" sama "Is technical".
 
 ![20231126_003131_image.png](_media/20231126_003131_image.png)
 

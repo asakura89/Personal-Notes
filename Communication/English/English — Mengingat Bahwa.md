@@ -7,10 +7,10 @@ date: 2023-05-22
 
 # Mengingat Bahwa
 
-1. Mau mulai sekarang, **mengingat** bakal ada yang leave duluan?
-   
-   American-English:
-   - Do you want to start now, **considering** there will be people who wants to leave early?
+Mau mulai sekarang, <ins>mengingat</ins> bakal ada yang leave duluan?
+
+1. Do you guys want to start now, <ins>considering</ins> there will be people who wants to leave early?
+2. Do you guys able to start now, <ins>considering</ins> there will be people who wants to leave early?
 
 
 

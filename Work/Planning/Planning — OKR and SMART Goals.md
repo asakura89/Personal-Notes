@@ -1,8 +1,7 @@
 ---
 tags:
-- Productive
-- OKR
-- SMART Goals
+- Work
+- Planning
 date: 2023-03-29
 ---
 
