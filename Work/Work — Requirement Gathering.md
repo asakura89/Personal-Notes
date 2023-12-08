@@ -1,6 +1,8 @@
 ---
 tags:
 - Work
+- Problem-Solving
+- Roadblock-Removing
 date: 2023-08-13
 ---
 
