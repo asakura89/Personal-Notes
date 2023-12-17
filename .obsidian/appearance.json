@@ -3,7 +3,7 @@
   "enabledCssSnippets": [],
   "interfaceFontFamily": "Segoe UI",
   "textFontFamily": "Cambria",
-  "monospaceFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "Cascadia Mono SemiLight,JetBrains Mono",
   "cssTheme": "Things",
-  "accentColor": ""
+  "accentColor": "#7a4ce6"
 }
