@@ -1,16 +1,3 @@
----
-tags:
-- Work
-- Client
-- Draft
-date: 2023-07-30
----
-
-# Client Oriented Mindsets
-
-{Content}
-
-<!--
 
 ## Six Advisor Mindsets that Change Everything
 
@@ -243,5 +230,3 @@ Key Takeaways
 •  These mindsets help you to be more honest, objective, courageous, positive, visionary, skeptical, curious, knowledgeable, collaborative, empathetic, supportive, and inclusive with your clients.
 
 •  To develop these mindsets, you need to be aware of your current attitudes and beliefs, challenge them when they are limiting or negative, and adopt new ones that are empowering and positive.
-
--->

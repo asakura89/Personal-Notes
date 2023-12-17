@@ -7,6 +7,10 @@ date: 2023-02-01
 
 # Mindset
 
+Ada yang bilang kalo mindset atau pola pikir itu magnet. Kalo kita berpikiran positif terus, maka hal-hal positif bakal ketarik ke kehidupan kita. Kalo kita berpikiran masalah terus, ya masalah bakal datang menghampiri.
+
+
+
 ## Bersyukur
 
 Selalulah bersyukur dengan apapun biar enggak negative thinking terus. Bersyukur dan melihat segala sesuatu dengan positif bakal bikin pikiran kita selalu positif dan optimis.
@@ -43,15 +47,9 @@ Jangan pernah mengedepankan ego karena ini adalah sumber terbesar dari miskomuni
 
 
 
-Ada yang bilang kalo mindset atau pola pikir itu magnet. Kalo kita berpikiran positif terus, maka hal-hal positif bakal ketarik ke kehidupan kita. Kalo kita berpikiran masalah terus, ya masalah bakal datang menghampiri.
-
-
-
 ## Jalani aja dulu
 
-— if you keep doing what you love, you’ll connect  with people who appreciate it.
-— Don't let metrics (followers,likes,reach) define the quality of your creation
-— Never give up on your passion
-— It's okay to take a break, but never quit
-— Build a habit around your passion
-— Set goals and chase it - One percent every day
+- Kalo kita ngelakuin terus apa yang kita sukai, suatu saat kita bakal ketemu sama orang-orang yang bakal ngeapresiasinya. Komitmen, konsisten, dan sabar. Jangan pernah nyerah gitu aja sama passion yang kita punya.
+- Jangan terlalu terpaku sama metrik pengukuran. Angka-angka ini bakal nge-limit seberapa jauh kita bakal bisa bikin creation yang berkualitas.
+- Kadang kita butuh berhenti sejenak dan ngeliat kebelakang apa yang kurang, apa yang bagus. Tapi jangan lupa abis berhenti kita harus lanjut lagi kedepan. Jangan pernah stop permanen, stoplah hanya buat restrospective feedback.
+- Bikin list goals, kerjain pelan-pelan satu persen tiap hari.
