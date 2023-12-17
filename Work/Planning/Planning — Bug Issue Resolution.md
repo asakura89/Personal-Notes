@@ -2,6 +2,7 @@
 tags:
 - Work
 - Planning
+- Draft
 date: 2023-06-10
 ---
 

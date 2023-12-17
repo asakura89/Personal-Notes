@@ -15,6 +15,8 @@ date: 2023-12-05
 
 
 
+## TL;DR
+
 1. <ins>Test:</ins> Biasa ada Automated testing, Manual testing, Performance testing, Penetration testing.
 2. <ins>Pemisahan effort pricing:</ins> Seringkali di tiap pricing buat testing, kita lupa kalo ngebenerin/nge-fixing hasil test-nya biar meet sama kriteria juga butuh di-charge ke customer/client.
 
