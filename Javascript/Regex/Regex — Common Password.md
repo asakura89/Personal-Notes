@@ -7,6 +7,10 @@ date: 2023-12-02
 
 # Common Password
 
+Regex: `^(?:(?:[0-9]+[a-zA-Z]+)+|(?:[a-zA-Z]+[0-9]+)+|[a-zA-Z]+|[0-9]+|(?:.*?pass.+|.*?p@ss.+|.*?word.+|.*?w0rd.+|.*?fuck.+|.*?pussy.+|.*?asshole.+|ass.+))$`
+
+Code:
+
 ```javascript
 let matchedCommonPass = [
     "0000", "000000", "1111", "11111", "111111",
@@ -51,11 +55,13 @@ let matchedCommonPass = [
     "welcome","whatever","william","xxxxxx","yamaha",
     "yankees", "yellow"
 ]
-    .map(item => item.trim())
-    .map(item => {
-        let matching = item.match(/^(?:(?:[0-9]+[a-zA-Z]+)+|(?:[a-zA-Z]+[0-9]+)+|[a-zA-Z]+|[0-9]+|(?:.*?pass.+|.*?p@ss.+|.*?word.+|.*?w0rd.+|.*?fuck.+|.*?pussy.+|.*?asshole.+|ass.+))$/g);
-        return matching !== null;
-    });
+.map(item => {
+    let matching = item
+        .trim()
+        .match(/^(?:(?:[0-9]+[a-zA-Z]+)+|(?:[a-zA-Z]+[0-9]+)+|[a-zA-Z]+|[0-9]+|(?:.*?pass.+|.*?p@ss.+|.*?word.+|.*?w0rd.+|.*?fuck.+|.*?pussy.+|.*?asshole.+|ass.+))$/g);
+
+    return matching !== null;
+});
 
 console.log(matchedCommonPass.filter(item => item === false));
 ```

@@ -144,14 +144,14 @@ Get-ChildItem -Path . -Recurse |
 Contoh hasil run
 
 ```powershell
-D: AI Tools                                           : D:\Microsoft\Workspace\Personal-Notes
-D: Coffee                                             : D:\Microsoft\Workspace\Personal-Notes
-D: Communication                                      : D:\Microsoft\Workspace\Personal-Notes
+D: AI Tools                                           : D:\Personal-Notes
+D: Coffee                                             : D:\Personal-Notes
+D: Communication                                      : D:\Personal-Notes
 . . . omitted . . .
-F: Team Lead — Team Member.md                         : D:\Microsoft\Workspace\Personal-Notes\Work\Team Lead
-F: Team Lead — Terminating Member.md                  : D:\Microsoft\Workspace\Personal-Notes\Work\Team Lead
-F: 20231126_003131_image.png                          : D:\Microsoft\Workspace\Personal-Notes\Work\Team Lead\_media
-F: Default.md                                         : D:\Microsoft\Workspace\Personal-Notes\_templates
+F: Team Lead — Team Member.md                         : D:\Personal-Notes\Work\Team Lead
+F: Team Lead — Terminating Member.md                  : D:\Personal-Notes\Work\Team Lead
+F: 20231126_003131_image.png                          : D:\Personal-Notes\Work\Team Lead\_media
+F: Default.md                                         : D:\Personal-Notes\_templates
 ```
 
 

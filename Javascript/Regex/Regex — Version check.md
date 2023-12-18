@@ -7,6 +7,10 @@ date: 2023-12-02
 
 # Version check
 
+Regex: `(?:\d{1,}\.){2}\d{1,}(?:.+)?`
+
+Code:
+
 ```javascript
 console.log(
     [
@@ -17,12 +21,12 @@ console.log(
         "bootstrap-main.css",
         " tailwind.min.css"
     ]
-        .map(item => item.trim())
-        .filter(item => item.endsWith(".js") || item.endsWith(".min.js"))
-        .map(item => {
-            let matching = item.match(/(?:\d{1,}\.){2}\d{1,}(?:.+)?/g);
-            return matching === null ? null : matching[0];
-        })
+    .map(item => item.trim())
+    .filter(item => item.endsWith(".js") || item.endsWith(".min.js"))
+    .map(item => {
+        let matching = item.match(/(?:\d{1,}\.){2}\d{1,}(?:.+)?/g);
+        return matching === null ? null : matching[0];
+    })
 );
 ```
 

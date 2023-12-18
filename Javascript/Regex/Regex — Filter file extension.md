@@ -7,11 +7,19 @@ date: 2023-12-02
 
 # Filter file extension
 
-```typescript
+Regex:
+- `([^\\]+)?\.map$`
+- `([^\\]+)?\.min.js$`
+- `([^\\]+)?\.css$`
+- `(.+)\\([^\\]+).+\.[^\\]{2,}$` ⇒ file with extension
+
+Code:
+
+```javascript
 import fs from "node:fs"
 
 try {
-    let content: string = fs.readFileSync("D:\\Microsoft\\Workspace\\Personal-Notes\\Powershell\\_media\\file-list.txt", "utf8");
+    let content: string = fs.readFileSync("D:\\Personal-Notes\\Powershell\\_media\\file-list.txt", "utf8");
     let lines: string[] = content.split(/\r?\n/);
     let mapMatches: (string | null)[] = lines
         .map(item => item.trim())
