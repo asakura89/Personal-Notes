@@ -2,7 +2,7 @@
 tags:
 - Javascript
 - Regex
-date: 2023-12-02
+date: 2023-12-18
 ---
 
 # GUID validation
