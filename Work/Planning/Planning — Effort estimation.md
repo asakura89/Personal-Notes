@@ -2,6 +2,7 @@
 tags:
 - Work
 - Planning
+- Pricing
 date: 2023-11-06
 ---
 
