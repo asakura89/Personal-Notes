@@ -29,6 +29,8 @@ Dan selain task managerial di atas, Manager juga harus udah punya dan ahli dalam
 
 Baca ini [Team Lead — Team Lead](/Work/Team%20Lead/Team%20Lead%20—%20Team%20Lead.md)
 
+Baca ini juga [Work — Team Managing](/Work/Work%20%E2%80%94%20Team%20Managing.md)
+
 
 
 ## At which manager level am I now?
