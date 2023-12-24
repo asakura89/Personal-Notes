@@ -14,7 +14,7 @@ date: 2020-10-25
 Clear-Host
 
 #:< global config >:#
-$configPath = "D:\\Personal-Notes\\Powershell\\Load-Xml.config.xml"
+$configPath = "D:\\Personal-Notes\\Powershell\\_media\\Load-Xml.config.xml"
 
 function LoadXml([System.String]$xmlContent) {
     $content = $xmlContent.Trim()

@@ -28,7 +28,7 @@ D7CF8959B943433BA58C7609BBD758A5912AAAA4E9010B67EA5E0F343600029E
 ```powershell
 Clear-Host
 
-$path = "C:\Users\dita.subrata.XTR\Downloads\MicrosoftTeams-image (27).png"
+$path = "C:\Users\ASMNetworkLabUsr\Downloads\MicrosoftTeams-image (27).png"
 
 $hashMD5 = Get-FileHash $path -Algorithm MD5
 $hash256 = Get-FileHash $path -Algorithm SHA256

@@ -36,14 +36,14 @@ GetFiles $dir $ext |
 Output-nya
 
 ```powershell
-D:\Microsoft\Workspace\NugetCache\Zlib.Portable.Signed.1.11.0.nupkg
-D:\Microsoft\Workspace\NugetCache\Z.EntityFramework.Plus.EF5.1.7.7.nupkg
-D:\Microsoft\Workspace\NugetCache\yuicompressor.net.2.7.0.nupkg
-D:\Microsoft\Workspace\NugetCache\YUICompressor.NET.2.7.0.0.nupkg
+C:sers\<Username>\.nuget\packages\Zlib.Portable.Signed.1.11.0.nupkg
+C:sers\<Username>\.nuget\packages\Z.EntityFramework.Plus.EF5.1.7.7.nupkg
+C:sers\<Username>\.nuget\packages\yuicompressor.net.2.7.0.nupkg
+C:sers\<Username>\.nuget\packages\YUICompressor.NET.2.7.0.0.nupkg
 . . . omitted . . .
-D:\Microsoft\Workspace\NugetCache\ActionMailer.0.7.4.nupkg
-D:\Microsoft\Workspace\NugetCache\7zip.commandline.16.02.nupkg
-D:\Microsoft\Workspace\NugetCache\51Degrees.mobi-core.3.2.17.2.nupkg
+C:sers\<Username>\.nuget\packages\ActionMailer.0.7.4.nupkg
+C:sers\<Username>\.nuget\packages\7zip.commandline.16.02.nupkg
+C:sers\<Username>\.nuget\packages\51Degrees.mobi-core.3.2.17.2.nupkg
 ```
 
 
