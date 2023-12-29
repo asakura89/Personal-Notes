@@ -3,14 +3,23 @@ tags:
 - Communication
 - Writing
 - Format
+- Template
 date: 2023-03-29
 ---
 
 # Article or Paragraph
 
+- [What is this?](#what-is-this)
+- [#1 — General Template](#1--general-template)
+- [#2 — Problem explaining Template](#2--problem-explaining-template)
+- [#3 — Another Problem Explaining Template](#3--another-problem-explaining-template)
+- [#4 — Problem Reporting Template](#4--problem-reporting-template)
+
+
+
 ## What is this?
 
-Format yang lumayan bagus buat ngebikin tulisan.
+Template atau format yang lumayan bagus buat ngebikin tulisan atau report.
 
 
 
@@ -172,3 +181,8 @@ Format yang lumayan bagus buat ngebikin tulisan.
 - [IBM and Java: 8, 11, and beyond - IBM Developer](https://developer.ibm.com/blogs/ibm-and-java-8-11-and-beyond/)
 - [Doc Switcher window icons have problems when Tab Bar &#39;Reduce&#39; setting changed · Issue #8109 · notepad-plus-plus/notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus/issues/8109#issue-598849027)
 
+
+
+Baca juga:
+- [Communication — Progress Report](/Communication/Communication%20—%20Progress%20Report.md)
+- [Communication — Problem Escalation](/Communication/Communication%20—%20Problem%20Escalation.md)
