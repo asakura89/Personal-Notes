@@ -13,7 +13,9 @@ date: 2023-12-31
 - [Selecting Excel Table](#selecting-excel-table)
 - [Filters](#filters)
 - [Extract text](#extract-text)
-- [Cleaning data](#cleaning-data)
+- [Data cleaning](#data-cleaning)
+- [Sort](#sort)
+- [Finalizing](#finalizing)
 
 
 
@@ -199,5 +201,424 @@ Output-nya
 
 
 
-## Cleaning data
+## Data cleaning
+
+Kalo ngeliat dari output data terakhir, SellEndDate kok number ya, padahal kan namanya aja ada "Date"-nya. Kalo ngeliat dari `Table.TransformColumnTypes` function di code-nya, SellEndDate di-convert ke data type any. Jadi hasil output-nya ditampilin apa adanya sesuai data aslinya ketika disimpen ke excel, yaitu number yang merepresentasiin tanggal. Terus gimana biar orang yang ngebaca datanya bisa baca dengan jelas. Kalo gini kan gak ngerti orang juga apa maksudnya 41058. Ini makanya penting buat ngelakuin data cleaning.
+
+
+
+### Step 1 — Fix SellEndDate type
+
+Karena seharusnya data type SellEndDate adalah `date`, jadi letsego (pake nada mario) kita benerin.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    TransformedTypes = Table.TransformColumnTypes(
+        Source,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type datetime},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    #"Seasoned Products" = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> "-" and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    )
+in
+    #"Seasoned Products"
+```
+
+Output-nya
+
+```log
+DataFormat.Error: We couldn't parse the input provided as a Date value.
+Details:
+    -
+```
+
+Uwaaah, error.
+
+Ini karena, ternyata data SellEndDate ada yang berisi text "-". Kaya yang udah dijelasin di bagian [Filters](#filters), gak semua data SellEndDate isinya date. Gimana caranya biar data type-nya gak any tapi juga gak error? Kita bisa pake workaround yaitu semua tanggal yang gak ada, atau "-", diganti sama tanggal yang gak make sense secara real-life tapi valid secara pemrograman. Apa itu? Tanggal 1 Januari tahun 1. Caranya? Kita bisa pake `ReplaceValue`.
+
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        Source,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type datetime},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    #"Seasoned Products" = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> "-" and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    )
+in
+    #"Seasoned Products"
+```
+
+Dari ngeliat output-nya, OK. Gadak error.
+
+
+
+### Step 2 — Fix SellStartDate type
+
+Selain SellEndDate, ternyata SellStartDate juga salah data type. Enggak salah banget sih, tapi rada gak pas dikit aja. Data dari dua kolom ini gak punya jam yang bener, dan jam juga gak relevan karena kita gakkan cek jam dari tanggal-tanggal penjualan mulai dan penjualan selese. Kita cuma butuh tanggal, paling enggak buat sekarang. Karena ada system yang penjualannya meriksa jam, karena cuma dijual tengah malem misalnya, atau promo cuma tengah malem. Yaoke lanjut.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        Source,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    #"Seasoned Products" = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> "-" and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    )
+in
+    #"Seasoned Products"
+```
+
+Sejauh ini aman, lanjut.
+
+
+
+### Step 3 — Use correct filters
+
+Etapi, kan harusnya kita ngambil data yang tanggal jualannya gak musiman, kok sekarang data yang tanggal-nya gak bener (secara common sense), yang 1 januari, malah masuk. Ini karena filter sebelumnya yang kita pake itu `[SellEndDate] <> "-"` sedangkan sekarang udah gak ada tanggal yang "-". Jadi filter-nya ngeproses-proses aja yang tanggalnya 1 januari.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        Source,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    #"Seasoned Products" = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> #date(1, 1, 1) and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    )
+in
+    #"Seasoned Products"
+```
+
+Nah, sekarang udah bener.
+
+Ebentar, karena filter kita sekarang udah spesifik cuma ngambil data sepeda, nama table "Seasoned Products" udah gak relevan lagi. Letsego fix it.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        Source,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    Bike = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> #date(1, 1, 1) and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    )
+in
+    Bike
+```
+
+Output setelah cleaning
+
+| ProductName      | ProductNumber | Color | SafetyStockLevel | SellStartDate | SellEndDate | LocationName           | Shelf | Bin   | Quantity |
+| :--------------- | :------------ | :---- | :--------------- | :------------ | :---------- | :--------------------- | :---- | :---- | :------- |
+| Road-150 Red, 62 | BK-R93R-62    | Red   | 100              | 5/31/2011     | 5/29/2012   | Finished Goods Storage | N/A   | 0     | 73       |
+| Road-150 Red, 62 | BK-R93R-62    | Red   | 100              | 5/31/2011     | 5/29/2012   | Final Assembly         | N/A   | 0     | 60       |
+| Road-150 Red, 44 | BK-R93R-44    | Red   | 100              | 5/31/2011     | 5/29/2012   | Finished Goods Storage | N/A   | 0     | 102      |
+| Road-150 Red, 44 | BK-R93R-44    | Red   | 100              | 5/31/2011     | 5/29/2012   | Final Assembly         | N/A   | 0     | 121      |
+| Road-150 Red, 48 | BK-R93R-48    | Red   | 100              | 5/31/2011     | 5/29/2012   | Finished Goods Storage | N/A   | 0     | 32       |
+| Road-150 Red, 48 | BK-R93R-48    | Red   | 100              | 5/31/2011     | 5/29/2012   | Final Assembly         | N/A   | 0     | 108      |
+| Road-150 Red, 52 | BK-R93R-52    | Red   | 100              | 5/31/2011     | 5/29/2012   | Finished Goods Storage | N/A   | 0     | 52       |
+|                  |               |       | ... omitted ...  |               |             |                        |       |       |          |
+
+
+
+## Sort
+
+Sekarang data-nya udah bersih. Kita pengen tau nih yang stock-nya paling banyak yang mana. Kita bisa urutin berdasarkan stock terbanyak.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        Source,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            {"SafetyStockLevel", Int64.Type},
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            {"Shelf", type text},
+            {"Bin", Int64.Type},
+            {"Quantity", Int64.Type}
+        }
+    ),
+    Bike = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> #date(1, 1, 1) and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    ),
+    SortedByLargestStock = Table.Sort(
+        Bike, {
+            {"Quantity", Order.Descending}
+        }
+    )
+in
+    SortedByLargestStock
+```
+
+Output-nya
+
+| ProductName            | ProductNumber | Color | SafetyStockLevel | SellStartDate | SellEndDate | LocationName           | Shelf | Bin   | Quantity |
+| :--------------------- | :------------ | :---- | :--------------- | :------------ | :---------- | :--------------------- | :---- | :---- | :------- |
+| Road-650 Black, 52     | BK-R50B-52    | Black | 100              | 5/31/2011     | 5/29/2013   | Final Assembly         | N/A   | 0     | 123      |
+| Road-150 Red, 44       | BK-R93R-44    | Red   | 100              | 5/31/2011     | 5/29/2012   | Final Assembly         | N/A   | 0     | 121      |
+| Road-650 Red, 48       | BK-R50R-48    | Red   | 100              | 5/31/2011     | 5/29/2013   | Final Assembly         | N/A   | 0     | 121      |
+| Mountain-300 Black, 40 | BK-M47B-40    | Black | 100              | 5/30/2012     | 5/29/2013   | Final Assembly         | N/A   | 0     | 121      |
+| Road-650 Black, 60     | BK-R50B-60    | Black | 100              | 5/31/2011     | 5/29/2013   | Finished Goods Storage | N/A   | 0     | 116      |
+| Mountain-100 Black, 42 | BK-M82B-42    | Black | 100              | 5/31/2011     | 5/29/2012   | Final Assembly         | N/A   | 0     | 116      |
+| Road-450 Red, 52       | BK-R68R-52    | Red   | 100              | 5/31/2011     | 5/29/2012   | Finished Goods Storage | N/A   | 0     | 116      |
+|                        |               |       | ... omitted ...  |               |             |                        |       |       |          |
+
+
+
+## Selecting specific columns
+
+Gak semua kolom kadang gak butuh kita bawa buat di-present.
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    RemoveIrrelevantCols = Table.RemoveColumns(
+        Source, {
+            "SafetyStockLevel", "Shelf", "Bin"
+        }
+    ),
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        RemoveIrrelevantCols,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            /* {"SafetyStockLevel", Int64.Type}, */
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            /* {"Shelf", type text},
+            {"Bin", Int64.Type}, */
+            {"Quantity", Int64.Type}
+        }
+    ),
+    Bike = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> #date(1, 1, 1) and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK"
+    ),
+    SortedByLargestStock = Table.Sort(
+        Bike, {
+            {"Quantity", Order.Descending}
+        }
+    )
+in
+    SortedByLargestStock
+```
+
+Output-nya
+
+| ProductName            | ProductNumber | Color | SellStartDate    | SellEndDate | LocationName           | Quantity |
+| :--------------------- | :------------ | :---- | :--------------- | :---------- | :--------------------- | :------- |
+| Road-650 Black, 52     | BK-R50B-52    | Black | 5/31/2011        | 5/29/2013   | Final Assembly         | 123      |
+| Road-150 Red, 44       | BK-R93R-44    | Red   | 5/31/2011        | 5/29/2012   | Final Assembly         | 121      |
+| Road-650 Red, 48       | BK-R50R-48    | Red   | 5/31/2011        | 5/29/2013   | Final Assembly         | 121      |
+| Mountain-300 Black, 40 | BK-M47B-40    | Black | 5/30/2012        | 5/29/2013   | Final Assembly         | 121      |
+| Road-650 Black, 60     | BK-R50B-60    | Black | 5/31/2011        | 5/29/2013   | Finished Goods Storage | 116      |
+| Mountain-100 Black, 42 | BK-M82B-42    | Black | 5/31/2011        | 5/29/2012   | Final Assembly         | 116      |
+| Road-450 Red, 52       | BK-R68R-52    | Red   | 5/31/2011        | 5/29/2012   | Finished Goods Storage | 116      |
+|                        |               |       | ... omitted ...  |             |                        |          |
+
+
+
+## Finalizing
+
+Okay, di step terakhir, kita lakuin semua buat finalizing data presentation biar bisa dikonsumsi dengan baik. Letsego!
+
+```m
+let
+    Source = Excel.CurrentWorkbook(){[Name="ProductsRaw"]}[Content],
+    RemoveIrrelevantCols = Table.RemoveColumns(
+        Source, {
+            "SafetyStockLevel", "Shelf", "Bin"
+        }
+    ),
+    ReplaceDashDateToOneJan = Table.ReplaceValue(
+        RemoveIrrelevantCols,
+        "-", #date(1, 1, 1), Replacer.ReplaceValue, {"SellEndDate"}
+    ),
+    TransformedTypes = Table.TransformColumnTypes(
+        ReplaceDashDateToOneJan,{
+            {"ProductName", type text},
+            {"ProductNumber", type text},
+            {"Color", type text},
+            /* {"SafetyStockLevel", Int64.Type}, */
+            {"SellStartDate", type date},
+            {"SellEndDate", type date},
+            {"LocationName", type text},
+            /* {"Shelf", type text},
+            {"Bin", Int64.Type}, */
+            {"Quantity", Int64.Type}
+        }
+    ),
+    Bike = Table.SelectRows(
+        TransformedTypes,
+        each
+            [SellEndDate] <> #date(1, 1, 1) and
+            /* Text.Start([ProductNumber], 2) = "BK" */
+            /* Text.StartsWith([ProductNumber], "BK") */
+            Text.Range([ProductNumber], 0, 2) = "BK" and
+            [LocationName] = "Finished Goods Storage" and
+            Date.Year([SellEndDate]) = 2013
+    ),
+    AddTempColToBeSorted = Table.AddColumn(
+        Bike,
+        "ProductNoToBeSorted",
+        each Text.Start([ProductNumber], 4),
+        type text
+    ),
+    SortedByLargestStock = Table.Sort(
+        AddTempColToBeSorted, {
+            {"Quantity", Order.Descending},
+            {"ProductNoToBeSorted", Order.Ascending}
+        }
+    ),
+    CleanTempCols = Table.RemoveColumns(
+        SortedByLargestStock,
+        { "ProductNoToBeSorted" }
+    ),
+    Indexed = Table.AddIndexColumn(
+        CleanTempCols,
+        "#", 1, 1, Int64.Type
+    ),
+    ReorderCols = Table.ReorderColumns(
+        Indexed, {
+            "#", "ProductName", "ProductNumber", "Color",
+            "SellStartDate", "SellEndDate", "LocationName", "Quantity"
+        }
+    )
+in
+    ReorderCols
+```
+
+Output-nya
+
+| #     | ProductName            | ProductNumber | Color | SellStartDate | SellEndDate | LocationName           | Quantity |
+| :---- | :--------------------- | :------------ | :---- | :------------ | :---------- | :--------------------- | :------- |
+| 1     | Road-650 Black, 60     | BK-R50B-60    | Black | 5/31/2011     | 5/29/2013   | Finished Goods Storage | 116      |
+| 2     | Road-250 Red, 44       | BK-R89R-44    | Red   | 5/30/2012     | 5/29/2013   | Finished Goods Storage | 112      |
+| 3     | Road-650 Red, 58       | BK-R50R-58    | Red   | 5/31/2011     | 5/29/2013   | Finished Goods Storage | 112      |
+| 4     | Road-650 Black, 52     | BK-R50B-52    | Black | 5/31/2011     | 5/29/2013   | Finished Goods Storage | 104      |
+| 5     | Mountain-300 Black, 40 | BK-M47B-40    | Black | 5/30/2012     | 5/29/2013   | Finished Goods Storage | 102      |
+| 6     | Road-650 Red, 48       | BK-R50R-48    | Red   | 5/31/2011     | 5/29/2013   | Finished Goods Storage | 102      |
+| 7     | Road-650 Black, 62     | BK-R50B-62    | Black | 5/31/2011     | 5/29/2013   | Finished Goods Storage | 100      |
+|       |                        |               |       | ... omitted ... |           |                        |          |
 
