@@ -1,6 +1,7 @@
 ---
 tags:
-  - Thought
+- Life
+- Thought
 date: 2023-06-21
 ---
 
