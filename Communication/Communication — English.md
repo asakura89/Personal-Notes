@@ -6,13 +6,10 @@ date: 2022-07-25
 
 # English
 
-## Improve English
-
-1. [English Grammar: The Prepositions ON, AT, IN, BY - YouTube](https://www.youtube.com/watch?v=sN5H7YTo_IQ)  
-2. [Improve your Vocabulary: Stop saying VERY! - YouTube](https://www.youtube.com/watch?v=PCoyTwltu5g)  
-3. [Improve your Vocabulary: Stop saying I KNOW! - YouTube](https://www.youtube.com/watch?v=FXjvpR02uNg)  
-4. [4 ways to improve your English speaking... ALONE \#athome! - YouTube](https://www.youtube.com/watch?v=N0qEHuyTTp8)  
-5. [Conversation Skills: What's your communication style? - YouTube](https://www.youtube.com/watch?v=9ybqVmp1p6s)
+- [Pronunciation](#pronunciation)
+- [Writing](#writing)
+- [Listening](#listening)
+- [Reference examples](#reference-examples)
 
 
 
@@ -51,3 +48,13 @@ Jaman dulu dengan cara dengerin lagu-lagu barat. Dengerin kaset percakapan bahas
 5. Lagu barat
 
 Dan yang paling efektif adalah dengerin audiobook dan dengerin lagu-lagu barat. Karena Audiobook, ya, buku. Jadi ada versi teks dan ada versi audio. Begitupun Lagu barat, ada lirik dan ada lagunya. Karena bahasa Inggris itu bukan bahasa yang fonetik. Artinya apa yang ditulis sama bunyinya dengan yang disebut, kaya bahasa Jepang atau bahasa Indo.
+
+
+
+## Reference examples
+
+1. [English Grammar: The Prepositions ON, AT, IN, BY - YouTube](https://www.youtube.com/watch?v=sN5H7YTo_IQ)  
+2. [Improve your Vocabulary: Stop saying VERY! - YouTube](https://www.youtube.com/watch?v=PCoyTwltu5g)  
+3. [Improve your Vocabulary: Stop saying I KNOW! - YouTube](https://www.youtube.com/watch?v=FXjvpR02uNg)  
+4. [4 ways to improve your English speaking... ALONE \#athome! - YouTube](https://www.youtube.com/watch?v=N0qEHuyTTp8)  
+5. [Conversation Skills: What's your communication style? - YouTube](https://www.youtube.com/watch?v=9ybqVmp1p6s)

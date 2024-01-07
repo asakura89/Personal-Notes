@@ -1,6 +1,7 @@
 ---
 tags:
 - Communication
+- Draft
 date: 2022-12-11
 ---
 
