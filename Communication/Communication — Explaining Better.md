@@ -33,7 +33,13 @@ Buat tablet yang support coret bisa pake apps ini:
 
 Buat workflow di desktop, bisa pake apps ini:
 - Draw.io
+    - Web App: [draw.io (diagrams.net)](https://app.diagrams.net/)
+    - Desktop App: [draw.io Download (drawio.com)](https://get.diagrams.net/)
+    - VS Code Ext: [Draw.io Integration - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 - Excalidraw
+    - Web App: [Excalidraw | Hand-drawn look &amp; feel • Collaborative • Secure](https://excalidraw.com/)
+    - Desktop App: -
+    - VS Code Ext: [Excalidraw - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor)
 
 Dua apps desktop ini selain bisa buat diagram, bisa buat dicoret juga kalo diakses lewat tablet yang bisa dicoret. Tapi rada lemot jadi gak direkomendasiin.
 
