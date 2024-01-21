@@ -1,10 +1,7 @@
 ---
 tags:
 - Powershell
-- DotEnv
-- .env
-- env
-- Config
+- Email
 date: 2024-01-20
 ---
 
@@ -149,54 +146,104 @@ function GetNodesValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
 }
 #:< Xml End >:#
 
+#:< String Replace >:#
+function Replace([System.String]$template, [System.Collections.Hashtable]$replacements) {
+    If ($replacements -Ne $null -And $replacements.Count -Gt 0) {
+        $matches = [System.Text.RegularExpressions.Regex]::Matches($template, "\$\{(\w*)\}")
+        ForEach ($match In $matches) {
+            If ($match.Success) {
+                $replace = $match.Groups[0].Value
+                $key = $match.Groups[1].Value
+                $replacement = $replacements[$key]
+                $template = $template.Replace($replace, $replacement)
+            }
+        }
+    }
+
+    Return $template
+}
+#:< String Replace End >:#
+
+#:< Email >:#
+function SendEmail($smtpConfig, $mailConfig) {
+    $mailClient = New-Object System.Net.Mail.SmtpClient($smtpConfig.Server)
+    $mailClient.Port = $($smtpConfig.Port -As [System.Int32])
+    $mailClient.EnableSsl = $($smtpConfig.UseSsl -As [System.Boolean])
+    $mailClient.Credentials = New-Object System.Net.NetworkCredential($smtpConfig.Username, $smtpConfig.Password)
+
+    $message = New-Object System.Net.Mail.MailMessage
+    $message.From = New-Object System.Net.Mail.MailAddress($mailConfig.FromEmail, $mailConfig.FromName)
+    ForEach ($to in $mailConfig.Recipients) {
+        $message.To.Add($to)
+    }
+    $message.Subject = $mailConfig.Subject
+    $message.Body = $mailConfig.Body
+    $message.IsBodyHtml = $true
+
+    $mailClient.Send($message)
+}
+#:< Email End >:#
+
+#:< Map Config >:#
 function GetConfig() {
     $scriptInfo = GetScriptInfo
-    $configFileName = [System.IO.Path]::Combine($scriptInfo.Directory, "$($scriptInfo.Name).config.xml")
+    #$configFileName = [System.IO.Path]::Combine($scriptInfo.Directory, "$($scriptInfo.Name).config.xml")
+    $configFileName = "D:\\Personal-Notes\\Powershell\\_media\\Load-Xml.config.xml"
 
-    Return LoadXmlFromPath $configFileName
+    $xmlDoc = LoadXmlFromPath $configFileName
+    $fromNode = $xmlDoc.SelectSingleNode("configuration/mailConfig/from") -As [System.Xml.XmlNode]
+    $config = @{
+        SmtpConfig = @{
+            Server = (GetNodeValue $xmlDoc "configuration/smtpConfig/server")
+            Port = (GetNodeValue $xmlDoc "configuration/smtpConfig/port") -As [System.Int32]
+            Username = (GetNodeValue $xmlDoc "configuration/smtpConfig/userName")
+            Password = (GetNodeValue $xmlDoc "configuration/smtpConfig/password")
+            UseSsl = (GetNodeValue $xmlDoc "configuration/smtpConfig/useSsl") -As [System.Boolean]
+            UseTls = (GetNodeValue $xmlDoc "configuration/smtpConfig/useTls") -As [System.Boolean]
+        }
+        MailConfig = @{
+            FromEmail = (GetAttributeValue $fromNode "email") 
+            FromName = (GetAttributeValue $fromNode "name")
+            Recipients = (GetNodesValue $xmlDoc "configuration/mailConfig/recipients/email")
+            Ccs = (GetNodesValue $xmlDoc "configuration/mailConfig/ccs/email")
+            SubjectTemplate = (GetNodeValue $xmlDoc "configuration/mailConfig/subject")
+            Subject = ""
+            BodyTemplate = (GetNodeValue $xmlDoc "configuration/mailConfig/body")
+            Body = ""
+        }
+    }
+
+    $rep = @{
+        "Title" = "Reminding you of Task"
+        "Body" = "<ins><strong>Reminder: $([System.DateTime]::Now.ToString(`"HH:mm:ss`"))</strong></ins>
+        <br/>
+        <em>Approve my PR ASAP sir!</em>"
+    }
+    $config.MailConfig.Subject = $config.MailConfig.SubjectTemplate
+    $config.MailConfig.Body = Replace $config.MailConfig.BodyTemplate $rep
+
+    Return $config
 }
+#:< Map Config End >:#
 
-Log ":: Start Script ::" $true
+Try {
+    Log ":: Start Script ::" $true
 
-Log "Doing something ..."
+    Log "Preparing config ..."
 
-Log "Doing another thing ..."
+    $config = GetConfig
 
-Log ":: Finish Script ::"
+    Log "Preparing config done ..."
+
+    Log "Sending email ..."
+
+    SendEmail $config.SmtpConfig $config.MailConfig
+
+    Log "Sending email done ..."
+
+    Log ":: Finish Script ::"
+}
+Catch {
+    Log $(GetExceptionMessage $_.Exception)
+}
 ```
-
-Isi dari `Load-Env.config.env` adalah
-
-```env
-STRIPE_API_KEY=scr_12345
-TWILIO_API_KEY=abcd1234
-LISTEN_ADDRESS=0.0.0.0
-MONGO_HOST=mongo
-MONGO_URL=mongodb://mongo/mainnode?directConnection=true
-WEB_API_PASSWORD=mainnode
-WEB_API_USER=mongo_main
-WEB_HOST=web
-email_template="<ins><strong>Reminder: ${Date}</strong></ins>
-<em>Approve my PR ASAP sir!</em>"
-```
-
-Contoh hasil run
-
-```powershell
-Key              Value
----              -----
-STRIPE_API_KEY   scr_12345
-TWILIO_API_KEY   abcd1234
-LISTEN_ADDRESS   0.0.0.0
-MONGO_HOST       mongo
-MONGO_URL        mongodb://mongo/mainnode?directConnection=true
-WEB_API_PASSWORD mainnode
-WEB_API_USER     mongo_main
-WEB_HOST         web
-email_template   "<ins><strong>Reminder: ${Date}</strong></ins>...
-```
-
-
-**References:**
-
-- https://github.com/bkeepers/dotenv/blob/master/lib/dotenv/parser.rb

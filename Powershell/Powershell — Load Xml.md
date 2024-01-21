@@ -74,19 +74,19 @@ function GetNodesValue([System.Xml.XmlDocument]$xmlDoc, $selector) {
     Return $values
 }
 
-function MapConfigToSmtpSetting($configPath = $Script:configPath) {
+function MapConfigToSmtpConfig($configPath = $Script:configPath) {
     $config = LoadXmlFromPath $configPath
     Return @{
-        Server = (GetNodeValue $config "configuration/smtpSettings/server")
-        Port = (GetNodeValue $config "configuration/smtpSettings/port") -As [System.Int32]
-        Username = (GetNodeValue $config "configuration/smtpSettings/userName")
-        Password = (GetNodeValue $config "configuration/smtpSettings/password")
-        UseTls = (GetNodeValue $config "configuration/smtpSettings/useTls") -As [System.Boolean]
+        Server = (GetNodeValue $config "configuration/smtpConfig/server")
+        Port = (GetNodeValue $config "configuration/smtpConfig/port") -As [System.Int32]
+        Username = (GetNodeValue $config "configuration/smtpConfig/userName")
+        Password = (GetNodeValue $config "configuration/smtpConfig/password")
+        UseTls = (GetNodeValue $config "configuration/smtpConfig/useTls") -As [System.Boolean]
     }
 }
 
-$smtpSettings = MapConfigToSmtpSetting
-$smtpSettings | ConvertTo-Json
+$smtpConfig = MapConfigToSmtpConfig
+$smtpConfig | ConvertTo-Json
 
 $xmlContent = @"
 <?xml version="1.0" encoding="utf-8" ?>
@@ -108,13 +108,13 @@ Isi dari `Load-Xml.config.xml` adalah
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-    <smtpSettings>
+    <smtpConfig>
         <server>smtp.supermailservice.com</server>
         <port>587</port>
         <userName>SmtpUser_Admin</userName>
         <password>100%SmtpPwd4Admin</password>
         <useTls>false</useTls>
-    </smtpSettings>
+    </smtpConfig>
 </configuration>
 ```
 
@@ -142,21 +142,21 @@ Contoh hasil run
 Clear-Host
 
 #:< global config >:#
-$configPath = "D:\\Personal-Notes\\Powershell\\Load-Xml.config.xml"
+$configPath = "D:\\Personal-Notes\\Powershell\\_media\\Load-Xml.config.xml"
 
-function MapConfigToSmtpSetting($configPath = $Script:configPath) {
+function MapConfigToSmtpConfig($configPath = $Script:configPath) {
     [xml]$config = Get-Content $configPath
     Return @{
-        Server = $config.configuration.smtpSettings.server
-        Port = $config.configuration.smtpSettings.port -As [System.Int32]
-        Username = $config.configuration.smtpSettings.userName
-        Password = $config.configuration.smtpSettings.password
-        UseTls = $config.configuration.smtpSettings.useTls -As [System.Boolean]
+        Server = $config.configuration.smtpConfig.server
+        Port = $config.configuration.smtpConfig.port -As [System.Int32]
+        Username = $config.configuration.smtpConfig.userName
+        Password = $config.configuration.smtpConfig.password
+        UseTls = $config.configuration.smtpConfig.useTls -As [System.Boolean]
     }
 }
 
-$smtpSettings = MapConfigToSmtpSetting
-$smtpSettings | ConvertTo-Json
+$smtpConfig = MapConfigToSmtpConfig
+$smtpConfig | ConvertTo-Json
 
 [xml]$xmlContent = @"
 <?xml version="1.0" encoding="utf-8" ?>
