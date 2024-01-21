@@ -20,7 +20,7 @@ function LoadEnv([System.String]$envContent) {
     }
 
     $envData = New-Object 'System.Collections.Generic.Dictionary[System.String,System.String]'
-    $pattern = "^(?<key>[a-zA-Z0-9.\-_ ]+)(?:=|:) *(?<value>[^#\r\n]+)"
+    $pattern = "^(?<key>[a-zA-Z0-9.\-_ ]+)(?:\s*?(?:=|:)\s*?)(?<value>`"[^`"]+`"|[^#\r\n]+)"
     $options = [System.Text.RegularExpressions.RegexOptions]::Compiled `
         -Bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase `
         -Bor [System.Text.RegularExpressions.RegexOptions]::Multiline
@@ -66,6 +66,8 @@ MONGO_URL=mongodb://mongo/mainnode?directConnection=true
 WEB_API_PASSWORD=mainnode
 WEB_API_USER=mongo_main
 WEB_HOST=web
+email_template="<ins><strong>Reminder: ${Date}</strong></ins>
+<em>Approve my PR ASAP sir!</em>"
 ```
 
 Contoh hasil run
@@ -81,4 +83,10 @@ MONGO_URL        mongodb://mongo/mainnode?directConnection=true
 WEB_API_PASSWORD mainnode
 WEB_API_USER     mongo_main
 WEB_HOST         web
+email_template   "<ins><strong>Reminder: ${Date}</strong></ins>...
 ```
+
+
+**References:**
+
+- https://github.com/bkeepers/dotenv/blob/master/lib/dotenv/parser.rb
