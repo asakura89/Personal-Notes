@@ -1,8 +1,0 @@
-## Pengguna
-I have a problem. My windows 10 cannot be hibernated when browser opened. can you help?
-## Bing
-I'm sorry to hear that you're having trouble with hibernating your Windows 10 computer while a browser is open. There could be several reasons why this is happening, and there are a few things you can try to fix the issue.
-One possibility is that some programs can prevent your computer from hibernating by doing exactly what you are describing. You could check what process is keeping your computer awake by running cmd as administrator and typing: powercfg -requests.
-Another thing you can try is to use the Power troubleshooter to troubleshoot the issue. You can do this by opening the Settings app on Windows 10, clicking on Update & Security, then clicking on Troubleshoot. From there, click the Additional troubleshooters option, select the Power option, and click the “Run the troubleshooter” button.
-If that doesn't work, you can try updating your drivers, resetting your power settings to default, or re-enabling Hibernation in Windows 10 by going to the old Control Panel and then to Power Options.
-I hope these suggestions help! Let me know if you have any other questions or if there's anything else I can do to assist you. 😊
