@@ -88,3 +88,14 @@ The log levels you mentioned are commonly used in many logging frameworks and li
 I hope this explanation helps you understand the log levels and how to use them. 😊
 
 If you have any other questions or requests, please let me know. I am happy to help. 😊
+
+
+one of the format
+
+ [14:13:23 GMT+0700 (Indochina Time)] [connectivity] Checking connection app.js:formatted:110838:23
+14:13:23.997
+XHRGET
+https://res-1.cdn.office.net/todo/online.txt
+[HTTP/2 200  25ms]
+
+14:13:24.032 [14:13:24 GMT+0700 (Indochina Time)] [connectivity] Connection is OK
