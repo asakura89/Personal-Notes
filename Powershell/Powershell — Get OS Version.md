@@ -1,7 +1,7 @@
 ---
 tags:
 - Powershell
-- OS Version
+- OS-Version
 date: 2020-05-25
 ---
 

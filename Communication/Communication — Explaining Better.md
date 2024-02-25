@@ -30,6 +30,7 @@ Buat tablet yang support coret bisa pake apps ini:
 - OneNote
 - Google Keep
 - Samsung Note
+- GoodNotes
 
 Buat workflow di desktop, bisa pake apps ini:
 - Draw.io
