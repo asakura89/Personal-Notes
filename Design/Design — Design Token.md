@@ -2,12 +2,13 @@
 tags:
 - Design
 - Token
+- Draft
 date: 2023-06-08
 ---
 
 # Design Token
 
-## What is?
+## What is
 
 Hi Bing, do you know about term "Design Token"?
 
