@@ -1,5 +1,6 @@
 ---
 tags:
+- Writing
 - Format
 - Markdown
 date: 2022-11-20

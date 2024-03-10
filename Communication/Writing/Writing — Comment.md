@@ -1,7 +1,7 @@
 ---
 tags:
+- Writing
 - Format
-- Markdown
 date: 2023-11-27
 ---
 

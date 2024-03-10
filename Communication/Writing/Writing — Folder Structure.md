@@ -1,11 +1,10 @@
 ---
 tags:
 - Writing
-- ASCII
 date: 2023-11-18
 ---
 
-# Folder Structure in ASCII
+# Folder Structure
 
 ```text
 📂 src

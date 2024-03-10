@@ -1,5 +1,6 @@
 ---
 tags:
+- Writing
 - Research
 - Concept
 - Markdown

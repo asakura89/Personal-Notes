@@ -1,7 +1,6 @@
 ---
 tags:
-- Format
-- Markdown
+- Writing
 date: 2024-03-06
 ---
 
