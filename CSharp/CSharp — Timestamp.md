@@ -27,3 +27,10 @@ Ada juga format lain yang suka dipake buat rename file. Contohnya gini.
 Console.WriteLine("Name file - " + DateTime.Now.ToString("yyyyMMddTHHmmss.fff") + ".txt");
 // Name file - 20240310T235224.287.txt
 ```
+
+Yang ini mungkin lebih ke datestamp kali ya. Karena format ini biasanya dipake buat blogging.
+
+```c#
+Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd"));
+// 2024-03-10
+```

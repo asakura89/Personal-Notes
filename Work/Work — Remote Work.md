@@ -2,11 +2,17 @@
 tags:
 - Work
 - Ways-of-Work
-- Draft
+- WFH
+- WFA
+- Remote-Work
 date: 2023-03-26
 ---
 
-# Work from home or work from anywhere
+# Remote Work
+
+
+
+## From Books
 
 - Offices have become interruption factories, hindering meaningful work.
 - Meaningful work requires stretches of uninterrupted time.

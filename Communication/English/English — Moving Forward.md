@@ -15,16 +15,16 @@ Biasanya dipake di urusan formal atau bisnis. Maksudnya untuk menjelaskan sesuat
 
 ## Kata Ganti
 
-_**Going forward**_
+<ins>Going forward</ins>
 Going ahead
-_**From this point on**_
+<ins>From this point on</ins>
 From now on
 Proceeding
 Advancing
 Moving on from this
-_**From here**_
+<ins>From here</ins>
 Looking forward
-_**In the future**_
+<ins>In the future</ins>
 
 
 
