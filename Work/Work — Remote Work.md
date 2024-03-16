@@ -5,12 +5,285 @@ tags:
 - WFH
 - WFA
 - Remote-Work
+- Draft
 date: 2023-03-26
 ---
 
 # Remote Work
 
+## Ways of Working Remotely
 
+1. **<ins>Set Up a Dedicated and Comfortable Workspace:</ins>**
+    1. Lokasi kerja bisa diatur di pojokan rumah atau memang ruangan tersendiri.
+    2. Harus terpisah dari bagian rumah/ruangan dimana orang berlalu-lalang biar fokus. Juga buat ngebedain mana buat kerjaan dan mana yang kehidupan personal.
+    3. Sebisa mungkin selalu ada meja dan kursi. Paling enggak, meja kalo semisal mau sambil selonjoran.
+    4. Peralatan kerja juga harus udah siap tersedia. Laptop, monitor lah, tempat sampah, keyboard, mouse, internet, alat tulis kantor.
+    5. Penerangan yang pas juga jangan lupa. Kadang terlalu silau atau terlalu gelap pengaruh ke fokus kerja sama nyaman atau enggaknya daerah tempat kerja/ruang kerja.
+    6. Sirkulasi udara juga penting banget. Kalo bisa pake AC, kayanya butuh disediain. Paling enggak ada kipas angin tapi usahakan kipas yang sesedikit mungkin berisiknya. Kalo udara tempat kerja dingin mungkin masih bisa sambil selimutan. Tapi kalo udah panas, bakal susah banget fokus dan jadi sering bangkit buat nyari udara sejuk yang mana bikin waktu kerja semakin berkurang dan fokus juga menurun.
+2. **<ins>Establish a Routine, Set Boundaries, and Take Breaks:</ins>**
+    1. Jam kerja harus dimulai dan diakhiri dengan disiplin. Kenapa, karena sekarang kerja udah di luar kantor jadi jam masuk akan jadi lebih fleksibel tanpa ada rentang waktu berangkat kerja. Pulang pun juga jadinya bisa langsung sesimpel keluar dari ruang kerja, atau bangkit dari meja kerja. Makanya seakan kecampur antara kerjaan dari kehidupan personal karena lokasi sama, hanya beda ruangan. Makanya disiplin dan organized disini jadi penting banget.
+    2. Bikin batas antara kehidupan kantor dan kehidupan personal ini penting. Dua contoh udah dijelasin di atas. Batas fisik antara ruang kerja dan ruangan lain buat kehidupan personal. Juga set waktu kerja dengan jelas. Jangan nyampurin jam kerja sama personal dan jam personal sama kerjaan. Turn off notification di luar jam kerja (Ini tergantung dari kebutuhan masing-masing jenis kerjaan yang dilakuin).
+    3. Jadwalin morning ritual buat nyiapin semua hal sebelum mulai kerja. Kalo sebelumnya sewaktu WFO (Work from Office), yang disiapin adalah perlengkapan berangkat, commute, dan mungkin persiapan kalo ada cuaca buruk. Yang sekarang sewaktu WFH (Work from Home)/WFA (Work from Anywhere) ini lebih ke siapin peralatan kerja dan hilangin distraksi. Siapin diri buat bisa fokus.
+    4. Jadwalin breaks teratur, istirahat, dan isi ulang energi. Dengan catatan gak ganggu jadwal kerja normal. Ini penting buat ngehindari burnout dan tetep ngejaga semangat dan motivasi. Caranya bisa banyak. Jalan-jalan sekitaran rumah. Coffee break sebentar. Tea break sejenak. Boci sebentar (short nap). Atau mungkin hal lain yang intinya lakuin hal-hal buat rileks dan refresh pikiran.
+    5. Jadwalin virtual commute sewaktu udah selese kerja dan udah waktunya jam pulang kerja. Karena sekarang gak ada perjalanan pulang kerja atau commute dari kantor ke rumah, jadinya diganti jadi virtual commute dimana kita nyiapin segala sesuatu buat dilakuin besok sewaktu morning ritual. Atau buat nyiapin apa yang perlu dilakuin besok. Ini semacam refleksi hari ini. Bisa dibilang semacam mini sprint retro. What works, what doesn't.
+
+
+<!--
+3. **Use Technology**: There are numerous tools and apps available that can help you work remotely. These include project management tools, communication apps, and cloud storage services.
+
+4. **Stay Connected**: Even though you're not physically present in an office, it's important to stay connected with your team. Regular check-ins and meetings can help you stay in the loop.
+
+# Ways of Working from Home
+
+3. **Stay Organized**: Keep your workspace clean and organized. This can help you stay focused and make your workday more productive.
+
+4. **Communicate Effectively**: Communication is key when working from home. Make sure to regularly check in with your team and keep them updated on your progress.
+
+5. **Take Care of Your Health**: Don't forget to take care of your physical and mental health. This includes taking regular breaks, eating healthy, and getting regular exercise.
+
+# Tips to Utilize Chat App Features to Maximize Remote Work
+
+Chat apps can be a great tool for remote work. Here are some tips to utilize chat app features to maximize remote work:
+
+1. **Use Channels**: Most chat apps allow you to create channels for different topics or projects. This can help keep conversations organized and relevant.
+
+2. **Use Direct Messages**: For one-on-one conversations or sensitive topics, use direct messages.
+
+3. **Use Video Calls**: For more complex discussions, use video calls. This can help reduce misunderstandings and make communication more effective.
+
+4. **Use Screen Sharing**: If you need to explain something visually, use the screen sharing feature.
+
+5. **Use File Sharing**: Most chat apps allow you to share files. This can make collaboration easier and more efficient.
+
+# Make Sure to Communicate Better When Remote Working
+
+Communication is key when working remotely. Here are some tips to communicate better when remote working:
+
+1. **Be Clear and Concise**: When communicating remotely, it's important to be clear and concise. This can help prevent misunderstandings and ensure everyone is on the same page.
+
+2. **Use the Right Tools**: Use the right communication tools for the job. This could mean using email for formal communications, chat apps for quick questions, and video calls for in-depth discussions.
+
+3. **Be Responsive**: Make sure to respond to messages and emails in a timely manner. This can help keep projects moving forward and show your team that you're engaged.
+
+4. **Give and Receive Feedback**: Regular feedback can help improve your work and the work of your team. Don't be afraid to give constructive feedback, and be open to receiving feedback as well.
+
+5. **Show Empathy**: Remember that everyone is dealing with their own challenges when working remotely. Show empathy and understanding in your communications.
+
+# Make Sure to Communicate Presence Better When Remote Working
+
+When working remotely, it's important to communicate your presence to your team. Here are some tips to do this effectively:
+
+1. **Set Your Status**: Most communication tools allow you to set your status. This can let your team know when you're available, busy, or out of the office.
+
+2. **Share Your Schedule**: Share your work schedule with your team. This can help them know when they can reach you and when you'll be unavailable.
+
+3. **Be Active in Meetings**: Be active in virtual meetings. This can show your team that you're engaged and present.
+
+4. **Respond Promptly**: Respond to messages and emails promptly. This can show your team that you're present and engaged.
+
+5. **Check-In Regularly**: Regular check-ins with your team can help you stay connected and show your presence. This could be a daily stand-up meeting or a weekly team meeting.
+
+Remember, remote work can be challenging, but with the right strategies and tools, it can also be very rewarding. Happy remote working! 😊
+
+Source: Conversation with Bing, 16/3/2024
+(1) undefined. https://bing.com/search?q=.
+
+
+Sure, I can elaborate more on each point. Here's the expanded version:
+
+# Ways of Working Remotely
+
+
+
+## Use Technology
+
+Technology plays a vital role in remote work. There are numerous tools and apps available that can help you work remotely. These include project management tools like Trello or Asana, communication apps like Slack or Microsoft Teams, and cloud storage services like Google Drive or Dropbox. These tools can help you stay organized, collaborate with your team, and access your work from anywhere.
+
+## Stay Connected
+
+Even though you're not physically present in an office, it's important to stay connected with your team. Regular check-ins and meetings can help you stay in the loop and feel part of the team. These could be daily stand-ups, weekly team meetings, or one-on-one meetings with your manager. Staying connected also means being responsive to messages and emails, participating in team activities, and being available for impromptu discussions.
+
+# Ways of Working from Home
+
+## Stay Organized
+
+Staying organized is key to being productive when working from home. This means keeping your workspace clean and clutter-free, managing your tasks and deadlines effectively, and keeping track of your meetings and appointments. You could use tools and apps to help you stay organized, such as a digital calendar, a task management app, or even a simple notebook and pen.
+
+## Communicate Effectively
+
+Communication is key when working from home. You need to regularly check in with your team, update them on your progress, and clarify any doubts or issues you might have. You could use communication tools like email, chat apps, or video calls for this. Effective communication helps you stay connected with your team, avoid misunderstandings, and ensure everyone is on the same page.
+
+## Take Care of Your Health
+
+Working from home also means taking care of your physical and mental health. This includes taking regular breaks, eating healthy, getting regular exercise, and getting enough sleep. It also means taking care of your mental health by managing stress, taking time off when needed, and seeking support when you're feeling overwhelmed.
+
+# Tips to Utilize Chat App Features to Maximize Remote Work
+
+## Use Channels
+
+Most chat apps allow you to create channels for different topics or projects. This can help keep conversations organized and relevant. For example, you could have a channel for each project, a channel for announcements, and a channel for casual chats. This way, you can easily find the information you need and keep up with the conversations that matter to you.
+
+## Use Direct Messages
+
+For one-on-one conversations or sensitive topics, use direct messages. Direct messages allow you to have private conversations with your colleagues. This could be for discussing a specific task, giving feedback, or discussing a sensitive issue. Direct messages help you have focused conversations without distractions.
+
+## Use Video Calls
+
+For more complex discussions, use video calls. Video calls allow you to have face-to-face conversations with your team, even when you're working remotely. This can help reduce misunderstandings, build relationships, and make communication more effective. Most chat apps have a video call feature, so you can easily switch from a chat to a video call.
+
+## Use Screen Sharing
+
+If you need to explain something visually, use the screen sharing feature. Screen sharing allows you to share your screen with your team, so they can see what you're seeing. This could be for demonstrating a task, presenting a slide, or troubleshooting a problem. Screen sharing makes it easier to explain complex ideas and ensures everyone is on the same page.
+
+## Use File Sharing
+
+Most chat apps allow you to share files. This can make collaboration easier and more efficient. You can share documents, images, videos, and other files with your team. This way, everyone has access to the resources they need, and you can work together on the same files.
+
+# Make Sure to Communicate Better When Remote Working
+
+## Be Clear and Concise
+
+When communicating remotely, it's important to be clear and concise. This can help prevent misunderstandings and ensure everyone is on the same page. Before you send a message or start a conversation, think about what you want to say and how to say it clearly. Avoid jargon and complex language, and use simple and straightforward words.
+
+## Use the Right Tools
+
+Use the right communication tools for the job. This could mean using email for formal communications, chat apps for quick questions, and video calls for in-depth discussions. Each tool has its strengths and weaknesses, so choose the one that best suits your needs. Also, make sure everyone in your team is comfortable with the tools you're using.
+
+## Be Responsive
+
+Make sure to respond to messages and emails in a timely manner. This can help keep projects moving forward and show your team that you're engaged. If you can't respond immediately, let your team know when they can expect a response. Being responsive shows your team that you're reliable and committed to your work.
+
+## Give and Receive Feedback
+
+Regular feedback can help improve your work and the work of your team. Don't be afraid to give constructive feedback, and be open to receiving feedback as well. Feedback should be specific, actionable, and delivered in a respectful manner. It should focus on the work, not the person, and it should be aimed at helping the person improve.
+
+## Show Empathy
+
+Remember that everyone is dealing with their own challenges when working remotely. Show empathy and understanding in your communications. This could mean acknowledging the challenges of remote work, showing understanding when mistakes are made, and offering support when needed. Empathy can help build trust and strengthen your relationships with your team.
+
+# Make Sure to Communicate Presence Better When Remote Working
+
+## Set Your Status
+
+Most communication tools allow you to set your status. This can let your team know when you're available, busy, or out of the office. Your status could be "Available", "Busy", "In a meeting", or "Out of office". Setting your status helps your team know when they can reach you and when you're not available.
+
+## Share Your Schedule
+
+Share your work schedule with your team. This can help them know when they can reach you and when you'll be unavailable. Your schedule could include your work hours, your breaks, and your days off. Sharing your schedule helps your team plan their communications with you and respect your time.
+
+## Be Active in Meetings
+
+Be active in virtual meetings. This can show your team that you're engaged and present. Being active could mean speaking up, asking questions, giving feedback, and showing interest in what others are saying. Being active in meetings helps you contribute to the discussion, learn from others, and build relationships with your team.
+
+## Respond Promptly
+
+Respond to messages and emails promptly. This can show your team that you're present and engaged. Prompt responses can help keep projects moving forward, prevent misunderstandings, and show your team that you're reliable.
+
+## Check-In Regularly
+
+Regular check-ins with your team can help you stay connected and show your presence. This could be a daily stand-up meeting, a weekly team meeting, or a one-on-one meeting with your manager. Check-ins help you stay in the loop, share updates, and address any issues or concerns.
+
+Remember, remote work can be challenging, but with the right strategies and tools, it can also be very rewarding. Happy remote working! 😊
+
+
+Sure, I can elaborate more on each point. Here's the expanded version:
+
+# Ways of Working Remotely
+
+## Telecommuting
+
+Telecommuting is a flexible work arrangement where employees split their work time between an office and a remote location, often their home. This arrangement offers the best of both worlds - it provides the flexibility of remote work and the structure and social interaction of an office environment. Employees can schedule their work hours based on their productivity peaks and personal commitments. However, it requires good time management skills to balance work and personal life.
+
+## Coworking
+
+Coworking is a modern work style where employees work at a shared workspace instead of a dedicated office. These shared workspaces offer all the amenities of an office - desks, meeting rooms, internet connection, coffee machines, and more. They also provide opportunities for networking and collaboration with professionals from different fields. However, they come with a cost and may not provide the same level of privacy as a home office or a dedicated office.
+
+## Globally-distributed teams
+
+Globally-distributed teams consist of members working from different countries or regions. This arrangement allows companies to tap into global talent and provide round-the-clock service. It also offers employees the freedom to work from anywhere in the world. However, it poses challenges in terms of communication, collaboration, and cultural differences. It's important to use technology to bridge the geographical gap and foster a strong team culture.
+
+# Ways of Working from Home
+
+## Schedule creation
+
+Creating a daily or weekly schedule is crucial when working from home. Your schedule should outline your work hours, breaks, and meetings. Sticking to a schedule helps ensure productivity, maintain a work-life balance, and avoid burnout. It's important to start and end your workday at the same time every day, take regular breaks to rest and recharge, and set aside time for meals and exercise.
+
+## Communication strategy
+
+Since in-person communication is limited while working from home, it's important to establish effective communication channels with colleagues and managers. You can use project management tools to manage tasks and deadlines, video conferencing tools to hold meetings, and instant messaging apps to stay connected with your team. Regular communication helps keep everyone on the same page, fosters teamwork, and builds a strong team culture.
+
+# Tips to Utilize Chat App Features for Remote Work
+
+## Create channels
+
+Creating specific channels for project discussions, team announcements, and casual conversations can help organize communication and make it easier to find information. Each channel serves a specific purpose and includes relevant team members. This way, you can keep your work discussions separate from your casual chats and avoid information overload.
+
+## Utilize mentions and tags
+
+Mentions and tags are useful features in chat apps that allow you to direct your messages to the right people. By mentioning someone in a message, you can ensure they receive a notification and respond promptly. Tags allow you to categorize messages and make them easier to find. They can be used to mark messages as important, urgent, or related to a specific project or topic.
+
+## Share files
+
+Most chat apps allow you to share documents, images, and other files directly within the platform. This makes it easy to collaborate on documents, share updates, and keep all your work-related files in one place. You can also use file sharing to give feedback, share ideas, and keep your team updated on your progress.
+
+# Ensuring Better Communication When Remote Working
+
+## Regular check-ins
+
+Regular check-ins are crucial for maintaining a sense of connection and collaboration when working remotely. These can be daily stand-up meetings, weekly team meetings, or one-on-one meetings with your manager. Check-ins provide an opportunity to discuss projects, address concerns, share updates, and celebrate achievements. They also help build relationships, foster teamwork, and create a sense of belonging.
+
+## Clear and concise communication
+
+Clear and concise communication is key to avoiding misunderstandings and ensuring everyone is on the same page. When communicating remotely, it's important to express your thoughts and ideas clearly and concisely. This means avoiding jargon, using simple language, and providing enough context for your message. It's also important to listen actively, ask clarifying questions, and confirm understanding.
+
+## Overcommunication is key
+
+While it may seem excessive, erring on the side of overcommunicating is beneficial when working remotely. This means providing regular updates, sharing information proactively, and repeating important messages. Overcommunication helps ensure everyone has the information they need, reduces the risk of misunderstandings, and builds trust within the team.
+
+# Communicating Presence While Remote Working
+
+## Set status indicators
+
+Status indicators are a useful feature in chat applications that allow you to show your availability. You can set your status to "online" when you're available, "busy" when you're working on a task, or "away" when you're not at your desk. This helps your team know when they can reach you and when you're not available. It also helps manage expectations and respect boundaries.
+
+## Communicate breaks
+
+Communicating your breaks is important to avoid missed messages or delays in responses. You can do this by setting your status to "away", sending a quick message to your team, or blocking out your break time in your calendar. This helps your team know when you're not available and respect your break time. It also helps you take guilt-free breaks and return to work refreshed and recharged.
+
+## Respond promptly
+
+Responding promptly to messages and emails is crucial for effective communication and collaboration. This shows your team that you're present, engaged, and reliable. It also helps keep projects moving forward, prevent delays, and build trust within the team. However, it's important to balance responsiveness with productivity and avoid constant interruptions. You can do this by setting specific times for checking messages and emails, using "do not disturb" mode when working on a task, or using automated responses to manage expectations.
+
+
+Sure, let's continue:
+
+# Check-In Regularly
+
+Regular check-ins are a crucial part of remote work. These could be daily stand-up meetings, weekly team meetings, or one-on-one meetings with your manager. Check-ins provide an opportunity to discuss projects, address concerns, share updates, and celebrate achievements. They also help build relationships, foster teamwork, and create a sense of belonging. Regular check-ins ensure that everyone is on the same page and working towards the same goals. They also provide a platform for feedback, recognition, and learning.
+
+# Clear and Concise Communication
+
+Clear and concise communication is key to avoiding misunderstandings and ensuring everyone is on the same page. When communicating remotely, it's important to express your thoughts and ideas clearly and concisely. This means avoiding jargon, using simple language, and providing enough context for your message. It's also important to listen actively, ask clarifying questions, and confirm understanding. Clear and concise communication helps build trust, fosters collaboration, and ensures effective teamwork.
+
+# Overcommunication is Key
+
+While it may seem excessive, erring on the side of overcommunicating is beneficial when working remotely. This means providing regular updates, sharing information proactively, and repeating important messages. Overcommunication helps ensure everyone has the information they need, reduces the risk of misunderstandings, and builds trust within the team. It also helps create a culture of transparency, openness, and collaboration.
+
+# Set Status Indicators
+
+Status indicators are a useful feature in chat applications that allow you to show your availability. You can set your status to "online" when you're available, "busy" when you're working on a task, or "away" when you're not at your desk. This helps your team know when they can reach you and when you're not available. It also helps manage expectations and respect boundaries. Setting your status indicators accurately and updating them regularly can help foster a culture of respect, trust, and accountability.
+
+# Communicate Breaks
+
+Communicating your breaks is important to avoid missed messages or delays in responses. You can do this by setting your status to "away", sending a quick message to your team, or blocking out your break time in your calendar. This helps your team know when you're not available and respect your break time. It also helps you take guilt-free breaks and return to work refreshed and recharged. Communicating your breaks effectively can help maintain a healthy work-life balance and prevent burnout.
+
+# Respond Promptly
+
+Responding promptly to messages and emails is crucial for effective communication and collaboration. This shows your team that you're present, engaged, and reliable. It also helps keep projects moving forward, prevent delays, and build trust within the team. However, it's important to balance responsiveness with productivity and avoid constant interruptions. You can do this by setting specific times for checking messages and emails, using "do not disturb" mode when working on a task, or using automated responses to manage expectations.
+
+Remember, remote work can be challenging, but with the right strategies and tools, it can also be very rewarding. Happy remote working! 😊
+
+-->
 
 ## From Books
 
