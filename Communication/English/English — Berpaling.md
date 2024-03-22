@@ -9,7 +9,7 @@ date: 2023-12-25
 
 fix gue paling ganteng sekampung, warga pasti gakkan berpaling
 
-⇒ Me me me surely the most handsome in the village, residents won't ever look away
+→ Me me me surely the most handsome guy in the village, people won't ever look away
 
 - Won't ever turn their gaze
 - Won't ever shift their focus
