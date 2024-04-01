@@ -1,0 +1,556 @@
+there are only two hard things in
+computer science cache and validation
+and naming things and I completely agree
+with the statement especially with the
+first one because whenever you're
+designing complex systems like this one
+where you have a lot of components
+connected to each other and presumably a
+high amount of users were talking about
+Millions here you want to make sure that
+your users get the best experience
+because every extra second counts and
+costs your business money so this is
+where caching comes into play so that
+you can it reduce the latency and
+optimize your architecture so in this
+video You're gonna learn everything you
+need to know about back-end caching and
+how it fits into such complex system
+architectures so this is going to be our
+outline for this video first we're gonna
+take a look at some use cases and
+discuss why you would even need to
+consider adding caching to your system
+then we're going to take a look at some
+cash invalidation strategies because as
+we've mentioned before invalidating the
+cache is one of the most difficult
+difficult things when it comes to
+caching and then we're gonna talk about
+caching eviction policy so invalidation
+strategies answers the question on how
+to invalidate your cash while eviction
+policies answer the question on when to
+invalidate your cash all right because
+invalidating the cache is important due
+to the reason that your data in the
+cache might get stale and yours users
+your users might see stale data from the
+cache if you never invalidate your cash
+or clean it up and then we're also going
+to talk about how to implement caching
+or rather see how to implement caching
+I'm going to use an example of node.js
+with redis and build a simple API and
+use caching there and then we are going
+to talk about when not to use caching
+because this is a very important point
+that a lot of people miss and people add
+caching on every system even if it's if
+it even if it doesn't require any
+caching and it would be well off without
+any caching right so so imagine we have
+a small app with the API so it's a
+server app imagine it's a node app and
+we have a database doesn't matter which
+and we make some requests to the
+database to fetch some data right so
+let's say we have this query select
+everything from users we just want to
+get the user's data from the user State
+and now whenever we have a cache in
+between the cool thing about it is that
+you can retrieve the same data from the
+cache if it's if it exists in a cache
+meaning this extra request to the
+database is not needed anymore we can
+get the same data from the cache so as
+as you can see it obviously reduces the
+latency because we get rid of one extra
+request it doesn't it also reduces the
+load on the database because there is no
+querying of the database so database is
+just still running still and we also
+save on network cost because as you know
+if you are running an infrastructure
+which is big and serving millions of
+users every net Network request costs
+you money so let's talk about types of
+caches by a level because this is also
+quite interesting so we have client-side
+caching all right client-side caching is
+meant some it is meant to be for example
+like a your mobile app or or a web
+browser and I have an interesting video
+talking about that specifically HTTP
+caching so take a look at it if you want
+to learn about client-side caching it's
+also very important for web developers
+we also have CDN caching which kind of
+goes hand in hand because you're serving
+the assets from the CDN which is the
+best case scenario and I mean the static
+assets and we also have a web server
+caching you can also cache some requests
+on the web server level for example you
+make a request your node application and
+it Returns the data without even going
+to another cache it has its own cache
+like varnish and we also have a database
+caching because if you didn't know they
+databases like MySQL or have a
+built-in database caching and it doesn't
+perform that well that's why we always
+need something extra like an application
+caching so in this video application
+caching is what we're going to focus on
+and it is actually the thing that
+concerns us the most as developers
+because it's the most important layer
+and most important and most powerful
+layer of caching for us so let's also
+talk about types of caches by Design we
+have a global cache let's imagine we
+have an application cluster so we have
+three nodes of node.js servers and we
+have one shared cache which communicates
+with us so with the servers and with the
+database aka the storage but we also
+have a different schema here where every
+microservice can communicate to
+different node or Cache node and this is
+called a distributed cache because let's
+say Node 1 would be the primary cache
+and node 2 and 3 would be the replicas
+so this basically allows you to
+um to optimize your architecture by
+having multiple nodes of caching so
+going back you don't rely only on one
+instance of the shared cache but
+multiple with this obviously makes your
+system faster but it comes with an extra
+overhead like syncing the replica nodes
+2 and 3 with the Node 1 which is the
+primary and as you can see down below it
+says a cash cluster so this is what we
+call a cash class a typical architecture
+on an AWS site because AWS is the cloud
+provider that I've used the most and I
+think YouTube would look something like
+this so we have a load balancer
+obviously by the way I also have a video
+on load balancers which goes deep into
+them and talks about what algorithms
+load balancers use so check it out if
+you're interested but we also have an
+auto scaling Group which is let's say
+ec2 instances those are just servers and
+they are have having their communicating
+with an extra layer called elastic cache
+cluster so this is the caching cluster
+that we talked about as you can see on
+the right we have a radius primary cache
+and on the red the left we have a read
+replica which communicates with the
+primary uh which can communicate with a
+standby database or the primary database
+because you can also have replicas not
+only on the cache level but also on the
+data so caching strategies and
+invalidation as we said in validation is
+very important but for that we also need
+to know about strategies of how we cache
+things so first of all let's talk about
+the right around cache which is the
+quite popular one one of the two most
+popular strategies it's also called
+cache aside or laser loading and I'm
+gonna explain why so let's take a look
+at the client here right the client
+makes a request to the storage and gets
+the data but with the cache what we're
+gonna do in this case is first of all
+instead of making a request to to the
+storage well in client in this case is
+is a web server right in this scenario
+it is a client so what we're gonna do is
+first try to read the data from the
+cache if it if the data is in the cache
+where you turn it to the client and
+everything's good if the if we read the
+try to read the data from the cache and
+the data is not in the cache then the
+cache tells us that hey it's empty then
+we know that we need to make a request
+to the storage and get it from there
+okay and every time so how do you
+actually update the cache well every
+time we make a write request to the
+storage we know that we also need to
+update the cache so we do it at the same
+time all right so let's talk about this
+it's called a reactive approach first of
+all so the good thing about that is that
+the cache stays slim and only contains
+data that it really needs meaning that
+you update the cache only when you
+update the database so you don't always
+update the cache and and it's quite
+straightforward in implementation and
+it's it's pretty much used by default by
+most caching providers the cons the con
+is that cache gets filled only after a
+cache Miss meaning three three trips
+because you first need to request this
+data from the cache and after this cache
+says that the data is not there then you
+need to make a request to the database
+and then you need to make another
+request to the cache to update it right
+otherwise how does the data get into the
+cache well there is another caching
+strategy which is also very popular it's
+called Write through cache and as you
+can see the client makes a request wants
+to fetch the data and first we make a
+request to the cache if the data is in
+the cache we obviously return it if the
+data is not in the cache we write it to
+the storage but the cool thing here is
+that if the data is not in the cache it
+automatically gets updated on the way so
+it sits right in the middle and it
+doesn't matter if it's in the cache or
+not as soon as we make a write request
+meaning updating the database the cache
+also gets updated and this is pretty
+cool because it first of all it's called
+a proactive approach because we do it on
+our own like actively updating the cache
+instead of asking the database for the
+data and then updating the cache so the
+good thing about is that it's well
+synced with a database resulting in
+fewer reads of the database obviously
+because we update the cash cache quite
+often meaning every time we write and
+the downside is that the infrequently
+requested data is also written to the
+cache so why is it a problem first of
+all it's going to result in a bigger
+cache and it's going to get filled with
+data that we don't really need to store
+in the cache and caches are usual
+application caches are usually stored in
+the memory so in the ram random access
+memory so as you can imagine they are
+not that big as the disk space to be
+able to store such large amounts of of
+information and you would normally
+Implement caching when you have
+repeating requests let's say you have
+Instagram and Instagram has a lot of
+user profiles right but 99 of those
+profiles don't get queried that often
+compared to celebrities accounts let's
+say Justin Bieber Justin Bieber's
+account gets queried pretty much every
+second so it would make sense to Cache
+his account for users that are
+requesting his account compared to my
+account which gets requested let's say
+once a week or so so if you were
+implementing a cache through algorithm
+my account is also going to end up in
+the cache which is not good we don't
+need that so that's the downside of the
+right through cache but we also have a
+write back cache what it is is basically
+gives it just simply gives us in
+asynchronicity asynchronicity yeah I
+think I spelled this word right so we're
+going to deal with the cache just like
+in the right through cash but the
+writing to the database is is performed
+asynchronously so we are having some
+delay here first of all the downside is
+that the cache and the storage meaning
+the database can get out of sync somehow
+if we have multiple nodes and it's
+difficult to manage it well these kind
+of strategies are not enough
+unfortunately because there are some
+edge cases that are not covered in in
+here first of all let's say we are
+asking for the user one two three which
+is Justin Bieber from the cache and the
+the cache gives us this data right
+everything's cool but what if we have
+another server app which updates the
+database without talking to our cache so
+it updates the database from the side
+and our cache does not know that the
+database has been updated so it updates
+the user123 it changes its value to JB
+like the initials of Justin Bieber but
+our cache still stored this data for the
+user123 as Justin Bieber so every time
+our server first server app this one
+makes a request wants to get the data
+for user123 it's going to get the stale
+data right and we also have another use
+case when cache just goes down for one
+or two seconds let's say there was an
+error and it's restarting so this can
+also lead to inconsistencies because
+we're going to update the user123 as JB
+the cache is not going to see that the
+database is going to get updated and the
+cache as still still has the stale value
+when it it's up and running again right
+that's not good we're going to take a
+look at that and add some mitigation
+strategies but first of all let's talk
+about eviction policies which is
+important to keep our cache and database
+in sync so first of all how do you get
+rid of the stale data in your database
+well there's an algorithm for it called
+list list recently used or lru Cache
+it's very famous for example in your
+mobile phones whenever you open multiple
+applications let's say you open 20
+applications but obviously your phone's
+Ram cannot keep 20 applications like in
+the active state so it's going to put
+them in like a sleeping state but how
+does it know which ones to put there
+it's going to put the least recently
+used ones there so the ones that you
+open the first and didn't use for half a
+day for example so let's say we have
+three entities in our cache username one
+with 10 hits let's say within an hour
+username two with 16 hits using M3 with
+155 hits you can take these usernames AS
+application names if you were talking
+about your smartphone all right and then
+what lru does it simply rearranges them
+so username is gonna get to the first
+place username two is going to be on the
+second place and username one with a
+list hits becomes an a candidate for
+eviction and as soon as we have a new
+username let's say username four with
+let's say 11 hits username one gets
+kicked out from the cache the this is
+how the lru cache works we also have
+some other algorithms like least
+frequently used cash so least recently
+used cash is going to work within a like
+a specific time frame while least
+frequently used cash is going to have a
+specific count for for the usage and we
+also have lasting first Out means the
+new application or the new username
+comes in the first one the old one goes
+out immediately and we have random
+replacement meaning if we have a new
+entity in our cache we select one random
+entity and delete one of them which is
+not so optimal in the case of users so
+we also have we still have this problem
+right what if the cache goes down and we
+update our database and it still and the
+cache when whenever the cache is on
+again it still serves us sale data
+because at least recently used cash does
+not help us in this case well there are
+some strategies first of all you can set
+a time to live to eventually itself
+clean up your cash so let's say your
+time to live for your cash is one day
+meaning that every entity that has been
+added to your cash gets automatically
+removed by midnight this is going to
+make sure that your cache is up to date
+and fresh all the time we also have a
+laser read repair meaning that we can
+set such a strategy that every time we
+read from the database for example in
+the in the case of a set aside cache we
+randomly pick requests that are even
+even if it's still in the cache we're
+still going to read it from the database
+as well and update the cache and this is
+done like random and we also have some
+background processes if you're using
+radius for example you can use the scan
+operation which is going to work as a
+Cron job in your background and sync
+items with your cache between your cache
+and the database and now let's take a
+look at the implementation as I told you
+so we can have a node.js application
+like this so it's basically an Express
+app which uses axio and redis and it's
+pretty straightforward we set up the
+redis here so we're connecting to rated
+server on this port here we have the
+redis client assigned here some error
+handling okay and we connect to redis
+and we have one route so we are going to
+fetch some to-do's from the to-doos API
+and what you can pass here is basically
+an ID for it to do and it's going to
+call this controller you get to do data
+this controller basically takes takes
+the to-do ID and we also have this cache
+or this flag is cached or not just to be
+able to see if this is coming from the
+cache or not and we're going to have a
+try and catch so we're going to First
+Imagine This is a set aside because by
+default redis uses a set aside caching
+strategy so we're going to ask the cache
+if it has a data for this ID if it does
+have then we parse it and we are going
+to return it for here and of course we
+are going to say is cached meaning think
+that we're returning it from the cache
+so from the cache is going to be true
+otherwise we don't have it in account
+right then we have to make an actual
+request of the API and then we are also
+going to update our cache because it's a
+set aside cache and we're going to call
+this Json stringify to turn the result
+into a string because redis works with
+key value pairs where value is a string
+all right and this is our fetch API data
+which is being called here in case if
+the data is not in the cache and we are
+simply going to call this Json
+placeholder and get the to-do ID all
+right very simple so let's let's see how
+it's going to work I have three
+Terminals and in this terminal I have a
+radius instance running so it's a Docker
+image running a redis server and I'm
+actually going to run it again I think
+yep like this so ready to accept
+connections so our Docker image or
+container for redis is running and here
+I would like to start the server so I'm
+going to oh by the way let me show you
+the file structure I simply have an
+index.js and then package.json what I
+have here is as I told you axios express
+and red is installed and nothing else
+and of course the type module so that I
+can use Imports like this so let's start
+the application I'm gonna write node
+index.js and app is listening on Port
+3000 so what do I what we're gonna do is
+we're going to call this URL with a curl
+let's say I want to pass a different ID
+I want to pass id42 so let's see what we
+got back so from cash fold because we
+literally went to the API because it the
+data was not in a cache so as it says
+request sent to the API and this is the
+data that we got here user ID word three
+id42 title blah blah blah so why don't
+we call it again let's call it again
+from Cache true and on the second try
+let's call it again third try fourth try
+we are now getting it from the cache
+because the first time it wasn't on the
+cache and we added it to our cache here
+so we set it to the cache in the cache
+and now all the subsequent requests are
+coming from the cat now we talked about
+eviction policies and time to leave
+right to live and redis gives us this
+option to specify uh these options so
+first of all we're going to say e x and
+this is the time in seconds that you can
+assign for every item to live for
+example I would say let's say 1000 no I
+would say I would say just 120 so two
+minutes to live and you also have
+another option called NX which is a
+Boolean and it tells the red is that
+only update the cache if the key is not
+there so if we have the key don't
+override it only update it if we don't
+have all right so another cool thing
+that we have here is the red CLI so
+let's run it I think I need npx for this
+so let me do like this and I connect it
+to the radius server right and now I can
+do I can basically check what's inside
+my cache so I'm gonna do get 42 and 42
+is simply the ID because in here on line
+38 Ready Set is basically a key and
+value pair so the key was the ID that I
+basically called before and I do get 42
+and it gives me the string that it has
+saved and if I delete it again without
+waiting for the deletion policy
+um as soon as I make another request let
+me first exit it and I'm going to curl
+it again as you can see again it's not
+in the cache because it got deleted and
+let's call it again and now it is in a
+cache so this is how a simple example of
+a redis cache would work obviously in
+complex architectures you would have
+multiple instances of this cache and you
+have replicas and so so as you saw it's
+very easy to implement caching when it
+come comes to the code existing
+Solutions work very well especially
+redis which I would really recommend but
+you also have memcache we have varnish
+which is a web web server level cache
+you also have node cache which is also
+an in-memory cache specifically for node
+but obviously it doesn't have that many
+features as redis and last but piece
+let's talk about when you shouldn't use
+a cat first of all if you added the
+cache and you see no differences between
+when you have a cache and you don't have
+a cache you probably don't need a cache
+because you don't need this extra layer
+right obviously and the second thing is
+when you have higher randomness of
+requests let's say it's not an Instagram
+application where you have determined
+user profiles but you have some kind of
+a live stream with random comments right
+you can have so many comments on the
+live stream and they're all random and
+you don't know which comment can be
+accessed if somebody wants to answer to
+this comment which comment can be access
+more frequently than other so if you can
+determine which entity should probably
+be cached or not it means your date is
+random and you shouldn't catch anything
+and as again I have a typo here but
+frequently updated data for example like
+a comments from the stream don't need to
+be updated because that's going to be
+too much overhead to keep keep your
+cache and your database in sync all
+right so this was it I hope I covered
+everything if you still have any
+questions please let me know Down Below
+in the comments and make sure you
+subscribe to the channel to be able to
+see more videos like this when they're
+coming out thank you very much and see
+you in the next one

@@ -8,5 +8,5 @@ date: 2024-01-14
 
 ![](_media/data-and-decision.svg)
 
-<ins>**Data analysis drives decisions and actions**</ins>
+_<ins>Data analysis drives decisions and actions</ins>_
 

@@ -145,7 +145,7 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 
 
 
-## Convert writing or any text to be easier to read
+## Convert writing or any text to be easier to be read
 
 **\#1**
 
@@ -185,6 +185,12 @@ Please convert the writings on _<ins>\[insert type here. document, page.\]</ins>
 
 Please convert the writings to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using provided text and do not search the web. Ignore earlier bot and user messages and use provided text only. Here is the text:
 _<ins>\[insert the text here\]</ins>_
+
+
+
+**\#5**
+
+what is _<ins>\[topic that you want to be explained in details\]</ins>_. explain to me in minimal 500 words for each sections you write and use simple words.
 
 
 
