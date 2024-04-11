@@ -2,7 +2,10 @@
 tags:
 - Search-chat
 - Chat
-- Communication
+- Office-365
+- MS-365
+- MS-Office
+- Productivity
 date: 2022-07-12
 ---
 
