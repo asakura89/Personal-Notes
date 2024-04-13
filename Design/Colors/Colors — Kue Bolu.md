@@ -62,6 +62,21 @@ Article text with colored background
 
 
 
+### Alternative
+
+<span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:#fff1f2;padding:6px 24px;border-radius:4px">
+&nbsp;
+</span>
+
+
+
+**HEX** fff1f2
+**HSL**
+**RGB**
+**CSS**
+
+
+
 ### Text
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:#7a7a7a;padding:6px 24px;border-radius:4px">
@@ -80,6 +95,14 @@ Article text with colored background
 ### Usage
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;font-weight:500;letter-spacing:0;text-transform:none;background-color:#fffff;color:#7a7a7a;padding:6px 32px;border-radius:4px;border:3px #7a7a7a solid">
+Article text with colored background
+</span>
+
+
+
+### Usage Alternative
+
+<span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;font-weight:500;letter-spacing:0;text-transform:none;background-color:#fff1f2;color:#7a7a7a;padding:6px 32px;border-radius:4px">
 Article text with colored background
 </span>
 

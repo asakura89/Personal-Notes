@@ -8,28 +8,28 @@ date: 2024-04-11
 
 ```javascript
 function State(initial) {
-    this._value = initial;
-    this._listeners = [];
+    this.__value__ = initial;
+    this.__listeners__ = [];
 }
 
 State.prototype.onChange = function(listener) {
-    this._listeners.push(listener);
+    this.__listeners__.push(listener);
 };
 
 State.prototype.notifyChange = function(newValue) {
-    this._listeners.forEach(function(listener) {
+    this.__listeners__.forEach(function(listener) {
         listener(newValue);
     });
 };
 
 Object.defineProperty(State.prototype, 'value', {
     get: function() {
-        return this._value;
+        return this.__value__;
     },
     set: function(newValue) {
-        var oldValue = this._value;
+        var oldValue = this.__value__;
         if (oldValue !== newValue) {
-            this._value = newValue;
+            this.__value__ = newValue;
             this.notifyChange(newValue);
         }
     }
@@ -63,7 +63,7 @@ run();
 Minify pake [Minify JS Online. JavaScript Minification tool that works in browser. | Minify JS Online (minify-js.com)](https://minify-js.com/)
 
 ```javascript
-function State(e){this._value=e,this._listeners=[]}function decode(e){var t,n=e.match(/.{1,4}/g)||[],o="";for(t=0;t<n.length;t++)o+=String.fromCharCode(parseInt(n[t],16));return o}function run(){var e=new State(1444);e.onChange((function(e){console.log(decode("00480061007000700079002000450069006400200041006c002d00460069007400720020")+e+decode("0048002e00200050006c006500610073006500200061006300630065007000740020007400680069007300200068006500610072007400660065006c0074002000610070006f006c006f00670079002e00200048006f00700069006e006700200066006f007200200064006f006f00720020006f006600200066006f00720067006900760065006e0065007300730020007700690074006800200061006c006c0020006d007900200068006500610072007400200061006e006400200073006f0075006c00200066006f007200200061006e0079002000770072006f006e00670064006f0069006e006700730020004900270076006500200063006f006d006d0069007400740065006400200061006e00640020006d0069007300740061006b00650073002000490027007600650020006d006100640065002e"))})),e.value++}State.prototype.onChange=function(e){this._listeners.push(e)},State.prototype.notifyChange=function(e){this._listeners.forEach((function(t){t(e)}))},Object.defineProperty(State.prototype,"value",{get:function(){return this._value},set:function(e){this._value!==e&&(this._value=e,this.notifyChange(e))}}),run();
+function State(e){this.__value__=e,this.__listeners__=[]}function decode(e){var t,n=e.match(/.{1,4}/g)||[],o="";for(t=0;t<n.length;t++)o+=String.fromCharCode(parseInt(n[t],16));return o}function run(){var e=new State(1444);e.onChange((function(e){console.log(decode("00480061007000700079002000450069006400200041006c002d00460069007400720020")+e+decode("0048002e00200050006c006500610073006500200061006300630065007000740020007400680069007300200068006500610072007400660065006c0074002000610070006f006c006f00670079002e00200048006f00700069006e006700200066006f007200200064006f006f00720020006f006600200066006f00720067006900760065006e0065007300730020007700690074006800200061006c006c0020006d007900200068006500610072007400200061006e006400200073006f0075006c00200066006f007200200061006e0079002000770072006f006e00670064006f0069006e006700730020004900270076006500200063006f006d006d0069007400740065006400200061006e00640020006d0069007300740061006b00650073002000490027007600650020006d006100640065002e"))})),e.value++}State.prototype.onChange=function(e){this.__listeners__.push(e)},State.prototype.notifyChange=function(e){this.__listeners__.forEach((function(t){t(e)}))},Object.defineProperty(State.prototype,"value",{get:function(){return this.__value__},set:function(e){this.__value__!==e&&(this.__value__=e,this.notifyChange(e))}}),run();
 ```
 
 Hand tweaked
