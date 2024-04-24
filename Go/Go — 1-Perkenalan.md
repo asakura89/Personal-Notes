@@ -145,3 +145,77 @@ func main() {
 ```
 
 
+## Function Overload
+
+Di Golang gak ada function overload. Code ini bakal ngeluarin compile-time error
+
+```go
+package main
+
+import (
+    "math/rand"
+    "time"
+    "fmt"
+)
+
+func main() {
+    fmt.Println(Ryandomize(10))
+}
+
+const feigenbaum = 46692016
+
+func Ryandomize(lowerBound, upperBound int32) int32 {
+    seed := time.Now().UnixNano() % feigenbaum
+    rnd := rand.New(rand.NewSource(seed))
+    return lowerBound + rnd.Int31n(upperBound-lowerBound)
+}
+
+func Ryandomize(upperBound int32) int32 {
+    return Ryandomize(0, upperBound)
+}
+```
+
+error-nya
+
+```log
+PS D:\Workspace\code\AskScratchpad\GolangScratchpad> go run main.go
+# command-line-arguments
+.\main.go:10:28: not enough arguments in call to Ryandomize
+        have (number)
+        want (int32, int32)
+.\main.go:22:6: Ryandomize redeclared in this block
+        .\main.go:15:6: other declaration of Ryandomize
+PS D:\Workspace\code\AskScratchpad\GolangScratchpad> 
+```
+
+tapi kalo code-nya kaya gini
+
+```go
+// . . . omitted . . .
+
+func main() {
+    fmt.Println(RyandomizeUpper(10))
+}
+
+func Ryandomize(lowerBound, upperBound int32) int32 {
+    // . . . omitted . . .
+}
+
+func RyandomizeUpper(upperBound int32) int32 {
+    return Ryandomize(0, upperBound)
+}
+```
+
+bisa
+
+```go
+PS D:\Workspace\code\AskScratchpad\GolangScratchpad> go run main.go
+5
+PS D:\Workspace\code\AskScratchpad\GolangScratchpad> go run main.go
+2
+PS D:\Workspace\code\AskScratchpad\GolangScratchpad> go run main.go
+3
+```
+
+Jadi harus pinter-pinter nyari nama buat function yang overloading function lainnya
+
