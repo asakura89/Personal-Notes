@@ -14,15 +14,15 @@ Sebenernya template atau format dari progress report ini ada banyak sih. Dan ber
 
 ## Format/Template \#1
 
-> **Progress:** Jelasin progress-nya sedetail mungkin (baca penjelasan di atas kalo gak tau gimana caranya).
-> **Evidence:** Taro screenshot/video (biasanya video demo atau video verifikasi)/file-file yang dibutuhin kalo ada.
-> **Next Actions:** List semua actionables yang mungkin dilakuin.
-> 1. action 1
-> 2. action 2
-> 
-> **Next assignee:** Assign orang berikutnya buat ngelanjutin.
-> **Risks/Challenges:** Jelasin semua kemungkinan kesulitan dan resiko-resiko yang mungkin terjadi.
-> **Mitigation Plan:** Jelasin atau suggest action-action atau hal-hal apa aja yang bisa dilakuin buat nge-tackle risks dan challenges tadi. Kalo gak ada, jujur aja gak ada dan minta bantuan ke atas. Escalate.
+> **Progress:** Jelasin progress-nya sedetail mungkin (baca penjelasan di atas kalo gak tau gimana caranya).  
+> **Evidence:** Taro screenshot/video (biasanya video demo atau video verifikasi)/file-file yang dibutuhin kalo ada.  
+> **Next Actions:** List semua actionables yang mungkin dilakuin.  
+> 1. action 1  
+> 2. action 2  
+>  
+> **Next assignee:** Assign orang berikutnya buat ngelanjutin.  
+> **Risks/Challenges:** Jelasin semua kemungkinan kesulitan dan resiko-resiko yang mungkin terjadi.  
+> **Mitigation Plan:** Jelasin atau suggest action-action atau hal-hal apa aja yang bisa dilakuin buat nge-tackle risks dan challenges tadi. Kalo gak ada, jujur aja gak ada dan minta bantuan ke atas. Escalate.  
 
 
 
@@ -34,16 +34,15 @@ Baca juga:
 
 ## Format/Template \#2
 
-> **Current Status:** Jelasin progress-nya sedetail mungkin
-> **Next Action:** Ini kalo bisa end-to-end. Artinya sampe issue dan problem-nya selese kita harus ngapain aja. Termasuk segala administratif yang butuh dilakuin.
+> **Current Status:** Jelasin progress-nya sedetail mungkin  
+> **Next Action:** Ini kalo bisa end-to-end. Artinya sampe issue dan problem-nya selese kita harus ngapain aja. Termasuk segala administratif yang butuh dilakuin.  
 
 
 versi kedua dari template 2 ini ditambahin section yang jelasin apa aja yang udah selese.
 
 
-> **Current Status:** Jelasin progress-nya sedetail mungkin
-> **Next Action:** Ini kalo bisa end-to-end. Artinya sampe issue dan problem-nya selese kita harus ngapain aja. Termasuk segala administratif yang butuh dilakuin dan kapan target selesenya.
-> **Done:** Ini list task yang udah selese dan kapan selesenya
+> **Current Status:** Jelasin progress-nya sedetail mungkin  
+> **Next Action:** Ini kalo bisa end-to-end. Artinya sampe issue dan problem-nya selese kita harus ngapain aja. Termasuk segala administratif yang butuh dilakuin dan kapan target selesenya.  
+> **Done:** Ini list task yang udah selese dan kapan selesenya  
 
 Poin penting lain buat disampein ke konsumer adalah, what we are doing now dan what we prioritize later. Tapi ini lebih ke gimana nyampein atau bikin report-nya.
-
