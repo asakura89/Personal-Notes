@@ -19,3 +19,9 @@ Proses ini itu crucial banget. Dokumen Requirement Specification dibikin disini.
 3. <ins>Prioritas masing-masing stakeholder</ins>
    1. <ins>Masalah:</ins> Masing-masing project stakeholder punya prioritas dan sudut pandang yang berbeda.
    2. <ins>Solusi:</ins> Memahami dan mengelola semua kebutuhan, ekspektasi, dan kontribusi dari stakeholder ini krusial dan sangat penting untuk keberhasilan project. <ins>Komunikasi yang efektif, kolaborasi, dan keterlibatan dengan stakeholder</ins> membantu memastikan kalo project align sama business objectives dan deliver values ke semua pihak yang terlibat. Kalo bahasa project managing-nya itu stakeholder management.
+
+
+
+butuh biKIN tabel buat jelasin semua field yang ada
+accepted data type buat input-nya
+terus tambahin apa field lable-nya editable apa enggak

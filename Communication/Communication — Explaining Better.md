@@ -46,3 +46,11 @@ Dua apps desktop ini selain bisa buat diagram, bisa buat dicoret juga kalo diaks
 
 Ngejelasin pake coret-coretan ini bagus banget karena bisa langsung bikin kebayang. Karena dengan semakin hybrid-nya cara kerja jaman sekarang dan masa depan, kayanya meeting call digital itu udah umum dan kadang kalo cuma diomongin suka gak kebayang.
 
+
+## Show it off
+
+Share screen
+papan tulis
+tunjukin
+
+
