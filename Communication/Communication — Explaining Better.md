@@ -24,7 +24,14 @@ Bahkan kadang dengan beberapa format ini, masih ada juga yang gak ngerti.
 
 ## Doodle and diagramming
 
-Selain dengan format-format tadi, yang mana bagus buat tulisan, juga bagus sebagai struktur contekan ketika ngejelasin secara langsung. Dan selain dengan tulisan, ada baiknya ngejelasin dengan gambar atau coretan. Kalo ketemu langsung mungkin bisa pake pensil dan kertas atau papan tulis. Gimana kalo secara digital? Yang pasti jaman sekarang banyak banget pilihan tablet atau hape yang bisa dicorat-coret, tinggal pilih. Tapi pastinya tergantung apps.
+Selain dengan format-format tadi, yang mana bagus buat tulisan, juga bagus sebagai struktur contekan ketika ngejelasin secara langsung. Dan selain dengan tulisan, ada baiknya ngejelasin dengan gambar atau coretan. Kalo ketemu langsung dna pengen nunjukin langsung, mungkin bisa pake ini:
+- Pensil dan kertas
+    - Ada Sticky Notes
+    - Ada Kertas HVS
+    - Buku Tulis
+- Papan tulis
+
+Gimana kalo secara digital? Yang pasti jaman sekarang banyak banget pilihan tablet atau hape yang bisa dicorat-coret, tinggal pilih. Tapi pastinya tergantung apps.
 
 Buat tablet yang support coret bisa pake apps ini:
 - OneNote
@@ -46,11 +53,8 @@ Dua apps desktop ini selain bisa buat diagram, bisa buat dicoret juga kalo diaks
 
 Ngejelasin pake coret-coretan ini bagus banget karena bisa langsung bikin kebayang. Karena dengan semakin hybrid-nya cara kerja jaman sekarang dan masa depan, kayanya meeting call digital itu udah umum dan kadang kalo cuma diomongin suka gak kebayang.
 
+Selain tools digital, yang bisa bikin kebayang juga ketika kita ngomongin sesuatu yang bisa dibuka di Apps tertentu ya kita bisa langsung share screen aja. Atau juga ya bisa gini:
+- Share screen
+- Screenshot
 
-## Show it off
-
-Share screen
-papan tulis
-tunjukin
-
-
+Yang penting intinya adalah tunjukin langsung apa konteks yang lagi dibahas. Jadi instead of berkutat dengan theater of mind. Kita langsung tunjukin tanpa membuat orang lain berasumsi.
