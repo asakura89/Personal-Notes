@@ -11,3 +11,4 @@ date: 2024-05-13
 2. Start Menu →
     1. `C:\Users\<username>\Desktop`
     2. `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`
+    3. `C:\ProgramData\Microsoft\Windows\Start Menu\Programs`
