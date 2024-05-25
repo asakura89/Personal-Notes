@@ -17,6 +17,6 @@ Dari sini kita bisa simpulin sebenernya bisa jadi kita yang stupid karena enggak
 
 Terus gimana kalo pertanyaannya sepele? Kan udah pernah dijelasin.
 Mungkin dia lupa?
-Tugas kita sebagai atasan atau sebagai temen ya bantu mengingat. Bukan cuma bantu mengingatkan. Se-simple ngarahin ke catetan tertentu atau link tertentu.
+Tugas kita sebagai atasan atau sebagai temen ya bantu mengingat. Bukan cuma bantu ngingetin. Se-simple ngarahin ke catetan tertentu atau link tertentu.
 
-Membantu memudahkan pekerjaan, nanti kita juga bakal dimudahkan pekerjaannya. <ins>Every act of kindness you’ve done, you’ve done to yourself</ins> ([The Egg by Andy Weir](http://www.galactanet.com/oneoff/theegg_mod.html)).
+Ngebantu memudahkan pekerjaan orang lain, nanti kita juga bakal dimudahkan pekerjaannya. <ins>Every act of kindness you’ve done, you’ve done to yourself</ins> ([The Egg by Andy Weir](http://www.galactanet.com/oneoff/theegg_mod.html)).
