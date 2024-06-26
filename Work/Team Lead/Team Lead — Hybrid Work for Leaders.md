@@ -7,6 +7,7 @@ date: 2023-11-14
 
 # Hybrid Work for Leaders
 
+<!--
 **Introduction**
 This document is a guide for business leaders who want to make hybrid work work for their organizations. Hybrid work is a model that allows employees to work from different locations and at different times, depending on their preferences and needs. Hybrid work can offer many benefits, such as increased flexibility, wellbeing, productivity, and innovation. However, it also requires a deliberate, thoughtful, and strategic approach to address the challenges and opportunities of this new reality. This guide will share the insights and learnings from Microsoft's own experience of embracing hybrid work, and provide actionable steps and solutions for business leaders to get started today.
 
@@ -38,6 +39,7 @@ The second section of the document explains how Microsoft is preparing for the h
 
 The third section of the document provides quick start guides for business leaders to get started with hybrid work today. The guides cover different functional areas, such as human resources, information technology and security, marketing and sales, real estate and facilities, and operations. The guides provide tips and tricks, best practices, and recommended solutions for each area. The document also provides a list of Microsoft solutions that are built for the era of hybrid work, enabling organizations to meet new employee and customer expectations, and gain competitive advantage.
 
+-->
 
 
 **References:**
