@@ -6,6 +6,7 @@ date: 2023-05-14
 
 # Resolve ticket-based issue tracker
 
+<!--
 How can I improve my ticket resolution process?
 
 
@@ -29,3 +30,8 @@ Source: Conversation with Bing, 5/15/2023
 (3) Ticket Resolution Time - 11 Tricks to reduce | By Aritic Desk. https://aritic.com/blog/aritic-desk/ticket-resolution-time/.
 (4) 6 Secret Strategies for Quick Ticket Resolution – Customer Service.... https://blog.happyfox.com/quick-ticket-resolution/.
 (5) 9 ticketing system tips for outstanding customer service. https://www.zendesk.com/blog/ticketing-system-tips/.
+
+-->
+
+- [Life — If I want to sell tickets](/Life/Life%20—%20If%20I%20want%20to%20sell%20tickets.md)
+

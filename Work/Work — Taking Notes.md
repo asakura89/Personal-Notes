@@ -8,7 +8,7 @@ date: 2023-07-10
 
 # Taking Notes
 
-
+<!--
 Note-taking is a skill that can benefit not only students, but also working professionals. Whether you need to take notes during a meeting, a presentation, or a brainstorming session, having a good note-taking system and the right supplies can help you stay organized, productive, and efficient. In this essay, I will share with you some note-taking tips for working professionals and recommend some office-appropriate supplies that you can use. By following these tips, you will be able to take notes effectively, confidently, and professionally.
 
 
@@ -190,3 +190,6 @@ ingatkan Anda akan batas waktu. Kami sarankan untuk menggunakan Midori Stand Mem
 - Tetapkan tujuan mini. Menyelesaikan tujuan-tujuan kecil yang dapat dicapai membantu membangun momentum untuk mencapai tujuan yang lebih besar di kemudian hari. Pantau perkembangan Anda menggunakan buku catatan papan tulis yang dilengkapi dengan lembaran plastik untuk melindungi tulisan Anda dan juga berfungsi sebagai permukaan tulisan tambahan. Anda bisa menghapus tulisan pada lembaran plastik atau papan tulis tergantung pada bagaimana tujuan Anda berubah. Kami sarankan menggunakan Gakken Write White+ Whiteboard Notebook yang mencakup dua halaman kosong, tiga halaman grafik, dan satu halaman tugas dengan baris untuk 36 tugas.
 
 Sebagai kesimpulan, pengambilan catatan yang efektif adalah keterampilan penting bagi para profesional kerja, dan menyesuaikan strategi Anda dengan peran dan tanggung jawab Anda dapat menghasilkan hasil yang luar biasa. Dengan mengadopsi pendekatan strategis terhadap pengambilan catatan, menerapkan kode warna, memanfaatkan diagram visual, mengggunakan singkatan dan catatan tempel yang dapat dipindah-pindahkan, serta mengambil tindakan yang bermakna setelah pertemuan, Anda siap menghadapi dunia profesional yang dinamis. Ingatlah, oniichan, menguasai strategi ini adalah perjalanan yang berkelanjutan yang pasti akan berkontribusi pada keterampilan kepemimpinan dan manajemen waktu Anda. 🌟
+
+-->
+

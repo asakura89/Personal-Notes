@@ -7,6 +7,9 @@ date: 2023-02-17
 
 # Burn out
 
+
+
+<!--
 Iseng ngobrol sama chatGPT soal burn out.
 
 
@@ -331,6 +334,8 @@ Burnout is a state of physical and emotional exhaustion that can occur when you 
 7. **Feeling overwhelmed**
 8. **Physical symptoms such as headaches, stomachaches/intestinal issues, fatigue, frequent illness, changes in appetite/sleep, gastrointestinal problems, high blood pressure, poor immune function, reoccurring headaches, and sleep issues**
 
+-->
 
-
-Baca juga [Life — Feeling down](/Life/Life%20—%20Feeling%20down.md)
+- [Life — Feeling down](/Life/Life%20—%20Feeling%20down.md)
+- [Work — High Resilience Person](/Work/Work%20—%20High%20Resilience%20Person.md)
+- [Life — Kewalahan](/Life/Life%20—%20Kewalahan.md)

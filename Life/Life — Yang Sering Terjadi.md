@@ -32,7 +32,7 @@ Jalan-jalan keluar. Liat alam. Liat pohon. Pergi ke taman. Pergi ke hutan. Berce
 
 ## Emosi
 
-Olahraga. Senam. Cardio workout. Luapkan ke aktifitas fisik. Baca juga [Life — Kebiasaan Penting](Life%20%E2%80%94%20Kebiasaan%20Penting).
+Olahraga. Senam. Cardio workout. Luapkan ke aktifitas fisik. Baca juga [Life — Kebiasaan Penting](/Life/Life%20%E2%80%94%20Kebiasaan%20Penting).
 
 
 
