@@ -7,6 +7,8 @@ date: 2023-03-29
 
 # OKR and SMART Goals
 
+<!--
+
 ## OKR
 
 OKRs stands for Objectives and Key Results. It's a way for people in an organization to set goals and measure how well they're doing. Think of it like a game where you have to complete different levels to win. Each level has its own objectives and key results that you need to achieve to move on to the next level.
@@ -106,3 +108,5 @@ Tips for setting OKRs and SMART goals include choosing your goals carefully, cre
 **References:**
 
 - https://www.smartsheet.com/content/okr-vs-smart-goals
+
+-->
