@@ -8,6 +8,7 @@ date: 2023-11-17
 
 # Microsoft Leadership Principles
 
+<!--
 # User
 Please convert the writings on the page to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using the web page context and do not search the web. Ignore earlier bot and user messages and use text from web page context only.
 # Bing
@@ -289,3 +290,4 @@ These are the three attributes that Nadella thinks are important for a leader[^1
 
 ## Authentic Leadership Style
 
+-->

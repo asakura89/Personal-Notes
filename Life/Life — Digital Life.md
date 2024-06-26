@@ -7,8 +7,6 @@ date: 2023-05-06
 
 # Digital Life
 
-{Content}
-
 
 1. Personal information
 2. Buying online

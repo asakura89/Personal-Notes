@@ -6,6 +6,9 @@ date: 2023-09-30
 
 # Thinking models
 
+- Design Thinking
+
+<!--
 ## Thinking models and Thought processes in Mathematics, Physics, Engineering, and Software Development
 
 **ExpertM (Mathematics)**: In mathematics, we often use **abstract thinking** and **logical reasoning**. We start with axioms, or basic truths, and then use logic to build upon these truths to create more complex structures. This approach can be applied to real-world problems by breaking them down into smaller, more manageable parts, and then using logical reasoning to solve these parts.
@@ -90,3 +93,4 @@ Source: Conversation with Bing, 30/9/2023
 5. undefined. https://doi.org/10.1038/525315a.  
 6. undefined. https://doi.org/10.1038/s41893-018-0085-1.  
 7. undefined. https://www.biography.com/scientist/gregor-mendel.
+8. -->

@@ -38,7 +38,7 @@ console.log(replaced);
 
 Output-nya
 
-```javascript
+```markdown
 * 
 ┌─────────┬──────────┐
 │ (index) │  Values  │
@@ -65,3 +65,5 @@ Ini harusnya Change Request
     - Berarti saking simplenya gadak UAT 
     - CR tersendiri tapi yang di-charge cuma effort development doang. SIT, deployment, sama UAT dianggap sbg bagian dari maintenance 
 ```
+
+
