@@ -28,12 +28,11 @@ date: 2024-07-04
 
 
 
-## 🙋‍♂️ 1:1 Material Question
+## 🙋‍♂️ 1:1 Material
 
 - Personal life / how's work / how's project
 - Kesulitan / kendala secara technical dan non-technical
 - Gratitude for achievement / hard work
-- Kesulitan dalam nerapin 360 review
 - Beban mental / impact ke performance atau diri sendiri
 - Issue yang ber-impact ke performance atau diri sendiri
 - Pernah self-review atau feedback loop?
