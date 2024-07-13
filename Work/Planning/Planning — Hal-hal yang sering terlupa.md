@@ -34,3 +34,11 @@ date: 2023-12-19
 **References:**
 
 - [Project Management Basics: How to Manage Your Project with Checklists - Melanie McBride - Google Buku](https://books.google.co.id/books/about/Project_Management_Basics.html?id=XpvVDAAAQBAJ&redir_esc=y)
+
+
+
+## Estimasi Cost
+
+Kita gak jago-jago amat nge-estimate. Jadi estimation pake manhours sama mandays itu butuh buffer gede.
+Terus gimana nge-estimate-nya? Pake cara agile. Cara agile estimationnya high level. Pake sistem complexity, gak langsung di-map ke manhours atau mandays.
+
