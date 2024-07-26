@@ -13,6 +13,7 @@ date: 2023-10-22
 - [To-Do](#to-do)
 - [Loop](#loop)
 - [Planner](#planner)
+- [Lists](#lists)
 
 
 
@@ -55,3 +56,7 @@ Task yang didelegasiin, kalo udah di-assign apakah pake To-Do atau Loop Task, na
 Antara format default sama format Kanban cuma beda nama kolom. Kalo di Kanban, nanti bakal jadi Backlog, On Progress, sama Done. Kalo di default, kita bisa kategoriin secara custom.
 
 Ada format lain buat track deadline. Jadi bisa dibilang strong point-nya planner itu ada di progress tracking-nya.
+
+
+## Lists
+

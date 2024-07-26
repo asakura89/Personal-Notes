@@ -6,6 +6,8 @@ tags:
 - MS-365
 - MS-Office
 - Productivity
+- Teams
+- MS-Teams
 date: 2022-07-12
 ---
 
