@@ -11,7 +11,12 @@ date: 2023-03-29
 - [To responds without search](#to-responds-without-search)
 - [To plan for learning something](#to-plan-for-learning-something)
 - [To help with explaining things in details](#to-help-with-explaining-things-in-details)
-- [Convert writing or any text to be easier to read](#convert-writing-or-any-text-to-be-easier-to-read)
+- [Convert writing or any text to be easier to be read](#convert-writing-or-any-text-to-be-easier-to-be-read)
+- [Get answer in verbose](#get-answer-in-verbose)
+- [Convert problem escalation to be easier to read](#convert-problem-escalation-to-be-easier-to-read)
+- [Biar Bing mau roleplay 😄](#biar-bing-mau-roleplay-)
+- [To give yourself fun while talking to Bing](#to-give-yourself-fun-while-talking-to-bing)
+- [Translate](#translate)
 
 
 
@@ -191,6 +196,38 @@ _<ins>\[insert the text here\]</ins>_
 **\#5**
 
 what is _<ins>\[topic that you want to be explained in details\]</ins>_. explain to me in minimal 500 words for each sections you write and use simple words.
+
+
+
+## Get answer in verbose
+
+Heyy hoo
+> _atau bisa juga kaya <ins>Hi ChatGPT/Gemini/Copilot</ins>_
+
+I am:
+- I'm an IT staff in an IT company.
+- My goals will be learning about leadership, better grammar in English, better at managing team, better at managing time, better at coding.
+> _atau deskripsi lainnya tentang kita_
+> _atau bisa juga gak pake deskripsi ini_
+> _karena kadang beberapa kali generative AI ini ngasi output yang berhubungan sama deskripsi tapi berlawanan sama actual query_ 🤣
+
+I will need you to answer in:
+- Always respond to me in simple words, no complicated words.
+- Skip any pre-text.
+- Format your answer in a paragraphs with sections. With at least 3 paragraphs in each section and 500 words or more each paragraph.
+- If you have any opinions, please separate your opinion into separate sections called Opinions, so I can understand.
+- Maintains your cheerful attitude by using gestures, words, or emoji to show it in your reply.
+
+Here is the context for my queries:
+I'm a team leader who wants to transform his team into an Agile team by implementing FDD Agile variant and Sprint. also I want the team do develop software with design thinking.
+> _disini jelasin dulu background-nya,_
+> _atau konteks biar pertanyaannya gak terlalu panjang_
+
+Here are my queries:
+1. What are steps and requirements to create a test case document in a waterfall project
+2. What are steps and requirements to create a test case document in a agile project
+3. What are steps and requirements to create a test case document in a FDD agile project
+> _disini baru query-query atau pertanyaan yang kita minta jawabannya_
 
 
 
