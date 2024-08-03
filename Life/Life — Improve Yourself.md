@@ -131,3 +131,19 @@ Jonathan Blow also said that the answer to how to get better at anything was alm
 
 - Jonathan Blow clips that made me consider quitting my job for real - YouTube ([Video](https://www.youtube.com/watch?app=desktop&v=nL8GWU9M8LY), [Subtitle](_media/Jonathan%20Blow%20clips%20that%20made%20me%20consider%20quitting%20my%20job%20for%20real%20-%20YouTube%20-%20English.srt.md))
 - Jonathan Blow Made Me Quit My Job | Prime Reacts - YouTube ([Video](https://www.youtube.com/watch?v=znmZA_n485I), [Subtitle](_media/Jonathan%20Blow%20Made%20Me%20Quit%20My%20Job%20Prime%20Reacts%20-%20YouTube%20-%20English.srt.md))
+
+
+
+## List Exams yang mungkin ngebantu improve
+
+1. AWS Cloud Practitioner: 100 USD, Rp 1.620.182,35
+2. AWS Developer Associate: 150 USD, Rp 2.430.273,53
+3. AWS Solutions Architect Associate: 150 USD, Rp 2.430.273,53
+4. AWS Solutions Architect Professional: 300 USD, Rp 4.860.547,06
+5. Sitecore 10 .NET Developer: 350 USD, Rp 5.673.492,16
+6. Professional Scrum Master I: 200 USD, Rp 3.241.995,52
+7. Project Management Professional: 575 USD, Rp 9.320.737,12
+    To take the project management exam, you need to meet one of the following sets of criteria:
+    - Four-Year College / University Degree, 36 months of experience leading projects within the past eight years, and 35 hours of project management education/training or CAPM ® certification.
+    - High School or Secondary School Diploma, 60 non-overlapping months of project management experience totaling 7,500 hours of project management tasks within the last eight years, and 35 contact hours of project management education.
+    - High School Diploma, GED, associate degree, or equivalent, and 23 hours of project management education completed before the time of the exam.
