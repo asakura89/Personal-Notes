@@ -58,7 +58,7 @@ var dataPembeli = new List<Pembeli> {
 
 Maka bisa digambarin kaya gini.
 
-![img](_media/BungaMatahari-DataTable-Collections.png)
+![img](_media/BungaMatahari-DataTable-Collections.drawio.svg)
 
 Kalo semisal data di atas kita bikin ulang pake `DataTable`, jadinya kaya di bawah ini.
 
@@ -135,7 +135,7 @@ dataPembeli.Rows.Add(row);
 
 Dan bisa digambarin kaya gini.
 
-![img](_media/BungaMatahari-DataTable-Table.png)
+![img](_media/BungaMatahari-DataTable-Table.drawio.svg)
 
 Perbedaan mendasarnya adalah `DataTable` punya kolom dan baris persis table di Database.
 

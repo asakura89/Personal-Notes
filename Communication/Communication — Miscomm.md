@@ -10,13 +10,13 @@ Miskom. Dimana-mana miskom. Ngomong A ketangkepnya B. Ngomong ABX ketangkepnya A
 
 Biasanya gini nih yang bikin miskom.
 
-![image](_media/Miscomm_1.png)
+![image](_media/Miscomm_1.svg)
 
 Karena si A cuma tau miscomm-nya dari 1 aja. Tapi apa 2 miscomm apa enggak ketauan.
 
 Nah tapi kalo gini.
 
-![image](_media/Miscomm_2.png)
+![image](_media/Miscomm_2.svg)
 
 si A tau kalo 1 sama 2 bisa jadi miscomm dan bisa langsung diklarifikasi.
 

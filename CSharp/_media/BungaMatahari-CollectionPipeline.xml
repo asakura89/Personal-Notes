@@ -1,1 +1,94 @@
-<mxfile host="Electron" modified="2021-05-15T07:23:59.154Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" etag="N5zpiZOl-JXbhY7P9lJE" version="14.6.13" type="device"><diagram id="6SR7Z1we7s6VZpHu6Nb_" name="Page-1">3Zpbc6IwGIZ/jZfuyEntZas9zKxd27Hd2t7sRIiQgoQNwUN//QYJCiRV64KH3rTJB/kgT17zvWasaZ3J/JaAwLnHFvRqasOa17RuTVVbhsb+xoFFEtAv2knAJshKQso6MEAfkAcbPBohC4a5GynGHkVBPmhi34cmzcUAIXiWv22MvfxTA2BDITAwgSdGX5BFnSTaNhrr+B1EtpM+WWnwKxOQ3swDoQMsPMuEtOua1iEY06Q1mXegF7NLuSTjbj65unoxAn26y4Dnm6HrOlfd18G9frGoP7z3fs7rPMsUeBGfMPKDiNbUpseSXo0Ia9nLFiRRANitHex5DDTCPp8WXaSsCI58C8aPa7ARMwdROAiAGV+dMXGwmEMnHusprCm+fvoukFA4z4T4dG4hnkBKFuwWfrXJyXJpKWl/tl4oJaXvZBZJ5zHAtWGvMq/xsQYn+AWaqkATR/RscOqNU+OpCTwpAX44xmQCQlRTOxKwEUWkHkBSX7YEqOxTGMTNgGAThuF2sCNguvZyKfoR9ZAPywO+2uQ2AW8eErguABcAQt+6jPdV1jM9EIbIzPNiOMhiyEW77LzGnR9G2u3Osxe7i7Q3R3SY5mDtzCjWWw+KO+mYT9cgxBEx4fZ9jwJiQ7pdgdDKVQlxRTMrZkgWLI0R6AGKpvnaIltF/oQHjNjMVoJRCp9QtVUQQjJvPipbC4qJjEIitZAoASMkWopqNe39dWaUoLOD6kWugx0EpB5TL2q7sMG099SLViwNxUTl6aWv96d1/W3Y6z/+dqca/hj/HUsK6/naFPWQZVVKUyyr52xTjs9TrJoB8pDDQoyfBUJAXODH0ybQQi6gS+PSOGenImVelVORMi+jgpyaU9m09WULzSYRnqhT0cpyKlp1TkWKtXkcp7KvNvfXmVw/OwhPOyWHo5blcIRE5elM6XloTCZvv1rv9rM+HPjR3cu3OojRDlmRpTRFv3jODuf4PEXHGJGIJq4m73FcuDh/eyMFXpW9kQL/jgcxm/a9bJXZpMATtTd6WfZGr87eSLEe6SCmUnvzBf3sILyTOsDRyrI3QqLydPb2NLLcx0tLvzGVJ9j7Y3+QmaSAHNbeCLVAoqJd7Y1+yHIspSlWh632JoSjCMRHEg4IkXd0pEWLc3ym4k7InEkIQ5mVaUQ+jVz230LvID7SiZ1PCGhUtcv5L+ZFlyNlXpXLkTIv48v1wV2OUEK2lKNN+2G2+nyuylNxOUZZLseozuVIKbbO0eWUojNjR53pp+Ry9LJcjpBob52x7vqXOsnt6587adf/AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.7">
+  <diagram id="6SR7Z1we7s6VZpHu6Nb_" name="Page-1">
+    <mxGraphModel dx="1081" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-1" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="60" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-2" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-3" value="transformasi,&lt;br&gt;butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" vertex="1">
+          <mxGeometry x="210" y="160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-4" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" source="UFXkkhBDYSM49y-PjLKx-1" target="UFXkkhBDYSM49y-PjLKx-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="270" as="sourcePoint" />
+            <mxPoint x="150" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UFXkkhBDYSM49y-PjLKx-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#AE4132;" parent="1" source="UFXkkhBDYSM49y-PjLKx-3" target="UFXkkhBDYSM49y-PjLKx-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="180" as="sourcePoint" />
+            <mxPoint x="300" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-2" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="60" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-3" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="400" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-4" value="pilih berdasarkan predikat, butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" vertex="1">
+          <mxGeometry x="210" y="260" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-5" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" source="O4Ov-4ZXLOQVkv3ozfqf-2" target="O4Ov-4ZXLOQVkv3ozfqf-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="370" as="sourcePoint" />
+            <mxPoint x="150" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O4Ov-4ZXLOQVkv3ozfqf-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#56517E;" parent="1" source="O4Ov-4ZXLOQVkv3ozfqf-4" target="O4Ov-4ZXLOQVkv3ozfqf-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="280" as="sourcePoint" />
+            <mxPoint x="300" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-1" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-2" value="output&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="400" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-3" value="urutkan berdasarkan key, butir-per-butir" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" vertex="1">
+          <mxGeometry x="210" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-4" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" source="1LlifrmZN7jgU4XSnuHW-1" target="1LlifrmZN7jgU4XSnuHW-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="470" as="sourcePoint" />
+            <mxPoint x="150" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LlifrmZN7jgU4XSnuHW-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;fontColor=#0E8088;" parent="1" source="1LlifrmZN7jgU4XSnuHW-3" target="1LlifrmZN7jgU4XSnuHW-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="380" as="sourcePoint" />
+            <mxPoint x="300" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-3" value="input&lt;br&gt;berupa Collection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="60" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-4" value="output&lt;br&gt;berupa sebuah hasil" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="400" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-5" value="proses butir-per-butir untuk dijadikan satu" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" vertex="1">
+          <mxGeometry x="210" y="460" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-6" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" source="ZTbdkQAd4Fc1TeL_gzrw-3" target="ZTbdkQAd4Fc1TeL_gzrw-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="570" as="sourcePoint" />
+            <mxPoint x="150" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTbdkQAd4Fc1TeL_gzrw-7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#23445D;" parent="1" source="ZTbdkQAd4Fc1TeL_gzrw-5" target="ZTbdkQAd4Fc1TeL_gzrw-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="300" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
