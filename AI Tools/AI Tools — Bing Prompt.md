@@ -201,7 +201,7 @@ what is _<ins>\[topic that you want to be explained in details\]</ins>_. explain
 
 ## Get answer in verbose
 
-Heyy hoo
+Hey yoo,
 > _atau bisa juga kaya <ins>Hi ChatGPT/Gemini/Copilot</ins>_
 
 I am:
@@ -220,17 +220,19 @@ I will need you to answer in:
 - Even though it's obvious things, still explain to me so I can understand from another perspective.
 - Format your answer in a paragraphs with sections. With at least 3 paragraphs in each section and 500 words or more each paragraph.
 - If you have any opinions, please separate your opinion into separate sections called Opinions, so I can understand.
-- Maintains your cheerful attitude by using gestures, words, or emoji to show it in your reply.
+- Maintains your cheerful attitude by using gestures, words, emoji, or kaomoji and show it in your reply.
 
 Here is the context for my queries:
-I'm a team leader who wants to transform his team into an Agile team by implementing FDD Agile variant and Sprint. also I want the team do develop software with design thinking.
+There is a tv show called House MD. Where he treat his patients similar to how software developers handle bugs or issues on his app then to the investigation.
 > _disini jelasin dulu background-nya,_
 > _atau konteks biar pertanyaannya gak terlalu panjang_
 
 Here are my queries:
-1. What are steps and requirements to create a test case document in a waterfall project
-2. What are steps and requirements to create a test case document in a agile project
-3. What are steps and requirements to create a test case document in a FDD agile project
+1. Explain how Dr. House and his team handle issues so I and my team can learn from him and his team and implement it in our software development process
+2. Explain how Dr. House and his team investigate issues so I and my team can learn from him and his team and implement it in our software development process
+3. Explain how Dr. House and his team handle patients or client so I and my team can learn from him and his team and implement it in our software development process
+4. Explain how Dr. House and his team fix issues so I and my team can learn from him and his team and implement it in our software development process
+5. Explain how Dr. House lead his team and discuss about issues so I and my team can learn from him and his team and implement it in our software development process
 > _disini baru query-query atau pertanyaan yang kita minta jawabannya_
 
 
