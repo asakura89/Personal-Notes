@@ -25,3 +25,7 @@ date: 2024-09-08
 - Struggle sama time management atau detail
 
 
+
+**References:**
+
+- [Surrounded by Idiots by Thomas Erikson | Goodreads](https://www.goodreads.com/book/show/39101777-surrounded-by-idiots)
