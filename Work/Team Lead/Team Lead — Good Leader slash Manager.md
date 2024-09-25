@@ -136,4 +136,4 @@ Tapi kalo berdasarkan Conceptual Framework yang disusun penulis paper, yang pali
 
 **References:**
 
--  [What Makes a Great Manager of Software Engineers?](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)
+- [What Makes a Great Manager of Software Engineers?](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)

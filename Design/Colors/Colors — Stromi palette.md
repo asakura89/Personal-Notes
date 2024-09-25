@@ -8,7 +8,7 @@ date: 2022-12-08
 
 # Stromi palette by [@alenn.design](https://www.instagram.com/alenn.design/)
 
-## \#3B7197
+## Stromi Dark Blue
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:rgba(59,112,151,1);padding:6px 24px;border-radius:4px">
 &nbsp;
@@ -23,7 +23,7 @@ date: 2022-12-08
 
 
 
-## \#4A8DB7
+## Stromi A Bit Teal
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:rgba(74,141,183,1);padding:6px 24px;border-radius:4px">
 &nbsp;
@@ -38,7 +38,7 @@ date: 2022-12-08
 
 
 
-## \#74BDE0
+## Stromi A Bit Sky
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:rgba(117,191,225,1);padding:6px 24px;border-radius:4px">
 &nbsp;
@@ -53,7 +53,7 @@ date: 2022-12-08
 
 
 
-## \#A1E1FA
+## Stromi Beach
 
 <span style="display:inline-block;vertical-align:baseline;text-decoration:none;white-space:nowrap;font-size:24px;line-height:36px;background-color:rgba(161,225,250,1);padding:6px 24px;border-radius:4px">
 &nbsp;

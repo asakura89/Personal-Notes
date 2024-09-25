@@ -7,6 +7,17 @@ date: 2023-06-04
 
 # Team Lead
 
+Leader juga disebut [Manager](/Work/Work%20—%20Manager.md). Karena:
+- Kita nge-lead team-nya
+- Kita manage team-nya
+- Sebagai bonus, kalo di project biasanya bakal ada beberapa Team Lead ngumpul, kalo kita sebagai Project Lead, kita bakal jadi main person yang nge-lead dan nge-manage project-nya.
+
+
+
+## Lead the team
+
+### What is Leadership
+
 1. Leadership is an art form that can be learned, not taught.
 2. Leadership involves embracing the idea of seeing what needs to be done and then exercising the art of getting people to want to join in and help.
 3. Leaders take responsibility for the situation and take action, rather than being bystanders.
@@ -15,11 +26,47 @@ date: 2023-06-04
 _Note: poin-poin di atas diambil dengan bahasa aslinya biar gak ada lost-in-translation_
 
 
-
 **References:**
 
 - [TKP Insights: Leadership [The Knowledge Project Ep. #160] - Farnam Street (fs.blog)](https://fs.blog/knowledge-project-podcast/tkp-insights-leadership/)
 - [10min summary of #160 TKP Insights: Leadership from The Knowledge Project with Shane Parrish (snipd.com)](https://share.snipd.com/episode/6c52b2f9-4cbf-41c6-8fb0-ceda0dc80507/summary)
+
+
+—
+
+Sama kaya yang ada di point 2 dan 4 di atas, Team Leader tanggung jawabnya nge-lead team-nya ke arah goals yang sama.
+
+Gimana caranya? sama kaya point 1 di atas, leadership ini gak bisa diajarin, bisanya dipelajarin. Nanti bakal kebentuk dari pengalaman.
+
+
+
+### Build the experience
+
+Sebelum menyelam minum air dan menerjang kebakaran yang terjadi, paling enggak kita butuh tau beberapa hal sebagai knowledge dasar. Knowledge dasar ini juga gak ada standarnya. Jadi bisa dibilang karena gadak standar, itu yang ngebikin tiap-tiap leader itu unique.
+
+
+
+#### Build Traits
+
+List ini diambil dari Microsoft ([What Makes a Great Manager of Software Engineers?](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)). Atau mungkin paper yang didasarkan questioner ke beberapa karyawan Microsoft. Jadi gak ada standar gimana jadi good manager, great manager atau jadi best manager. Paling enggak list ini ngasi gambaran gimana caranya jadi manager di domain software engineer.
+
+Ada 15 traits dari technical team leads/managers.
+1. Is available
+2. Is technical
+3. Enables autonomy
+4. Supports experimentation
+5. Grows talent
+6. Promotes fairness
+7. Builds a realationship with team members
+8. Recognizes individuality
+9. Clears path to execution
+10. Builds team culture
+11. Guides the team
+12. Maintains a positive working environment
+13. Inpires the team
+14. Facilitates external communication
+15. Drives alignment
+
 
 
 
