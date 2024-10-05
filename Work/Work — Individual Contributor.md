@@ -6,11 +6,6 @@ date: 2023-01-07
 
 # Individual Contributor
 
-- [What is](#what-is)
-- [IC Skill](#ic-skill)
-
-
-
 ## What is
 
 Individual Contributor atau disebut juga IC, itu professional tanpa role yang kategorinya management atau managing. Tanpa role me-manage orang lain lebih tepatnya. Walaupun IC ini gak bertanggung jawab terhadap siapapun, tapi dia bertanggung jawab terhadap management dirinya sendiri. Jadi bisa disimpulin juga IC ini adalah orang yang task-nya non-strategical dan lebih kepada tactile atau tactual. Yaitu bersentuhan langsung dengan hal-hal lapangan. Dan menjadi executor.
