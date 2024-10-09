@@ -8,7 +8,7 @@ date: 2023-06-21
 # Succeed
 
 1. Success → pencapaian dari suatu tujuan
-2. Succeed → untuk mencapai suatu tujuan atau hasi yang diinginkan
+2. Succeed → untuk mencapai suatu tujuan atau hasil yang diinginkan
 
 Jadi success itu kata benda, succeed itu kata kerja.
 

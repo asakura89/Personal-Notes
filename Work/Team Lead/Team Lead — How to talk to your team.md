@@ -1,7 +1,8 @@
 ---
 tags:
-  - Work
-  - Team-Lead
+- Work
+- Team-Lead
+- Ways-of-Work
 date: 2024-05-25
 ---
 
