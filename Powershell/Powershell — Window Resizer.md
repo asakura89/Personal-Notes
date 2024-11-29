@@ -178,9 +178,9 @@ function Set-CurrentSize {
 }
 
 [System.String[]]$windowSizeList = @(
-    "1581.25, 868.75" <# 1.25 scaling #>
-    "1897.5, 1042.5" <# 1.5 scaling #>
-    "1265, 695" <# 1 scaling #>
+    "1581.25, 868.75"  <# 1.25 scaling #>
+    "1897.5, 1042.5"   <# 1.5 scaling #>
+    "1265, 695"        <# 1 scaling #>
     "500, 340"
     "385, 217"
 
@@ -197,6 +197,9 @@ function Set-CurrentSize {
     "1080, 575"
 
     "450, 1040"
+
+    "1000, 536.25"    <# 1.25 scaling #>
+    "800, 429"        <# 1 scaling #>
 )
 
 function Run() {
