@@ -7,7 +7,7 @@ date: 2023-11-20
 
 # Buffer experiment
 
-```typescript
+```javascript
 class BufferExperiment {
     log() {
         let a: Buffer = Buffer.from("yahharo");

@@ -15,7 +15,7 @@ date: 2023-08-17
 
 **Code:**
 
-```typescript
+```javascript
 let threshold: number = 80; // Number
 let message: string = "Yahharo Typescript and Javascript"; // String
 let isSuperhero: boolean = true; // Booelan
@@ -44,7 +44,7 @@ function GetThreshold(): number {
 
 Biasanya kita bakal menganggap type itu kaku dan statik dan strong type kaya gini
 
-```typescript
+```javascript
 interface Pointlike {
     x: number;
     y: number;
@@ -79,7 +79,7 @@ console.table({
 
 Output-nya
 
-```markdown
+```javascript
 ┌─────────┬─────────────────┐
 │ (index) │     Values      │
 ├─────────┼─────────────────┤
@@ -90,7 +90,7 @@ Output-nya
 
 Tapi ternyata di typescript, type itu gak mesti melulu strong type tapi bisa structural type. Jadi bisa ditulis gini
 
-```typescript
+```javascript
 let obj = {
     x: 0,
     y: 0,
@@ -105,7 +105,7 @@ console.table({
 
 Tapi kalo diginiin, jadinya tetep strong type dan error.
 
-```typescript
+```javascript
 let obj: Pointlike = {
     x: 0,
     y: 0,
@@ -120,7 +120,7 @@ console.table({
 
 Begitupun ini
 
-```typescript
+```javascript
 let obj: Named = {
     x: 0, // error disini
     y: 0,
@@ -135,7 +135,7 @@ console.table({
 
 Gara-gara structural type, jadinya bisa gini
 
-```typescript
+```javascript
 interface Empty { }
 
 let obj: Empty = {
@@ -147,7 +147,7 @@ let obj: Empty = {
 
 Tapi diginiin error 🤣🤣
 
-```typescript
+```javascript
 console.table({
     point: logPoint(obj), // error disini
     name: logName(obj), // error disini
@@ -159,7 +159,7 @@ Di object property yang ketiga juga error karena obj type-nya `Empty`. `Empty` g
 
 Kecuali diginiin
 
-```typescript
+```javascript
 let obj = {
     x: 0,
     y: 0,
@@ -169,7 +169,7 @@ let obj = {
 
 Output-nya
 
-```markdown
+```javascript
 ┌─────────┬───────────────────────────────┐
 │ (index) │            Values             │
 ├─────────┼───────────────────────────────┤
@@ -181,7 +181,7 @@ Output-nya
 
 Itu tadi kalo secara structural, yang sama adalah property-nya. Gimana kalo yang secara structural yang sama adalah method-nya? Ya sama juga. Maksudnya sama gakkan error secara typing, tapi bakal beda secara output.
 
-```typescript
+```javascript
 class Pointlike {
     log(): string {
         let obj = {
@@ -213,13 +213,13 @@ console.log(expected2BePointlikeButGotNamedInstead.log());
 
 Output-nya
 
-```markdown
+```javascript
 Hello, Origin
 ```
 
 Sebaliknya
 
-```typescript
+```javascript
 let expected2BeNamedButGotPointlikeInstead: Named = new Pointlike();
 
 console.log(expected2BeNamedButGotPointlikeInstead.log());
@@ -227,13 +227,13 @@ console.log(expected2BeNamedButGotPointlikeInstead.log());
 
 Output-nya
 
-```markdown
+```javascript
 x = 0, y = 0
 ```
 
 Kecuali class-nya punya property, maka secara structural udah gak bisa dibilang sama dan kalo saling di-assign, jadi error.
 
-```typescript
+```javascript
 class Pointlike {
     x: number;
     y: number;

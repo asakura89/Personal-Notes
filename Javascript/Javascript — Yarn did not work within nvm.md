@@ -6,7 +6,7 @@ date: 2024-01-14
 
 # Yarn did not work within nvm
 
-```cmd
+```shell
 cmd> nvm deactivate && nvm uninstall 14.21.3 && nvm install 14.21.3
 cmd> npm install -g corepack@0.10.0
 cmd> corepack prepare yarn@3.6.4 --activate

@@ -7,7 +7,7 @@ date: 2023-12-03
 
 # Read file
 
-```typescript
+```javascript
 import fs from "node:fs"
 
 try {
@@ -22,6 +22,6 @@ catch (err) {
 
 Output-nya
 
-```typescript
+```javascript
 4235
 ```

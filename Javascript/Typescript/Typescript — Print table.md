@@ -1,7 +1,6 @@
 ---
 tags:
 - Typescript
-- NodeJs
 date: 2023-12-13
 ---
 
@@ -9,7 +8,7 @@ date: 2023-12-13
 
 Versi typescript-nya
 
-```typescript
+```javascript
 function drawTable(data: (string | number)[][]): void {
     const horizontal: string = '─';
     const vertical: string = '│';
@@ -89,7 +88,7 @@ drawTable([
 
 Output-nya
 
-```typescript
+```javascript
 ┌───────┬─────┬───────────────┐
 │ Name  │ Age │ City          │
 ├───────┼─────┼───────────────┤
@@ -103,7 +102,7 @@ Alternatifnya ini
 
 Versi typescript-nya
 
-```typescript
+```javascript
 function drawTable(data: (string | number)[][]): void {
     const horizontal: string = '─';
     const vertical: string = '│';

@@ -10,7 +10,7 @@ date: 2022-12-06
 
 ## TS Version
 
-```typescript
+```javascript
 class StringHelper {
     constructor() { }
 
