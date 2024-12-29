@@ -10,7 +10,7 @@
             "path": "AI Tools"
         },
         {
-            "path": "Colors"
+            "path": "Coffee"
         },
         {
             "path": "Communication"
@@ -19,13 +19,28 @@
             "path": "CSharp"
         },
         {
+            "path": "Design"
+        },
+        {
+            "path": "Economic"
+        },
+        {
             "path": "Excel"
         },
         {
             "path": "Git"
         },
         {
+            "path": "Go"
+        },
+        {
+            "path": "IIS"
+        },
+        {
             "path": "Java"
+        },
+        {
+            "path": "Javascript"
         },
         {
             "path": "Life"
@@ -34,16 +49,10 @@
             "path": "LINQPad"
         },
         {
-            "path": "Markdown"
-        },
-        {
             "path": "Office 365"
         },
         {
             "path": "Powershell"
-        },
-        {
-            "path": "Productive"
         },
         {
             "path": "Programming Concept"
@@ -52,7 +61,13 @@
             "path": "Sitecore"
         },
         {
-            "path": "Time Management"
+            "path": "SQL"
+        },
+        {
+            "path": "Statistics"
+        },
+        {
+            "path": "Tech"
         },
         {
             "path": "Work"
@@ -73,7 +88,8 @@
                 "strings": "off",
                 "other": "off"
             },
-            "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+            "editor.defaultFormatter": null,
+            "diffEditor.ignoreTrimWhitespace": false
         },
         "blockman.n01LineHeight": 0,
         "blockman.n04ColorComboPreset": "Classic Light (Gradients)",
@@ -83,12 +99,15 @@
         "debug.console.fontFamily": "'JetBrains Mono Light', 'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
         "debug.inlineValues": "on",
         "debug.toolBarLocation": "floating",
+        "diffEditor.experimental.showMoves": true,
+        "diffEditor.hideUnchangedRegions.enabled": true,
         "diffEditor.ignoreTrimWhitespace": false,
         "diffEditor.renderSideBySide": true,
+        "diffEditor.useInlineViewWhenSpaceIsLimited": false,
         "editor.accessibilitySupport": "off",
-        "editor.fontFamily": "'JetBrains Mono Light', 'JetBrains Mono Light', 'Cascadia Code Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
+        "editor.fontFamily": "'Cascadia Code', 'Cascadia Code Light', 'JetBrains Mono', 'JetBrains Mono Light', 'Fira Code Retina', 'Fira Code Light', 'Inconsolata Light', Consolas, Monospace",
         "editor.fontLigatures": true,
-        "editor.fontSize": 16,
+        "editor.fontSize": 18,
         "editor.glyphMargin": false,
         "editor.guides.bracketPairs": false,
         "editor.guides.indentation": false,
@@ -145,7 +164,8 @@
             "logs/*.txt": "log",
             "logs/*.log": "log",
             "Logs/*.txt": "log",
-            "Logs/*.log": "log"
+            "Logs/*.log": "log",
+            "*.txt": "markdown"
         },
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 100,
@@ -182,7 +202,6 @@
         "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
         "window.titleSeparator": " • ",
         "window.zoomLevel": 0,
-        "workbench.activityBar.visible": false,
         "workbench.colorCustomizations": {
             "editor.lineHighlightBackground": "#1073cf2d",
             "editor.lineHighlightBorder": "#9fced11f"
@@ -192,7 +211,7 @@
         "workbench.editor.enablePreviewFromQuickOpen": false,
         "workbench.editor.historyBasedLanguageDetection": false,
         "workbench.editor.languageDetection": false,
-        "workbench.editor.pinnedTabSizing": "shrink",
+        "workbench.editor.pinnedTabSizing": "compact",
         "workbench.editor.showIcons": false,
         "workbench.editor.untitled.hint": "hidden",
         "workbench.editor.untitled.labelFormat": "name",
@@ -201,7 +220,10 @@
         "workbench.panel.defaultLocation": "bottom",
         "workbench.productIconTheme": "fluent-icons",
         "workbench.sideBar.location": "right",
+        "workbench.editor.highlightModifiedTabs": true,
+        "window.commandCenter": false,
         "workbench.statusBar.visible": false,
-        "workbench.tree.indent": 16
+        "workbench.tree.indent": 16,
+        "workbench.activityBar.location": "hidden"
     }
 }
