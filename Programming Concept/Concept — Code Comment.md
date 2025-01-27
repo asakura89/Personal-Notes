@@ -11,16 +11,20 @@ Beberapa code comment yang bikin ceria
 
 1. **<ins>SQL:</ins>**
     ```sql
-    --<< This is a comment >>-
+    --<< This is a comment >>--
     ```
 
 2. **<ins>Powershell:</ins>**
     ```powershell
     #:< This is a comment >:#
     <# ~<< This is a comment >>~ #>
+    <#--< This is a comment >--#>
     <# ~<<
         This is a comment
     >>~ #>
+    <#-<
+        This is a comment
+    >-#>
     ```
 
 3. **<ins>Typescript, Javascript, C#:</ins>**
@@ -44,9 +48,13 @@ Beberapa code comment yang bikin ceria
 5. **<ins>ASP .NET WebForm</ins>**
     ```
     <%--|| This is a comment ||--%>
+    <%-< This is a comment >-%>
     <%--||
         This is a comment
     ||--%>
+    <%-<
+        This is a comment
+    >-%>
     ```
 
 6. **<ins>ASP .NET MVC Razor</ins>**
