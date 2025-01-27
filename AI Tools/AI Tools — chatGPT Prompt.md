@@ -8,6 +8,19 @@ date: 2023-04-28
 
 # chatGPT Prompt
 
+- [Find a similar phrase](#find-a-similar-phrase)
+    - [Prompt](#prompt)
+    - [Example](#example)
+    - [Result](#result)
+- [Generate Q\&A for better learning](#generate-qa-for-better-learning)
+    - [Prompt](#prompt-1)
+    - [Example](#example-1)
+    - [Result](#result-1)
+- [Summary Podcast transcription or Youtube subtitle](#summary-podcast-transcription-or-youtube-subtitle)
+- [Simple prompts for learning](#simple-prompts-for-learning)
+
+
+
 ## Find a similar phrase
 
 ### Prompt

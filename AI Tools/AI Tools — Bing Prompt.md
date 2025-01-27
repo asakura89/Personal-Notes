@@ -13,6 +13,7 @@ date: 2023-03-29
 - [To help with explaining things in details](#to-help-with-explaining-things-in-details)
 - [Convert writing or any text to be easier to be read](#convert-writing-or-any-text-to-be-easier-to-be-read)
 - [Get answer in verbose](#get-answer-in-verbose)
+- [Get answer in simple way](#get-answer-in-simple-way)
 - [Convert problem escalation to be easier to read](#convert-problem-escalation-to-be-easier-to-read)
 - [Biar Bing mau roleplay 😄](#biar-bing-mau-roleplay-)
 - [To give yourself fun while talking to Bing](#to-give-yourself-fun-while-talking-to-bing)
@@ -233,6 +234,26 @@ Here are my queries:
 3. Explain how Dr. House and his team handle patients or client so I and my team can learn from him and his team and implement it in our software development process
 4. Explain how Dr. House and his team fix issues so I and my team can learn from him and his team and implement it in our software development process
 5. Explain how Dr. House lead his team and discuss about issues so I and my team can learn from him and his team and implement it in our software development process
+> _disini baru query-query atau pertanyaan yang kita minta jawabannya_
+
+
+
+## Get answer in simple way
+
+Hey yoo,
+
+I will need you to answer in:
+- Always respond to me in simple words, no complicated words.
+- Skip any pre-text.
+- Explain things in logical way.
+- Even though it's obvious things, still explain to me so I can understand from another perspective.
+- Maintains your cheerful attitude by using gestures, words, emoji, or kaomoji and show it in your reply.
+
+Here is the context for my queries:
+> _bisa pake context bisa enggak_
+
+Here are my queries:
+1. Explain how Dr. House and his team handle issues so I and my team can learn from him and his team and implement it in our software development process
 > _disini baru query-query atau pertanyaan yang kita minta jawabannya_
 
 
