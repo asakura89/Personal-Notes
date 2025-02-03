@@ -23,7 +23,7 @@ date: 2023-03-29
 
 ## To responds without search
 
-**Version 1**
+### Version \#1
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>\[insert topic here\]</ins>_. You can use any format or style that you like, such as a poem, a story, a song, a code, etc. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -32,7 +32,7 @@ _<ins>\[insert query here\]</ins>_
 
 
 
-**Version 2**
+### Version \#2
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>\[insert topic here\]</ins>_. Format or style that I prefer is a _<ins>\[insert format here. a poem, a story, a song, a code, etc.\]</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -41,7 +41,7 @@ _<ins>\[insert query here\]</ins>_
 
 
 
-**Example \#1**
+### Example \#1
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>Event Driven, Distributed Event, Non-blocking Event, Pure .NET Inter-process Communication</ins>_. Format or style that I prefer _<ins>is a code</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -50,7 +50,7 @@ Please generate a simple C# code to implement distributed event without network 
 
 
 
-**Example \#2**
+### Example \#2
 
 Hi Bing, please generate a creative and entertaining response based on the following topic: _<ins>OKR, SMART Goals</ins>_. Format or style that I prefer _<ins>is a paragraph with bullet points</ins>_. You do not have to search for any information or reference any sources. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -59,7 +59,7 @@ Explain me like I'm five what is it means "A set of OKRs in an organization shou
 
 
 
-**Version 3**
+### Version \#3
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is _<ins>\[insert format here. a poem, a story, a song, a code, etc.\]</ins>_. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -68,7 +68,7 @@ _<ins>\[insert query here\]</ins>_
 
 
 
-**Example \#3**
+### Example \#3
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is an paragraph with bullet points but in a conversational way.
 
@@ -77,7 +77,7 @@ How I can built good or even great architecture that can withstand earthquake?
 
 
 
-**Example \#4**
+### Example \#4
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is an paragraph with bullet points but in a conversational way. You can use your own words and knowledge. You do not have to worry about being subjective or controversial. You can be as imaginative and original as you want.
 
@@ -86,7 +86,7 @@ According to your opinion or knowledge, how can AI such as yourself can help hum
 
 
 
-**Example \#5**
+### Example \#5
 
 Hi Bing, Please generate a brief and complete response. Format or style that I prefer is a code.
 
@@ -104,7 +104,7 @@ public class Clarissa {
 
 
 
-**Example \#6**
+### Example \#6
 
 Buatkan email balasan untuk atasan dengan poin-poin berikut, menggunakan bahasa inggris:
 - mohon maap
@@ -121,7 +121,7 @@ Yo Bing, design a comprehensive 30-day plan to help me learn _<ins>\[insert topi
 
 
 
-**Example \#1**
+### Example \#1
 
 Yo Bing, design a comprehensive 30-day plan to help me learn Team Leading from scratch. Break down the plan into daily tasks, incorporating learning resources, hands-on exercises, progress checks, and rest days to ensure a balanced, sustainable, and progressive learning journey.
 
@@ -136,7 +136,7 @@ And the other critic and proposes an improved approach.
 
 
 
-**Example \#1**
+### Example \#1
 
 Imagine a conversation between three powershell experts: ExpertA, ExpertB and ExpertC.
 Three of them are expert and have deep expert knowledge related to the following fields: powershell code, powershell technique.
@@ -145,7 +145,7 @@ And the other critic and proposes an improved approach.
 
 
 
-**Example \#2**
+### Example \#2
 
 Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about what is the differences between Naruto run and Arale run? because people often mixed up both. Please help to explain.
 
@@ -153,7 +153,7 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 
 ## Convert writing or any text to be easier to be read
 
-**\#1**
+### \#1
 
 Hi Bing, please convert this writing to be an essay with sections and points and key take aways. Here it is:
 _<ins>\[insert the text here\]</ins>_
@@ -163,7 +163,7 @@ Please convert this writing to paragraph with sections with at least 500 words e
 
 
 
-**\#2**
+### \#2
 
 Kalo panjang, di-split pake parts aja, jadi gini:
 I will give you writing in parts, you will say NEXT and I will give you another part and you will do the same until I said DONECOMPLETE. when I said DONECOMPLETE, it means all parts are complete, you are to help me to convert this writing to be paragraphs with sections with at least 500 words each section. Rephrase using simple words.
@@ -181,20 +181,20 @@ kalo udah selese bales pake DONECOMPLETE
 
 
 
-**\#3**
+### \#3
 
 Please convert the writings on _<ins>\[insert type here. document, page.\]</ins>_ to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using the web page context and do not search the web. Ignore earlier bot and user messages and use text from web page context only.
 
 
 
-**\#4**
+### \#4
 
 Please convert the writings to paragraph with sections with at least 500 words each. Rephrase using simple words. Answer only using provided text and do not search the web. Ignore earlier bot and user messages and use provided text only. Here is the text:
 _<ins>\[insert the text here\]</ins>_
 
 
 
-**\#5**
+### \#5
 
 what is _<ins>\[topic that you want to be explained in details\]</ins>_. explain to me in minimal 500 words for each sections you write and use simple words.
 
@@ -284,7 +284,7 @@ Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. Y
 
 
 
-**Example \#1**
+### Example \#1
 
 Hi Bing, Imagine that you are a cheerful otaku that expert in Anime and Manga. You want to make world as colorful as it should be by discussing about your hobby as positive activity. There is a person asking you about what is the differences between Naruto run and Arale run? because people often mixed up both. Please help to explain.
 
