@@ -2,22 +2,22 @@
 tags:
 - Typescript
 - NodeJs
+- Deno
 date: 2023-11-20
 ---
 
 # Buffer experiment
 
 ```javascript
+// import { Buffer } from "node:buffer"; // used for Deno
+
 class BufferExperiment {
     log() {
         let a: Buffer = Buffer.from("yahharo");
         let b: string = typeof a;
         let c: string = JSON.stringify(a);
         let d: string = `<Buffer ${Array.from(a).map(byte => byte.toString(16)).reduce((acc, item) => acc += item + " ", "").trim()}>`
-        let e: string = d
-            .match(/\s[0-9a-fA-F]+/g)
-            ?.map(match => match.trim())
-            .join("")!;
+        let e: string = d.match(/\s[0-9a-fA-F]+/g)?.map(match => match.trim()).join("")!;
         let f: Buffer = Buffer.from(e, "hex");
         let g: number = Buffer.compare(a, f);
 
