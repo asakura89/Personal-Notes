@@ -26,29 +26,17 @@ Kalo mau nyinggung culture, Indonesia kan gak sendirian di kondisi ini. Ada Jepa
 Kalo menurut Chat GPT:
 
 > The "-san" honorific is commonly used in Japanese language and culture to show respect
->
 > and politeness when addressing someone. It is an honorific title used after a person's name,
->
 > similar to how "Mr." or "Ms." is used in English.
->
 > The honorific "-san" is a neutral and general form of address and is commonly used in
->
 > various contexts, such as in formal and business settings, as well as in everyday
->
 > conversations. It can be used for both men and women, regardless of their marital status or
->
 > age. It is a default honorific that doesn't imply a close relationship nor formality.
->
 > In Japanese, there are other honorifics like "-sama" (more formal and respectful) or "-chan"
->
 > (used for close friends, children, or in an affectionate manner). The choice of honorific
->
 > depends on the level of formality and familiarity between the speakers.
->
 > When discussing Japanese language or addressing someone in a respectful manner, using
->
 > the "-san" honorific is a common and polite practice. It demonstrates cultural awareness and
->
 > respect for Japanese customs and traditions.
 
 Jadi harusnya gak ada masalah kalo kita juga nge-enforce culture buat nge-address orang-orang yang kita hormati di lingkungan kerja atau pun bukan dengan honorific mas, mbak, pak, bu.

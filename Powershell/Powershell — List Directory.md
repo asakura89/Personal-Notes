@@ -15,9 +15,10 @@ Sebelum masuk ke topik _Directory_ atau _File_, umumnya untuk ngambil list item 
 ```powershell
 Clear-Host
 
-Get-ChildItem -Path . |
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath |
     Where-Object {
-        $((Get-Item $_) -Is [System.IO.DirectoryInfo])
+        $(Get-Item -Path $_.FullName) -Is [System.IO.DirectoryInfo]
     } |
     Select-Object -ExpandProperty "Name" |
     Format-List
@@ -187,4 +188,206 @@ Team Lead — Team Member.md
 Team Lead — Terminating Member.md
 20231126_003131_image.png
 Default.md
+```
+
+
+
+## `Get-Item` gotchas
+
+```powershell
+Clear-Host
+
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath |
+    Select-Object @{ L="Name"; E={ $_.Name } },
+        @{ L="GetType"; E={ $_.GetType() } },
+        @{ L="GetItem"; E={ $(Get-Item $_) } },
+        @{ L="Is DirectoryInfo"; E={ $(Get-Item $_) -Is [System.IO.DirectoryInfo] } },
+        @{ L="GetItem Name"; E={ $(Get-Item $_).Name } } |
+    Format-Table
+```
+
+Output
+
+```powershell
+Name                 GetType                 GetItem Is DirectoryInfo GetItem Name
+----                 -------                 ------- ---------------- ------------
+.obsidian            System.IO.DirectoryInfo                    False             
+AI Tools             System.IO.DirectoryInfo                    False             
+Coffee               System.IO.DirectoryInfo                    False             
+Communication        System.IO.DirectoryInfo                    False             
+CSharp               System.IO.DirectoryInfo                    False             
+Design               System.IO.DirectoryInfo                    False             
+Economic             System.IO.DirectoryInfo                    False             
+Excel                System.IO.DirectoryInfo                    False             
+Git                  System.IO.DirectoryInfo                    False             
+Go                   System.IO.DirectoryInfo                    False             
+IIS                  System.IO.DirectoryInfo                    False             
+Java                 System.IO.DirectoryInfo                    False             
+Javascript           System.IO.DirectoryInfo                    False             
+Life                 System.IO.DirectoryInfo                    False             
+LINQPad              System.IO.DirectoryInfo                    False             
+Office 365           System.IO.DirectoryInfo                    False             
+Politic              System.IO.DirectoryInfo                    False             
+Powershell           System.IO.DirectoryInfo                    False             
+Programming Concept  System.IO.DirectoryInfo                    False             
+Sitecore             System.IO.DirectoryInfo                    False             
+SQL                  System.IO.DirectoryInfo                    False             
+Statistics           System.IO.DirectoryInfo                    False             
+Tech                 System.IO.DirectoryInfo                    False             
+Work                 System.IO.DirectoryInfo                    False             
+_templates           System.IO.DirectoryInfo                    False             
+.editorconfig        System.IO.FileInfo                         False             
+.gitattributes       System.IO.FileInfo                         False             
+.gitignore           System.IO.FileInfo                         False             
+LICENSE.md           System.IO.FileInfo                         False             
+notes.code-workspace System.IO.FileInfo                         False             
+README.md            System.IO.FileInfo                         False             
+```
+
+Liat kolom GetItem sama GetItem Name, kosong. Kayanya emang gak ada result-nya. Ini bisa dibuktiin pake JSON.
+
+```powershell
+Clear-Host
+
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath |
+    Select-Object @{ L="Name"; E={ $_.Name } },
+        @{ L="GetType"; E={ $_.GetType() } },
+        @{ L="GetItem"; E={ $(Get-Item $_) } },
+        @{ L="Is DirectoryInfo"; E={ $(Get-Item $_) -Is [System.IO.DirectoryInfo] } },
+        @{ L="GetItem Name"; E={ $(Get-Item $_).Name } } |
+    ConvertTo-Json
+```
+
+Output
+
+```json
+[
+    {
+        "Name":  ".obsidian",
+        "GetType":  {
+                        "BaseType":  "System.IO.FileSystemInfo",
+                        "UnderlyingSystemType":  "System.IO.DirectoryInfo",
+                        "FullName":  "System.IO.DirectoryInfo",
+                        . . . omitted . . .
+                    },
+        "GetItem":  {
+
+                    },
+        "Is DirectoryInfo":  false,
+        "GetItem Name":  null
+    },
+    {
+        "Name":  "AI Tools",
+        "GetType":  {
+                        "BaseType":  "System.IO.FileSystemInfo",
+                        "UnderlyingSystemType":  "System.IO.DirectoryInfo",
+                        "FullName":  "System.IO.DirectoryInfo",
+                        . . . omitted . . .
+                    },
+        "GetItem":  {
+
+                    },
+        "Is DirectoryInfo":  false,
+        "GetItem Name":  null
+    },
+    {
+        "Name":  "LICENSE.md",
+        "GetType":  {
+                        "BaseType":  "System.IO.FileSystemInfo",
+                        "UnderlyingSystemType":  "System.IO.FileInfo",
+                        "FullName":  "System.IO.FileInfo",
+                        . . . omitted . . .
+                    },
+        "GetItem":  {
+
+                    },
+        "Is DirectoryInfo":  false,
+        "GetItem Name":  null
+    },
+    {
+        "Name":  "notes.code-workspace",
+        "GetType":  {
+                        "BaseType":  "System.IO.FileSystemInfo",
+                        "UnderlyingSystemType":  "System.IO.FileInfo",
+                        "FullName":  "System.IO.FileInfo",
+                        . . . omitted . . .
+                    },
+        "GetItem":  {
+
+                    },
+        "Is DirectoryInfo":  false,
+        "GetItem Name":  null
+    },
+    {
+        "Name":  "README.md",
+        "GetType":  {
+                        "BaseType":  "System.IO.FileSystemInfo",
+                        "UnderlyingSystemType":  "System.IO.FileInfo",
+                        "FullName":  "System.IO.FileInfo",
+                        . . . omitted . . .
+                    },
+        "GetItem":  {
+
+                    },
+        "Is DirectoryInfo":  false,
+        "GetItem Name":  null
+    },
+    . . . omitted . . .
+]
+```
+
+Itu kenapa code ini error
+
+```powershell
+Clear-Host
+
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath |
+    Where-Object {
+         $(Get-Item $_) -Is [System.IO.DirectoryInfo]
+    } |
+    Select-Object -ExpandProperty "Name" |
+    Format-List
+```
+
+Output
+
+```powershell
+Get-Item : Cannot find path 'C:\Users\ASMNetworkLabUsr\.gitattributes' because it does not exist.
+At line:6 char:12
++          $(Get-Item $_) -Is [System.IO.DirectoryInfo]
++            ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ASMNetworkLabUsr\.gitattributes:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+ 
+Get-Item : Cannot find path 'C:\Users\ASMNetworkLabUsr\.gitignore' because it does not exist.
+At line:6 char:12
++          $(Get-Item $_) -Is [System.IO.DirectoryInfo]
++            ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ASMNetworkLabUsr\.gitignore:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+ 
+Get-Item : Cannot find path 'C:\Users\ASMNetworkLabUsr\LICENSE.md' because it does not exist.
+At line:6 char:12
++          $(Get-Item $_) -Is [System.IO.DirectoryInfo]
++            ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ASMNetworkLabUsr\LICENSE.md:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+ 
+Get-Item : Cannot find path 'C:\Users\ASMNetworkLabUsr\notes.code-workspace' because it does not exist.
+At line:6 char:12
++          $(Get-Item $_) -Is [System.IO.DirectoryInfo]
++            ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\dita.s....code-workspace:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+ 
+Get-Item : Cannot find path 'C:\Users\ASMNetworkLabUsr\README.md' because it does not exist.
+At line:6 char:12
++          $(Get-Item $_) -Is [System.IO.DirectoryInfo]
++            ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ASMNetworkLabUsr\README.md:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+. . . omitted . . .
 ```

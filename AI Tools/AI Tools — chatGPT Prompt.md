@@ -63,9 +63,9 @@ Please create two-column spreadsheet with question and corresponding answer for 
 
 Topic: Set clear goals and expectations
 
-| Question                                                       | Answer                                                          |
-| -------------------------------------------------------------- | --------------------------------------------------------------- |
-| How can setting clear goals benefit a team's performance?       | Setting clear goals provides focus and direction for the team.    |
+| Question | Answer |
+|---|---|
+| How can setting clear goals benefit a team's performance? | Setting clear goals provides focus and direction for the team. |
 
 _. . . dipotong biar gak kepanjangan . . ._
 
@@ -73,8 +73,8 @@ _. . . dipotong biar gak kepanjangan . . ._
 
 Topic: Identify and solve problems
 
-| Question                                                       | Answer                                                          |
-| -------------------------------------------------------------- | --------------------------------------------------------------- |
+| Question | Answer |
+|---|---|
 | Why is it important to proactively identify and solve problems? | Proactive problem-solving prevents issues from escalating and improves efficiency. |
 
 _. . . dipotong biar gak kepanjangan . . ._
