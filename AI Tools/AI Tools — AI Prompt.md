@@ -53,7 +53,7 @@ date: 2023-03-29
     - [Summary Podcast transcription or Youtube subtitle](#summary-podcast-transcription-or-youtube-subtitle)
     - [Simple prompts for learning](#simple-prompts-for-learning)
 - [Mozilla Orbit (Mistral 7B)](#mozilla-orbit-mistral-7b)
-    - [Verbos Answer](#verbos-answer)
+    - [Verbose Answer](#verbose-answer)
 
 
 
