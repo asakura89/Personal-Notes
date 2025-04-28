@@ -16,7 +16,7 @@ Sebelum masuk ke topik _Directory_ atau _File_, umumnya untuk ngambil list item 
 Clear-Host
 
 $dirPath = "D:\\Personal-Notes"
-Get-ChildItem -Path $dirPath |
+Get-ChildItem -Path $dirPath -Recurse |
     Where-Object {
         $(Get-Item -Path $_.FullName) -Is [System.IO.DirectoryInfo]
     } |
