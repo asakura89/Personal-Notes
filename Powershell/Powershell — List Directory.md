@@ -16,7 +16,7 @@ Sebelum masuk ke topik _Directory_ atau _File_, umumnya untuk ngambil list item 
 Clear-Host
 
 $dirPath = "D:\\Personal-Notes"
-Get-ChildItem -Path $dirPath |
+Get-ChildItem -Path $dirPath -Recurse |
     Where-Object {
         $(Get-Item -Path $_.FullName) -Is [System.IO.DirectoryInfo]
     } |
@@ -48,7 +48,8 @@ _templates
 ```powershell
 Clear-Host
 
-Get-ChildItem -Path . -Recurse |
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath -Recurse |
     Where-Object { $_.FullName -NotMatch "(^\.|\\\.).+" } |
     Select-Object @{
         Name="FullName";
@@ -120,7 +121,8 @@ D:\Personal-Notes\_templates\Default.md
 ```powershell
 Clear-Host
 
-Get-ChildItem -Path . -Recurse |
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath -Recurse |
     Where-Object { $_.FullName -NotMatch "(^\.|\\\.).+" } |
     Select-Object @{
         L="Type";
@@ -157,12 +159,13 @@ F: Default.md                                         : D:\Personal-Notes\_templ
 
 
 
-## List Directory contents file-only
+## List file-only of Directory contents
 
 ```powershell
 Clear-Host
 
-Get-ChildItem -Path . -Recurse |
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath -Recurse |
     Where-Object { $_.FullName -NotMatch "(^\.|\\\.).+" } |
     Select-Object @{
         L="Type";
@@ -188,6 +191,21 @@ Team Lead — Team Member.md
 Team Lead — Terminating Member.md
 20231126_003131_image.png
 Default.md
+```
+
+atau
+
+```
+$dirPath = "D:\\Personal-Notes"
+Get-ChildItem -Path $dirPath -Recurse |
+    Where-Object {
+        $(Get-Item -Path $_.FullName) -Is [System.IO.FileInfo] -And `
+        $_.FullName -NotMatch "(^\.|\\\.).+"
+        #:< Debugging purposes >:# $(Get-Item -Path $_.FullName) -IsNot [System.IO.DirectoryInfo] -And $_.FullName -NotMatch "(^\.|\\\.).+"
+    } |
+    Select-Object -ExpandProperty "Name" -First 3 |
+    #:< Debugging purposes >:# Select-Object -ExpandProperty "FullName" -First 3 |
+    Format-List
 ```
 
 
