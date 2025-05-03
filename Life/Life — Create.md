@@ -1,7 +1,7 @@
 ---
 tags:
 - Life
-- Thought
+- Thoughts
 date: 2023-12-07
 ---
 
