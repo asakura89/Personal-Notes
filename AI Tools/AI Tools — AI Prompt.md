@@ -420,6 +420,7 @@ _<ins>\[insert essay, subtitle, transcription here\]</ins>_
 > _Mirip sama yang ini "[Get answer in verbose](#get-answer-in-verbose)"_
 
 Hey yoo, I will need you to answer in:
+- Forget previous prompt.
 - Dont answer based on context but based on your knowledge.
 - Always respond to me in simple words, no complicated words.
 - Skip any pre-text.
