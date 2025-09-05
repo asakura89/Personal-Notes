@@ -43,6 +43,9 @@ Beberapa code comment yang bikin ceria
     <!--</>
         This is a comment
     </>-->
+    <!-- ~>>
+        This is a comment
+    <<~ -->
     ```
 
 5. **<ins>ASP .NET WebForm</ins>**
